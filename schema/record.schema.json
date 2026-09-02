@@ -1,0 +1,99 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://devcon-iligan.org/schema/record.schema.json",
+  "title": "Iligan ESG Indicator Record",
+  "description": "Canonical shape for every indicator data point in the Iligan El Nino ESG Resilience Dashboard, per CLAUDE.md. One record = one indicator reading for one barangay at one point in time.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "date_time",
+    "barangay",
+    "latitude",
+    "longitude",
+    "indicator",
+    "value",
+    "unit",
+    "source",
+    "responsible_office",
+    "status",
+    "remarks"
+  ],
+  "properties": {
+    "date_time": {
+      "type": "string",
+      "format": "date-time",
+      "description": "UTC ISO-8601 timestamp of the observation/report. Display converts to Asia/Manila (UTC+8)."
+    },
+    "barangay": {
+      "type": "string",
+      "description": "One of Iligan City's 44 barangays. Must match a name in data/barangays.json.",
+      "enum": [
+        "Abuno", "Acmac-Mariano Badelles Sr.", "Bagong Silang", "Bonbonon", "Bunawan",
+        "Buru-un", "Dalipuga", "Del Carmen", "Digkilaan", "Ditucalan", "Dulag",
+        "Hinaplanon", "Hindang", "Kabacsanan", "Kalilangan", "Kiwalan", "Lanipao",
+        "Luinab", "Mahayahay", "Mainit", "Mandulog", "Maria Cristina", "Pala-o",
+        "Panoroganan", "Poblacion", "Puga-an", "Rogongon", "San Miguel", "San Roque",
+        "Santa Elena", "Santa Filomena", "Santiago", "Santo Rosario", "Saray",
+        "Suarez", "Tambacan", "Tibanga", "Tipanoy", "Tomas L. Cabili (Tominobo Proper)",
+        "Tubod", "Ubaldo Laya", "Upper Hinaplanon", "Upper Tominobo", "Villa Verde"
+      ]
+    },
+    "latitude": {
+      "type": ["number", "null"],
+      "minimum": 4,
+      "maximum": 21,
+      "description": "Decimal degrees. Null if no citable coordinate exists yet — never estimate."
+    },
+    "longitude": {
+      "type": ["number", "null"],
+      "minimum": 116,
+      "maximum": 127,
+      "description": "Decimal degrees. Null if no citable coordinate exists yet — never estimate."
+    },
+    "indicator": {
+      "type": "string",
+      "description": "One of the 8 MVP indicators.",
+      "enum": [
+        "heat_index",
+        "rainfall",
+        "water_level_availability",
+        "fire_incidents",
+        "population_exposed",
+        "households_water_shortage",
+        "farmers_hectares_affected",
+        "government_response_status"
+      ]
+    },
+    "value": {
+      "type": ["number", "string", "null"],
+      "description": "Null if unknown/pending. Numeric for measured quantities; string for status-type indicators (e.g. government_response_status)."
+    },
+    "unit": {
+      "type": ["string", "null"],
+      "enum": ["°C", "mm", "ha", "L", "₱", "count", "%", "status", null],
+      "description": "Null only when value is null."
+    },
+    "band": {
+      "type": ["string", "null"],
+      "enum": ["Caution", "Extreme Caution", "Danger", "Extreme Danger", null],
+      "description": "Required alongside the numeric value whenever indicator is heat_index — CLAUDE.md requires the band name always be shown, not just the number. Null/omitted for other indicators."
+    },
+    "source": {
+      "type": ["string", "null"],
+      "description": "Where this value came from, e.g. 'PAGASA iHeatMAP', 'Open-Meteo (supplementary)', 'City DRRMO situation report'. Null only while pending."
+    },
+    "responsible_office": {
+      "type": ["string", "null"],
+      "description": "The city/national office that owns this data, e.g. 'PAGASA', 'City DRRMO', 'City Agriculture Office'. Null only while the owner is unconfirmed."
+    },
+    "status": {
+      "type": "string",
+      "enum": ["verified", "reported", "estimated", "derived"],
+      "description": "verified = confirmed against an authoritative source; reported = as given by the owning office, unverified; estimated = official estimate; derived = calculated by this project (must also carry the 'Derived DEVCON Iligan indicator' label in the UI)."
+    },
+    "remarks": {
+      "type": ["string", "null"],
+      "description": "Free text for caveats, provenance notes, or 'NO DATA / PENDING' context. Null if nothing to add."
+    }
+  }
+}
