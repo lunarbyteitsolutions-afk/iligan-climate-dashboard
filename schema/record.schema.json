@@ -28,13 +28,13 @@
       "type": "string",
       "description": "One of Iligan City's 44 barangays. Must match a name in data/barangays.json.",
       "enum": [
-        "Abuno", "Acmac-Mariano Badelles Sr.", "Bagong Silang", "Bonbonon", "Bunawan",
+        "Abuno", "Acmac", "Bagong Silang", "Bonbonon", "Bunawan",
         "Buru-un", "Dalipuga", "Del Carmen", "Digkilaan", "Ditucalan", "Dulag",
         "Hinaplanon", "Hindang", "Kabacsanan", "Kalilangan", "Kiwalan", "Lanipao",
-        "Luinab", "Mahayahay", "Mainit", "Mandulog", "Maria Cristina", "Pala-o",
+        "Luinab", "Mahayahay", "Mainit", "Mandulog", "Maria Cristina", "Palao",
         "Panoroganan", "Poblacion", "Puga-an", "Rogongon", "San Miguel", "San Roque",
         "Santa Elena", "Santa Filomena", "Santiago", "Santo Rosario", "Saray",
-        "Suarez", "Tambacan", "Tibanga", "Tipanoy", "Tomas L. Cabili (Tominobo Proper)",
+        "Suarez", "Tambacan", "Tibanga", "Tipanoy", "Tomas L. Cabili",
         "Tubod", "Ubaldo Laya", "Upper Hinaplanon", "Upper Tominobo", "Villa Verde"
       ]
     },

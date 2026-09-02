@@ -34,15 +34,17 @@ project does not speak for the city and is not a city office.
 | `data/samples/` | Sample/fixture data for frontend development. Not real. |
 | `schema/record.schema.json` | The JSON Schema every indicator record must satisfy. |
 | `scripts/fetch/` | Planned scheduled Node job that pulls PAGASA/Open-Meteo/city data and writes JSON to `data/`. Not implemented yet. |
-| `src/` | Planned static frontend (map + barangay views). Not implemented yet. |
+| `src/` | Static frontend: single-page ESG dashboard (scorecard, hero card, ranked table). No map in the MVP — see CLAUDE.md's Phase 2 section. |
 
 ## Known gaps (as of this scaffold)
 
-- **Coordinates**: no `latitude`/`longitude` values have been filled in for
-  any barangay. We could not source per-barangay centroids from a citable
-  dataset, and per project rule we do not estimate coordinates. These need
-  proper geocoding (e.g. NAMRIA/PhilGIS barangay boundaries, or the City GIS
-  office) before the map can plot barangays.
+- **Coordinates**: `data/barangay_reference_points.json` now carries an
+  approximate reference point per barangay (OpenStreetMap admin_level=10
+  centroids/label nodes, ODbL 1.0), used to sample the weather grid. These
+  are points, not surveyed boundaries — see that file's `_meta` block for
+  known limitations (Tambacan in particular is low-confidence). Real
+  boundaries (needed for the phase 2 map) still require NAMRIA/PhilGIS/City
+  CPDO data.
 - **Population figures**: sourced from a citypopulation.de mirror of PSA
   2024 POPCEN data, cross-checked against an independent search (city total
   368,132; largest barangay Tubod 31,813 — both match). The official

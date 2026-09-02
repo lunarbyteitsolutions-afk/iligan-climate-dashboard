@@ -44,12 +44,20 @@ S: population exposed · households with water shortage · farmers and hectares
    affected
 G: government intervention/response status
 
+The MVP is a single-page dashboard: ESG scorecard, hottest-barangay hero
+card, and a sortable table of all 44 barangays. No map in phase 1.
+
 Out of scope until these 8 are flowing: sensors, ML forecasting, mobile app,
 citizen reporting portal, authentication, database.
 
+## Phase 2 (deferred — do not build yet)
+- Map view: Leaflet or MapLibre with barangay GeoJSON/boundaries.
+- Anything that depends on real barangay boundary polygons (NAMRIA/PhilGIS/
+  City CPDO) rather than the reference points in
+  data/barangay_reference_points.json.
+
 ## Tech constraints
 - Static frontend + scheduled fetch job writing JSON. No database yet.
-- Map: Leaflet or MapLibre with barangay GeoJSON.
 - Deploy target: GitHub Pages / Cloudflare Pages. Zero running cost.
 - Assume mobile users on limited data, and projection in meetings — legible,
   high contrast, works small.
