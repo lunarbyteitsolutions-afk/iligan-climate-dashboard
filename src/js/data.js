@@ -54,23 +54,40 @@ export const HERO_BAND_COLORS = {
   'Extreme Danger': ['#5c0010', '#210005']
 };
 
-// Shared content for the ESG scorecard/reframe AND the drawer's
-// "Data Owed" block — one list so no two views can drift out of sync.
-export const PENDING_INDICATORS = {
-  E: [
-    { label: 'Rainfall', office: 'PAGASA (authoritative); CDRRMO for local rain gauges — pending confirmation with the office' },
-    { label: 'Water level / availability', office: 'CDRRMO (river and water-source levels); Iligan City Water District (supply and service interruptions) — pending confirmation with the office' },
-    { label: 'Fire incidents', office: 'BFP Iligan City (structural/grass); ICENRO (vegetation/watershed) — pending confirmation with the office' }
-  ],
-  S: [
-    { label: 'Population exposed', office: 'CSWDO' },
-    { label: 'Households with water shortage', office: 'City Health' },
-    { label: 'Farmers & hectares affected', office: 'City Agriculture' }
-  ],
-  G: [
-    { label: 'Government intervention / response status', office: "City Administrator's Office" }
-  ]
-};
+// Single source of truth for MVP indicator completeness — every one of
+// the 8 indicators named in CLAUDE.md's MVP scope, whether it's live yet,
+// and (for pending ones) which office owns it. Consumed by the reframe
+// section + indicator cards (overview.js), the ESG scorecard (ops.js),
+// and the drawer's "Data Owed" list (drawer.js) — one list so no view can
+// show a different completeness count than another.
+//
+// Fire hotspots (NASA FIRMS) are deliberately NOT what makes
+// `fire_incidents` live: that satellite layer is a separate, clearly
+// labeled supplementary signal (see fire.html), not the official BFP
+// Iligan City / ICENRO confirmed-incident count this indicator names.
+// Don't flip `fire_incidents.live` to true because fire.html shows data.
+export const MVP_INDICATORS = [
+  { id: 'heat_index', pillar: 'E', label: 'Heat index', live: true, icon: 'environmental' },
+  { id: 'rainfall', pillar: 'E', label: 'Rainfall', live: true, icon: 'rainfall', office: 'PAGASA (authoritative); CDRRMO for local rain gauges' },
+  { id: 'water_level', pillar: 'E', label: 'Water level / availability', live: false, icon: 'water', office: 'CDRRMO (river and water-source levels); Iligan City Water District (supply and service interruptions) — pending confirmation with the office' },
+  { id: 'fire_incidents', pillar: 'E', label: 'Fire incidents', live: false, icon: 'fire', office: 'BFP Iligan City (structural/grass); ICENRO (vegetation/watershed) — pending confirmation with the office' },
+  { id: 'population_exposed', pillar: 'S', label: 'Population exposed', live: true, icon: 'social', office: 'CSWDO' },
+  { id: 'water_shortage', pillar: 'S', label: 'Households with water shortage', live: false, icon: 'health', office: 'City Health' },
+  { id: 'farmers_hectares', pillar: 'S', label: 'Farmers & hectares affected', live: false, icon: 'farms', office: 'City Agriculture' },
+  { id: 'gov_response', pillar: 'G', label: 'Government intervention / response status', live: false, icon: 'governance', office: "City Administrator's Office" }
+];
+
+/** @returns {{live:number, total:number, pending:number}} */
+export function indicatorCompleteness() {
+  const total = MVP_INDICATORS.length;
+  const live = MVP_INDICATORS.filter((i) => i.live).length;
+  return { live, total, pending: total - live };
+}
+
+/** @param {'E'|'S'|'G'} pillar */
+export function pillarIndicators(pillar) {
+  return MVP_INDICATORS.filter((i) => i.pillar === pillar);
+}
 
 export function getCssVar(name) {
   return getComputedStyle(document.documentElement).getPropertyValue(name).trim();

@@ -56,40 +56,36 @@
   <section class="landing-section tint-e reveal" aria-labelledby="reframe-heading">
     <div class="container">
       <h2 id="reframe-heading" class="section-heading">What We Still Don't Know</h2>
-      <p class="section-lede" id="reframe-lede">This dashboard is one third complete — one of three pillars (Environmental) has live data flowing. Social and Governance are still NO DATA / PENDING.</p>
+      <p class="section-lede" id="reframe-lede">Loading indicator completeness…</p>
       <div class="reframe-columns">
 
-        <div class="reframe-col" style="--col-accent: var(--accent);">
+        <div class="reframe-col" id="reframe-col-e" style="--col-accent: var(--accent);">
           <div class="reframe-col-head">
             <span class="icon" id="icon-e"></span>
-            <h3>Environmental — live</h3>
+            <h3 id="reframe-head-e">Environmental</h3>
           </div>
           <div class="reframe-metric-row">
             <span class="reframe-live-metric" id="reframe-e-value">—</span>
             <span class="live-pill">LIVE</span>
           </div>
           <div class="reframe-metric-label">heat index</div>
-          <div class="reframe-item"><span class="icon" id="icon-rainfall"></span><div>Rainfall<span class="owner">NO DATA / PENDING — PAGASA (authoritative); CDRRMO for local gauges</span></div></div>
-          <div class="reframe-item"><span class="icon" id="icon-water"></span><div>Water level / availability<span class="owner">NO DATA / PENDING — CDRRMO; Iligan City Water District</span></div></div>
-          <div class="reframe-item"><span class="icon" id="icon-fire"></span><div>Fire incidents<span class="owner">NO DATA / PENDING — BFP Iligan City; ICENRO</span></div></div>
+          <div id="reframe-items-e"></div>
         </div>
 
-        <div class="reframe-col" style="--col-accent: var(--text-muted);">
+        <div class="reframe-col" id="reframe-col-s" style="--col-accent: var(--text-muted);">
           <div class="reframe-col-head">
             <span class="icon" id="icon-s"></span>
-            <h3>Social — pending</h3>
+            <h3 id="reframe-head-s">Social</h3>
           </div>
-          <div class="reframe-item"><span class="icon" id="icon-social-1"></span><div>Population exposed<span class="owner">owning office: CSWDO</span></div></div>
-          <div class="reframe-item"><span class="icon" id="icon-health"></span><div>Households with water shortage<span class="owner">owning office: City Health</span></div></div>
-          <div class="reframe-item"><span class="icon" id="icon-farms"></span><div>Farmers &amp; hectares affected<span class="owner">owning office: City Agriculture</span></div></div>
+          <div id="reframe-items-s"></div>
         </div>
 
-        <div class="reframe-col" style="--col-accent: var(--text-muted);">
+        <div class="reframe-col" id="reframe-col-g" style="--col-accent: var(--text-muted);">
           <div class="reframe-col-head">
             <span class="icon" id="icon-g"></span>
-            <h3>Governance — pending</h3>
+            <h3 id="reframe-head-g">Governance</h3>
           </div>
-          <div class="reframe-item"><span class="icon" id="icon-gov"></span><div>Government intervention / response status<span class="owner">owning office: City Administrator's Office</span></div></div>
+          <div id="reframe-items-g"></div>
         </div>
 
       </div>

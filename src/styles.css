@@ -1327,6 +1327,7 @@ footer a { color: var(--accent); }
 .reframe-item { display: flex; align-items: flex-start; gap: 0.5rem; margin-bottom: 0.7rem; font-size: 0.85rem; }
 .reframe-item .icon { width: 18px; height: 18px; flex: none; margin-top: 0.1rem; color: var(--text-muted); }
 .reframe-item .owner { display: block; color: var(--text-muted); font-size: 0.76rem; }
+.reframe-item .owner.is-live { color: var(--accent); font-weight: 600; font-family: var(--font-mono); letter-spacing: 0.04em; }
 
 /* -----------------------------------------------------------------------
    Landing footer link + icon utility

@@ -2,7 +2,8 @@
 
 import {
   HERO_BAND_COLORS, BAND_CLASS, BAND_ORDER, tweenNumber, manilaHourLabel,
-  loadDashboardData, loadRainfallData, loadPopulationData, computeExposureByBand
+  loadDashboardData, loadRainfallData, loadPopulationData, computeExposureByBand,
+  MVP_INDICATORS, indicatorCompleteness, pillarIndicators
 } from './js/data.js';
 import { initThemeToggle, initFreshnessChip, setFooterUpdated, icon, renderNav, initScrollReveal } from './js/chrome.js';
 
@@ -218,20 +219,16 @@ function upgradeExposureCard(heatData, populationData) {
 }
 
 // ---------------------------------------------------------------------
-// ESG reframe icons (headline/count stays as committed; step 6 makes the
-// fraction data-driven)
+// "What We Still Don't Know" — fully driven by MVP_INDICATORS (data.js),
+// never hardcoded. The headline fraction, each pillar's "— live"/"—
+// pending" label, and every per-indicator line all come from the same
+// list a future step just edits one entry of (flip `live` to true) —
+// nothing here needs touching when the next indicator ships.
 // ---------------------------------------------------------------------
 function renderReframeIcons() {
   document.getElementById('icon-e').innerHTML = icon('environmental');
   document.getElementById('icon-s').innerHTML = icon('social');
   document.getElementById('icon-g').innerHTML = icon('governance');
-  document.getElementById('icon-rainfall').innerHTML = icon('rainfall');
-  document.getElementById('icon-water').innerHTML = icon('water');
-  document.getElementById('icon-fire').innerHTML = icon('fire');
-  document.getElementById('icon-social-1').innerHTML = icon('social');
-  document.getElementById('icon-health').innerHTML = icon('health');
-  document.getElementById('icon-farms').innerHTML = icon('farms');
-  document.getElementById('icon-gov').innerHTML = icon('governance');
 }
 
 function renderReframeMetric(data) {
@@ -239,11 +236,47 @@ function renderReframeMetric(data) {
   document.getElementById('reframe-e-value').textContent = hottest.current.value.toFixed(1) + '°C';
 }
 
+/** One `.reframe-item` row, live or pending, for a given MVP_INDICATORS entry. */
+function reframeItemHtml(item) {
+  const statusHtml = item.live
+    ? '<span class="owner is-live">LIVE</span>'
+    : '<span class="owner">NO DATA / PENDING — ' + item.office + '</span>';
+  return (
+    '<div class="reframe-item"><span class="icon">' + icon(item.icon) + '</span>' +
+    '<div>' + item.label + statusHtml + '</div></div>'
+  );
+}
+
+function renderReframeCompleteness() {
+  const { live, total } = indicatorCompleteness();
+  const liveLabels = MVP_INDICATORS.filter((i) => i.live).map((i) => i.label);
+  const pendingLabels = MVP_INDICATORS.filter((i) => !i.live).map((i) => i.label);
+  document.getElementById('reframe-lede').innerHTML =
+    '<strong>' + live + ' of ' + total + '</strong> MVP indicators are live: ' + liveLabels.join(', ') + '. ' +
+    pendingLabels.join(', ') + (pendingLabels.length === 1 ? ' remains' : ' remain') + ' NO DATA / PENDING.';
+
+  ['E', 'S', 'G'].forEach((pillar) => {
+    const items = pillarIndicators(pillar);
+    const anyLive = items.some((i) => i.live);
+    const pillarName = { E: 'Environmental', S: 'Social', G: 'Governance' }[pillar];
+    document.getElementById('reframe-head-' + pillar.toLowerCase()).textContent =
+      pillarName + ' — ' + (anyLive ? 'live' : 'pending');
+
+    // heat_index gets its own big-number treatment above the item list on
+    // the Environmental column (see renderReframeMetric) — don't repeat it
+    // as a plain item row too.
+    const rows = items.filter((i) => i.id !== 'heat_index');
+    document.getElementById('reframe-items-' + pillar.toLowerCase()).innerHTML =
+      rows.map(reframeItemHtml).join('');
+  });
+}
+
 // ---------------------------------------------------------------------
 // Boot
 // ---------------------------------------------------------------------
 renderNav('site-nav', 'overview');
 renderReframeIcons();
+renderReframeCompleteness();
 
 // Nothing on this page needs to re-render on theme change: the hero's
 // band pill/dot are class-driven (CSS resolves the right token) and the

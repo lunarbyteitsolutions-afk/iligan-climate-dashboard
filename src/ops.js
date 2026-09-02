@@ -4,7 +4,8 @@ import {
   BAND_ORDER, ROW_CLASS,
   bandVarColor, bandBadge, tweenNumber,
   manilaHourLabel, formatManilaFull, nowHourIndex,
-  competitionRanks, loadDashboardData, loadRainfallData, scrubbedView
+  competitionRanks, loadDashboardData, loadRainfallData, scrubbedView,
+  pillarIndicators
 } from './js/data.js';
 import {
   ensureAnnotationPluginRegistered, sparklineSvg,
@@ -33,8 +34,39 @@ function destroyChart(key) {
 }
 
 // ---------------------------------------------------------------------
-// ESG scorecard (E metric is real; S/G pending content is static markup)
+// ESG scorecard — the E/S/G tiles' pending-lists and live/pending border
+// come entirely from MVP_INDICATORS (data.js) via pillarIndicators, not
+// hardcoded here. Doesn't depend on the scrubbed view, so it renders once
+// at boot rather than on every hourchange.
 // ---------------------------------------------------------------------
+function renderScorecardCompleteness() {
+  ['E', 'S', 'G'].forEach((pillar) => {
+    const items = pillarIndicators(pillar);
+    const anyLive = items.some((i) => i.live);
+    const key = pillar.toLowerCase();
+
+    document.getElementById('tile-' + key).classList.toggle('tile-pending', !anyLive);
+
+    // heat_index's live value has its own dedicated #e-metric/#e-detail
+    // slot (see renderScorecard) — the S/G tiles have no such per-item
+    // slot, so they just get a compact "N of M live" summary instead of
+    // the static "NO DATA / PENDING" tag once at least one item is live.
+    if (pillar !== 'E') {
+      const metricEl = document.getElementById(key + '-metric');
+      const liveCount = items.filter((i) => i.live).length;
+      metricEl.innerHTML = anyLive
+        ? '<span class="live-pill">' + liveCount + ' OF ' + items.length + ' LIVE</span>'
+        : '<span class="pending-tag">NO DATA / PENDING</span>';
+    }
+
+    const list = document.getElementById('pending-list-' + key);
+    list.innerHTML = items.filter((i) => !i.live).map((item) =>
+      '<li>' + item.label + ' — <span class="pending-tag">NO DATA / PENDING</span><br>' +
+      '<span class="owner">owning office: ' + item.office + '</span></li>'
+    ).join('');
+  });
+}
+
 function renderScorecard(view) {
   const barangays = view.barangays;
   const hottest = barangays.reduce((a, b) => (b.current.value > a.current.value ? b : a));
@@ -280,6 +312,7 @@ function runEntranceAnimation() {
 // Boot
 // ---------------------------------------------------------------------
 renderNav('site-nav', 'ops');
+renderScorecardCompleteness();
 ensureAnnotationPluginRegistered();
 
 initThemeToggle('theme-toggle', 'theme-toggle-label', () => {

@@ -129,8 +129,15 @@ function outside `data.js`, that's a bug, not a style choice.
 - **`data.js`** — the single source of truth. Band thresholds (Celsius,
   matching `scripts/fetch/heat-index.js`'s NWS/Rothfusz `band()`
   function), band CSS classes, Manila time formatting, the tie-safe
-  competition-ranking function, number-tween animation, and
-  `loadDashboardData()` (the one place every page fetches from).
+  competition-ranking function, number-tween animation,
+  `loadDashboardData()` (the one place every page fetches from), and
+  `MVP_INDICATORS` — the list of all 8 MVP indicators with a `live`
+  boolean and (for pending ones) an owning office. `indicatorCompleteness()`
+  and `pillarIndicators()` read it to drive the "X of 8 live" fraction on
+  `index.html`'s reframe section, the ESG scorecard tiles on `ops.html`,
+  and the drawer's "Data Owed" list — three different views computed from
+  one array, so shipping an indicator is flipping one `live: false` to
+  `true` in this one place, not editing three pages' markup by hand.
 - **`charts.js`** — every Chart.js chart the site draws, plus the inline
   SVG sparkline (not Chart.js, but still "a chart"). Reads theme colors
   fresh on every call via `chartTheme()`, so a theme toggle just needs a
@@ -219,7 +226,14 @@ function outside `data.js`, that's a bug, not a style choice.
    it, so every indicator card is hardcoded NO DATA until its own step
    actually ships the file.
 4. Remove `pending: true` from that page's entry in `chrome.js`'s
-   `NAV_ITEMS` so its nav link stops showing the pending dot.
+   `NAV_ITEMS` so its nav link stops showing the pending dot, and flip
+   that indicator's entry in `data.js`'s `MVP_INDICATORS` to `live: true`.
+   The nav dot and the completeness count are two different signals (a
+   page can show real content — see `fire.html` — while its named MVP
+   indicator stays pending) so don't assume flipping one flips the other;
+   check both against what's actually true. Flipping `live` is the only
+   edit needed — the reframe fraction, the ESG scorecard tiles, and the
+   drawer's "Data Owed" list all recompute from it automatically.
 5. If the indicator should appear in the ops-view table/charts, extend
    `src/ops.js`. If it needs its own band thresholds or color, they go in
    `data.js`, not inline in the new code.

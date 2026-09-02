@@ -6,7 +6,7 @@
  * initDrawer) and the standard drawer DOM ids every page includes.
  */
 
-import { bandVarColor, bandBadge, manilaHourLabel, PENDING_INDICATORS, reduceMotionPreferred } from './data.js';
+import { bandVarColor, bandBadge, manilaHourLabel, MVP_INDICATORS, reduceMotionPreferred } from './data.js';
 import { buildDrawerChart } from './charts.js';
 
 let _data = null;
@@ -67,12 +67,10 @@ export function openDrawer(name) {
 
   const owed = document.getElementById('drawer-owed');
   owed.innerHTML = '';
-  ['E', 'S', 'G'].forEach((pillar) => {
-    PENDING_INDICATORS[pillar].forEach((item) => {
-      const li = document.createElement('li');
-      li.innerHTML = '<strong>' + item.label + '</strong> — <span class="owner">owning office: ' + item.office + '</span>';
-      owed.appendChild(li);
-    });
+  MVP_INDICATORS.filter((item) => !item.live).forEach((item) => {
+    const li = document.createElement('li');
+    li.innerHTML = '<strong>' + item.label + '</strong> — <span class="owner">owning office: ' + item.office + '</span>';
+    owed.appendChild(li);
   });
 
   const prov = document.getElementById('drawer-provenance');
