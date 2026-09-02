@@ -29,6 +29,44 @@ const ICONS = {
 export function icon(name) { return ICONS[name] || ''; }
 
 // -----------------------------------------------------------------------
+// Shared nav — one list, edited in the step that makes a page live
+// (remove `pending: true` from that page's entry), so every page's nav
+// bar stays in sync automatically.
+// -----------------------------------------------------------------------
+export const NAV_ITEMS = [
+  { id: 'overview', label: 'Overview', href: 'index.html' },
+  { id: 'heat', label: 'Heat', href: 'heat.html' },
+  { id: 'rainfall', label: 'Rainfall', href: 'rainfall.html', pending: true },
+  { id: 'fire', label: 'Fire', href: 'fire.html', pending: true },
+  { id: 'exposure', label: 'Exposure', href: 'exposure.html', pending: true },
+  { id: 'water', label: 'Water', href: 'water.html', pending: true },
+  { id: 'agri', label: 'Agriculture', href: 'agri.html', pending: true },
+  { id: 'response', label: 'Response', href: 'response.html', pending: true },
+  { id: 'ops', label: 'Operations', href: 'ops.html' }
+];
+
+/** Renders the shared nav into a container, marking the active + pending pages. */
+export function renderNav(containerId, activeId) {
+  const nav = document.getElementById(containerId);
+  if (!nav) return;
+  nav.innerHTML = '';
+  NAV_ITEMS.forEach((item) => {
+    const a = document.createElement('a');
+    a.href = item.href;
+    a.className = 'nav-link' + (item.id === activeId ? ' is-active' : '') + (item.pending ? ' is-pending' : '');
+    if (item.id === activeId) a.setAttribute('aria-current', 'page');
+    a.textContent = item.label;
+    if (item.pending) {
+      const dot = document.createElement('span');
+      dot.className = 'nav-pending-dot';
+      dot.title = 'Pending — no data yet';
+      a.appendChild(dot);
+    }
+    nav.appendChild(a);
+  });
+}
+
+// -----------------------------------------------------------------------
 // Theme
 // -----------------------------------------------------------------------
 export function currentTheme() {

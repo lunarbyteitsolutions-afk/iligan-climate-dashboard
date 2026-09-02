@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Iligan Rainfall</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="landing-header">
+  <div class="wordmark"><span class="wordmark-dot" id="wordmark-dot"></span>ILIGAN CLIMATE</div>
+  <nav class="site-nav" id="site-nav" aria-label="Indicator pages"></nav>
+  <div class="topbar-chips">
+    <span class="chip chip-fresh" id="freshness-chip">UPDATED —</span>
+    <button type="button" id="theme-toggle" class="icon-btn" aria-label="Switch color theme">
+      <span id="theme-toggle-label">Light theme</span>
+    </button>
+  </div>
+</header>
+
+<main>
+  <div class="container">
+
+    <section class="pending-hero">
+      <span class="pending-tag">NO DATA / PENDING</span>
+      <h1>Rainfall</h1>
+      <p>How much rain has fallen, and for how long a barangay has gone without it, is one of the clearest early signals of El Niño drought stress — and one of the clearest signals that the dry spell has broken. Tracking it per barangay lets the city see which areas are driest before water shortages are reported, not after.</p>
+    </section>
+
+    <section class="data-request-section">
+      <h2>Owning Office</h2>
+      <p><strong>PAGASA</strong> is the authoritative source for rainfall in the Philippines. <strong>CDRRMO</strong> (City Disaster Risk Reduction and Management Office) is the likely holder of any local rain-gauge readings supplementing PAGASA's station data. Confirmation of which office holds barangay-level readings is itself part of this request.</p>
+    </section>
+
+    <section class="data-request-section">
+      <h2>Fields Needed</h2>
+      <div class="table-wrap"><table class="field-table">
+        <thead><tr><th>Field</th><th>Type</th><th>Unit</th><th>Example</th></tr></thead>
+        <tbody>
+          <tr><td>barangay</td><td>string</td><td>—</td><td>Mahayahay</td></tr>
+          <tr><td>psgc_code</td><td>string</td><td>—</td><td>103504012</td></tr>
+          <tr><td>date</td><td>date</td><td>YYYY-MM-DD</td><td>2026-09-02</td></tr>
+          <tr><td>rainfall_mm</td><td>number</td><td>mm</td><td>12.4</td></tr>
+          <tr><td>rainfall_hours</td><td>number</td><td>hours</td><td>3</td></tr>
+          <tr><td>source</td><td>string</td><td>—</td><td>PAGASA Iligan Synoptic Station</td></tr>
+        </tbody>
+      </table></div>
+    </section>
+
+    <section class="data-request-section">
+      <h2>Frequency &amp; Format</h2>
+      <p>Daily. One spreadsheet (CSV or a shared Google Sheet), one row per barangay per day — the same shape as every other indicator on this site.</p>
+    </section>
+
+    <section class="data-request-section">
+      <div class="sample-block">
+        <span class="sample-banner">SAMPLE — NOT REAL DATA</span>
+        <p>Illustrative only — not a real reading, not PAGASA data. This is what the page looks like once real rainfall data arrives.</p>
+        <div class="table-wrap"><table class="field-table">
+          <thead><tr><th>Barangay</th><th>Rainfall (mm)</th><th>Rainfall Hours</th><th>Dry Days (7d)</th></tr></thead>
+          <tbody>
+            <tr><td>Panoroganan (sample)</td><td>e.g. 8.0</td><td>e.g. 2</td><td>e.g. 1</td></tr>
+            <tr><td>Suarez (sample)</td><td>e.g. 0.0</td><td>e.g. 0</td><td>e.g. 6</td></tr>
+            <tr><td>Rogongon (sample)</td><td>e.g. 14.5</td><td>e.g. 4</td><td>e.g. 0</td></tr>
+          </tbody>
+        </table></div>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<footer>
+  <div class="container" style="padding:0;">
+    <p>Built by DEVCON Iligan (volunteer civic-tech) — not a City of Iligan office. City data owned and confirmed by the city.</p>
+    <p><strong>Last updated:</strong> <span id="footer-updated">—</span></p>
+    <p>Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure.</p>
+  </div>
+</footer>
+
+<script type="module">
+  import { initPendingPage } from './js/pending-boot.js';
+  initPendingPage('rainfall');
+</script>
+
+</body>
+</html>

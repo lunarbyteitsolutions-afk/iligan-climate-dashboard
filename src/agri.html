@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Iligan Farmers &amp; Hectares Affected</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="landing-header">
+  <div class="wordmark"><span class="wordmark-dot" id="wordmark-dot"></span>ILIGAN CLIMATE</div>
+  <nav class="site-nav" id="site-nav" aria-label="Indicator pages"></nav>
+  <div class="topbar-chips">
+    <span class="chip chip-fresh" id="freshness-chip">UPDATED —</span>
+    <button type="button" id="theme-toggle" class="icon-btn" aria-label="Switch color theme">
+      <span id="theme-toggle-label">Light theme</span>
+    </button>
+  </div>
+</header>
+
+<main>
+  <div class="container">
+
+    <section class="pending-hero">
+      <span class="pending-tag">NO DATA / PENDING</span>
+      <h1>Farmers &amp; Hectares Affected</h1>
+      <p>El Niño drought hits agriculture directly — reduced yields, crop failure, and irrigation shortfalls. Tracking hectares and farmers affected per barangay tells the city where agricultural livelihoods are most exposed, and where relief or irrigation support is most needed.</p>
+    </section>
+
+    <section class="data-request-section">
+      <h2>Owning Office</h2>
+      <p><strong>City Agriculture Office.</strong></p>
+    </section>
+
+    <section class="data-request-section">
+      <h2>Fields Needed</h2>
+      <div class="table-wrap"><table class="field-table">
+        <thead><tr><th>Field</th><th>Type</th><th>Unit</th><th>Example</th></tr></thead>
+        <tbody>
+          <tr><td>barangay</td><td>string</td><td>—</td><td>Rogongon</td></tr>
+          <tr><td>psgc_code</td><td>string</td><td>—</td><td>103504019</td></tr>
+          <tr><td>date</td><td>date</td><td>YYYY-MM-DD</td><td>2026-09-02</td></tr>
+          <tr><td>crop_type</td><td>string</td><td>—</td><td>corn / rice / vegetable / other</td></tr>
+          <tr><td>hectares_affected</td><td>number</td><td>ha</td><td>4.5</td></tr>
+          <tr><td>farmers_affected_count</td><td>number</td><td>farmers</td><td>12</td></tr>
+          <tr><td>damage_type</td><td>string</td><td>—</td><td>drought / pest / other</td></tr>
+          <tr><td>estimated_loss_php</td><td>number (optional)</td><td>₱</td><td>85000</td></tr>
+        </tbody>
+      </table></div>
+    </section>
+
+    <section class="data-request-section">
+      <h2>Frequency &amp; Format</h2>
+      <p>As reported (per assessment/incident), or a periodic summary. One spreadsheet, one row per barangay per reporting period.</p>
+    </section>
+
+    <section class="data-request-section">
+      <div class="sample-block">
+        <span class="sample-banner">SAMPLE — NOT REAL DATA</span>
+        <p>Illustrative only — not a real report. This is what the page looks like once real data arrives.</p>
+        <div class="table-wrap"><table class="field-table">
+          <thead><tr><th>Barangay</th><th>Crop</th><th>Hectares (sample)</th><th>Farmers (sample)</th></tr></thead>
+          <tbody>
+            <tr><td>Rogongon (sample)</td><td>e.g. corn</td><td>e.g. 6.0</td><td>e.g. 15</td></tr>
+            <tr><td>Kalilangan (sample)</td><td>e.g. rice</td><td>e.g. 3.2</td><td>e.g. 8</td></tr>
+          </tbody>
+        </table></div>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<footer>
+  <div class="container" style="padding:0;">
+    <p>Built by DEVCON Iligan (volunteer civic-tech) — not a City of Iligan office. City data owned and confirmed by the city.</p>
+    <p><strong>Last updated:</strong> <span id="footer-updated">—</span></p>
+    <p>Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure.</p>
+  </div>
+</footer>
+
+<script type="module">
+  import { initPendingPage } from './js/pending-boot.js';
+  initPendingPage('agri');
+</script>
+
+</body>
+</html>

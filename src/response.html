@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Iligan Government Response</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="landing-header">
+  <div class="wordmark"><span class="wordmark-dot" id="wordmark-dot"></span>ILIGAN CLIMATE</div>
+  <nav class="site-nav" id="site-nav" aria-label="Indicator pages"></nav>
+  <div class="topbar-chips">
+    <span class="chip chip-fresh" id="freshness-chip">UPDATED —</span>
+    <button type="button" id="theme-toggle" class="icon-btn" aria-label="Switch color theme">
+      <span id="theme-toggle-label">Light theme</span>
+    </button>
+  </div>
+</header>
+
+<main>
+  <div class="container">
+
+    <section class="pending-hero">
+      <span class="pending-tag">NO DATA / PENDING</span>
+      <h1>Government Response</h1>
+      <p>This is the Governance pillar: what the city is actually doing about El Niño conditions — water trucking, relief distribution, advisories, evacuation support — and where. It closes the loop from "here's what's happening" (Environmental) and "here's who it affects" (Social) to "here's what the city is doing about it."</p>
+    </section>
+
+    <section class="data-request-section">
+      <h2>Owning Office</h2>
+      <p><strong>City Administrator's Office.</strong></p>
+    </section>
+
+    <section class="data-request-section">
+      <h2>Fields Needed</h2>
+      <div class="table-wrap"><table class="field-table">
+        <thead><tr><th>Field</th><th>Type</th><th>Unit</th><th>Example</th></tr></thead>
+        <tbody>
+          <tr><td>barangay</td><td>string (or "citywide")</td><td>—</td><td>Suarez</td></tr>
+          <tr><td>date</td><td>date</td><td>YYYY-MM-DD</td><td>2026-09-02</td></tr>
+          <tr><td>intervention_type</td><td>string</td><td>—</td><td>water trucking / relief distribution / evacuation / advisory</td></tr>
+          <tr><td>status</td><td>string (enum)</td><td>—</td><td>planned / ongoing / completed</td></tr>
+          <tr><td>responsible_office</td><td>string</td><td>—</td><td>City DRRMO</td></tr>
+          <tr><td>remarks</td><td>string (optional)</td><td>—</td><td>2 water tankers deployed</td></tr>
+        </tbody>
+      </table></div>
+    </section>
+
+    <section class="data-request-section">
+      <h2>Frequency &amp; Format</h2>
+      <p>As reported (per intervention), or a periodic status log. One spreadsheet, one row per intervention.</p>
+    </section>
+
+    <section class="data-request-section">
+      <div class="sample-block">
+        <span class="sample-banner">SAMPLE — NOT REAL DATA</span>
+        <p>Illustrative only — not a real intervention. This is what the page looks like once real data arrives.</p>
+        <div class="table-wrap"><table class="field-table">
+          <thead><tr><th>Barangay</th><th>Intervention</th><th>Status (sample)</th></tr></thead>
+          <tbody>
+            <tr><td>Suarez (sample)</td><td>e.g. water trucking</td><td>e.g. ongoing</td></tr>
+            <tr><td>Citywide (sample)</td><td>e.g. heat advisory</td><td>e.g. issued</td></tr>
+          </tbody>
+        </table></div>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<footer>
+  <div class="container" style="padding:0;">
+    <p>Built by DEVCON Iligan (volunteer civic-tech) — not a City of Iligan office. City data owned and confirmed by the city.</p>
+    <p><strong>Last updated:</strong> <span id="footer-updated">—</span></p>
+    <p>Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure.</p>
+  </div>
+</footer>
+
+<script type="module">
+  import { initPendingPage } from './js/pending-boot.js';
+  initPendingPage('response');
+</script>
+
+</body>
+</html>

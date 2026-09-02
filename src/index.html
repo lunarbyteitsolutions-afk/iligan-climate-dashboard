@@ -7,7 +7,6 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.css">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -17,6 +16,7 @@
     <span class="wordmark-dot" id="wordmark-dot"></span>
     ILIGAN CLIMATE
   </div>
+  <nav class="site-nav" id="site-nav" aria-label="Indicator pages"></nav>
   <div class="topbar-chips">
     <button type="button" id="theme-toggle" class="icon-btn" aria-label="Switch color theme">
       <span id="theme-toggle-label">Light theme</span>
@@ -45,51 +45,18 @@
     <div class="hero-scroll-cue" aria-hidden="true">&#8595;</div>
   </section>
 
-  <section class="landing-section reveal" aria-labelledby="hottest-heading">
+  <section class="landing-section reveal" aria-labelledby="indicators-heading">
     <div class="container">
-      <h2 id="hottest-heading" class="section-heading">Today's Heat Tiers</h2>
-      <p class="section-lede">Every distinct heat index reading right now, hottest first — not an arbitrary top 5. All 44 barangays are one click away in the operations view.</p>
-      <div class="tier-cards" id="tier-cards"></div>
-    </div>
-  </section>
-
-  <section class="landing-section map-section reveal" aria-labelledby="map-heading">
-    <div class="map-section-heading">
-      <h2 id="map-heading" class="section-heading">The City, Right Now</h2>
-    </div>
-    <div class="map-fullbleed">
-      <div id="public-map"></div>
-      <div class="public-scrubber-wrap">
-        <div class="scrubber">
-          <button type="button" class="scrubber-play" id="scrubber-play" aria-label="Play 24-hour animation">&#9654;</button>
-          <div class="scrubber-track">
-            <input type="range" id="scrubber-range" min="0" max="23" step="1" value="0" aria-label="Scrub through today's 24 hours">
-            <div class="scrubber-ticks"><span>00:00</span><span>06:00</span><span>12:00</span><span>18:00</span><span>23:00</span></div>
-          </div>
-          <div class="scrubber-readout" id="scrubber-readout">--:--</div>
-        </div>
-      </div>
-    </div>
-    <div class="container">
-      <p class="section-lede" style="margin-top:1rem;">44 reference points, not barangay boundaries — this data is point-sampled from a weather grid, so a filled area map would imply coverage we don't have.</p>
-      <div class="map-legend" id="map-legend"></div>
-    </div>
-  </section>
-
-  <section class="landing-section tint-warn reveal" aria-labelledby="elevation-heading">
-    <div class="container">
-      <h2 id="elevation-heading" class="section-heading">Why the Coast Is Hotter</h2>
-      <p class="story-headline" id="elevation-sentence">Loading elevation comparison…</p>
-      <div class="chart-wrap chart-wrap-tall">
-        <canvas id="chart-elevation"></canvas>
-      </div>
+      <h2 id="indicators-heading" class="section-heading">The 8 Indicators</h2>
+      <p class="section-lede">One card per MVP indicator, its real current status, and who owns the data we're still missing.</p>
+      <div class="indicator-cards" id="indicator-cards"></div>
     </div>
   </section>
 
   <section class="landing-section tint-e reveal" aria-labelledby="reframe-heading">
     <div class="container">
       <h2 id="reframe-heading" class="section-heading">What We Still Don't Know</h2>
-      <p class="section-lede">This dashboard is one third complete — one of three pillars (Environmental) has live data flowing. Social and Governance are still NO DATA / PENDING.</p>
+      <p class="section-lede" id="reframe-lede">This dashboard is one third complete — one of three pillars (Environmental) has live data flowing. Social and Governance are still NO DATA / PENDING.</p>
       <div class="reframe-columns">
 
         <div class="reframe-col" style="--col-accent: var(--accent);">
@@ -133,40 +100,6 @@
 
 <div id="load-state" class="load-state">Loading heat index data…</div>
 
-<div class="drawer-backdrop" id="drawer-backdrop"></div>
-<aside class="drawer" id="drawer" role="dialog" aria-modal="true" aria-labelledby="drawer-title" hidden>
-  <button type="button" class="drawer-close" id="drawer-close" aria-label="Close detail panel">&#10005;</button>
-  <h2 id="drawer-title">—</h2>
-  <div class="drawer-kv" id="drawer-basics"></div>
-
-  <div class="drawer-section">
-    <h3>Current</h3>
-    <div class="drawer-kv" id="drawer-current"></div>
-  </div>
-
-  <div class="drawer-section">
-    <h3>24-Hour Curve</h3>
-    <div class="drawer-chart-wrap">
-      <canvas id="drawer-chart"></canvas>
-    </div>
-  </div>
-
-  <div class="drawer-section">
-    <h3>Band Timeline (24h)</h3>
-    <div class="band-timeline" id="drawer-timeline"></div>
-  </div>
-
-  <div class="drawer-section">
-    <h3>Data Owed</h3>
-    <ul class="drawer-owed-list" id="drawer-owed"></ul>
-  </div>
-
-  <div class="drawer-section">
-    <h3>Coordinate Provenance</h3>
-    <div class="drawer-kv" id="drawer-provenance"></div>
-  </div>
-</aside>
-
 <footer>
   <div class="container" style="padding:0;">
     <p>Built by DEVCON Iligan (volunteer civic-tech) — not a City of Iligan office. City data owned and confirmed by the city.</p>
@@ -174,14 +107,10 @@
     <p><strong>Data source:</strong> Open-Meteo (supplementary) — PAGASA iHeatMAP is the authoritative reference for heat index in the Philippines.</p>
     <p>Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure.</p>
     <p>Barangay reference points and map tiles: © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap contributors</a>, ODbL 1.0.</p>
-    <p><a class="ops-link" href="ops.html">OPERATIONS VIEW &rarr;</a></p>
   </div>
 </footer>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.5.0/chart.umd.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-annotation/3.1.0/chartjs-plugin-annotation.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js"></script>
-<script type="module" src="landing.js"></script>
+<script type="module" src="overview.js"></script>
 
 </body>
 </html>

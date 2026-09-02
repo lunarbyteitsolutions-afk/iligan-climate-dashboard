@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Iligan Water</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="landing-header">
+  <div class="wordmark"><span class="wordmark-dot" id="wordmark-dot"></span>ILIGAN CLIMATE</div>
+  <nav class="site-nav" id="site-nav" aria-label="Indicator pages"></nav>
+  <div class="topbar-chips">
+    <span class="chip chip-fresh" id="freshness-chip">UPDATED —</span>
+    <button type="button" id="theme-toggle" class="icon-btn" aria-label="Switch color theme">
+      <span id="theme-toggle-label">Light theme</span>
+    </button>
+  </div>
+</header>
+
+<main>
+  <div class="container">
+
+    <section class="pending-hero">
+      <span class="pending-tag">NO DATA / PENDING</span>
+      <h1>Water</h1>
+      <p>Two indicators live on this page: how much water the city's rivers and reservoirs actually have (Environmental), and how many households are going without it (Social). Together they're the difference between a supply problem and a service problem.</p>
+    </section>
+
+    <section class="data-request-section">
+      <h2>1. Water Level / Availability</h2>
+      <p><strong>Owning office:</strong> CDRRMO (river and water-source levels); Iligan City Water District (supply and service interruptions).</p>
+      <div class="table-wrap"><table class="field-table">
+        <thead><tr><th>Field</th><th>Type</th><th>Unit</th><th>Example</th></tr></thead>
+        <tbody>
+          <tr><td>source_name</td><td>string</td><td>—</td><td>Mandulog River — Bunawan gauge</td></tr>
+          <tr><td>nearest_barangay</td><td>string</td><td>—</td><td>Bunawan</td></tr>
+          <tr><td>reading_date</td><td>date</td><td>YYYY-MM-DD</td><td>2026-09-02</td></tr>
+          <tr><td>level_status</td><td>string (enum)</td><td>—</td><td>normal / low / critical</td></tr>
+          <tr><td>level_m</td><td>number (optional)</td><td>metres</td><td>1.8</td></tr>
+        </tbody>
+      </table></div>
+    </section>
+
+    <section class="data-request-section">
+      <h2>2. Households with Water Shortage</h2>
+      <p><strong>Owning office:</strong> City Health.</p>
+      <div class="table-wrap"><table class="field-table">
+        <thead><tr><th>Field</th><th>Type</th><th>Unit</th><th>Example</th></tr></thead>
+        <tbody>
+          <tr><td>barangay</td><td>string</td><td>—</td><td>Kiwalan</td></tr>
+          <tr><td>psgc_code</td><td>string</td><td>—</td><td>103504011</td></tr>
+          <tr><td>date</td><td>date</td><td>YYYY-MM-DD</td><td>2026-09-02</td></tr>
+          <tr><td>households_reporting_shortage</td><td>number</td><td>households</td><td>34</td></tr>
+          <tr><td>total_households</td><td>number</td><td>households</td><td>612</td></tr>
+        </tbody>
+      </table></div>
+    </section>
+
+    <section class="data-request-section">
+      <h2>Frequency &amp; Format</h2>
+      <p>Daily where possible (river/reservoir gauges), or as reported (household shortage complaints/reports). One spreadsheet per indicator, one row per barangay per reporting period.</p>
+    </section>
+
+    <section class="data-request-section">
+      <div class="sample-block">
+        <span class="sample-banner">SAMPLE — NOT REAL DATA</span>
+        <p>Illustrative only — not a real reading. This is what the page looks like once real data arrives.</p>
+        <div class="table-wrap"><table class="field-table">
+          <thead><tr><th>Barangay</th><th>Water Level</th><th>Households Short (sample)</th></tr></thead>
+          <tbody>
+            <tr><td>Buru-un (sample)</td><td>e.g. low</td><td>e.g. 22 of 540</td></tr>
+            <tr><td>Del Carmen (sample)</td><td>e.g. normal</td><td>e.g. 0 of 480</td></tr>
+          </tbody>
+        </table></div>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<footer>
+  <div class="container" style="padding:0;">
+    <p>Built by DEVCON Iligan (volunteer civic-tech) — not a City of Iligan office. City data owned and confirmed by the city.</p>
+    <p><strong>Last updated:</strong> <span id="footer-updated">—</span></p>
+    <p>Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure.</p>
+  </div>
+</footer>
+
+<script type="module">
+  import { initPendingPage } from './js/pending-boot.js';
+  initPendingPage('water');
+</script>
+
+</body>
+</html>

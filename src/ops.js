@@ -11,9 +11,9 @@ import {
   buildCurveChart, updateCurvePlayhead, buildRankedChart, buildElevationChart, buildDistributionChart
 } from './js/charts.js';
 import { applyMapTileTheme, createBaseMap, createMarkers, updateMarkerBands, highlightMarker, renderMapLegend } from './js/map.js';
-import { initDrawer, openDrawer } from './js/drawer.js';
+import { initDrawer, openDrawer, openFromHash } from './js/drawer.js';
 import { initScrubber } from './js/scrubber.js';
-import { initThemeToggle, initFreshnessChip, initPeakChip, setFooterUpdated } from './js/chrome.js';
+import { initThemeToggle, initFreshnessChip, initPeakChip, setFooterUpdated, renderNav } from './js/chrome.js';
 
 let lastData = null;
 let referenceByName = {};
@@ -255,6 +255,7 @@ function runEntranceAnimation() {
 // ---------------------------------------------------------------------
 // Boot
 // ---------------------------------------------------------------------
+renderNav('site-nav', 'ops');
 ensureAnnotationPluginRegistered();
 
 initThemeToggle('theme-toggle', 'theme-toggle-label', () => {
@@ -294,6 +295,7 @@ loadDashboardData()
     initScrubber(lastData.barangays[0].hourly);
     updateScrubReadoutHeader();
     runEntranceAnimation();
+    openFromHash();
   })
   .catch((err) => {
     const el = document.getElementById('load-state');

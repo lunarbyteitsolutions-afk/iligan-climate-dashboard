@@ -6,18 +6,26 @@
  * initDrawer) and the standard drawer DOM ids every page includes.
  */
 
-import { getCssVar, bandVarColor, bandBadge, manilaHourLabel, PENDING_INDICATORS, reduceMotionPreferred } from './data.js';
+import { bandVarColor, bandBadge, manilaHourLabel, PENDING_INDICATORS, reduceMotionPreferred } from './data.js';
 import { buildDrawerChart } from './charts.js';
 
 let _data = null;
 let _referenceData = [];
 let _drawerChart = null;
 let _onOpen = null;
+let _deepLink = true;
 
+/**
+ * @param {object} [opts] - opts.onOpen(name); opts.deepLink (default true) —
+ *   reads #brgy=<psgc> on init to auto-open a drawer, and keeps the hash in
+ *   sync (via replaceState, so opening/closing drawers doesn't spam
+ *   browser history) whenever a drawer opens or closes.
+ */
 export function initDrawer(data, referenceData, opts) {
   _data = data;
   _referenceData = referenceData;
   _onOpen = (opts && opts.onOpen) || null;
+  _deepLink = !opts || opts.deepLink !== false;
 
   document.getElementById('drawer-close').addEventListener('click', closeDrawer);
   document.getElementById('drawer-backdrop').addEventListener('click', closeDrawer);
@@ -85,7 +93,20 @@ export function openDrawer(name) {
     document.getElementById('drawer-backdrop').classList.add('is-open');
   });
 
+  if (_deepLink && ref) {
+    history.replaceState(null, '', '#brgy=' + ref.psgc_code_9);
+  }
   if (_onOpen) _onOpen(name);
+}
+
+/** Opens the barangay named by #brgy=<psgc_code_9> in the current URL, if any. */
+export function openFromHash() {
+  const m = location.hash.match(/#brgy=(\w+)/);
+  if (!m) return false;
+  const ref = _referenceData.find((r) => r.psgc_code_9 === m[1]);
+  if (!ref) return false;
+  openDrawer(ref.name);
+  return true;
 }
 
 export function closeDrawer() {
@@ -93,4 +114,7 @@ export function closeDrawer() {
   drawer.classList.remove('is-open');
   document.getElementById('drawer-backdrop').classList.remove('is-open');
   setTimeout(() => { drawer.hidden = true; }, reduceMotionPreferred() ? 0 : 200);
+  if (_deepLink && location.hash.indexOf('#brgy=') === 0) {
+    history.replaceState(null, '', location.pathname + location.search);
+  }
 }

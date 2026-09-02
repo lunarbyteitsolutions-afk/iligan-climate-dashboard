@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Iligan Population Exposed</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="landing-header">
+  <div class="wordmark"><span class="wordmark-dot" id="wordmark-dot"></span>ILIGAN CLIMATE</div>
+  <nav class="site-nav" id="site-nav" aria-label="Indicator pages"></nav>
+  <div class="topbar-chips">
+    <span class="chip chip-fresh" id="freshness-chip">UPDATED —</span>
+    <button type="button" id="theme-toggle" class="icon-btn" aria-label="Switch color theme">
+      <span id="theme-toggle-label">Light theme</span>
+    </button>
+  </div>
+</header>
+
+<main>
+  <div class="container">
+
+    <section class="pending-hero">
+      <span class="pending-tag">NO DATA / PENDING</span>
+      <h1>Population Exposed</h1>
+      <p>Heat index tells you where it's hot. Population exposed tells you how many people that heat actually reaches — the first indicator that crosses Environmental conditions with Social reality. It's the difference between "Extreme Caution in 43 barangays" and "roughly how many Iliganons are living under Extreme Caution right now."</p>
+    </section>
+
+    <section class="data-request-section">
+      <h2>Owning Office</h2>
+      <p><strong>CSWDO</strong> (City Social Welfare and Development Office) is named as the owning office for this indicator. This page is a request to confirm that assignment and the population methodology below with CSWDO before treating any resulting figure as more than a derived estimate.</p>
+    </section>
+
+    <section class="data-request-section">
+      <h2>What This Will (and Won't) Be</h2>
+      <p>Once built, this indicator will cross each barangay's PSA population baseline against its current heat band, and report a population-by-band split (e.g. "X of Y Iliganons are in Extreme Caution heat conditions right now"). Three caveats will be permanently visible wherever this number appears:</p>
+      <div class="table-wrap"><table class="field-table">
+        <thead><tr><th>Field</th><th>Type</th><th>Unit</th><th>Example</th></tr></thead>
+        <tbody>
+          <tr><td>psgc_code</td><td>string</td><td>—</td><td>103504012</td></tr>
+          <tr><td>population_2024</td><td>number</td><td>persons</td><td>8092</td></tr>
+          <tr><td>population_source</td><td>string</td><td>—</td><td>PSA 2024 POPCEN (pending psa.gov.ph verification)</td></tr>
+          <tr><td>current_band</td><td>string (enum)</td><td>—</td><td>Extreme Caution</td></tr>
+        </tbody>
+      </table></div>
+      <p>This will never be phrased as "affected," "at risk of heat stroke," or any health outcome — only as an exposure estimate: people living in a barangay currently reporting that band. It will not become a Social Vulnerability Score — that needs vulnerable-group counts from CSWDO, OSCA, PDAO and City Health, and inventing weights before those inputs exist is exactly the derived-number overreach this project's rules forbid.</p>
+    </section>
+
+    <section class="data-request-section">
+      <div class="sample-block">
+        <span class="sample-banner">SAMPLE — NOT REAL DATA</span>
+        <p>Illustrative only — not a real population split. This is what the page looks like once the cross-tabulation is built.</p>
+        <div class="table-wrap"><table class="field-table">
+          <thead><tr><th>Band</th><th>Population (sample)</th><th>Share</th></tr></thead>
+          <tbody>
+            <tr><td>Caution</td><td>e.g. 12,000</td><td>e.g. 3%</td></tr>
+            <tr><td>Extreme Caution</td><td>e.g. 340,000</td><td>e.g. 92%</td></tr>
+            <tr><td>Danger</td><td>e.g. 16,000</td><td>e.g. 4%</td></tr>
+          </tbody>
+        </table></div>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<footer>
+  <div class="container" style="padding:0;">
+    <p>Built by DEVCON Iligan (volunteer civic-tech) — not a City of Iligan office. City data owned and confirmed by the city.</p>
+    <p><strong>Last updated:</strong> <span id="footer-updated">—</span></p>
+    <p>Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure.</p>
+  </div>
+</footer>
+
+<script type="module">
+  import { initPendingPage } from './js/pending-boot.js';
+  initPendingPage('exposure');
+</script>
+
+</body>
+</html>

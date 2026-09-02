@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Iligan Fire Incidents</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="landing-header">
+  <div class="wordmark"><span class="wordmark-dot" id="wordmark-dot"></span>ILIGAN CLIMATE</div>
+  <nav class="site-nav" id="site-nav" aria-label="Indicator pages"></nav>
+  <div class="topbar-chips">
+    <span class="chip chip-fresh" id="freshness-chip">UPDATED —</span>
+    <button type="button" id="theme-toggle" class="icon-btn" aria-label="Switch color theme">
+      <span id="theme-toggle-label">Light theme</span>
+    </button>
+  </div>
+</header>
+
+<main>
+  <div class="container">
+
+    <section class="pending-hero">
+      <span class="pending-tag">NO DATA / PENDING</span>
+      <h1>Fire Incidents</h1>
+      <p>Dry vegetation and extended heat raise fire risk — grass fires, agricultural burning that gets away, and structural fires alike. Confirmed incident counts per barangay tell the city where dry-season fire response burden is concentrated, distinct from a satellite guess at where something is burning.</p>
+    </section>
+
+    <section class="data-request-section">
+      <h2>Owning Office</h2>
+      <p><strong>BFP Iligan City</strong> (Bureau of Fire Protection) for structural and grass fire incidents. <strong>ICENRO</strong> (City Environment and Natural Resources Office) for vegetation and watershed fire incidents.</p>
+    </section>
+
+    <section class="data-request-section">
+      <h2>Fields Needed</h2>
+      <div class="table-wrap"><table class="field-table">
+        <thead><tr><th>Field</th><th>Type</th><th>Unit</th><th>Example</th></tr></thead>
+        <tbody>
+          <tr><td>barangay</td><td>string</td><td>—</td><td>Buru-un</td></tr>
+          <tr><td>psgc_code</td><td>string</td><td>—</td><td>103504005</td></tr>
+          <tr><td>date</td><td>date</td><td>YYYY-MM-DD</td><td>2026-09-02</td></tr>
+          <tr><td>time</td><td>time</td><td>HH:MM</td><td>14:30</td></tr>
+          <tr><td>incident_type</td><td>string (enum)</td><td>—</td><td>grass / structural / agricultural / vegetation</td></tr>
+          <tr><td>estimated_area_ha</td><td>number</td><td>ha</td><td>0.8</td></tr>
+          <tr><td>response_time_min</td><td>number</td><td>minutes</td><td>12</td></tr>
+          <tr><td>source_office</td><td>string</td><td>—</td><td>BFP Iligan City</td></tr>
+        </tbody>
+      </table></div>
+    </section>
+
+    <section class="data-request-section">
+      <h2>Frequency &amp; Format</h2>
+      <p>Per-incident log, or a daily summary spreadsheet — one row per incident (or per barangay per day if only aggregated counts are available).</p>
+    </section>
+
+    <section class="data-request-section">
+      <div class="sample-block">
+        <span class="sample-banner">SAMPLE — NOT REAL DATA</span>
+        <p>Illustrative only — not a real incident, not a BFP or ICENRO record. This is what the page looks like once real incident data arrives.</p>
+        <div class="table-wrap"><table class="field-table">
+          <thead><tr><th>Barangay</th><th>Date</th><th>Type</th><th>Area (ha)</th></tr></thead>
+          <tbody>
+            <tr><td>Digkilaan (sample)</td><td>e.g. 2026-08-29</td><td>e.g. grass</td><td>e.g. 0.5</td></tr>
+            <tr><td>Kalilangan (sample)</td><td>e.g. 2026-08-31</td><td>e.g. agricultural</td><td>e.g. 1.2</td></tr>
+          </tbody>
+        </table></div>
+      </div>
+    </section>
+
+    <section class="data-request-section">
+      <h2>A related but different signal</h2>
+      <p>Satellite-detected thermal anomalies (from NASA FIRMS) are planned as a separate, clearly-labeled supplementary layer once built — they are not confirmed fire incidents, and will not fill in this indicator. A satellite hotspot can be a grass fire, agricultural burning, or a false positive; a structural fire can produce no hotspot at all. This page's "Fire Incidents" indicator stays NO DATA / PENDING until BFP Iligan City or ICENRO provide confirmed records, regardless of what the satellite layer shows.</p>
+    </section>
+
+  </div>
+</main>
+
+<footer>
+  <div class="container" style="padding:0;">
+    <p>Built by DEVCON Iligan (volunteer civic-tech) — not a City of Iligan office. City data owned and confirmed by the city.</p>
+    <p><strong>Last updated:</strong> <span id="footer-updated">—</span></p>
+    <p>Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure.</p>
+  </div>
+</footer>
+
+<script type="module">
+  import { initPendingPage } from './js/pending-boot.js';
+  initPendingPage('fire');
+</script>
+
+</body>
+</html>
