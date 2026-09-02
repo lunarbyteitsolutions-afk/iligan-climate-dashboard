@@ -1,0 +1,11 @@
+# Netlify build config.
+#
+# index.html lives at src/index.html, not the repo root, and every page's
+# fetch('data/...') calls assume data/ sits as a SIBLING of the HTML files
+# (see docs/ARCHITECTURE.md, "Previewing the site locally"). Netlify has
+# no way to know that on its own, so this stages src/ + data/ together
+# into _site/ before publishing it — the same staging step
+# .github/workflows/pages.yml already does for GitHub Pages.
+[build]
+  command = "mkdir -p _site && cp -r src/. _site/ && cp -r data _site/data"
+  publish = "_site"
