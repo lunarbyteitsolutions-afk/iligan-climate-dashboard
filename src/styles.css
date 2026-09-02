@@ -827,14 +827,6 @@ footer {
 footer p { margin: 0.28rem 0; }
 footer a { color: var(--accent); }
 
-/* Full attribution by default; the compact form takes over once space is
-   tight (narrow mobile) — see chrome.js's renderDisclosureCopy(). */
-.attribution-compact { display: none; }
-@media (max-width: 640px) {
-  .attribution-full { display: none; }
-  .attribution-compact { display: inline; }
-}
-
 .load-state {
   max-width: 1200px;
   margin: 2rem auto;
@@ -957,14 +949,17 @@ footer a { color: var(--accent); }
   gap: 0.55rem;
   font-family: var(--font-display);
   font-size: 1.05rem;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
   color: var(--text);
 }
 .wordmark-plus {
   color: var(--accent);
-  font-size: 0.82em;
+  font-size: 0.78em;
   font-weight: 600;
   margin-left: 0.02em;
+  position: relative;
+  top: -0.3em;
 }
 .wordmark-dot {
   width: 10px; height: 10px;

@@ -1,4 +1,4 @@
-# Iligan Climate+
+# ILIGAN CLIMATE+
 
 A public, barangay-level dashboard tracking El Niño / heat and drought risk
 across Iligan City's 44 barangays, organized on three pillars: Environmental

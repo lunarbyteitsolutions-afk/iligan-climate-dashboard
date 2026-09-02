@@ -37,12 +37,14 @@ export function icon(name) { return ICONS[name] || ''; }
 // monitoring-tool-not-advisory distinctions MORE important, not less.
 // Never re-type any of these strings inline; import them from here.
 // -----------------------------------------------------------------------
-export const FOOTER_ATTRIBUTION_FULL =
-  'An initiative of the Center for Digital Iligan, Innovation and Sustainability (CDIIS), ' +
-  'City Government of Iligan, through its Digital Creatives Hub, in collaboration with ' +
-  'DEVCON Iligan — Developers Connect Philippines, Iligan Chapter.';
-
-export const FOOTER_ATTRIBUTION_COMPACT = 'CDIIS · City Government of Iligan × DEVCON Iligan';
+// Approved copy — do not reword, shorten, or restructure. One constant,
+// used verbatim on every page.
+export const FOOTER_ATTRIBUTION =
+  'Iligan Climate+ is initiated by the Center for Digital Iligan, Innovation, ' +
+  'and Sustainability and Digital Creatives Hub Iligan and co-developed by ' +
+  'DEVCON Iligan as a volunteer civic-tech initiative supporting the Iligan ' +
+  "City Government's efforts in data-informed climate awareness, digital " +
+  'innovation, and community resilience during the current El Niño phenomenon.';
 
 export const DERIVED_DISCLAIMER =
   'Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, ' +
@@ -70,11 +72,7 @@ export function renderDisclosureCopy() {
   }
 
   const attribution = document.getElementById('footer-attribution');
-  if (attribution) {
-    attribution.innerHTML =
-      '<span class="attribution-full">' + FOOTER_ATTRIBUTION_FULL + '</span>' +
-      '<span class="attribution-compact">' + FOOTER_ATTRIBUTION_COMPACT + '</span>';
-  }
+  if (attribution) attribution.textContent = FOOTER_ATTRIBUTION;
 
   const derivedNote = document.getElementById('footer-derived-note');
   if (derivedNote) derivedNote.textContent = DERIVED_DISCLAIMER;
