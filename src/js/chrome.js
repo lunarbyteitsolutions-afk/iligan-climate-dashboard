@@ -36,7 +36,7 @@ export function icon(name) { return ICONS[name] || ''; }
 export const NAV_ITEMS = [
   { id: 'overview', label: 'Overview', href: 'index.html' },
   { id: 'heat', label: 'Heat', href: 'heat.html' },
-  { id: 'rainfall', label: 'Rainfall', href: 'rainfall.html', pending: true },
+  { id: 'rainfall', label: 'Rainfall', href: 'rainfall.html' },
   { id: 'fire', label: 'Fire', href: 'fire.html', pending: true },
   { id: 'exposure', label: 'Exposure', href: 'exposure.html', pending: true },
   { id: 'water', label: 'Water', href: 'water.html', pending: true },
@@ -172,4 +172,20 @@ export function initPeakChip(chipId, citySeries) {
 export function setFooterUpdated(elId, generatedAtIso) {
   const el = document.getElementById(elId);
   if (el) el.textContent = formatManilaFull(new Date(generatedAtIso));
+}
+
+// -----------------------------------------------------------------------
+// Scroll reveal — fades/slides `.reveal` sections in as they enter view.
+// Shared by every page with `.reveal` sections so the animation and its
+// IntersectionObserver threshold stay identical everywhere.
+// -----------------------------------------------------------------------
+export function initScrollReveal(reduceMotion) {
+  if (reduceMotion || !window.IntersectionObserver) return;
+  const sections = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) { entry.target.classList.add('is-revealed'); io.unobserve(entry.target); }
+    });
+  }, { threshold: 0.15 });
+  sections.forEach((el) => { el.classList.add('will-reveal'); io.observe(el); });
 }

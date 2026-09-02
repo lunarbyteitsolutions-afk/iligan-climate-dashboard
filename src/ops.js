@@ -4,7 +4,7 @@ import {
   BAND_ORDER, ROW_CLASS,
   bandVarColor, bandBadge, tweenNumber,
   manilaHourLabel, formatManilaFull, nowHourIndex,
-  competitionRanks, loadDashboardData, scrubbedView
+  competitionRanks, loadDashboardData, loadRainfallData, scrubbedView
 } from './js/data.js';
 import {
   ensureAnnotationPluginRegistered, sparklineSvg,
@@ -21,6 +21,11 @@ let citySeries = null;
 let map = null;
 let markersByName = {};
 let rankMode = 'current';
+// Rainfall is daily, not hourly — loaded independently of the scrubbed
+// heat data and merged into the table by barangay name. Empty until (or
+// unless) rainfall-latest.json loads; the table shows "NO DATA" per row
+// until then rather than blocking on it.
+let rainfallByName = {};
 const chartInstances = {};
 
 function destroyChart(key) {
@@ -76,6 +81,14 @@ function renderTable(view) {
       const dir = tableSortState.dir === 'asc' ? 1 : -1;
       if (tableSortState.key === 'name') return a.name.localeCompare(b.name) * dir;
       if (tableSortState.key === 'peak') return (a.today_peak.value - b.today_peak.value) * dir;
+      if (tableSortState.key === 'rain7') {
+        const ra = rainfallByName[a.name], rb = rainfallByName[b.name];
+        return ((ra ? ra.rainfall_7day_mm : -1) - (rb ? rb.rainfall_7day_mm : -1)) * dir;
+      }
+      if (tableSortState.key === 'dryStreak') {
+        const ra = rainfallByName[a.name], rb = rainfallByName[b.name];
+        return ((ra ? ra.consecutive_dry_days : -1) - (rb ? rb.consecutive_dry_days : -1)) * dir;
+      }
       return (a.current.value - b.current.value) * dir;
     });
 
@@ -118,6 +131,17 @@ function renderTable(view) {
       const tdSpark = document.createElement('td');
       tdSpark.innerHTML = sparklineSvg(b.hourly, b.today_peak.date_time);
       tr.appendChild(tdSpark);
+
+      const rainfall = rainfallByName[b.name];
+      const tdRain7 = document.createElement('td');
+      tdRain7.className = 'value-cell';
+      tdRain7.textContent = rainfall ? rainfall.rainfall_7day_mm.toFixed(1) : 'NO DATA';
+      tr.appendChild(tdRain7);
+
+      const tdDryStreak = document.createElement('td');
+      tdDryStreak.className = 'value-cell';
+      tdDryStreak.textContent = rainfall ? rainfall.consecutive_dry_days : 'NO DATA';
+      tr.appendChild(tdDryStreak);
 
       tr.addEventListener('click', () => openDrawer(b.name));
       tr.addEventListener('keydown', (e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openDrawer(b.name); } });
@@ -264,6 +288,17 @@ initThemeToggle('theme-toggle', 'theme-toggle-label', () => {
 });
 
 window.addEventListener('hourchange', (e) => onHourChange(e.detail.index));
+
+// Loads independently of the heat data — a late or failed rainfall fetch
+// never blocks the heat table; it just re-renders the table once (or if)
+// rainfall-latest.json resolves, filling in the two rainfall columns.
+loadRainfallData()
+  .then((rainfallData) => {
+    rainfallByName = {};
+    rainfallData.barangays.forEach((b) => { rainfallByName[b.name] = b; });
+    if (lastData) renderTable(currentView());
+  })
+  .catch(() => { /* table already shows NO DATA for these columns */ });
 
 loadDashboardData()
   .then((result) => {

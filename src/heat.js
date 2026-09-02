@@ -7,7 +7,7 @@ import { ensureAnnotationPluginRegistered, sparklineSvg, buildElevationChart } f
 import { applyMapTileTheme, createBaseMap, createMarkers, updateMarkerBands, renderMapLegend } from './js/map.js';
 import { initDrawer, openDrawer, openFromHash } from './js/drawer.js';
 import { initScrubber } from './js/scrubber.js';
-import { initThemeToggle, initFreshnessChip, setFooterUpdated, renderNav } from './js/chrome.js';
+import { initThemeToggle, initFreshnessChip, setFooterUpdated, renderNav, initScrollReveal } from './js/chrome.js';
 
 let lastData = null;
 let referenceByName = {};
@@ -122,20 +122,6 @@ function renderElevationSentence(data) {
   document.getElementById('elevation-sentence').textContent =
     'Iligan’s heat risk sits on the coast. Barangays ' + lowPhrase + ' today run about ' + diff +
     '°C hotter than ' + coolestElevationBarangay.name + ' at ' + coolestElevationBarangay.elevation_m + ' metres.';
-}
-
-// ---------------------------------------------------------------------
-// Scroll reveal
-// ---------------------------------------------------------------------
-function initScrollReveal(reduceMotion) {
-  if (reduceMotion || !window.IntersectionObserver) return;
-  const sections = document.querySelectorAll('.reveal');
-  const io = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) { entry.target.classList.add('is-revealed'); io.unobserve(entry.target); }
-    });
-  }, { threshold: 0.15 });
-  sections.forEach((el) => { el.classList.add('will-reveal'); io.observe(el); });
 }
 
 // ---------------------------------------------------------------------

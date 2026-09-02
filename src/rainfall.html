@@ -15,6 +15,7 @@
   <div class="wordmark"><span class="wordmark-dot" id="wordmark-dot"></span>ILIGAN CLIMATE</div>
   <nav class="site-nav" id="site-nav" aria-label="Indicator pages"></nav>
   <div class="topbar-chips">
+    <span class="chip chip-outline" id="derived-chip" title="Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure.">DERIVED INDICATOR &middot; NOT OFFICIAL PAGASA OR CITY DATA</span>
     <span class="chip chip-fresh" id="freshness-chip">UPDATED —</span>
     <button type="button" id="theme-toggle" class="icon-btn" aria-label="Switch color theme">
       <span id="theme-toggle-label">Light theme</span>
@@ -22,70 +23,74 @@
   </div>
 </header>
 
-<main>
-  <div class="container">
+<main id="app" hidden>
 
-    <section class="pending-hero">
-      <span class="pending-tag">NO DATA / PENDING</span>
-      <h1>Rainfall</h1>
-      <p>How much rain has fallen, and for how long a barangay has gone without it, is one of the clearest early signals of El Niño drought stress — and one of the clearest signals that the dry spell has broken. Tracking it per barangay lets the city see which areas are driest before water shortages are reported, not after.</p>
-    </section>
+  <section class="landing-section reveal" aria-labelledby="rainfall-heading" style="padding-top:2rem;">
+    <div class="container">
+      <h2 id="rainfall-heading" class="section-heading">Rainfall</h2>
+      <p class="section-lede">7-day accumulated rainfall and consecutive dry days per barangay, from Open-Meteo's daily precipitation model. <strong>PAGASA is the authoritative source for rainfall in the Philippines</strong> — this is a supplementary, derived view only, useful for spotting which barangays are driest before a water shortage is reported. A day counts as <strong>dry</strong> below <span id="dry-threshold-text">1.0mm</span> of rain.</p>
+    </div>
+  </section>
 
-    <section class="data-request-section">
-      <h2>Owning Office</h2>
-      <p><strong>PAGASA</strong> is the authoritative source for rainfall in the Philippines. <strong>CDRRMO</strong> (City Disaster Risk Reduction and Management Office) is the likely holder of any local rain-gauge readings supplementing PAGASA's station data. Confirmation of which office holds barangay-level readings is itself part of this request.</p>
-    </section>
-
-    <section class="data-request-section">
-      <h2>Fields Needed</h2>
-      <div class="table-wrap"><table class="field-table">
-        <thead><tr><th>Field</th><th>Type</th><th>Unit</th><th>Example</th></tr></thead>
-        <tbody>
-          <tr><td>barangay</td><td>string</td><td>—</td><td>Mahayahay</td></tr>
-          <tr><td>psgc_code</td><td>string</td><td>—</td><td>103504012</td></tr>
-          <tr><td>date</td><td>date</td><td>YYYY-MM-DD</td><td>2026-09-02</td></tr>
-          <tr><td>rainfall_mm</td><td>number</td><td>mm</td><td>12.4</td></tr>
-          <tr><td>rainfall_hours</td><td>number</td><td>hours</td><td>3</td></tr>
-          <tr><td>source</td><td>string</td><td>—</td><td>PAGASA Iligan Synoptic Station</td></tr>
-        </tbody>
-      </table></div>
-    </section>
-
-    <section class="data-request-section">
-      <h2>Frequency &amp; Format</h2>
-      <p>Daily. One spreadsheet (CSV or a shared Google Sheet), one row per barangay per day — the same shape as every other indicator on this site.</p>
-    </section>
-
-    <section class="data-request-section">
-      <div class="sample-block">
-        <span class="sample-banner">SAMPLE — NOT REAL DATA</span>
-        <p>Illustrative only — not a real reading, not PAGASA data. This is what the page looks like once real rainfall data arrives.</p>
-        <div class="table-wrap"><table class="field-table">
-          <thead><tr><th>Barangay</th><th>Rainfall (mm)</th><th>Rainfall Hours</th><th>Dry Days (7d)</th></tr></thead>
-          <tbody>
-            <tr><td>Panoroganan (sample)</td><td>e.g. 8.0</td><td>e.g. 2</td><td>e.g. 1</td></tr>
-            <tr><td>Suarez (sample)</td><td>e.g. 0.0</td><td>e.g. 0</td><td>e.g. 6</td></tr>
-            <tr><td>Rogongon (sample)</td><td>e.g. 14.5</td><td>e.g. 4</td><td>e.g. 0</td></tr>
-          </tbody>
-        </table></div>
+  <section class="landing-section reveal" aria-labelledby="rainfall-summary-heading">
+    <div class="container">
+      <h2 id="rainfall-summary-heading" class="panel-title" style="margin-bottom:1rem;">Right Now</h2>
+      <div class="hero">
+        <div class="hero-field">
+          <div class="hero-label">Longest Dry Streak<span id="dry-streak-count-suffix"></span></div>
+          <div class="hero-names" id="dry-streak-names">—</div>
+          <div class="hero-value" id="dry-streak-value" style="font-size:1.6rem;">—</div>
+        </div>
+        <div class="hero-field">
+          <div class="hero-label">7-Day Rainfall Range</div>
+          <div class="hero-value" id="rainfall-range-value" style="font-size:1.6rem;">—</div>
+          <div class="hero-time" id="rainfall-range-detail"></div>
+        </div>
+        <div class="hero-field">
+          <div class="hero-label">3+ Consecutive Dry Days</div>
+          <div class="hero-value" id="dry-count-value" style="font-size:1.6rem;">—</div>
+          <div class="hero-time">of 44 barangays</div>
+        </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-  </div>
+  <section class="landing-section reveal" aria-labelledby="table-heading">
+    <div class="container">
+      <h2 id="table-heading" class="panel-title">All 44 Barangays</h2>
+      <p class="panel-subtitle">Today's rainfall, the trailing 7-day total, and how many of those days were dry.</p>
+      <div class="table-wrap">
+        <table id="rainfall-table">
+          <thead>
+            <tr>
+              <th scope="col" data-sort="name" tabindex="0">Barangay <span aria-hidden="true">⇅</span></th>
+              <th scope="col" data-sort="today" tabindex="0">Today (mm) <span aria-hidden="true">⇅</span></th>
+              <th scope="col" data-sort="week" tabindex="0">7-Day (mm) <span aria-hidden="true">⇅</span></th>
+              <th scope="col" data-sort="dryDays">Dry Days (of 7)</th>
+              <th scope="col" data-sort="streak" tabindex="0">Consecutive Dry Days <span aria-hidden="true">⇅</span></th>
+            </tr>
+          </thead>
+          <tbody id="rainfall-table-body"></tbody>
+        </table>
+      </div>
+      <p class="table-note">Several barangays share an identical modeled value — several fall in the same Open-Meteo weather grid cell. This is expected model resolution, not measurement precision at the barangay level.</p>
+    </div>
+  </section>
+
 </main>
+
+<div id="load-state" class="load-state">Loading rainfall data…</div>
 
 <footer>
   <div class="container" style="padding:0;">
     <p>Built by DEVCON Iligan (volunteer civic-tech) — not a City of Iligan office. City data owned and confirmed by the city.</p>
     <p><strong>Last updated:</strong> <span id="footer-updated">—</span></p>
+    <p><strong>Data source:</strong> Open-Meteo (supplementary) — PAGASA is the authoritative rainfall reference for the Philippines. <strong>Owning office:</strong> PAGASA (authoritative); CDRRMO for local rain gauges.</p>
     <p>Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure.</p>
   </div>
 </footer>
 
-<script type="module">
-  import { initPendingPage } from './js/pending-boot.js';
-  initPendingPage('rainfall');
-</script>
+<script type="module" src="rainfall.js"></script>
 
 </body>
 </html>

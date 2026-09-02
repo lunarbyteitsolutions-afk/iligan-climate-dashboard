@@ -1,4 +1,4 @@
-name: Fetch heat index
+name: Fetch indicator data
 
 on:
   schedule:
@@ -9,7 +9,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: fetch-heat-index
+  group: fetch-data
   cancel-in-progress: false
 
 jobs:
@@ -24,20 +24,22 @@ jobs:
         with:
           node-version: '20'
 
-      # scripts/fetch/fetch-heat-index.js validates its own output (44
-      # barangays, no null/NaN heat index values) before writing the file.
-      # A bad or partial Open-Meteo response makes this step fail and exit
-      # non-zero, which stops the job here — the commit step below never
-      # runs, so the last good data/heat-index-latest.json is left in place.
-      - name: Run fetch
-        run: node scripts/fetch/fetch-heat-index.js
-
       - name: Configure git identity
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-      - name: Commit data if it changed
+      # Each indicator below is fetch-then-commit, and every later step uses
+      # `if: always()` so one indicator's Open-Meteo hiccup never blocks
+      # another's. Each fetch script validates its own output (44 barangays,
+      # no null/NaN values) before writing; a bad or partial response makes
+      # that step fail and exit non-zero, so the commit step right after it
+      # finds no diff and leaves the last good data file in place.
+      - name: Run heat index fetch
+        run: node scripts/fetch/fetch-heat-index.js
+
+      - name: Commit heat index data if changed
+        if: always()
         run: |
           if git diff --quiet -- data/heat-index-latest.json; then
             echo "No change to data/heat-index-latest.json — nothing to commit."
@@ -45,4 +47,19 @@ jobs:
           fi
           git add data/heat-index-latest.json
           git commit -m "chore: update heat index data"
+          git push
+
+      - name: Run rainfall fetch
+        if: always()
+        run: node scripts/fetch/fetch-rainfall.js
+
+      - name: Commit rainfall data if changed
+        if: always()
+        run: |
+          if git diff --quiet -- data/rainfall-latest.json; then
+            echo "No change to data/rainfall-latest.json — nothing to commit."
+            exit 0
+          fi
+          git add data/rainfall-latest.json
+          git commit -m "chore: update rainfall data"
           git push

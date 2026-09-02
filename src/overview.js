@@ -1,7 +1,7 @@
 'use strict';
 
-import { HERO_BAND_COLORS, BAND_CLASS, tweenNumber, manilaHourLabel, loadDashboardData } from './js/data.js';
-import { initThemeToggle, initFreshnessChip, setFooterUpdated, icon, renderNav } from './js/chrome.js';
+import { HERO_BAND_COLORS, BAND_CLASS, tweenNumber, manilaHourLabel, loadDashboardData, loadRainfallData } from './js/data.js';
+import { initThemeToggle, initFreshnessChip, setFooterUpdated, icon, renderNav, initScrollReveal } from './js/chrome.js';
 
 let citySeries = null;
 
@@ -75,12 +75,12 @@ function tickHeroPeak() {
 
 // ---------------------------------------------------------------------
 // Indicator cards — real value where live, NO DATA + owning office where
-// not. Rainfall/fire are hardcoded NO DATA here — deliberately not a
-// speculative fetch for a file that doesn't exist yet: a 404 gets logged
-// to the console by the browser itself regardless of a JS try/catch, so
-// "probe and gracefully degrade" isn't actually silent. Per
-// docs/ARCHITECTURE.md, the step that ships each indicator's fetch script
-// is also the step that updates this card to read the real file.
+// not. Fire/water/exposure/agri/response are hardcoded NO DATA here —
+// deliberately not a speculative fetch for a file that doesn't exist yet:
+// a 404 gets logged to the console by the browser itself regardless of a
+// JS try/catch, so "probe and gracefully degrade" isn't actually silent.
+// Per docs/ARCHITECTURE.md, the step that ships each indicator's fetch
+// script is also the step that updates this card to read the real file.
 // ---------------------------------------------------------------------
 function cardHtml(opts) {
   return (
@@ -91,55 +91,73 @@ function cardHtml(opts) {
   );
 }
 
-function renderIndicatorCards(data) {
+/** Rainfall card content — real once rainfall-latest.json has loaded, NO DATA fallback otherwise. */
+function rainfallCard(rainfallData) {
+  if (!rainfallData) {
+    return {
+      value: 'NO DATA', meta: 'PAGASA (authoritative); CDRRMO'
+    };
+  }
+  const barangays = rainfallData.barangays;
+  const driest = barangays.reduce((a, b) => (b.consecutive_dry_days > a.consecutive_dry_days ? b : a));
+  return {
+    value: driest.consecutive_dry_days + (driest.consecutive_dry_days === 1 ? ' dry day' : ' dry days'),
+    meta: driest.consecutive_dry_days > 0
+      ? driest.name + ' · longest current streak · derived'
+      : 'No barangay has gone a full day without rain · derived'
+  };
+}
+
+function renderIndicatorCards(data, rainfallData) {
   const barangays = data.barangays;
   const hottest = barangays.reduce((a, b) => (b.current.value > a.current.value ? b : a));
+  const rainfall = rainfallCard(rainfallData);
 
   const cards = [
     {
-      href: 'heat.html', band: hottest.current.band,
+      id: 'card-heat', href: 'heat.html', band: hottest.current.band,
       icon: icon('environmental'), name: 'Heat index',
       value: hottest.current.value.toFixed(1) + '°C', meta: hottest.current.band + ' · LIVE',
       linkLabel: 'View heat index'
     },
     {
-      href: 'rainfall.html',
+      id: 'card-rainfall', href: 'rainfall.html',
       icon: icon('rainfall'), name: 'Rainfall',
-      value: 'NO DATA', meta: 'PAGASA (authoritative); CDRRMO',
+      value: rainfall.value, meta: rainfall.meta,
       linkLabel: 'View rainfall'
     },
     {
-      href: 'water.html',
+      id: 'card-water-level', href: 'water.html',
       icon: icon('water'), name: 'Water level / availability',
       value: 'NO DATA', meta: 'CDRRMO; Iligan City Water District',
       linkLabel: 'View water'
     },
     {
-      href: 'fire.html',
+      id: 'card-fire', href: 'fire.html',
       icon: icon('fire'), name: 'Fire incidents',
       value: 'NO DATA', meta: 'BFP Iligan City; ICENRO',
       linkLabel: 'View fire'
     },
     {
-      href: 'exposure.html',
+      id: 'card-exposure', href: 'exposure.html',
       icon: icon('social'), name: 'Population exposed',
       value: 'NO DATA', meta: 'owning office: CSWDO',
       linkLabel: 'View exposure'
     },
     {
-      href: 'water.html',
+      id: 'card-water-shortage', href: 'water.html',
       icon: icon('health'), name: 'Households with water shortage',
       value: 'NO DATA', meta: 'owning office: City Health',
       linkLabel: 'View water'
     },
     {
-      href: 'agri.html',
+      id: 'card-agri', href: 'agri.html',
       icon: icon('farms'), name: 'Farmers & hectares affected',
       value: 'NO DATA', meta: 'owning office: City Agriculture',
       linkLabel: 'View agriculture'
     },
     {
-      href: 'response.html',
+      id: 'card-response', href: 'response.html',
       icon: icon('governance'), name: 'Government response status',
       value: 'NO DATA', meta: "owning office: City Administrator's Office",
       linkLabel: 'View response'
@@ -151,11 +169,21 @@ function renderIndicatorCards(data) {
   cards.forEach((c) => {
     const a = document.createElement('a');
     a.className = 'indicator-card';
+    a.id = c.id;
     a.href = c.href;
     if (c.band) a.style.setProperty('--card-band', 'var(--band-' + c.band.toLowerCase().replace(/\s+/g, '-') + '-bg)');
     a.innerHTML = cardHtml(c);
     wrap.appendChild(a);
   });
+}
+
+/** Patches just the rainfall card in place, for when rainfall-latest.json resolves after the initial render. */
+function upgradeRainfallCard(rainfallData) {
+  const card = document.getElementById('card-rainfall');
+  if (!card) return;
+  const rainfall = rainfallCard(rainfallData);
+  card.querySelector('.indicator-card-value').textContent = rainfall.value;
+  card.querySelector('.indicator-card-meta').textContent = rainfall.meta;
 }
 
 // ---------------------------------------------------------------------
@@ -181,20 +209,6 @@ function renderReframeMetric(data) {
 }
 
 // ---------------------------------------------------------------------
-// Scroll reveal
-// ---------------------------------------------------------------------
-function initScrollReveal(reduceMotion) {
-  if (reduceMotion || !window.IntersectionObserver) return;
-  const sections = document.querySelectorAll('.reveal');
-  const io = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) { entry.target.classList.add('is-revealed'); io.unobserve(entry.target); }
-    });
-  }, { threshold: 0.15 });
-  sections.forEach((el) => { el.classList.add('will-reveal'); io.observe(el); });
-}
-
-// ---------------------------------------------------------------------
 // Boot
 // ---------------------------------------------------------------------
 renderNav('site-nav', 'overview');
@@ -204,6 +218,14 @@ renderReframeIcons();
 // band pill/dot are class-driven (CSS resolves the right token) and the
 // hero-gradient's colors are fixed per band, not per theme.
 initThemeToggle('theme-toggle', 'theme-toggle-label', () => {});
+
+// Rainfall loads independently of heat data — whichever resolves first
+// renders with what it has; a late rainfall response upgrades the
+// already-rendered card in place rather than blocking on it.
+let rainfallDataCache = null;
+loadRainfallData()
+  .then((rainfallData) => { rainfallDataCache = rainfallData; upgradeRainfallCard(rainfallData); })
+  .catch(() => { /* card already shows NO DATA */ });
 
 loadDashboardData()
   .then((result) => {
@@ -215,7 +237,7 @@ loadDashboardData()
     setInterval(tickHeroPeak, 1000);
 
     renderHero(data);
-    renderIndicatorCards(data);
+    renderIndicatorCards(data, rainfallDataCache);
     renderReframeMetric(data);
     setFooterUpdated('footer-updated', data.generated_at);
 

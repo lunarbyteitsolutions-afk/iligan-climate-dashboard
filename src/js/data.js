@@ -21,6 +21,13 @@ export const EXTREME_DANGER_MIN_C = ((130 - 32) * 5) / 9; // 54.4
 
 export const BAND_ORDER = ['Caution', 'Extreme Caution', 'Danger', 'Extreme Danger'];
 
+// A day counts as "dry" below this accumulation. Same threshold as
+// scripts/fetch/rainfall.js's DRY_DAY_THRESHOLD_MM — stated wherever a dry
+// day count appears in the UI. Never call this "drought" or a "rainfall
+// deficit" (needs a climatological normal this project doesn't have); only
+// "7-day accumulated rainfall" and "consecutive dry days".
+export const DRY_DAY_THRESHOLD_MM = 1.0;
+
 export const BAND_CLASS = {
   'Caution': 'band-caution',
   'Extreme Caution': 'band-extreme-caution',
@@ -232,6 +239,17 @@ export function loadDashboardData() {
     const referenceByName = {};
     referenceData.forEach((r) => { referenceByName[r.name] = r; });
     return { data, referenceData, referenceByName, citySeries: computeCitySeries(data) };
+  });
+}
+
+/** Same shape as loadDashboardData, for rainfall.html/overview.js/ops.js. */
+export function loadRainfallData() {
+  return fetch('data/rainfall-latest.json').then((res) => {
+    if (!res.ok) throw new Error('HTTP ' + res.status + ' loading rainfall-latest.json');
+    return res.json();
+  }).then((data) => {
+    if (!data.barangays || !data.barangays.length) throw new Error('No barangays in rainfall-latest.json');
+    return data;
   });
 }
 
