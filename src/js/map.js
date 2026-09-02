@@ -170,6 +170,37 @@ export function highlightMarker(markersByName, name, on) {
   else resetMarkerRing(marker);
 }
 
+/**
+ * Plots satellite thermal-anomaly detections as a distinct marker shape
+ * (a triangle) — deliberately not the circleMarker used for barangay
+ * reference points, since a hotspot is a one-off event, not a place.
+ * Returns the array of markers (callers don't need to look these up by
+ * name the way barangay markers are).
+ */
+export function createHotspotMarkers(map, hotspots, opts) {
+  opts = opts || {};
+  const icon = L.divIcon({
+    className: 'hotspot-marker-icon',
+    html: '<span class="hotspot-marker-shape" aria-hidden="true"></span>',
+    iconSize: [14, 14],
+    iconAnchor: [7, 7]
+  });
+
+  return hotspots.map((h) => {
+    const marker = L.marker([h.latitude, h.longitude], { icon });
+    const when = opts.formatDateTime ? opts.formatDateTime(h.date_time) : h.date_time;
+    marker.bindPopup(
+      '<strong>Satellite thermal anomaly</strong> — not a confirmed fire incident<br>' +
+      when + '<br>' +
+      'Confidence: ' + h.confidence + ' &middot; FRP: ' + h.frp + 'MW<br>' +
+      'Detected by: ' + h.satellites.join(', ') + '<br>' +
+      'Nearest reference point: ' + h.nearest_barangay + ' (' + h.distance_km + 'km)'
+    );
+    marker.addTo(map);
+    return marker;
+  });
+}
+
 /** Renders the standard 4-band + low-confidence legend into a container. */
 export function renderMapLegend(containerId, bandOrder) {
   const legend = document.getElementById(containerId);

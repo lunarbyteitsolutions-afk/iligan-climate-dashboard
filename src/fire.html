@@ -7,6 +7,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.css">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -72,9 +73,33 @@
       </div>
     </section>
 
-    <section class="data-request-section">
-      <h2>A related but different signal</h2>
-      <p>Satellite-detected thermal anomalies (from NASA FIRMS) are planned as a separate, clearly-labeled supplementary layer once built — they are not confirmed fire incidents, and will not fill in this indicator. A satellite hotspot can be a grass fire, agricultural burning, or a false positive; a structural fire can produce no hotspot at all. This page's "Fire Incidents" indicator stays NO DATA / PENDING until BFP Iligan City or ICENRO provide confirmed records, regardless of what the satellite layer shows.</p>
+    <section class="data-request-section reveal" aria-labelledby="hotspot-heading">
+      <h2 id="hotspot-heading">Satellite Thermal Anomalies (NASA FIRMS) &mdash; Live</h2>
+      <p><strong>These are not confirmed fire incidents.</strong> A satellite hotspot can be a grass fire, agricultural burning, industrial heat, or a false positive; a real structural fire can produce no hotspot at all. The "Fire Incidents" indicator above stays NO DATA / PENDING until BFP Iligan City or ICENRO provide confirmed records, regardless of what this layer shows. This supplementary layer is sourced from three NASA FIRMS satellite feeds (VIIRS aboard Suomi NPP and NOAA-20, plus MODIS), streamed and filtered to the Iligan area.</p>
+
+      <div class="hero" style="margin-top:1rem;">
+        <div class="hero-field">
+          <div class="hero-label">Detections, Last 7 Days</div>
+          <div class="hero-value" id="hotspot-count-value" style="font-size:1.6rem;">—</div>
+        </div>
+        <div class="hero-field">
+          <div class="hero-label">Sources</div>
+          <div class="hero-time">NASA FIRMS &middot; VIIRS (Suomi NPP, NOAA-20) + MODIS</div>
+        </div>
+      </div>
+
+      <p id="hotspot-zero-state" class="table-note" hidden style="margin-top:1rem;">No thermal anomalies detected in the last 7 days.</p>
+
+      <div style="margin-top:1.2rem;">
+        <h3 class="panel-subtitle" style="margin-bottom:0.5rem;">By Day</h3>
+        <div class="hotspot-timeline" id="hotspot-timeline"></div>
+      </div>
+
+      <div class="map-wrap" style="margin-top:1.2rem;">
+        <div id="map"></div>
+      </div>
+      <div class="map-legend" id="hotspot-map-legend"></div>
+      <p class="table-note">Marker positions are satellite pixel centers, not surveyed locations — treat placement as approximate, especially for the coarser-resolution MODIS detections.</p>
     </section>
 
   </div>
@@ -84,14 +109,13 @@
   <div class="container" style="padding:0;">
     <p>Built by DEVCON Iligan (volunteer civic-tech) — not a City of Iligan office. City data owned and confirmed by the city.</p>
     <p><strong>Last updated:</strong> <span id="footer-updated">—</span></p>
+    <p><strong>Data source (satellite layer only):</strong> NASA FIRMS — VIIRS (Suomi NPP, NOAA-20) and MODIS active fire detections, not a substitute for BFP Iligan City / ICENRO confirmed incident reports.</p>
     <p>Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure.</p>
   </div>
 </footer>
 
-<script type="module">
-  import { initPendingPage } from './js/pending-boot.js';
-  initPendingPage('fire');
-</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js"></script>
+<script type="module" src="fire.js"></script>
 
 </body>
 </html>

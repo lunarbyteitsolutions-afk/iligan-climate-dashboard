@@ -253,6 +253,24 @@ export function loadRainfallData() {
   });
 }
 
+/**
+ * For fire.html. Unlike loadRainfallData, an empty `hotspots` array is a
+ * valid, expected result ("no thermal anomalies detected") — only a
+ * missing/malformed `by_day` (the 7-day timeline, always present even at
+ * zero) means the file itself failed to load correctly.
+ */
+export function loadFireHotspotsData() {
+  return fetch('data/fire-hotspots-latest.json').then((res) => {
+    if (!res.ok) throw new Error('HTTP ' + res.status + ' loading fire-hotspots-latest.json');
+    return res.json();
+  }).then((data) => {
+    if (!Array.isArray(data.hotspots) || !Array.isArray(data.by_day)) {
+      throw new Error('Malformed fire-hotspots-latest.json');
+    }
+    return data;
+  });
+}
+
 // ---------------------------------------------------------------------
 // Number tween
 // ---------------------------------------------------------------------

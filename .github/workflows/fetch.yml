@@ -2,7 +2,8 @@ name: Fetch indicator data
 
 on:
   schedule:
-    - cron: '0 * * * *' # hourly, on the hour, UTC
+    - cron: '0 * * * *' # hourly, on the hour, UTC — heat index + rainfall
+    - cron: '0 3 * * *' # daily, 03:00 UTC (~11:00 Manila) — fire hotspots only
   workflow_dispatch: {}
 
 permissions:
@@ -62,4 +63,23 @@ jobs:
           fi
           git add data/rainfall-latest.json
           git commit -m "chore: update rainfall data"
+          git push
+
+      # Fire hotspots run daily, not hourly — the hourly heat/rainfall cron
+      # skips this step (there's nothing new from NASA FIRMS on that
+      # cadence to justify streaming three ~5MB CSVs every hour). A manual
+      # workflow_dispatch always runs it too, for testing.
+      - name: Run fire hotspots fetch
+        if: always() && (github.event_name == 'workflow_dispatch' || github.event.schedule == '0 3 * * *')
+        run: node scripts/fetch/fetch-fire-hotspots.js
+
+      - name: Commit fire hotspots data if changed
+        if: always() && (github.event_name == 'workflow_dispatch' || github.event.schedule == '0 3 * * *')
+        run: |
+          if git diff --quiet -- data/fire-hotspots-latest.json; then
+            echo "No change to data/fire-hotspots-latest.json — nothing to commit."
+            exit 0
+          fi
+          git add data/fire-hotspots-latest.json
+          git commit -m "chore: update fire hotspots data"
           git push

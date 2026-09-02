@@ -1,0 +1,184 @@
+{
+  "generated_at": "2026-09-02T08:39:11.563Z",
+  "indicator": "fire_hotspots",
+  "label": "Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure.",
+  "schema": "schema/record.schema.json",
+  "disclaimer": "These are satellite-detected thermal anomalies (NASA FIRMS), NOT confirmed fire incidents. A hotspot can be a grass fire, agricultural burning, industrial heat, or a false positive; a real structural fire can produce no hotspot at all. The official \"Fire Incidents\" indicator stays NO DATA / PENDING until BFP Iligan City or ICENRO provide confirmed records, regardless of what this satellite layer shows.",
+  "window_days": 7,
+  "bounding_box": {
+    "lat_min": 8.05,
+    "lat_max": 8.4,
+    "lon_min": 124.15,
+    "lon_max": 124.62
+  },
+  "count_7day": 5,
+  "by_day": [
+    {
+      "date": "2026-08-27",
+      "count": 0
+    },
+    {
+      "date": "2026-08-28",
+      "count": 0
+    },
+    {
+      "date": "2026-08-29",
+      "count": 0
+    },
+    {
+      "date": "2026-08-30",
+      "count": 1
+    },
+    {
+      "date": "2026-08-31",
+      "count": 2
+    },
+    {
+      "date": "2026-09-01",
+      "count": 0
+    },
+    {
+      "date": "2026-09-02",
+      "count": 0
+    }
+  ],
+  "sources": [
+    "suomi-npp-viirs",
+    "noaa-20-viirs",
+    "modis-c6.1"
+  ],
+  "records": [
+    {
+      "date_time": "2026-08-31T04:46:00.000Z",
+      "barangay": "Panoroganan",
+      "latitude": 8.0726,
+      "longitude": 124.52839,
+      "indicator": "fire_hotspot_detection",
+      "value": 2.99,
+      "unit": "MW",
+      "source": "NASA FIRMS (suomi-npp-viirs) — satellite thermal anomaly detection, not a confirmed fire incident",
+      "responsible_office": "None — satellite detection only. BFP Iligan City / ICENRO would confirm any actual incident.",
+      "status": "reported",
+      "remarks": "Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure. Detected by suomi-npp-viirs. Confidence: nominal. Nearest reference point: Panoroganan (6.8km). This is a satellite thermal anomaly, not a confirmed fire incident."
+    },
+    {
+      "date_time": "2026-08-31T04:46:00.000Z",
+      "barangay": "Mainit",
+      "latitude": 8.34749,
+      "longitude": 124.4687,
+      "indicator": "fire_hotspot_detection",
+      "value": 4.31,
+      "unit": "MW",
+      "source": "NASA FIRMS (suomi-npp-viirs) — satellite thermal anomaly detection, not a confirmed fire incident",
+      "responsible_office": "None — satellite detection only. BFP Iligan City / ICENRO would confirm any actual incident.",
+      "status": "reported",
+      "remarks": "Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure. Detected by suomi-npp-viirs. Confidence: nominal. Nearest reference point: Mainit (11.34km). This is a satellite thermal anomaly, not a confirmed fire incident."
+    },
+    {
+      "date_time": "2026-08-30T05:25:00.000Z",
+      "barangay": "Dulag",
+      "latitude": 8.2122,
+      "longitude": 124.42266,
+      "indicator": "fire_hotspot_detection",
+      "value": 4.67,
+      "unit": "MW",
+      "source": "NASA FIRMS (noaa-20-viirs) — satellite thermal anomaly detection, not a confirmed fire incident",
+      "responsible_office": "None — satellite detection only. BFP Iligan City / ICENRO would confirm any actual incident.",
+      "status": "reported",
+      "remarks": "Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure. Detected by noaa-20-viirs. Confidence: nominal. Nearest reference point: Dulag (4.99km). This is a satellite thermal anomaly, not a confirmed fire incident."
+    },
+    {
+      "date_time": "2026-08-26T04:57:00.000Z",
+      "barangay": "Hindang",
+      "latitude": 8.32154,
+      "longitude": 124.36887,
+      "indicator": "fire_hotspot_detection",
+      "value": 3.05,
+      "unit": "MW",
+      "source": "NASA FIRMS (noaa-20-viirs) — satellite thermal anomaly detection, not a confirmed fire incident",
+      "responsible_office": "None — satellite detection only. BFP Iligan City / ICENRO would confirm any actual incident.",
+      "status": "reported",
+      "remarks": "Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure. Detected by noaa-20-viirs. Confidence: low. Nearest reference point: Hindang (2.97km). This is a satellite thermal anomaly, not a confirmed fire incident."
+    },
+    {
+      "date_time": "2026-08-26T04:38:00.000Z",
+      "barangay": "Hindang",
+      "latitude": 8.32654,
+      "longitude": 124.34372,
+      "indicator": "fire_hotspot_detection",
+      "value": 4.77,
+      "unit": "MW",
+      "source": "NASA FIRMS (suomi-npp-viirs) — satellite thermal anomaly detection, not a confirmed fire incident",
+      "responsible_office": "None — satellite detection only. BFP Iligan City / ICENRO would confirm any actual incident.",
+      "status": "reported",
+      "remarks": "Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure. Detected by suomi-npp-viirs. Confidence: nominal. Nearest reference point: Hindang (2.51km). This is a satellite thermal anomaly, not a confirmed fire incident."
+    }
+  ],
+  "hotspots": [
+    {
+      "date_time": "2026-08-31T04:46:00.000Z",
+      "latitude": 8.0726,
+      "longitude": 124.52839,
+      "confidence": "nominal",
+      "frp": 2.99,
+      "satellite": "suomi-npp-viirs",
+      "satellites": [
+        "suomi-npp-viirs"
+      ],
+      "nearest_barangay": "Panoroganan",
+      "distance_km": 6.8
+    },
+    {
+      "date_time": "2026-08-31T04:46:00.000Z",
+      "latitude": 8.34749,
+      "longitude": 124.4687,
+      "confidence": "nominal",
+      "frp": 4.31,
+      "satellite": "suomi-npp-viirs",
+      "satellites": [
+        "suomi-npp-viirs"
+      ],
+      "nearest_barangay": "Mainit",
+      "distance_km": 11.34
+    },
+    {
+      "date_time": "2026-08-30T05:25:00.000Z",
+      "latitude": 8.2122,
+      "longitude": 124.42266,
+      "confidence": "nominal",
+      "frp": 4.67,
+      "satellite": "noaa-20-viirs",
+      "satellites": [
+        "noaa-20-viirs"
+      ],
+      "nearest_barangay": "Dulag",
+      "distance_km": 4.99
+    },
+    {
+      "date_time": "2026-08-26T04:57:00.000Z",
+      "latitude": 8.32154,
+      "longitude": 124.36887,
+      "confidence": "low",
+      "frp": 3.05,
+      "satellite": "noaa-20-viirs",
+      "satellites": [
+        "noaa-20-viirs"
+      ],
+      "nearest_barangay": "Hindang",
+      "distance_km": 2.97
+    },
+    {
+      "date_time": "2026-08-26T04:38:00.000Z",
+      "latitude": 8.32654,
+      "longitude": 124.34372,
+      "confidence": "nominal",
+      "frp": 4.77,
+      "satellite": "suomi-npp-viirs",
+      "satellites": [
+        "suomi-npp-viirs"
+      ],
+      "nearest_barangay": "Hindang",
+      "distance_km": 2.51
+    }
+  ]
+}
