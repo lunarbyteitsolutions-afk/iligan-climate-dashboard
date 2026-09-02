@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-02T03:41:52.102Z",
+  "generated_at": "2026-09-02T07:14:18.770Z",
   "indicator": "heat_index",
   "label": "Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure.",
   "schema": "schema/record.schema.json",
@@ -7,290 +7,24 @@
   "grid_resolution_note": "Several barangays fall in the same Open-Meteo weather grid cell and so share an identical modeled value. This is expected model resolution, not measurement precision at the barangay level — do not read tied values as coincidence.",
   "records": [
     {
-      "date_time": "2026-09-02T03:30:00.000Z",
+      "date_time": "2026-09-02T07:00:00.000Z",
       "barangay": "Abuno",
       "latitude": 8.184697,
       "longitude": 124.256959,
       "indicator": "heat_index",
-      "value": 39.5,
+      "value": 39.2,
       "unit": "°C",
       "band": "Extreme Caution",
       "source": "Open-Meteo (supplementary) — PAGASA iHeatMAP is the authoritative reference",
       "responsible_office": null,
       "status": "derived",
-      "remarks": "Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 36.0°C, 41% RH."
+      "remarks": "Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 34.2°C, 51% RH."
     },
     {
-      "date_time": "2026-09-02T03:30:00.000Z",
+      "date_time": "2026-09-02T07:00:00.000Z",
       "barangay": "Acmac",
       "latitude": 8.275246,
       "longitude": 124.268353,
-      "indicator": "heat_index",
-      "value": 39.8,
-      "unit": "°C",
-      "band": "Extreme Caution",
-      "source": "Open-Meteo (supplementary) — PAGASA iHeatMAP is the authoritative reference",
-      "responsible_office": null,
-      "status": "derived",
-      "remarks": "Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 35.1°C, 47% RH."
-    },
-    {
-      "date_time": "2026-09-02T03:30:00.000Z",
-      "barangay": "Bagong Silang",
-      "latitude": 8.241625,
-      "longitude": 124.251969,
-      "indicator": "heat_index",
-      "value": 39.7,
-      "unit": "°C",
-      "band": "Extreme Caution",
-      "source": "Open-Meteo (supplementary) — PAGASA iHeatMAP is the authoritative reference",
-      "responsible_office": null,
-      "status": "derived",
-      "remarks": "Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 36.1°C, 41% RH."
-    },
-    {
-      "date_time": "2026-09-02T03:30:00.000Z",
-      "barangay": "Bonbonon",
-      "latitude": 8.266244,
-      "longitude": 124.297982,
-      "indicator": "heat_index",
-      "value": 37,
-      "unit": "°C",
-      "band": "Extreme Caution",
-      "source": "Open-Meteo (supplementary) — PAGASA iHeatMAP is the authoritative reference",
-      "responsible_office": null,
-      "status": "derived",
-      "remarks": "Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 33.8°C, 47% RH."
-    },
-    {
-      "date_time": "2026-09-02T03:30:00.000Z",
-      "barangay": "Bunawan",
-      "latitude": 8.301856,
-      "longitude": 124.308101,
-      "indicator": "heat_index",
-      "value": 37,
-      "unit": "°C",
-      "band": "Extreme Caution",
-      "source": "Open-Meteo (supplementary) — PAGASA iHeatMAP is the authoritative reference",
-      "responsible_office": null,
-      "status": "derived",
-      "remarks": "Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 33.8°C, 47% RH."
-    },
-    {
-      "date_time": "2026-09-02T03:30:00.000Z",
-      "barangay": "Buru-un",
-      "latitude": 8.188072,
-      "longitude": 124.172216,
-      "indicator": "heat_index",
-      "value": 39.5,
-      "unit": "°C",
-      "band": "Extreme Caution",
-      "source": "Open-Meteo (supplementary) — PAGASA iHeatMAP is the authoritative reference",
-      "responsible_office": null,
-      "status": "derived",
-      "remarks": "Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 36.2°C, 40% RH."
-    },
-    {
-      "date_time": "2026-09-02T03:30:00.000Z",
-      "barangay": "Dalipuga",
-      "latitude": 8.30596,
-      "longitude": 124.258587,
-      "indicator": "heat_index",
-      "value": 39.1,
-      "unit": "°C",
-      "band": "Extreme Caution",
-      "source": "Open-Meteo (supplementary) — PAGASA iHeatMAP is the authoritative reference",
-      "responsible_office": null,
-      "status": "derived",
-      "remarks": "Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 34.8°C, 47% RH."
-    },
-    {
-      "date_time": "2026-09-02T03:30:00.000Z",
-      "barangay": "Del Carmen",
-      "latitude": 8.232228,
-      "longitude": 124.258058,
-      "indicator": "heat_index",
-      "value": 39.7,
-      "unit": "°C",
-      "band": "Extreme Caution",
-      "source": "Open-Meteo (supplementary) — PAGASA iHeatMAP is the authoritative reference",
-      "responsible_office": null,
-      "status": "derived",
-      "remarks": "Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 36.1°C, 41% RH."
-    },
-    {
-      "date_time": "2026-09-02T03:30:00.000Z",
-      "barangay": "Digkilaan",
-      "latitude": 8.262466,
-      "longitude": 124.337034,
-      "indicator": "heat_index",
-      "value": 38.2,
-      "unit": "°C",
-      "band": "Extreme Caution",
-      "source": "Open-Meteo (supplementary) — PAGASA iHeatMAP is the authoritative reference",
-      "responsible_office": null,
-      "status": "derived",
-      "remarks": "Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 34.4°C, 47% RH."
-    },
-    {
-      "date_time": "2026-09-02T03:30:00.000Z",
-      "barangay": "Ditucalan",
-      "latitude": 8.176033,
-      "longitude": 124.192768,
-      "indicator": "heat_index",
-      "value": 38.5,
-      "unit": "°C",
-      "band": "Extreme Caution",
-      "source": "Open-Meteo (supplementary) — PAGASA iHeatMAP is the authoritative reference",
-      "responsible_office": null,
-      "status": "derived",
-      "remarks": "Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 35.5°C, 41% RH."
-    },
-    {
-      "date_time": "2026-09-02T03:30:00.000Z",
-      "barangay": "Dulag",
-      "latitude": 8.209,
-      "longitude": 124.377448,
-      "indicator": "heat_index",
-      "value": 35.3,
-      "unit": "°C",
-      "band": "Extreme Caution",
-      "source": "Open-Meteo (supplementary) — PAGASA iHeatMAP is the authoritative reference",
-      "responsible_office": null,
-      "status": "derived",
-      "remarks": "Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 31.7°C, 56% RH."
-    },
-    {
-      "date_time": "2026-09-02T03:30:00.000Z",
-      "barangay": "Hinaplanon",
-      "latitude": 8.246596,
-      "longitude": 124.259474,
-      "indicator": "heat_index",
-      "value": 39.8,
-      "unit": "°C",
-      "band": "Extreme Caution",
-      "source": "Open-Meteo (supplementary) — PAGASA iHeatMAP is the authoritative reference",
-      "responsible_office": null,
-      "status": "derived",
-      "remarks": "Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 35.1°C, 47% RH."
-    },
-    {
-      "date_time": "2026-09-02T03:30:00.000Z",
-      "barangay": "Hindang",
-      "latitude": 8.304424,
-      "longitude": 124.348089,
-      "indicator": "heat_index",
-      "value": 35.3,
-      "unit": "°C",
-      "band": "Extreme Caution",
-      "source": "Open-Meteo (supplementary) — PAGASA iHeatMAP is the authoritative reference",
-      "responsible_office": null,
-      "status": "derived",
-      "remarks": "Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 32.1°C, 53% RH."
-    },
-    {
-      "date_time": "2026-09-02T03:30:00.000Z",
-      "barangay": "Kabacsanan",
-      "latitude": 8.288466,
-      "longitude": 124.320603,
-      "indicator": "heat_index",
-      "value": 37,
-      "unit": "°C",
-      "band": "Extreme Caution",
-      "source": "Open-Meteo (supplementary) — PAGASA iHeatMAP is the authoritative reference",
-      "responsible_office": null,
-      "status": "derived",
-      "remarks": "Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 33.8°C, 47% RH."
-    },
-    {
-      "date_time": "2026-09-02T03:30:00.000Z",
-      "barangay": "Kalilangan",
-      "latitude": 8.157388,
-      "longitude": 124.386706,
-      "indicator": "heat_index",
-      "value": 33.7,
-      "unit": "°C",
-      "band": "Extreme Caution",
-      "source": "Open-Meteo (supplementary) — PAGASA iHeatMAP is the authoritative reference",
-      "responsible_office": null,
-      "status": "derived",
-      "remarks": "Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 30.9°C, 56% RH."
-    },
-    {
-      "date_time": "2026-09-02T03:30:00.000Z",
-      "barangay": "Kiwalan",
-      "latitude": 8.288963,
-      "longitude": 124.281658,
-      "indicator": "heat_index",
-      "value": 36.8,
-      "unit": "°C",
-      "band": "Extreme Caution",
-      "source": "Open-Meteo (supplementary) — PAGASA iHeatMAP is the authoritative reference",
-      "responsible_office": null,
-      "status": "derived",
-      "remarks": "Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 33.7°C, 47% RH."
-    },
-    {
-      "date_time": "2026-09-02T03:30:00.000Z",
-      "barangay": "Lanipao",
-      "latitude": 8.22364,
-      "longitude": 124.343979,
-      "indicator": "heat_index",
-      "value": 36.2,
-      "unit": "°C",
-      "band": "Extreme Caution",
-      "source": "Open-Meteo (supplementary) — PAGASA iHeatMAP is the authoritative reference",
-      "responsible_office": null,
-      "status": "derived",
-      "remarks": "Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 33.4°C, 47% RH."
-    },
-    {
-      "date_time": "2026-09-02T03:30:00.000Z",
-      "barangay": "Luinab",
-      "latitude": 8.247049,
-      "longitude": 124.267966,
-      "indicator": "heat_index",
-      "value": 39.8,
-      "unit": "°C",
-      "band": "Extreme Caution",
-      "source": "Open-Meteo (supplementary) — PAGASA iHeatMAP is the authoritative reference",
-      "responsible_office": null,
-      "status": "derived",
-      "remarks": "Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 35.1°C, 47% RH."
-    },
-    {
-      "date_time": "2026-09-02T03:30:00.000Z",
-      "barangay": "Mahayahay",
-      "latitude": 8.224316,
-      "longitude": 124.238313,
-      "indicator": "heat_index",
-      "value": 39.9,
-      "unit": "°C",
-      "band": "Extreme Caution",
-      "source": "Open-Meteo (supplementary) — PAGASA iHeatMAP is the authoritative reference",
-      "responsible_office": null,
-      "status": "derived",
-      "remarks": "Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 36.2°C, 41% RH."
-    },
-    {
-      "date_time": "2026-09-02T03:30:00.000Z",
-      "barangay": "Mainit",
-      "latitude": 8.296761,
-      "longitude": 124.379313,
-      "indicator": "heat_index",
-      "value": 33.6,
-      "unit": "°C",
-      "band": "Extreme Caution",
-      "source": "Open-Meteo (supplementary) — PAGASA iHeatMAP is the authoritative reference",
-      "responsible_office": null,
-      "status": "derived",
-      "remarks": "Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 30.5°C, 59% RH."
-    },
-    {
-      "date_time": "2026-09-02T03:30:00.000Z",
-      "barangay": "Mandulog",
-      "latitude": 8.244349,
-      "longitude": 124.306129,
       "indicator": "heat_index",
       "value": 39.3,
       "unit": "°C",
@@ -298,69 +32,377 @@
       "source": "Open-Meteo (supplementary) — PAGASA iHeatMAP is the authoritative reference",
       "responsible_office": null,
       "status": "derived",
-      "remarks": "Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 34.9°C, 47% RH."
+      "remarks": "Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 33.8°C, 54% RH."
     },
     {
-      "date_time": "2026-09-02T03:30:00.000Z",
+      "date_time": "2026-09-02T07:00:00.000Z",
+      "barangay": "Bagong Silang",
+      "latitude": 8.241625,
+      "longitude": 124.251969,
+      "indicator": "heat_index",
+      "value": 39.4,
+      "unit": "°C",
+      "band": "Extreme Caution",
+      "source": "Open-Meteo (supplementary) — PAGASA iHeatMAP is the authoritative reference",
+      "responsible_office": null,
+      "status": "derived",
+      "remarks": "Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 34.3°C, 51% RH."
+    },
+    {
+      "date_time": "2026-09-02T07:00:00.000Z",
+      "barangay": "Bonbonon",
+      "latitude": 8.266244,
+      "longitude": 124.297982,
+      "indicator": "heat_index",
+      "value": 36.3,
+      "unit": "°C",
+      "band": "Extreme Caution",
+      "source": "Open-Meteo (supplementary) — PAGASA iHeatMAP is the authoritative reference",
+      "responsible_office": null,
+      "status": "derived",
+      "remarks": "Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 32.6°C, 53% RH."
+    },
+    {
+      "date_time": "2026-09-02T07:00:00.000Z",
+      "barangay": "Bunawan",
+      "latitude": 8.301856,
+      "longitude": 124.308101,
+      "indicator": "heat_index",
+      "value": 36.3,
+      "unit": "°C",
+      "band": "Extreme Caution",
+      "source": "Open-Meteo (supplementary) — PAGASA iHeatMAP is the authoritative reference",
+      "responsible_office": null,
+      "status": "derived",
+      "remarks": "Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 32.6°C, 53% RH."
+    },
+    {
+      "date_time": "2026-09-02T07:00:00.000Z",
+      "barangay": "Buru-un",
+      "latitude": 8.188072,
+      "longitude": 124.172216,
+      "indicator": "heat_index",
+      "value": 39,
+      "unit": "°C",
+      "band": "Extreme Caution",
+      "source": "Open-Meteo (supplementary) — PAGASA iHeatMAP is the authoritative reference",
+      "responsible_office": null,
+      "status": "derived",
+      "remarks": "Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 34.6°C, 48% RH."
+    },
+    {
+      "date_time": "2026-09-02T07:00:00.000Z",
+      "barangay": "Dalipuga",
+      "latitude": 8.30596,
+      "longitude": 124.258587,
+      "indicator": "heat_index",
+      "value": 38.3,
+      "unit": "°C",
+      "band": "Extreme Caution",
+      "source": "Open-Meteo (supplementary) — PAGASA iHeatMAP is the authoritative reference",
+      "responsible_office": null,
+      "status": "derived",
+      "remarks": "Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 33.5°C, 53% RH."
+    },
+    {
+      "date_time": "2026-09-02T07:00:00.000Z",
+      "barangay": "Del Carmen",
+      "latitude": 8.232228,
+      "longitude": 124.258058,
+      "indicator": "heat_index",
+      "value": 39.4,
+      "unit": "°C",
+      "band": "Extreme Caution",
+      "source": "Open-Meteo (supplementary) — PAGASA iHeatMAP is the authoritative reference",
+      "responsible_office": null,
+      "status": "derived",
+      "remarks": "Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 34.3°C, 51% RH."
+    },
+    {
+      "date_time": "2026-09-02T07:00:00.000Z",
+      "barangay": "Digkilaan",
+      "latitude": 8.262466,
+      "longitude": 124.337034,
+      "indicator": "heat_index",
+      "value": 37.6,
+      "unit": "°C",
+      "band": "Extreme Caution",
+      "source": "Open-Meteo (supplementary) — PAGASA iHeatMAP is the authoritative reference",
+      "responsible_office": null,
+      "status": "derived",
+      "remarks": "Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 33.2°C, 53% RH."
+    },
+    {
+      "date_time": "2026-09-02T07:00:00.000Z",
+      "barangay": "Ditucalan",
+      "latitude": 8.176033,
+      "longitude": 124.192768,
+      "indicator": "heat_index",
+      "value": 38.1,
+      "unit": "°C",
+      "band": "Extreme Caution",
+      "source": "Open-Meteo (supplementary) — PAGASA iHeatMAP is the authoritative reference",
+      "responsible_office": null,
+      "status": "derived",
+      "remarks": "Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 33.7°C, 51% RH."
+    },
+    {
+      "date_time": "2026-09-02T07:00:00.000Z",
+      "barangay": "Dulag",
+      "latitude": 8.209,
+      "longitude": 124.377448,
+      "indicator": "heat_index",
+      "value": 34.3,
+      "unit": "°C",
+      "band": "Extreme Caution",
+      "source": "Open-Meteo (supplementary) — PAGASA iHeatMAP is the authoritative reference",
+      "responsible_office": null,
+      "status": "derived",
+      "remarks": "Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 30.5°C, 62% RH."
+    },
+    {
+      "date_time": "2026-09-02T07:00:00.000Z",
+      "barangay": "Hinaplanon",
+      "latitude": 8.246596,
+      "longitude": 124.259474,
+      "indicator": "heat_index",
+      "value": 39.3,
+      "unit": "°C",
+      "band": "Extreme Caution",
+      "source": "Open-Meteo (supplementary) — PAGASA iHeatMAP is the authoritative reference",
+      "responsible_office": null,
+      "status": "derived",
+      "remarks": "Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 33.8°C, 54% RH."
+    },
+    {
+      "date_time": "2026-09-02T07:00:00.000Z",
+      "barangay": "Hindang",
+      "latitude": 8.304424,
+      "longitude": 124.348089,
+      "indicator": "heat_index",
+      "value": 34.1,
+      "unit": "°C",
+      "band": "Extreme Caution",
+      "source": "Open-Meteo (supplementary) — PAGASA iHeatMAP is the authoritative reference",
+      "responsible_office": null,
+      "status": "derived",
+      "remarks": "Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 31.0°C, 57% RH."
+    },
+    {
+      "date_time": "2026-09-02T07:00:00.000Z",
+      "barangay": "Kabacsanan",
+      "latitude": 8.288466,
+      "longitude": 124.320603,
+      "indicator": "heat_index",
+      "value": 36.3,
+      "unit": "°C",
+      "band": "Extreme Caution",
+      "source": "Open-Meteo (supplementary) — PAGASA iHeatMAP is the authoritative reference",
+      "responsible_office": null,
+      "status": "derived",
+      "remarks": "Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 32.6°C, 53% RH."
+    },
+    {
+      "date_time": "2026-09-02T07:00:00.000Z",
+      "barangay": "Kalilangan",
+      "latitude": 8.157388,
+      "longitude": 124.386706,
+      "indicator": "heat_index",
+      "value": 32.6,
+      "unit": "°C",
+      "band": "Extreme Caution",
+      "source": "Open-Meteo (supplementary) — PAGASA iHeatMAP is the authoritative reference",
+      "responsible_office": null,
+      "status": "derived",
+      "remarks": "Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 29.7°C, 62% RH."
+    },
+    {
+      "date_time": "2026-09-02T07:00:00.000Z",
+      "barangay": "Kiwalan",
+      "latitude": 8.288963,
+      "longitude": 124.281658,
+      "indicator": "heat_index",
+      "value": 36.1,
+      "unit": "°C",
+      "band": "Extreme Caution",
+      "source": "Open-Meteo (supplementary) — PAGASA iHeatMAP is the authoritative reference",
+      "responsible_office": null,
+      "status": "derived",
+      "remarks": "Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 32.5°C, 53% RH."
+    },
+    {
+      "date_time": "2026-09-02T07:00:00.000Z",
+      "barangay": "Lanipao",
+      "latitude": 8.22364,
+      "longitude": 124.343979,
+      "indicator": "heat_index",
+      "value": 35.5,
+      "unit": "°C",
+      "band": "Extreme Caution",
+      "source": "Open-Meteo (supplementary) — PAGASA iHeatMAP is the authoritative reference",
+      "responsible_office": null,
+      "status": "derived",
+      "remarks": "Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 32.2°C, 53% RH."
+    },
+    {
+      "date_time": "2026-09-02T07:00:00.000Z",
+      "barangay": "Luinab",
+      "latitude": 8.247049,
+      "longitude": 124.267966,
+      "indicator": "heat_index",
+      "value": 39.3,
+      "unit": "°C",
+      "band": "Extreme Caution",
+      "source": "Open-Meteo (supplementary) — PAGASA iHeatMAP is the authoritative reference",
+      "responsible_office": null,
+      "status": "derived",
+      "remarks": "Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 33.8°C, 54% RH."
+    },
+    {
+      "date_time": "2026-09-02T07:00:00.000Z",
+      "barangay": "Mahayahay",
+      "latitude": 8.224316,
+      "longitude": 124.238313,
+      "indicator": "heat_index",
+      "value": 39.6,
+      "unit": "°C",
+      "band": "Extreme Caution",
+      "source": "Open-Meteo (supplementary) — PAGASA iHeatMAP is the authoritative reference",
+      "responsible_office": null,
+      "status": "derived",
+      "remarks": "Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 34.4°C, 51% RH."
+    },
+    {
+      "date_time": "2026-09-02T07:00:00.000Z",
+      "barangay": "Mainit",
+      "latitude": 8.296761,
+      "longitude": 124.379313,
+      "indicator": "heat_index",
+      "value": 32.6,
+      "unit": "°C",
+      "band": "Extreme Caution",
+      "source": "Open-Meteo (supplementary) — PAGASA iHeatMAP is the authoritative reference",
+      "responsible_office": null,
+      "status": "derived",
+      "remarks": "Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 29.8°C, 61% RH."
+    },
+    {
+      "date_time": "2026-09-02T07:00:00.000Z",
+      "barangay": "Mandulog",
+      "latitude": 8.244349,
+      "longitude": 124.306129,
+      "indicator": "heat_index",
+      "value": 38.7,
+      "unit": "°C",
+      "band": "Extreme Caution",
+      "source": "Open-Meteo (supplementary) — PAGASA iHeatMAP is the authoritative reference",
+      "responsible_office": null,
+      "status": "derived",
+      "remarks": "Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 33.7°C, 53% RH."
+    },
+    {
+      "date_time": "2026-09-02T07:00:00.000Z",
       "barangay": "Maria Cristina",
       "latitude": 8.198912,
       "longitude": 124.193998,
       "indicator": "heat_index",
-      "value": 39.7,
+      "value": 39.4,
       "unit": "°C",
       "band": "Extreme Caution",
       "source": "Open-Meteo (supplementary) — PAGASA iHeatMAP is the authoritative reference",
       "responsible_office": null,
       "status": "derived",
-      "remarks": "Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 36.1°C, 41% RH."
+      "remarks": "Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 34.3°C, 51% RH."
     },
     {
-      "date_time": "2026-09-02T03:30:00.000Z",
+      "date_time": "2026-09-02T07:00:00.000Z",
       "barangay": "Palao",
       "latitude": 8.229264,
       "longitude": 124.254059,
       "indicator": "heat_index",
-      "value": 39.7,
+      "value": 39.4,
       "unit": "°C",
       "band": "Extreme Caution",
       "source": "Open-Meteo (supplementary) — PAGASA iHeatMAP is the authoritative reference",
       "responsible_office": null,
       "status": "derived",
-      "remarks": "Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 36.1°C, 41% RH."
+      "remarks": "Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 34.3°C, 51% RH."
     },
     {
-      "date_time": "2026-09-02T03:30:00.000Z",
+      "date_time": "2026-09-02T07:00:00.000Z",
       "barangay": "Panoroganan",
       "latitude": 8.107555,
       "longitude": 124.477695,
       "indicator": "heat_index",
-      "value": 30.7,
+      "value": 29.8,
       "unit": "°C",
       "band": "Caution",
       "source": "Open-Meteo (supplementary) — PAGASA iHeatMAP is the authoritative reference",
       "responsible_office": null,
       "status": "derived",
-      "remarks": "Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 28.8°C, 60% RH."
+      "remarks": "Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 28.4°C, 58% RH."
     },
     {
-      "date_time": "2026-09-02T03:30:00.000Z",
+      "date_time": "2026-09-02T07:00:00.000Z",
       "barangay": "Poblacion",
       "latitude": 8.228898,
       "longitude": 124.234013,
       "indicator": "heat_index",
-      "value": 39.9,
+      "value": 39.6,
       "unit": "°C",
       "band": "Extreme Caution",
       "source": "Open-Meteo (supplementary) — PAGASA iHeatMAP is the authoritative reference",
       "responsible_office": null,
       "status": "derived",
-      "remarks": "Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 36.2°C, 41% RH."
+      "remarks": "Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 34.4°C, 51% RH."
     },
     {
-      "date_time": "2026-09-02T03:30:00.000Z",
+      "date_time": "2026-09-02T07:00:00.000Z",
       "barangay": "Puga-an",
       "latitude": 8.228983,
       "longitude": 124.274745,
+      "indicator": "heat_index",
+      "value": 39,
+      "unit": "°C",
+      "band": "Extreme Caution",
+      "source": "Open-Meteo (supplementary) — PAGASA iHeatMAP is the authoritative reference",
+      "responsible_office": null,
+      "status": "derived",
+      "remarks": "Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 34.1°C, 51% RH."
+    },
+    {
+      "date_time": "2026-09-02T07:00:00.000Z",
+      "barangay": "Rogongon",
+      "latitude": 8.147127,
+      "longitude": 124.487814,
+      "indicator": "heat_index",
+      "value": 33.5,
+      "unit": "°C",
+      "band": "Extreme Caution",
+      "source": "Open-Meteo (supplementary) — PAGASA iHeatMAP is the authoritative reference",
+      "responsible_office": null,
+      "status": "derived",
+      "remarks": "Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 30.8°C, 56% RH."
+    },
+    {
+      "date_time": "2026-09-02T07:00:00.000Z",
+      "barangay": "San Miguel",
+      "latitude": 8.238596,
+      "longitude": 124.248663,
+      "indicator": "heat_index",
+      "value": 39.4,
+      "unit": "°C",
+      "band": "Extreme Caution",
+      "source": "Open-Meteo (supplementary) — PAGASA iHeatMAP is the authoritative reference",
+      "responsible_office": null,
+      "status": "derived",
+      "remarks": "Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 34.3°C, 51% RH."
+    },
+    {
+      "date_time": "2026-09-02T07:00:00.000Z",
+      "barangay": "San Roque",
+      "latitude": 8.257546,
+      "longitude": 124.261743,
       "indicator": "heat_index",
       "value": 39.3,
       "unit": "°C",
@@ -368,259 +410,217 @@
       "source": "Open-Meteo (supplementary) — PAGASA iHeatMAP is the authoritative reference",
       "responsible_office": null,
       "status": "derived",
-      "remarks": "Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 35.9°C, 41% RH."
+      "remarks": "Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 33.8°C, 54% RH."
     },
     {
-      "date_time": "2026-09-02T03:30:00.000Z",
-      "barangay": "Rogongon",
-      "latitude": 8.147127,
-      "longitude": 124.487814,
-      "indicator": "heat_index",
-      "value": 34.4,
-      "unit": "°C",
-      "band": "Extreme Caution",
-      "source": "Open-Meteo (supplementary) — PAGASA iHeatMAP is the authoritative reference",
-      "responsible_office": null,
-      "status": "derived",
-      "remarks": "Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 31.4°C, 55% RH."
-    },
-    {
-      "date_time": "2026-09-02T03:30:00.000Z",
-      "barangay": "San Miguel",
-      "latitude": 8.238596,
-      "longitude": 124.248663,
-      "indicator": "heat_index",
-      "value": 39.7,
-      "unit": "°C",
-      "band": "Extreme Caution",
-      "source": "Open-Meteo (supplementary) — PAGASA iHeatMAP is the authoritative reference",
-      "responsible_office": null,
-      "status": "derived",
-      "remarks": "Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 36.1°C, 41% RH."
-    },
-    {
-      "date_time": "2026-09-02T03:30:00.000Z",
-      "barangay": "San Roque",
-      "latitude": 8.257546,
-      "longitude": 124.261743,
-      "indicator": "heat_index",
-      "value": 39.8,
-      "unit": "°C",
-      "band": "Extreme Caution",
-      "source": "Open-Meteo (supplementary) — PAGASA iHeatMAP is the authoritative reference",
-      "responsible_office": null,
-      "status": "derived",
-      "remarks": "Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 35.1°C, 47% RH."
-    },
-    {
-      "date_time": "2026-09-02T03:30:00.000Z",
+      "date_time": "2026-09-02T07:00:00.000Z",
       "barangay": "Santa Elena",
       "latitude": 8.195303,
       "longitude": 124.226301,
       "indicator": "heat_index",
-      "value": 38.5,
+      "value": 38.1,
       "unit": "°C",
       "band": "Extreme Caution",
       "source": "Open-Meteo (supplementary) — PAGASA iHeatMAP is the authoritative reference",
       "responsible_office": null,
       "status": "derived",
-      "remarks": "Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 35.5°C, 41% RH."
+      "remarks": "Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 33.7°C, 51% RH."
     },
     {
-      "date_time": "2026-09-02T03:30:00.000Z",
+      "date_time": "2026-09-02T07:00:00.000Z",
       "barangay": "Santa Filomena",
       "latitude": 8.269375,
       "longitude": 124.260689,
       "indicator": "heat_index",
-      "value": 39.8,
+      "value": 39.6,
       "unit": "°C",
       "band": "Extreme Caution",
       "source": "Open-Meteo (supplementary) — PAGASA iHeatMAP is the authoritative reference",
       "responsible_office": null,
       "status": "derived",
-      "remarks": "Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 35.1°C, 47% RH."
+      "remarks": "Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 33.9°C, 54% RH."
     },
     {
-      "date_time": "2026-09-02T03:30:00.000Z",
+      "date_time": "2026-09-02T07:00:00.000Z",
       "barangay": "Santiago",
       "latitude": 8.25056,
       "longitude": 124.24446,
       "indicator": "heat_index",
-      "value": 39.7,
+      "value": 39.4,
       "unit": "°C",
       "band": "Extreme Caution",
       "source": "Open-Meteo (supplementary) — PAGASA iHeatMAP is the authoritative reference",
       "responsible_office": null,
       "status": "derived",
-      "remarks": "Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 36.1°C, 41% RH."
+      "remarks": "Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 34.3°C, 51% RH."
     },
     {
-      "date_time": "2026-09-02T03:30:00.000Z",
+      "date_time": "2026-09-02T07:00:00.000Z",
       "barangay": "Santo Rosario",
       "latitude": 8.242852,
       "longitude": 124.252966,
       "indicator": "heat_index",
-      "value": 39.7,
+      "value": 39.4,
       "unit": "°C",
       "band": "Extreme Caution",
       "source": "Open-Meteo (supplementary) — PAGASA iHeatMAP is the authoritative reference",
       "responsible_office": null,
       "status": "derived",
-      "remarks": "Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 36.1°C, 41% RH."
+      "remarks": "Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 34.3°C, 51% RH."
     },
     {
-      "date_time": "2026-09-02T03:30:00.000Z",
+      "date_time": "2026-09-02T07:00:00.000Z",
       "barangay": "Saray",
       "latitude": 8.234317,
       "longitude": 124.235559,
       "indicator": "heat_index",
-      "value": 39.9,
+      "value": 39.6,
       "unit": "°C",
       "band": "Extreme Caution",
       "source": "Open-Meteo (supplementary) — PAGASA iHeatMAP is the authoritative reference",
       "responsible_office": null,
       "status": "derived",
-      "remarks": "Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 36.2°C, 41% RH."
+      "remarks": "Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 34.4°C, 51% RH."
     },
     {
-      "date_time": "2026-09-02T03:30:00.000Z",
+      "date_time": "2026-09-02T07:00:00.000Z",
       "barangay": "Suarez",
       "latitude": 8.191592,
       "longitude": 124.217092,
       "indicator": "heat_index",
-      "value": 38.5,
+      "value": 38.1,
       "unit": "°C",
       "band": "Extreme Caution",
       "source": "Open-Meteo (supplementary) — PAGASA iHeatMAP is the authoritative reference",
       "responsible_office": null,
       "status": "derived",
-      "remarks": "Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 35.5°C, 41% RH."
+      "remarks": "Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 33.7°C, 51% RH."
     },
     {
-      "date_time": "2026-09-02T03:30:00.000Z",
+      "date_time": "2026-09-02T07:00:00.000Z",
       "barangay": "Tambacan",
       "latitude": 8.223634,
       "longitude": 124.234526,
       "indicator": "heat_index",
-      "value": 39.7,
+      "value": 39.4,
       "unit": "°C",
       "band": "Extreme Caution",
       "source": "Open-Meteo (supplementary) — PAGASA iHeatMAP is the authoritative reference",
       "responsible_office": null,
       "status": "derived",
-      "remarks": "Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 36.1°C, 41% RH. Reference point coordinate_confidence is \"low\" (nominatim_place_quarter) — treat this reading as indicative only."
+      "remarks": "Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 34.3°C, 51% RH. Reference point coordinate_confidence is \"low\" (nominatim_place_quarter) — treat this reading as indicative only."
     },
     {
-      "date_time": "2026-09-02T03:30:00.000Z",
+      "date_time": "2026-09-02T07:00:00.000Z",
       "barangay": "Tibanga",
       "latitude": 8.239938,
       "longitude": 124.240781,
       "indicator": "heat_index",
-      "value": 39.9,
+      "value": 39.6,
       "unit": "°C",
       "band": "Extreme Caution",
       "source": "Open-Meteo (supplementary) — PAGASA iHeatMAP is the authoritative reference",
       "responsible_office": null,
       "status": "derived",
-      "remarks": "Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 36.2°C, 41% RH."
+      "remarks": "Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 34.4°C, 51% RH."
     },
     {
-      "date_time": "2026-09-02T03:30:00.000Z",
+      "date_time": "2026-09-02T07:00:00.000Z",
       "barangay": "Tipanoy",
       "latitude": 8.198544,
       "longitude": 124.250993,
       "indicator": "heat_index",
-      "value": 39.5,
+      "value": 39.2,
       "unit": "°C",
       "band": "Extreme Caution",
       "source": "Open-Meteo (supplementary) — PAGASA iHeatMAP is the authoritative reference",
       "responsible_office": null,
       "status": "derived",
-      "remarks": "Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 36.0°C, 41% RH."
+      "remarks": "Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 34.2°C, 51% RH."
     },
     {
-      "date_time": "2026-09-02T03:30:00.000Z",
+      "date_time": "2026-09-02T07:00:00.000Z",
       "barangay": "Tomas L. Cabili",
       "latitude": 8.205731,
       "longitude": 124.227487,
       "indicator": "heat_index",
-      "value": 38.5,
+      "value": 38.1,
       "unit": "°C",
       "band": "Extreme Caution",
       "source": "Open-Meteo (supplementary) — PAGASA iHeatMAP is the authoritative reference",
       "responsible_office": null,
       "status": "derived",
-      "remarks": "Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 35.5°C, 41% RH."
+      "remarks": "Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 33.7°C, 51% RH."
     },
     {
-      "date_time": "2026-09-02T03:30:00.000Z",
+      "date_time": "2026-09-02T07:00:00.000Z",
       "barangay": "Tubod",
       "latitude": 8.213399,
       "longitude": 124.24302,
       "indicator": "heat_index",
-      "value": 38.5,
+      "value": 38.1,
       "unit": "°C",
       "band": "Extreme Caution",
       "source": "Open-Meteo (supplementary) — PAGASA iHeatMAP is the authoritative reference",
       "responsible_office": null,
       "status": "derived",
-      "remarks": "Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 35.5°C, 41% RH."
+      "remarks": "Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 33.7°C, 51% RH."
     },
     {
-      "date_time": "2026-09-02T03:30:00.000Z",
+      "date_time": "2026-09-02T07:00:00.000Z",
       "barangay": "Ubaldo Laya",
       "latitude": 8.224089,
       "longitude": 124.244723,
       "indicator": "heat_index",
-      "value": 39.7,
+      "value": 39.4,
       "unit": "°C",
       "band": "Extreme Caution",
       "source": "Open-Meteo (supplementary) — PAGASA iHeatMAP is the authoritative reference",
       "responsible_office": null,
       "status": "derived",
-      "remarks": "Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 36.1°C, 41% RH."
+      "remarks": "Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 34.3°C, 51% RH."
     },
     {
-      "date_time": "2026-09-02T03:30:00.000Z",
+      "date_time": "2026-09-02T07:00:00.000Z",
       "barangay": "Upper Hinaplanon",
       "latitude": 8.255802,
       "longitude": 124.268887,
       "indicator": "heat_index",
-      "value": 39.8,
+      "value": 39.3,
       "unit": "°C",
       "band": "Extreme Caution",
       "source": "Open-Meteo (supplementary) — PAGASA iHeatMAP is the authoritative reference",
       "responsible_office": null,
       "status": "derived",
-      "remarks": "Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 35.1°C, 47% RH."
+      "remarks": "Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 33.8°C, 54% RH."
     },
     {
-      "date_time": "2026-09-02T03:30:00.000Z",
+      "date_time": "2026-09-02T07:00:00.000Z",
       "barangay": "Upper Tominobo",
       "latitude": 8.172752,
       "longitude": 124.224324,
       "indicator": "heat_index",
-      "value": 38.5,
+      "value": 38.1,
       "unit": "°C",
       "band": "Extreme Caution",
       "source": "Open-Meteo (supplementary) — PAGASA iHeatMAP is the authoritative reference",
       "responsible_office": null,
       "status": "derived",
-      "remarks": "Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 35.5°C, 41% RH."
+      "remarks": "Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 33.7°C, 51% RH."
     },
     {
-      "date_time": "2026-09-02T03:30:00.000Z",
+      "date_time": "2026-09-02T07:00:00.000Z",
       "barangay": "Villa Verde",
       "latitude": 8.232672,
       "longitude": 124.242997,
       "indicator": "heat_index",
-      "value": 39.7,
+      "value": 39.4,
       "unit": "°C",
       "band": "Extreme Caution",
       "source": "Open-Meteo (supplementary) — PAGASA iHeatMAP is the authoritative reference",
       "responsible_office": null,
       "status": "derived",
-      "remarks": "Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 36.1°C, 41% RH."
+      "remarks": "Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 34.3°C, 51% RH."
     }
   ],
   "barangays": [
@@ -630,13 +630,13 @@
       "longitude": 124.256959,
       "elevation_m": 31,
       "current": {
-        "date_time": "2026-09-02T03:30:00.000Z",
-        "value": 39.5,
+        "date_time": "2026-09-02T07:00:00.000Z",
+        "value": 39.2,
         "band": "Extreme Caution"
       },
       "today_peak": {
-        "date_time": "2026-09-02T05:00:00.000Z",
-        "value": 39.7,
+        "date_time": "2026-09-02T06:00:00.000Z",
+        "value": 39.5,
         "band": "Extreme Caution"
       },
       "hourly": [
@@ -682,77 +682,77 @@
         },
         {
           "date_time": "2026-09-02T00:00:00.000Z",
-          "value": 35.9,
+          "value": 36.1,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T01:00:00.000Z",
-          "value": 37.4,
+          "value": 37,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T02:00:00.000Z",
-          "value": 38.2,
+          "value": 37.7,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T03:00:00.000Z",
-          "value": 39,
+          "value": 38.6,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T04:00:00.000Z",
-          "value": 39.5,
+          "value": 39.3,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T05:00:00.000Z",
-          "value": 39.7,
+          "value": 39.4,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T06:00:00.000Z",
-          "value": 39,
+          "value": 39.5,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T07:00:00.000Z",
-          "value": 38.7,
+          "value": 39.2,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T08:00:00.000Z",
-          "value": 38.3,
+          "value": 38.2,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T09:00:00.000Z",
-          "value": 37.2,
+          "value": 37.1,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T10:00:00.000Z",
-          "value": 35.8,
+          "value": 35,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T11:00:00.000Z",
-          "value": 34.3,
+          "value": 35,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T12:00:00.000Z",
-          "value": 33.5,
+          "value": 34.4,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T13:00:00.000Z",
-          "value": 32.4,
+          "value": 33.1,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T14:00:00.000Z",
-          "value": 31.8,
+          "value": 31.9,
           "band": "Caution"
         },
         {
@@ -768,13 +768,13 @@
       "longitude": 124.268353,
       "elevation_m": 12,
       "current": {
-        "date_time": "2026-09-02T03:30:00.000Z",
-        "value": 39.8,
+        "date_time": "2026-09-02T07:00:00.000Z",
+        "value": 39.3,
         "band": "Extreme Caution"
       },
       "today_peak": {
-        "date_time": "2026-09-02T06:00:00.000Z",
-        "value": 40,
+        "date_time": "2026-09-02T04:00:00.000Z",
+        "value": 39.5,
         "band": "Extreme Caution"
       },
       "hourly": [
@@ -820,52 +820,52 @@
         },
         {
           "date_time": "2026-09-02T00:00:00.000Z",
-          "value": 34.3,
+          "value": 35.2,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T01:00:00.000Z",
-          "value": 35.8,
+          "value": 36.1,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T02:00:00.000Z",
-          "value": 37.5,
+          "value": 37.6,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T03:00:00.000Z",
-          "value": 38.9,
+          "value": 38.5,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T04:00:00.000Z",
-          "value": 39.8,
+          "value": 39.5,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T05:00:00.000Z",
-          "value": 39.7,
+          "value": 39.3,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T06:00:00.000Z",
-          "value": 40,
+          "value": 38.8,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T07:00:00.000Z",
-          "value": 38.9,
+          "value": 39.3,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T08:00:00.000Z",
-          "value": 38.1,
+          "value": 38.3,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T09:00:00.000Z",
-          "value": 36.8,
+          "value": 36.9,
           "band": "Extreme Caution"
         },
         {
@@ -880,23 +880,23 @@
         },
         {
           "date_time": "2026-09-02T12:00:00.000Z",
-          "value": 34,
+          "value": 34.5,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T13:00:00.000Z",
-          "value": 33.2,
+          "value": 33.9,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T14:00:00.000Z",
-          "value": 32.8,
+          "value": 33.5,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T15:00:00.000Z",
-          "value": 31.9,
-          "band": "Caution"
+          "value": 32.5,
+          "band": "Extreme Caution"
         }
       ]
     },
@@ -906,8 +906,8 @@
       "longitude": 124.251969,
       "elevation_m": 8,
       "current": {
-        "date_time": "2026-09-02T03:30:00.000Z",
-        "value": 39.7,
+        "date_time": "2026-09-02T07:00:00.000Z",
+        "value": 39.4,
         "band": "Extreme Caution"
       },
       "today_peak": {
@@ -958,27 +958,27 @@
         },
         {
           "date_time": "2026-09-02T00:00:00.000Z",
-          "value": 36.1,
+          "value": 36.3,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T01:00:00.000Z",
-          "value": 37.6,
+          "value": 37.4,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T02:00:00.000Z",
-          "value": 38.6,
+          "value": 38.1,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T03:00:00.000Z",
-          "value": 39.4,
+          "value": 39,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T04:00:00.000Z",
-          "value": 39.8,
+          "value": 39.5,
           "band": "Extreme Caution"
         },
         {
@@ -988,47 +988,47 @@
         },
         {
           "date_time": "2026-09-02T06:00:00.000Z",
-          "value": 39.2,
+          "value": 39.7,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T07:00:00.000Z",
-          "value": 39,
+          "value": 39.4,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T08:00:00.000Z",
-          "value": 38.7,
+          "value": 38.4,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T09:00:00.000Z",
-          "value": 38,
+          "value": 37.5,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T10:00:00.000Z",
-          "value": 36,
+          "value": 35.5,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T11:00:00.000Z",
-          "value": 34.8,
+          "value": 35.2,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T12:00:00.000Z",
-          "value": 34,
+          "value": 34.7,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T13:00:00.000Z",
-          "value": 32.9,
+          "value": 33.3,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T14:00:00.000Z",
-          "value": 32,
+          "value": 32.2,
           "band": "Caution"
         },
         {
@@ -1044,13 +1044,13 @@
       "longitude": 124.297982,
       "elevation_m": 142,
       "current": {
-        "date_time": "2026-09-02T03:30:00.000Z",
-        "value": 37,
+        "date_time": "2026-09-02T07:00:00.000Z",
+        "value": 36.3,
         "band": "Extreme Caution"
       },
       "today_peak": {
         "date_time": "2026-09-02T05:00:00.000Z",
-        "value": 37.4,
+        "value": 37.3,
         "band": "Extreme Caution"
       },
       "hourly": [
@@ -1096,42 +1096,42 @@
         },
         {
           "date_time": "2026-09-02T00:00:00.000Z",
-          "value": 32.3,
+          "value": 32.4,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T01:00:00.000Z",
-          "value": 33.8,
+          "value": 34.3,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T02:00:00.000Z",
-          "value": 35.5,
+          "value": 35.4,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T03:00:00.000Z",
-          "value": 36.6,
+          "value": 36.2,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T04:00:00.000Z",
-          "value": 37.3,
+          "value": 37,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T05:00:00.000Z",
-          "value": 37.4,
+          "value": 37.3,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T06:00:00.000Z",
-          "value": 37.2,
+          "value": 36.7,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T07:00:00.000Z",
-          "value": 36.4,
+          "value": 36.3,
           "band": "Extreme Caution"
         },
         {
@@ -1141,7 +1141,7 @@
         },
         {
           "date_time": "2026-09-02T09:00:00.000Z",
-          "value": 33.9,
+          "value": 34.2,
           "band": "Extreme Caution"
         },
         {
@@ -1151,27 +1151,27 @@
         },
         {
           "date_time": "2026-09-02T11:00:00.000Z",
-          "value": 32,
+          "value": 31.9,
           "band": "Caution"
         },
         {
           "date_time": "2026-09-02T12:00:00.000Z",
-          "value": 30.4,
+          "value": 31,
           "band": "Caution"
         },
         {
           "date_time": "2026-09-02T13:00:00.000Z",
-          "value": 29.1,
+          "value": 29.8,
           "band": "Caution"
         },
         {
           "date_time": "2026-09-02T14:00:00.000Z",
-          "value": 26.9,
+          "value": 28.9,
           "band": "Caution"
         },
         {
           "date_time": "2026-09-02T15:00:00.000Z",
-          "value": 26.6,
+          "value": 26.8,
           "band": "Caution"
         }
       ]
@@ -1182,13 +1182,13 @@
       "longitude": 124.308101,
       "elevation_m": 289,
       "current": {
-        "date_time": "2026-09-02T03:30:00.000Z",
-        "value": 37,
+        "date_time": "2026-09-02T07:00:00.000Z",
+        "value": 36.3,
         "band": "Extreme Caution"
       },
       "today_peak": {
         "date_time": "2026-09-02T05:00:00.000Z",
-        "value": 37.4,
+        "value": 37.3,
         "band": "Extreme Caution"
       },
       "hourly": [
@@ -1234,42 +1234,42 @@
         },
         {
           "date_time": "2026-09-02T00:00:00.000Z",
-          "value": 32.3,
+          "value": 32.4,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T01:00:00.000Z",
-          "value": 33.8,
+          "value": 34.3,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T02:00:00.000Z",
-          "value": 35.5,
+          "value": 35.4,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T03:00:00.000Z",
-          "value": 36.6,
+          "value": 36.2,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T04:00:00.000Z",
-          "value": 37.3,
+          "value": 37,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T05:00:00.000Z",
-          "value": 37.4,
+          "value": 37.3,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T06:00:00.000Z",
-          "value": 37.2,
+          "value": 36.7,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T07:00:00.000Z",
-          "value": 36.4,
+          "value": 36.3,
           "band": "Extreme Caution"
         },
         {
@@ -1279,7 +1279,7 @@
         },
         {
           "date_time": "2026-09-02T09:00:00.000Z",
-          "value": 33.9,
+          "value": 34.2,
           "band": "Extreme Caution"
         },
         {
@@ -1289,27 +1289,27 @@
         },
         {
           "date_time": "2026-09-02T11:00:00.000Z",
-          "value": 32,
+          "value": 31.9,
           "band": "Caution"
         },
         {
           "date_time": "2026-09-02T12:00:00.000Z",
-          "value": 30.4,
+          "value": 31,
           "band": "Caution"
         },
         {
           "date_time": "2026-09-02T13:00:00.000Z",
-          "value": 29.1,
+          "value": 29.8,
           "band": "Caution"
         },
         {
           "date_time": "2026-09-02T14:00:00.000Z",
-          "value": 26.9,
+          "value": 28.9,
           "band": "Caution"
         },
         {
           "date_time": "2026-09-02T15:00:00.000Z",
-          "value": 26.6,
+          "value": 26.8,
           "band": "Caution"
         }
       ]
@@ -1320,13 +1320,13 @@
       "longitude": 124.172216,
       "elevation_m": 6,
       "current": {
-        "date_time": "2026-09-02T03:30:00.000Z",
-        "value": 39.5,
+        "date_time": "2026-09-02T07:00:00.000Z",
+        "value": 39,
         "band": "Extreme Caution"
       },
       "today_peak": {
-        "date_time": "2026-09-02T04:00:00.000Z",
-        "value": 39.8,
+        "date_time": "2026-09-02T05:00:00.000Z",
+        "value": 39.7,
         "band": "Extreme Caution"
       },
       "hourly": [
@@ -1372,27 +1372,27 @@
         },
         {
           "date_time": "2026-09-02T00:00:00.000Z",
-          "value": 35.3,
+          "value": 35.9,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T01:00:00.000Z",
-          "value": 37.3,
+          "value": 37.1,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T02:00:00.000Z",
-          "value": 38.3,
+          "value": 38.2,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T03:00:00.000Z",
-          "value": 39.1,
+          "value": 38.9,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T04:00:00.000Z",
-          "value": 39.8,
+          "value": 39.5,
           "band": "Extreme Caution"
         },
         {
@@ -1407,47 +1407,47 @@
         },
         {
           "date_time": "2026-09-02T07:00:00.000Z",
-          "value": 38.9,
+          "value": 39,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T08:00:00.000Z",
-          "value": 37.8,
+          "value": 38.3,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T09:00:00.000Z",
-          "value": 36.3,
+          "value": 36.8,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T10:00:00.000Z",
-          "value": 34.8,
+          "value": 35,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T11:00:00.000Z",
-          "value": 33.9,
+          "value": 34.1,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T12:00:00.000Z",
-          "value": 33,
+          "value": 33.4,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T13:00:00.000Z",
-          "value": 32.1,
-          "band": "Caution"
+          "value": 32.9,
+          "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T14:00:00.000Z",
-          "value": 31.3,
+          "value": 32,
           "band": "Caution"
         },
         {
           "date_time": "2026-09-02T15:00:00.000Z",
-          "value": 30.4,
+          "value": 31.4,
           "band": "Caution"
         }
       ]
@@ -1458,13 +1458,13 @@
       "longitude": 124.258587,
       "elevation_m": 8,
       "current": {
-        "date_time": "2026-09-02T03:30:00.000Z",
-        "value": 39.1,
+        "date_time": "2026-09-02T07:00:00.000Z",
+        "value": 38.3,
         "band": "Extreme Caution"
       },
       "today_peak": {
-        "date_time": "2026-09-02T06:00:00.000Z",
-        "value": 39.3,
+        "date_time": "2026-09-02T04:00:00.000Z",
+        "value": 38.9,
         "band": "Extreme Caution"
       },
       "hourly": [
@@ -1510,57 +1510,57 @@
         },
         {
           "date_time": "2026-09-02T00:00:00.000Z",
-          "value": 33.7,
+          "value": 34.3,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T01:00:00.000Z",
-          "value": 35.2,
+          "value": 35.5,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T02:00:00.000Z",
-          "value": 36.9,
+          "value": 37,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T03:00:00.000Z",
-          "value": 38.2,
+          "value": 37.9,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T04:00:00.000Z",
-          "value": 39.2,
+          "value": 38.9,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T05:00:00.000Z",
-          "value": 39,
+          "value": 38.7,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T06:00:00.000Z",
-          "value": 39.3,
-          "band": "Extreme Caution"
-        },
-        {
-          "date_time": "2026-09-02T07:00:00.000Z",
           "value": 38.2,
           "band": "Extreme Caution"
         },
         {
+          "date_time": "2026-09-02T07:00:00.000Z",
+          "value": 38.3,
+          "band": "Extreme Caution"
+        },
+        {
           "date_time": "2026-09-02T08:00:00.000Z",
-          "value": 37.4,
+          "value": 37.6,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T09:00:00.000Z",
-          "value": 36.1,
+          "value": 36.2,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T10:00:00.000Z",
-          "value": 34.6,
+          "value": 34.5,
           "band": "Extreme Caution"
         },
         {
@@ -1570,22 +1570,22 @@
         },
         {
           "date_time": "2026-09-02T12:00:00.000Z",
-          "value": 33.3,
+          "value": 33.7,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T13:00:00.000Z",
-          "value": 32.5,
+          "value": 33.2,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T14:00:00.000Z",
-          "value": 32,
-          "band": "Caution"
+          "value": 32.8,
+          "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T15:00:00.000Z",
-          "value": 31.1,
+          "value": 31.7,
           "band": "Caution"
         }
       ]
@@ -1596,13 +1596,13 @@
       "longitude": 124.258058,
       "elevation_m": 15,
       "current": {
-        "date_time": "2026-09-02T03:30:00.000Z",
-        "value": 39.7,
+        "date_time": "2026-09-02T07:00:00.000Z",
+        "value": 39.4,
         "band": "Extreme Caution"
       },
       "today_peak": {
         "date_time": "2026-09-02T05:00:00.000Z",
-        "value": 39.9,
+        "value": 39.7,
         "band": "Extreme Caution"
       },
       "hourly": [
@@ -1648,77 +1648,77 @@
         },
         {
           "date_time": "2026-09-02T00:00:00.000Z",
-          "value": 36.1,
+          "value": 36.3,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T01:00:00.000Z",
-          "value": 37.6,
+          "value": 37.2,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T02:00:00.000Z",
-          "value": 38.4,
+          "value": 37.9,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T03:00:00.000Z",
-          "value": 39.2,
+          "value": 38.8,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T04:00:00.000Z",
-          "value": 39.8,
+          "value": 39.5,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T05:00:00.000Z",
-          "value": 39.9,
+          "value": 39.7,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T06:00:00.000Z",
-          "value": 39.2,
+          "value": 39.7,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T07:00:00.000Z",
-          "value": 39,
+          "value": 39.4,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T08:00:00.000Z",
-          "value": 38.5,
+          "value": 38.4,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T09:00:00.000Z",
-          "value": 37.8,
+          "value": 37.3,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T10:00:00.000Z",
-          "value": 36,
+          "value": 35.3,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T11:00:00.000Z",
-          "value": 34.5,
+          "value": 35.2,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T12:00:00.000Z",
-          "value": 33.7,
+          "value": 34.7,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T13:00:00.000Z",
-          "value": 32.7,
+          "value": 33.3,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T14:00:00.000Z",
-          "value": 32,
+          "value": 32.2,
           "band": "Caution"
         },
         {
@@ -1734,13 +1734,13 @@
       "longitude": 124.337034,
       "elevation_m": 102,
       "current": {
-        "date_time": "2026-09-02T03:30:00.000Z",
-        "value": 38.2,
+        "date_time": "2026-09-02T07:00:00.000Z",
+        "value": 37.6,
         "band": "Extreme Caution"
       },
       "today_peak": {
-        "date_time": "2026-09-02T04:00:00.000Z",
-        "value": 38.8,
+        "date_time": "2026-09-02T05:00:00.000Z",
+        "value": 38.5,
         "band": "Extreme Caution"
       },
       "hourly": [
@@ -1791,7 +1791,7 @@
         },
         {
           "date_time": "2026-09-02T01:00:00.000Z",
-          "value": 35.2,
+          "value": 35.5,
           "band": "Extreme Caution"
         },
         {
@@ -1801,67 +1801,67 @@
         },
         {
           "date_time": "2026-09-02T03:00:00.000Z",
-          "value": 37.8,
+          "value": 37.9,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T04:00:00.000Z",
-          "value": 38.8,
+          "value": 38.2,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T05:00:00.000Z",
-          "value": 38.6,
-          "band": "Extreme Caution"
-        },
-        {
-          "date_time": "2026-09-02T06:00:00.000Z",
           "value": 38.5,
           "band": "Extreme Caution"
         },
         {
+          "date_time": "2026-09-02T06:00:00.000Z",
+          "value": 38.2,
+          "band": "Extreme Caution"
+        },
+        {
           "date_time": "2026-09-02T07:00:00.000Z",
-          "value": 37.7,
+          "value": 37.6,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T08:00:00.000Z",
-          "value": 37.2,
+          "value": 36.9,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T09:00:00.000Z",
-          "value": 35.4,
+          "value": 35.5,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T10:00:00.000Z",
-          "value": 34.3,
+          "value": 34.1,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T11:00:00.000Z",
-          "value": 33.8,
+          "value": 33.3,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T12:00:00.000Z",
-          "value": 32.2,
-          "band": "Caution"
+          "value": 32.7,
+          "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T13:00:00.000Z",
-          "value": 30.5,
+          "value": 31.5,
           "band": "Caution"
         },
         {
           "date_time": "2026-09-02T14:00:00.000Z",
-          "value": 29.6,
+          "value": 30.3,
           "band": "Caution"
         },
         {
           "date_time": "2026-09-02T15:00:00.000Z",
-          "value": 28.6,
+          "value": 28.9,
           "band": "Caution"
         }
       ]
@@ -1872,13 +1872,13 @@
       "longitude": 124.192768,
       "elevation_m": 202,
       "current": {
-        "date_time": "2026-09-02T03:30:00.000Z",
-        "value": 38.5,
+        "date_time": "2026-09-02T07:00:00.000Z",
+        "value": 38.1,
         "band": "Extreme Caution"
       },
       "today_peak": {
         "date_time": "2026-09-02T05:00:00.000Z",
-        "value": 38.7,
+        "value": 38.4,
         "band": "Extreme Caution"
       },
       "hourly": [
@@ -1924,42 +1924,42 @@
         },
         {
           "date_time": "2026-09-02T00:00:00.000Z",
-          "value": 34.7,
+          "value": 34.9,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T01:00:00.000Z",
-          "value": 36,
+          "value": 35.9,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T02:00:00.000Z",
-          "value": 37.1,
+          "value": 36.7,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T03:00:00.000Z",
-          "value": 38,
+          "value": 37.6,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T04:00:00.000Z",
-          "value": 38.6,
+          "value": 38.3,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T05:00:00.000Z",
-          "value": 38.7,
+          "value": 38.4,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T06:00:00.000Z",
-          "value": 37.9,
+          "value": 38.1,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T07:00:00.000Z",
-          "value": 37.6,
+          "value": 38.1,
           "band": "Extreme Caution"
         },
         {
@@ -1969,32 +1969,32 @@
         },
         {
           "date_time": "2026-09-02T09:00:00.000Z",
-          "value": 36,
+          "value": 35.9,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T10:00:00.000Z",
-          "value": 34.3,
+          "value": 33.9,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T11:00:00.000Z",
-          "value": 33.1,
+          "value": 33.7,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T12:00:00.000Z",
-          "value": 32.3,
+          "value": 33.1,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T13:00:00.000Z",
-          "value": 31.3,
+          "value": 31.9,
           "band": "Caution"
         },
         {
           "date_time": "2026-09-02T14:00:00.000Z",
-          "value": 30.6,
+          "value": 30.8,
           "band": "Caution"
         },
         {
@@ -2010,13 +2010,13 @@
       "longitude": 124.377448,
       "elevation_m": 342,
       "current": {
-        "date_time": "2026-09-02T03:30:00.000Z",
-        "value": 35.3,
+        "date_time": "2026-09-02T07:00:00.000Z",
+        "value": 34.3,
         "band": "Extreme Caution"
       },
       "today_peak": {
         "date_time": "2026-09-02T05:00:00.000Z",
-        "value": 35.8,
+        "value": 35.6,
         "band": "Extreme Caution"
       },
       "hourly": [
@@ -2062,77 +2062,77 @@
         },
         {
           "date_time": "2026-09-02T00:00:00.000Z",
-          "value": 30.8,
+          "value": 30.7,
           "band": "Caution"
         },
         {
           "date_time": "2026-09-02T01:00:00.000Z",
-          "value": 32.6,
-          "band": "Extreme Caution"
-        },
-        {
-          "date_time": "2026-09-02T02:00:00.000Z",
-          "value": 33.4,
-          "band": "Extreme Caution"
-        },
-        {
-          "date_time": "2026-09-02T03:00:00.000Z",
-          "value": 35,
-          "band": "Extreme Caution"
-        },
-        {
-          "date_time": "2026-09-02T04:00:00.000Z",
-          "value": 35.4,
-          "band": "Extreme Caution"
-        },
-        {
-          "date_time": "2026-09-02T05:00:00.000Z",
-          "value": 35.8,
-          "band": "Extreme Caution"
-        },
-        {
-          "date_time": "2026-09-02T06:00:00.000Z",
-          "value": 35.4,
-          "band": "Extreme Caution"
-        },
-        {
-          "date_time": "2026-09-02T07:00:00.000Z",
-          "value": 34.6,
-          "band": "Extreme Caution"
-        },
-        {
-          "date_time": "2026-09-02T08:00:00.000Z",
-          "value": 34.1,
-          "band": "Extreme Caution"
-        },
-        {
-          "date_time": "2026-09-02T09:00:00.000Z",
           "value": 32.8,
           "band": "Extreme Caution"
         },
         {
+          "date_time": "2026-09-02T02:00:00.000Z",
+          "value": 33.8,
+          "band": "Extreme Caution"
+        },
+        {
+          "date_time": "2026-09-02T03:00:00.000Z",
+          "value": 34.8,
+          "band": "Extreme Caution"
+        },
+        {
+          "date_time": "2026-09-02T04:00:00.000Z",
+          "value": 35.2,
+          "band": "Extreme Caution"
+        },
+        {
+          "date_time": "2026-09-02T05:00:00.000Z",
+          "value": 35.6,
+          "band": "Extreme Caution"
+        },
+        {
+          "date_time": "2026-09-02T06:00:00.000Z",
+          "value": 35.5,
+          "band": "Extreme Caution"
+        },
+        {
+          "date_time": "2026-09-02T07:00:00.000Z",
+          "value": 34.3,
+          "band": "Extreme Caution"
+        },
+        {
+          "date_time": "2026-09-02T08:00:00.000Z",
+          "value": 34.8,
+          "band": "Extreme Caution"
+        },
+        {
+          "date_time": "2026-09-02T09:00:00.000Z",
+          "value": 33.3,
+          "band": "Extreme Caution"
+        },
+        {
           "date_time": "2026-09-02T10:00:00.000Z",
-          "value": 30.3,
+          "value": 30.5,
           "band": "Caution"
         },
         {
           "date_time": "2026-09-02T11:00:00.000Z",
-          "value": 27,
+          "value": 28.7,
           "band": "Caution"
         },
         {
           "date_time": "2026-09-02T12:00:00.000Z",
-          "value": 26.1,
+          "value": 26.5,
           "band": "Caution"
         },
         {
           "date_time": "2026-09-02T13:00:00.000Z",
-          "value": 25.7,
+          "value": 25.9,
           "band": "Caution"
         },
         {
           "date_time": "2026-09-02T14:00:00.000Z",
-          "value": 25.4,
+          "value": 25.5,
           "band": "Caution"
         },
         {
@@ -2148,13 +2148,13 @@
       "longitude": 124.259474,
       "elevation_m": 9,
       "current": {
-        "date_time": "2026-09-02T03:30:00.000Z",
-        "value": 39.8,
+        "date_time": "2026-09-02T07:00:00.000Z",
+        "value": 39.3,
         "band": "Extreme Caution"
       },
       "today_peak": {
-        "date_time": "2026-09-02T06:00:00.000Z",
-        "value": 40,
+        "date_time": "2026-09-02T04:00:00.000Z",
+        "value": 39.5,
         "band": "Extreme Caution"
       },
       "hourly": [
@@ -2200,52 +2200,52 @@
         },
         {
           "date_time": "2026-09-02T00:00:00.000Z",
-          "value": 34.3,
+          "value": 35.2,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T01:00:00.000Z",
-          "value": 35.8,
+          "value": 36.1,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T02:00:00.000Z",
-          "value": 37.5,
+          "value": 37.6,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T03:00:00.000Z",
-          "value": 38.9,
+          "value": 38.5,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T04:00:00.000Z",
-          "value": 39.8,
+          "value": 39.5,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T05:00:00.000Z",
-          "value": 39.7,
+          "value": 39.3,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T06:00:00.000Z",
-          "value": 40,
+          "value": 38.8,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T07:00:00.000Z",
-          "value": 38.9,
+          "value": 39.3,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T08:00:00.000Z",
-          "value": 38.1,
+          "value": 38.3,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T09:00:00.000Z",
-          "value": 36.8,
+          "value": 36.9,
           "band": "Extreme Caution"
         },
         {
@@ -2260,23 +2260,23 @@
         },
         {
           "date_time": "2026-09-02T12:00:00.000Z",
-          "value": 34,
+          "value": 34.5,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T13:00:00.000Z",
-          "value": 33.2,
+          "value": 33.9,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T14:00:00.000Z",
-          "value": 32.8,
+          "value": 33.5,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T15:00:00.000Z",
-          "value": 31.9,
-          "band": "Caution"
+          "value": 32.5,
+          "band": "Extreme Caution"
         }
       ]
     },
@@ -2286,13 +2286,13 @@
       "longitude": 124.348089,
       "elevation_m": 369,
       "current": {
-        "date_time": "2026-09-02T03:30:00.000Z",
-        "value": 35.3,
+        "date_time": "2026-09-02T07:00:00.000Z",
+        "value": 34.1,
         "band": "Extreme Caution"
       },
       "today_peak": {
         "date_time": "2026-09-02T04:00:00.000Z",
-        "value": 35.9,
+        "value": 35.6,
         "band": "Extreme Caution"
       },
       "hourly": [
@@ -2338,82 +2338,82 @@
         },
         {
           "date_time": "2026-09-02T00:00:00.000Z",
-          "value": 31.3,
+          "value": 31.7,
           "band": "Caution"
         },
         {
           "date_time": "2026-09-02T01:00:00.000Z",
-          "value": 32.6,
+          "value": 32.8,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T02:00:00.000Z",
-          "value": 34,
-          "band": "Extreme Caution"
-        },
-        {
-          "date_time": "2026-09-02T03:00:00.000Z",
-          "value": 35,
-          "band": "Extreme Caution"
-        },
-        {
-          "date_time": "2026-09-02T04:00:00.000Z",
-          "value": 35.9,
-          "band": "Extreme Caution"
-        },
-        {
-          "date_time": "2026-09-02T05:00:00.000Z",
-          "value": 35.6,
-          "band": "Extreme Caution"
-        },
-        {
-          "date_time": "2026-09-02T06:00:00.000Z",
-          "value": 35.4,
-          "band": "Extreme Caution"
-        },
-        {
-          "date_time": "2026-09-02T07:00:00.000Z",
-          "value": 34.4,
-          "band": "Extreme Caution"
-        },
-        {
-          "date_time": "2026-09-02T08:00:00.000Z",
           "value": 33.9,
           "band": "Extreme Caution"
         },
         {
+          "date_time": "2026-09-02T03:00:00.000Z",
+          "value": 34.9,
+          "band": "Extreme Caution"
+        },
+        {
+          "date_time": "2026-09-02T04:00:00.000Z",
+          "value": 35.6,
+          "band": "Extreme Caution"
+        },
+        {
+          "date_time": "2026-09-02T05:00:00.000Z",
+          "value": 35.4,
+          "band": "Extreme Caution"
+        },
+        {
+          "date_time": "2026-09-02T06:00:00.000Z",
+          "value": 34.7,
+          "band": "Extreme Caution"
+        },
+        {
+          "date_time": "2026-09-02T07:00:00.000Z",
+          "value": 34.1,
+          "band": "Extreme Caution"
+        },
+        {
+          "date_time": "2026-09-02T08:00:00.000Z",
+          "value": 33.8,
+          "band": "Extreme Caution"
+        },
+        {
           "date_time": "2026-09-02T09:00:00.000Z",
-          "value": 32.3,
+          "value": 32.6,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T10:00:00.000Z",
-          "value": 30.7,
+          "value": 30.8,
           "band": "Caution"
         },
         {
           "date_time": "2026-09-02T11:00:00.000Z",
-          "value": 29.9,
+          "value": 29.8,
           "band": "Caution"
         },
         {
           "date_time": "2026-09-02T12:00:00.000Z",
-          "value": 28.8,
+          "value": 29.2,
           "band": "Caution"
         },
         {
           "date_time": "2026-09-02T13:00:00.000Z",
-          "value": 26.6,
+          "value": 27,
           "band": "Caution"
         },
         {
           "date_time": "2026-09-02T14:00:00.000Z",
-          "value": 26.1,
+          "value": 26.5,
           "band": "Caution"
         },
         {
           "date_time": "2026-09-02T15:00:00.000Z",
-          "value": 25.7,
+          "value": 25.9,
           "band": "Caution"
         }
       ]
@@ -2424,13 +2424,13 @@
       "longitude": 124.320603,
       "elevation_m": 182,
       "current": {
-        "date_time": "2026-09-02T03:30:00.000Z",
-        "value": 37,
+        "date_time": "2026-09-02T07:00:00.000Z",
+        "value": 36.3,
         "band": "Extreme Caution"
       },
       "today_peak": {
         "date_time": "2026-09-02T05:00:00.000Z",
-        "value": 37.4,
+        "value": 37.3,
         "band": "Extreme Caution"
       },
       "hourly": [
@@ -2476,42 +2476,42 @@
         },
         {
           "date_time": "2026-09-02T00:00:00.000Z",
-          "value": 32.3,
+          "value": 32.4,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T01:00:00.000Z",
-          "value": 33.8,
+          "value": 34.3,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T02:00:00.000Z",
-          "value": 35.5,
+          "value": 35.4,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T03:00:00.000Z",
-          "value": 36.6,
+          "value": 36.2,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T04:00:00.000Z",
-          "value": 37.3,
+          "value": 37,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T05:00:00.000Z",
-          "value": 37.4,
+          "value": 37.3,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T06:00:00.000Z",
-          "value": 37.2,
+          "value": 36.7,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T07:00:00.000Z",
-          "value": 36.4,
+          "value": 36.3,
           "band": "Extreme Caution"
         },
         {
@@ -2521,7 +2521,7 @@
         },
         {
           "date_time": "2026-09-02T09:00:00.000Z",
-          "value": 33.9,
+          "value": 34.2,
           "band": "Extreme Caution"
         },
         {
@@ -2531,27 +2531,27 @@
         },
         {
           "date_time": "2026-09-02T11:00:00.000Z",
-          "value": 32,
+          "value": 31.9,
           "band": "Caution"
         },
         {
           "date_time": "2026-09-02T12:00:00.000Z",
-          "value": 30.4,
+          "value": 31,
           "band": "Caution"
         },
         {
           "date_time": "2026-09-02T13:00:00.000Z",
-          "value": 29.1,
+          "value": 29.8,
           "band": "Caution"
         },
         {
           "date_time": "2026-09-02T14:00:00.000Z",
-          "value": 26.9,
+          "value": 28.9,
           "band": "Caution"
         },
         {
           "date_time": "2026-09-02T15:00:00.000Z",
-          "value": 26.6,
+          "value": 26.8,
           "band": "Caution"
         }
       ]
@@ -2562,13 +2562,13 @@
       "longitude": 124.386706,
       "elevation_m": 557,
       "current": {
-        "date_time": "2026-09-02T03:30:00.000Z",
-        "value": 33.7,
+        "date_time": "2026-09-02T07:00:00.000Z",
+        "value": 32.6,
         "band": "Extreme Caution"
       },
       "today_peak": {
         "date_time": "2026-09-02T05:00:00.000Z",
-        "value": 34.5,
+        "value": 34.2,
         "band": "Extreme Caution"
       },
       "hourly": [
@@ -2614,52 +2614,52 @@
         },
         {
           "date_time": "2026-09-02T00:00:00.000Z",
-          "value": 29.2,
+          "value": 29.4,
           "band": "Caution"
         },
         {
           "date_time": "2026-09-02T01:00:00.000Z",
-          "value": 31.3,
+          "value": 31.5,
           "band": "Caution"
         },
         {
           "date_time": "2026-09-02T02:00:00.000Z",
-          "value": 32.1,
-          "band": "Caution"
+          "value": 32.3,
+          "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T03:00:00.000Z",
-          "value": 33.2,
+          "value": 33.3,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T04:00:00.000Z",
-          "value": 33.8,
+          "value": 33.7,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T05:00:00.000Z",
-          "value": 34.5,
+          "value": 34.2,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T06:00:00.000Z",
-          "value": 33.9,
+          "value": 34,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T07:00:00.000Z",
-          "value": 33.2,
+          "value": 32.6,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T08:00:00.000Z",
-          "value": 32.5,
+          "value": 32.8,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T09:00:00.000Z",
-          "value": 31.1,
+          "value": 31.6,
           "band": "Caution"
         },
         {
@@ -2669,27 +2669,27 @@
         },
         {
           "date_time": "2026-09-02T11:00:00.000Z",
-          "value": 26.2,
+          "value": 26.4,
           "band": "Caution"
         },
         {
           "date_time": "2026-09-02T12:00:00.000Z",
-          "value": 25.3,
+          "value": 25.7,
           "band": "Caution"
         },
         {
           "date_time": "2026-09-02T13:00:00.000Z",
-          "value": 24.8,
+          "value": 25.1,
           "band": "Caution"
         },
         {
           "date_time": "2026-09-02T14:00:00.000Z",
-          "value": 24.5,
+          "value": 24.7,
           "band": "Caution"
         },
         {
           "date_time": "2026-09-02T15:00:00.000Z",
-          "value": 24.3,
+          "value": 24.4,
           "band": "Caution"
         }
       ]
@@ -2700,13 +2700,13 @@
       "longitude": 124.281658,
       "elevation_m": 219,
       "current": {
-        "date_time": "2026-09-02T03:30:00.000Z",
-        "value": 36.8,
+        "date_time": "2026-09-02T07:00:00.000Z",
+        "value": 36.1,
         "band": "Extreme Caution"
       },
       "today_peak": {
         "date_time": "2026-09-02T05:00:00.000Z",
-        "value": 37.2,
+        "value": 37.1,
         "band": "Extreme Caution"
       },
       "hourly": [
@@ -2752,52 +2752,52 @@
         },
         {
           "date_time": "2026-09-02T00:00:00.000Z",
-          "value": 32.1,
-          "band": "Caution"
+          "value": 32.3,
+          "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T01:00:00.000Z",
-          "value": 33.6,
+          "value": 34.1,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T02:00:00.000Z",
-          "value": 35.3,
+          "value": 35.2,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T03:00:00.000Z",
-          "value": 36.4,
+          "value": 36,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T04:00:00.000Z",
-          "value": 37.1,
+          "value": 36.8,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T05:00:00.000Z",
-          "value": 37.2,
+          "value": 37.1,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T06:00:00.000Z",
-          "value": 37,
+          "value": 36.5,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T07:00:00.000Z",
-          "value": 36.2,
+          "value": 36.1,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T08:00:00.000Z",
-          "value": 35.3,
+          "value": 35.4,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T09:00:00.000Z",
-          "value": 33.7,
+          "value": 34,
           "band": "Extreme Caution"
         },
         {
@@ -2807,27 +2807,27 @@
         },
         {
           "date_time": "2026-09-02T11:00:00.000Z",
-          "value": 31.8,
+          "value": 31.6,
           "band": "Caution"
         },
         {
           "date_time": "2026-09-02T12:00:00.000Z",
-          "value": 30.2,
+          "value": 30.8,
           "band": "Caution"
         },
         {
           "date_time": "2026-09-02T13:00:00.000Z",
-          "value": 28.9,
+          "value": 29.6,
           "band": "Caution"
         },
         {
           "date_time": "2026-09-02T14:00:00.000Z",
-          "value": 26.8,
+          "value": 28.6,
           "band": "Caution"
         },
         {
           "date_time": "2026-09-02T15:00:00.000Z",
-          "value": 26.5,
+          "value": 26.7,
           "band": "Caution"
         }
       ]
@@ -2838,13 +2838,13 @@
       "longitude": 124.343979,
       "elevation_m": 265,
       "current": {
-        "date_time": "2026-09-02T03:30:00.000Z",
-        "value": 36.2,
+        "date_time": "2026-09-02T07:00:00.000Z",
+        "value": 35.5,
         "band": "Extreme Caution"
       },
       "today_peak": {
-        "date_time": "2026-09-02T05:00:00.000Z",
-        "value": 36.6,
+        "date_time": "2026-09-02T04:00:00.000Z",
+        "value": 36.2,
         "band": "Extreme Caution"
       },
       "hourly": [
@@ -2890,17 +2890,17 @@
         },
         {
           "date_time": "2026-09-02T00:00:00.000Z",
-          "value": 31.6,
+          "value": 31.7,
           "band": "Caution"
         },
         {
           "date_time": "2026-09-02T01:00:00.000Z",
-          "value": 33.1,
+          "value": 33.5,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T02:00:00.000Z",
-          "value": 34.7,
+          "value": 34.6,
           "band": "Extreme Caution"
         },
         {
@@ -2915,27 +2915,27 @@
         },
         {
           "date_time": "2026-09-02T05:00:00.000Z",
-          "value": 36.6,
+          "value": 36.2,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T06:00:00.000Z",
-          "value": 36.4,
-          "band": "Extreme Caution"
-        },
-        {
-          "date_time": "2026-09-02T07:00:00.000Z",
           "value": 35.6,
           "band": "Extreme Caution"
         },
         {
+          "date_time": "2026-09-02T07:00:00.000Z",
+          "value": 35.5,
+          "band": "Extreme Caution"
+        },
+        {
           "date_time": "2026-09-02T08:00:00.000Z",
-          "value": 34.7,
+          "value": 34.8,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T09:00:00.000Z",
-          "value": 33,
+          "value": 33.4,
           "band": "Extreme Caution"
         },
         {
@@ -2945,27 +2945,27 @@
         },
         {
           "date_time": "2026-09-02T11:00:00.000Z",
-          "value": 31.1,
+          "value": 31,
           "band": "Caution"
         },
         {
           "date_time": "2026-09-02T12:00:00.000Z",
-          "value": 29.5,
+          "value": 30.1,
           "band": "Caution"
         },
         {
           "date_time": "2026-09-02T13:00:00.000Z",
-          "value": 27,
+          "value": 28.9,
           "band": "Caution"
         },
         {
           "date_time": "2026-09-02T14:00:00.000Z",
-          "value": 26.5,
+          "value": 26.9,
           "band": "Caution"
         },
         {
           "date_time": "2026-09-02T15:00:00.000Z",
-          "value": 26.1,
+          "value": 26.3,
           "band": "Caution"
         }
       ]
@@ -2976,13 +2976,13 @@
       "longitude": 124.267966,
       "elevation_m": 14,
       "current": {
-        "date_time": "2026-09-02T03:30:00.000Z",
-        "value": 39.8,
+        "date_time": "2026-09-02T07:00:00.000Z",
+        "value": 39.3,
         "band": "Extreme Caution"
       },
       "today_peak": {
-        "date_time": "2026-09-02T06:00:00.000Z",
-        "value": 40,
+        "date_time": "2026-09-02T04:00:00.000Z",
+        "value": 39.5,
         "band": "Extreme Caution"
       },
       "hourly": [
@@ -3028,52 +3028,52 @@
         },
         {
           "date_time": "2026-09-02T00:00:00.000Z",
-          "value": 34.3,
+          "value": 35.2,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T01:00:00.000Z",
-          "value": 35.8,
+          "value": 36.1,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T02:00:00.000Z",
-          "value": 37.5,
+          "value": 37.6,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T03:00:00.000Z",
-          "value": 38.9,
+          "value": 38.5,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T04:00:00.000Z",
-          "value": 39.8,
+          "value": 39.5,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T05:00:00.000Z",
-          "value": 39.7,
+          "value": 39.3,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T06:00:00.000Z",
-          "value": 40,
+          "value": 38.8,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T07:00:00.000Z",
-          "value": 38.9,
+          "value": 39.3,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T08:00:00.000Z",
-          "value": 38.1,
+          "value": 38.3,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T09:00:00.000Z",
-          "value": 36.8,
+          "value": 36.9,
           "band": "Extreme Caution"
         },
         {
@@ -3088,23 +3088,23 @@
         },
         {
           "date_time": "2026-09-02T12:00:00.000Z",
-          "value": 34,
+          "value": 34.5,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T13:00:00.000Z",
-          "value": 33.2,
+          "value": 33.9,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T14:00:00.000Z",
-          "value": 32.8,
+          "value": 33.5,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T15:00:00.000Z",
-          "value": 31.9,
-          "band": "Caution"
+          "value": 32.5,
+          "band": "Extreme Caution"
         }
       ]
     },
@@ -3114,13 +3114,13 @@
       "longitude": 124.238313,
       "elevation_m": 1,
       "current": {
-        "date_time": "2026-09-02T03:30:00.000Z",
-        "value": 39.9,
+        "date_time": "2026-09-02T07:00:00.000Z",
+        "value": 39.6,
         "band": "Extreme Caution"
       },
       "today_peak": {
         "date_time": "2026-09-02T05:00:00.000Z",
-        "value": 40.1,
+        "value": 39.9,
         "band": "Extreme Caution"
       },
       "hourly": [
@@ -3166,77 +3166,77 @@
         },
         {
           "date_time": "2026-09-02T00:00:00.000Z",
-          "value": 36.4,
+          "value": 36.5,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T01:00:00.000Z",
-          "value": 37.8,
+          "value": 37.4,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T02:00:00.000Z",
-          "value": 38.6,
+          "value": 38.1,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T03:00:00.000Z",
-          "value": 39.4,
+          "value": 39,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T04:00:00.000Z",
-          "value": 40,
+          "value": 39.7,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T05:00:00.000Z",
-          "value": 40.1,
+          "value": 39.9,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T06:00:00.000Z",
-          "value": 39.4,
+          "value": 39.9,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T07:00:00.000Z",
-          "value": 39.2,
+          "value": 39.6,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T08:00:00.000Z",
-          "value": 38.7,
+          "value": 38.6,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T09:00:00.000Z",
-          "value": 38,
+          "value": 37.5,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T10:00:00.000Z",
-          "value": 36.3,
+          "value": 35.5,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T11:00:00.000Z",
-          "value": 34.8,
+          "value": 35.5,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T12:00:00.000Z",
-          "value": 34,
+          "value": 34.9,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T13:00:00.000Z",
-          "value": 32.9,
+          "value": 33.6,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T14:00:00.000Z",
-          "value": 32.3,
+          "value": 32.4,
           "band": "Extreme Caution"
         },
         {
@@ -3252,8 +3252,8 @@
       "longitude": 124.379313,
       "elevation_m": 379,
       "current": {
-        "date_time": "2026-09-02T03:30:00.000Z",
-        "value": 33.6,
+        "date_time": "2026-09-02T07:00:00.000Z",
+        "value": 32.6,
         "band": "Extreme Caution"
       },
       "today_peak": {
@@ -3304,12 +3304,12 @@
         },
         {
           "date_time": "2026-09-02T00:00:00.000Z",
-          "value": 29.5,
+          "value": 29.2,
           "band": "Caution"
         },
         {
           "date_time": "2026-09-02T01:00:00.000Z",
-          "value": 31.1,
+          "value": 31.2,
           "band": "Caution"
         },
         {
@@ -3319,12 +3319,12 @@
         },
         {
           "date_time": "2026-09-02T03:00:00.000Z",
-          "value": 33,
+          "value": 33.2,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T04:00:00.000Z",
-          "value": 33.7,
+          "value": 33.6,
           "band": "Extreme Caution"
         },
         {
@@ -3334,52 +3334,52 @@
         },
         {
           "date_time": "2026-09-02T06:00:00.000Z",
-          "value": 33.9,
+          "value": 33.7,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T07:00:00.000Z",
-          "value": 33,
+          "value": 32.6,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T08:00:00.000Z",
-          "value": 32.1,
+          "value": 32.2,
           "band": "Caution"
         },
         {
           "date_time": "2026-09-02T09:00:00.000Z",
-          "value": 30.5,
+          "value": 30.9,
           "band": "Caution"
         },
         {
           "date_time": "2026-09-02T10:00:00.000Z",
-          "value": 28.7,
+          "value": 28.9,
           "band": "Caution"
         },
         {
           "date_time": "2026-09-02T11:00:00.000Z",
-          "value": 26.5,
+          "value": 26.7,
           "band": "Caution"
         },
         {
           "date_time": "2026-09-02T12:00:00.000Z",
-          "value": 25.5,
+          "value": 26,
           "band": "Caution"
         },
         {
           "date_time": "2026-09-02T13:00:00.000Z",
-          "value": 24.9,
+          "value": 25.5,
           "band": "Caution"
         },
         {
           "date_time": "2026-09-02T14:00:00.000Z",
-          "value": 24.3,
+          "value": 24.9,
           "band": "Caution"
         },
         {
           "date_time": "2026-09-02T15:00:00.000Z",
-          "value": 24,
+          "value": 24.3,
           "band": "Caution"
         }
       ]
@@ -3390,13 +3390,13 @@
       "longitude": 124.306129,
       "elevation_m": 31,
       "current": {
-        "date_time": "2026-09-02T03:30:00.000Z",
-        "value": 39.3,
+        "date_time": "2026-09-02T07:00:00.000Z",
+        "value": 38.7,
         "band": "Extreme Caution"
       },
       "today_peak": {
-        "date_time": "2026-09-02T05:00:00.000Z",
-        "value": 39.7,
+        "date_time": "2026-09-02T04:00:00.000Z",
+        "value": 39.6,
         "band": "Extreme Caution"
       },
       "hourly": [
@@ -3442,22 +3442,22 @@
         },
         {
           "date_time": "2026-09-02T00:00:00.000Z",
-          "value": 34.4,
+          "value": 34.6,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T01:00:00.000Z",
-          "value": 36,
+          "value": 36.6,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T02:00:00.000Z",
-          "value": 37.8,
+          "value": 37.6,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T03:00:00.000Z",
-          "value": 38.9,
+          "value": 38.8,
           "band": "Extreme Caution"
         },
         {
@@ -3467,27 +3467,27 @@
         },
         {
           "date_time": "2026-09-02T05:00:00.000Z",
-          "value": 39.7,
+          "value": 39.6,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T06:00:00.000Z",
-          "value": 39.5,
+          "value": 39,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T07:00:00.000Z",
-          "value": 38.9,
+          "value": 38.7,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T08:00:00.000Z",
-          "value": 38.3,
+          "value": 38,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T09:00:00.000Z",
-          "value": 36.4,
+          "value": 37,
           "band": "Extreme Caution"
         },
         {
@@ -3497,27 +3497,27 @@
         },
         {
           "date_time": "2026-09-02T11:00:00.000Z",
-          "value": 34.8,
+          "value": 34.6,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T12:00:00.000Z",
-          "value": 33.2,
+          "value": 34,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T13:00:00.000Z",
-          "value": 31.8,
-          "band": "Caution"
+          "value": 32.6,
+          "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T14:00:00.000Z",
-          "value": 30.5,
+          "value": 31.5,
           "band": "Caution"
         },
         {
           "date_time": "2026-09-02T15:00:00.000Z",
-          "value": 29.7,
+          "value": 30.1,
           "band": "Caution"
         }
       ]
@@ -3528,8 +3528,8 @@
       "longitude": 124.193998,
       "elevation_m": 5,
       "current": {
-        "date_time": "2026-09-02T03:30:00.000Z",
-        "value": 39.7,
+        "date_time": "2026-09-02T07:00:00.000Z",
+        "value": 39.4,
         "band": "Extreme Caution"
       },
       "today_peak": {
@@ -3580,27 +3580,27 @@
         },
         {
           "date_time": "2026-09-02T00:00:00.000Z",
-          "value": 36.1,
+          "value": 36.3,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T01:00:00.000Z",
-          "value": 37.6,
+          "value": 37.4,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T02:00:00.000Z",
-          "value": 38.6,
+          "value": 38.1,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T03:00:00.000Z",
-          "value": 39.4,
+          "value": 39,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T04:00:00.000Z",
-          "value": 39.8,
+          "value": 39.5,
           "band": "Extreme Caution"
         },
         {
@@ -3610,47 +3610,47 @@
         },
         {
           "date_time": "2026-09-02T06:00:00.000Z",
-          "value": 39.2,
+          "value": 39.7,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T07:00:00.000Z",
-          "value": 39,
+          "value": 39.4,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T08:00:00.000Z",
-          "value": 38.7,
+          "value": 38.4,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T09:00:00.000Z",
-          "value": 38,
+          "value": 37.5,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T10:00:00.000Z",
-          "value": 36,
+          "value": 35.5,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T11:00:00.000Z",
-          "value": 34.8,
+          "value": 35.2,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T12:00:00.000Z",
-          "value": 34,
+          "value": 34.7,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T13:00:00.000Z",
-          "value": 32.9,
+          "value": 33.3,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T14:00:00.000Z",
-          "value": 32,
+          "value": 32.2,
           "band": "Caution"
         },
         {
@@ -3666,8 +3666,8 @@
       "longitude": 124.254059,
       "elevation_m": 11,
       "current": {
-        "date_time": "2026-09-02T03:30:00.000Z",
-        "value": 39.7,
+        "date_time": "2026-09-02T07:00:00.000Z",
+        "value": 39.4,
         "band": "Extreme Caution"
       },
       "today_peak": {
@@ -3718,27 +3718,27 @@
         },
         {
           "date_time": "2026-09-02T00:00:00.000Z",
-          "value": 36.1,
+          "value": 36.3,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T01:00:00.000Z",
-          "value": 37.6,
+          "value": 37.4,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T02:00:00.000Z",
-          "value": 38.6,
+          "value": 38.1,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T03:00:00.000Z",
-          "value": 39.4,
+          "value": 39,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T04:00:00.000Z",
-          "value": 39.8,
+          "value": 39.5,
           "band": "Extreme Caution"
         },
         {
@@ -3748,47 +3748,47 @@
         },
         {
           "date_time": "2026-09-02T06:00:00.000Z",
-          "value": 39.2,
+          "value": 39.7,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T07:00:00.000Z",
-          "value": 39,
+          "value": 39.4,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T08:00:00.000Z",
-          "value": 38.7,
+          "value": 38.4,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T09:00:00.000Z",
-          "value": 38,
+          "value": 37.5,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T10:00:00.000Z",
-          "value": 36,
+          "value": 35.5,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T11:00:00.000Z",
-          "value": 34.8,
+          "value": 35.2,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T12:00:00.000Z",
-          "value": 34,
+          "value": 34.7,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T13:00:00.000Z",
-          "value": 32.9,
+          "value": 33.3,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T14:00:00.000Z",
-          "value": 32,
+          "value": 32.2,
           "band": "Caution"
         },
         {
@@ -3804,8 +3804,8 @@
       "longitude": 124.477695,
       "elevation_m": 873,
       "current": {
-        "date_time": "2026-09-02T03:30:00.000Z",
-        "value": 30.7,
+        "date_time": "2026-09-02T07:00:00.000Z",
+        "value": 29.8,
         "band": "Caution"
       },
       "today_peak": {
@@ -3856,27 +3856,27 @@
         },
         {
           "date_time": "2026-09-02T00:00:00.000Z",
-          "value": 25.6,
+          "value": 25.5,
           "band": "Caution"
         },
         {
           "date_time": "2026-09-02T01:00:00.000Z",
-          "value": 28.3,
+          "value": 28.4,
           "band": "Caution"
         },
         {
           "date_time": "2026-09-02T02:00:00.000Z",
-          "value": 29.5,
+          "value": 29.4,
           "band": "Caution"
         },
         {
           "date_time": "2026-09-02T03:00:00.000Z",
-          "value": 30.3,
+          "value": 30,
           "band": "Caution"
         },
         {
           "date_time": "2026-09-02T04:00:00.000Z",
-          "value": 31.1,
+          "value": 30.6,
           "band": "Caution"
         },
         {
@@ -3886,52 +3886,52 @@
         },
         {
           "date_time": "2026-09-02T06:00:00.000Z",
-          "value": 30.9,
+          "value": 31.1,
           "band": "Caution"
         },
         {
           "date_time": "2026-09-02T07:00:00.000Z",
-          "value": 29,
+          "value": 29.8,
           "band": "Caution"
         },
         {
           "date_time": "2026-09-02T08:00:00.000Z",
-          "value": 26.9,
+          "value": 28.5,
           "band": "Caution"
         },
         {
           "date_time": "2026-09-02T09:00:00.000Z",
-          "value": 25.8,
+          "value": 26.1,
           "band": "Caution"
         },
         {
           "date_time": "2026-09-02T10:00:00.000Z",
-          "value": 24.1,
+          "value": 24.3,
           "band": "Caution"
         },
         {
           "date_time": "2026-09-02T11:00:00.000Z",
-          "value": 23.1,
+          "value": 23.7,
           "band": "Caution"
         },
         {
           "date_time": "2026-09-02T12:00:00.000Z",
-          "value": 22.4,
+          "value": 23,
           "band": "Caution"
         },
         {
           "date_time": "2026-09-02T13:00:00.000Z",
-          "value": 22.1,
+          "value": 22.4,
           "band": "Caution"
         },
         {
           "date_time": "2026-09-02T14:00:00.000Z",
-          "value": 21.7,
+          "value": 22.1,
           "band": "Caution"
         },
         {
           "date_time": "2026-09-02T15:00:00.000Z",
-          "value": 21.5,
+          "value": 21.8,
           "band": "Caution"
         }
       ]
@@ -3942,13 +3942,13 @@
       "longitude": 124.234013,
       "elevation_m": 4,
       "current": {
-        "date_time": "2026-09-02T03:30:00.000Z",
-        "value": 39.9,
+        "date_time": "2026-09-02T07:00:00.000Z",
+        "value": 39.6,
         "band": "Extreme Caution"
       },
       "today_peak": {
         "date_time": "2026-09-02T05:00:00.000Z",
-        "value": 40.1,
+        "value": 39.9,
         "band": "Extreme Caution"
       },
       "hourly": [
@@ -3994,77 +3994,77 @@
         },
         {
           "date_time": "2026-09-02T00:00:00.000Z",
-          "value": 36.4,
+          "value": 36.5,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T01:00:00.000Z",
-          "value": 37.8,
+          "value": 37.4,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T02:00:00.000Z",
-          "value": 38.6,
+          "value": 38.1,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T03:00:00.000Z",
-          "value": 39.4,
+          "value": 39,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T04:00:00.000Z",
-          "value": 40,
+          "value": 39.7,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T05:00:00.000Z",
-          "value": 40.1,
+          "value": 39.9,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T06:00:00.000Z",
-          "value": 39.4,
+          "value": 39.9,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T07:00:00.000Z",
-          "value": 39.2,
+          "value": 39.6,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T08:00:00.000Z",
-          "value": 38.7,
+          "value": 38.6,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T09:00:00.000Z",
-          "value": 38,
+          "value": 37.5,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T10:00:00.000Z",
-          "value": 36.3,
+          "value": 35.5,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T11:00:00.000Z",
-          "value": 34.8,
+          "value": 35.5,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T12:00:00.000Z",
-          "value": 34,
+          "value": 34.9,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T13:00:00.000Z",
-          "value": 32.9,
+          "value": 33.6,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T14:00:00.000Z",
-          "value": 32.3,
+          "value": 32.4,
           "band": "Extreme Caution"
         },
         {
@@ -4080,13 +4080,13 @@
       "longitude": 124.274745,
       "elevation_m": 37,
       "current": {
-        "date_time": "2026-09-02T03:30:00.000Z",
-        "value": 39.3,
+        "date_time": "2026-09-02T07:00:00.000Z",
+        "value": 39,
         "band": "Extreme Caution"
       },
       "today_peak": {
         "date_time": "2026-09-02T05:00:00.000Z",
-        "value": 39.5,
+        "value": 39.4,
         "band": "Extreme Caution"
       },
       "hourly": [
@@ -4132,77 +4132,77 @@
         },
         {
           "date_time": "2026-09-02T00:00:00.000Z",
-          "value": 35.7,
+          "value": 35.8,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T01:00:00.000Z",
-          "value": 37.1,
+          "value": 37,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T02:00:00.000Z",
-          "value": 38.2,
+          "value": 37.7,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T03:00:00.000Z",
-          "value": 39,
+          "value": 38.6,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T04:00:00.000Z",
-          "value": 39.3,
+          "value": 39.1,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T05:00:00.000Z",
-          "value": 39.5,
+          "value": 39.4,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T06:00:00.000Z",
-          "value": 38.8,
+          "value": 39.3,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T07:00:00.000Z",
-          "value": 38.5,
+          "value": 39,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T08:00:00.000Z",
-          "value": 38.3,
+          "value": 38,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T09:00:00.000Z",
-          "value": 37.2,
+          "value": 37.1,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T10:00:00.000Z",
-          "value": 35.5,
+          "value": 35,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T11:00:00.000Z",
-          "value": 34.3,
+          "value": 34.7,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T12:00:00.000Z",
-          "value": 33.5,
+          "value": 34.2,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T13:00:00.000Z",
-          "value": 32.4,
+          "value": 32.8,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T14:00:00.000Z",
-          "value": 31.6,
+          "value": 31.7,
           "band": "Caution"
         },
         {
@@ -4218,13 +4218,13 @@
       "longitude": 124.487814,
       "elevation_m": 423,
       "current": {
-        "date_time": "2026-09-02T03:30:00.000Z",
-        "value": 34.4,
+        "date_time": "2026-09-02T07:00:00.000Z",
+        "value": 33.5,
         "band": "Extreme Caution"
       },
       "today_peak": {
-        "date_time": "2026-09-02T05:00:00.000Z",
-        "value": 35.3,
+        "date_time": "2026-09-02T06:00:00.000Z",
+        "value": 35.2,
         "band": "Extreme Caution"
       },
       "hourly": [
@@ -4270,7 +4270,7 @@
         },
         {
           "date_time": "2026-09-02T00:00:00.000Z",
-          "value": 29.5,
+          "value": 29.3,
           "band": "Caution"
         },
         {
@@ -4280,12 +4280,12 @@
         },
         {
           "date_time": "2026-09-02T02:00:00.000Z",
-          "value": 33.3,
+          "value": 33.2,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T03:00:00.000Z",
-          "value": 34,
+          "value": 34.3,
           "band": "Extreme Caution"
         },
         {
@@ -4295,7 +4295,7 @@
         },
         {
           "date_time": "2026-09-02T05:00:00.000Z",
-          "value": 35.3,
+          "value": 34.7,
           "band": "Extreme Caution"
         },
         {
@@ -4305,47 +4305,47 @@
         },
         {
           "date_time": "2026-09-02T07:00:00.000Z",
-          "value": 34.5,
+          "value": 33.5,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T08:00:00.000Z",
-          "value": 33.1,
+          "value": 32.5,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T09:00:00.000Z",
-          "value": 32.1,
-          "band": "Caution"
+          "value": 32.5,
+          "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T10:00:00.000Z",
-          "value": 26.9,
+          "value": 27.2,
           "band": "Caution"
         },
         {
           "date_time": "2026-09-02T11:00:00.000Z",
-          "value": 26.1,
+          "value": 26.6,
           "band": "Caution"
         },
         {
           "date_time": "2026-09-02T12:00:00.000Z",
-          "value": 25.2,
+          "value": 25.7,
           "band": "Caution"
         },
         {
           "date_time": "2026-09-02T13:00:00.000Z",
-          "value": 24.5,
+          "value": 24.9,
           "band": "Caution"
         },
         {
           "date_time": "2026-09-02T14:00:00.000Z",
-          "value": 24,
+          "value": 24.3,
           "band": "Caution"
         },
         {
           "date_time": "2026-09-02T15:00:00.000Z",
-          "value": 23.5,
+          "value": 23.6,
           "band": "Caution"
         }
       ]
@@ -4356,8 +4356,8 @@
       "longitude": 124.248663,
       "elevation_m": 8,
       "current": {
-        "date_time": "2026-09-02T03:30:00.000Z",
-        "value": 39.7,
+        "date_time": "2026-09-02T07:00:00.000Z",
+        "value": 39.4,
         "band": "Extreme Caution"
       },
       "today_peak": {
@@ -4408,27 +4408,27 @@
         },
         {
           "date_time": "2026-09-02T00:00:00.000Z",
-          "value": 36.1,
+          "value": 36.3,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T01:00:00.000Z",
-          "value": 37.6,
+          "value": 37.4,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T02:00:00.000Z",
-          "value": 38.6,
+          "value": 38.1,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T03:00:00.000Z",
-          "value": 39.4,
+          "value": 39,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T04:00:00.000Z",
-          "value": 39.8,
+          "value": 39.5,
           "band": "Extreme Caution"
         },
         {
@@ -4438,47 +4438,47 @@
         },
         {
           "date_time": "2026-09-02T06:00:00.000Z",
-          "value": 39.2,
+          "value": 39.7,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T07:00:00.000Z",
-          "value": 39,
+          "value": 39.4,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T08:00:00.000Z",
-          "value": 38.7,
+          "value": 38.4,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T09:00:00.000Z",
-          "value": 38,
+          "value": 37.5,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T10:00:00.000Z",
-          "value": 36,
+          "value": 35.5,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T11:00:00.000Z",
-          "value": 34.8,
+          "value": 35.2,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T12:00:00.000Z",
-          "value": 34,
+          "value": 34.7,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T13:00:00.000Z",
-          "value": 32.9,
+          "value": 33.3,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T14:00:00.000Z",
-          "value": 32,
+          "value": 32.2,
           "band": "Caution"
         },
         {
@@ -4494,13 +4494,13 @@
       "longitude": 124.261743,
       "elevation_m": 10,
       "current": {
-        "date_time": "2026-09-02T03:30:00.000Z",
-        "value": 39.8,
+        "date_time": "2026-09-02T07:00:00.000Z",
+        "value": 39.3,
         "band": "Extreme Caution"
       },
       "today_peak": {
-        "date_time": "2026-09-02T06:00:00.000Z",
-        "value": 40,
+        "date_time": "2026-09-02T04:00:00.000Z",
+        "value": 39.5,
         "band": "Extreme Caution"
       },
       "hourly": [
@@ -4546,52 +4546,52 @@
         },
         {
           "date_time": "2026-09-02T00:00:00.000Z",
-          "value": 34.3,
+          "value": 35.2,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T01:00:00.000Z",
-          "value": 35.8,
+          "value": 36.1,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T02:00:00.000Z",
-          "value": 37.5,
+          "value": 37.6,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T03:00:00.000Z",
-          "value": 38.9,
+          "value": 38.5,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T04:00:00.000Z",
-          "value": 39.8,
+          "value": 39.5,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T05:00:00.000Z",
-          "value": 39.7,
+          "value": 39.3,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T06:00:00.000Z",
-          "value": 40,
+          "value": 38.8,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T07:00:00.000Z",
-          "value": 38.9,
+          "value": 39.3,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T08:00:00.000Z",
-          "value": 38.1,
+          "value": 38.3,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T09:00:00.000Z",
-          "value": 36.8,
+          "value": 36.9,
           "band": "Extreme Caution"
         },
         {
@@ -4606,23 +4606,23 @@
         },
         {
           "date_time": "2026-09-02T12:00:00.000Z",
-          "value": 34,
+          "value": 34.5,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T13:00:00.000Z",
-          "value": 33.2,
+          "value": 33.9,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T14:00:00.000Z",
-          "value": 32.8,
+          "value": 33.5,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T15:00:00.000Z",
-          "value": 31.9,
-          "band": "Caution"
+          "value": 32.5,
+          "band": "Extreme Caution"
         }
       ]
     },
@@ -4632,13 +4632,13 @@
       "longitude": 124.226301,
       "elevation_m": 20,
       "current": {
-        "date_time": "2026-09-02T03:30:00.000Z",
-        "value": 38.5,
+        "date_time": "2026-09-02T07:00:00.000Z",
+        "value": 38.1,
         "band": "Extreme Caution"
       },
       "today_peak": {
         "date_time": "2026-09-02T05:00:00.000Z",
-        "value": 38.7,
+        "value": 38.4,
         "band": "Extreme Caution"
       },
       "hourly": [
@@ -4684,42 +4684,42 @@
         },
         {
           "date_time": "2026-09-02T00:00:00.000Z",
-          "value": 34.7,
+          "value": 34.9,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T01:00:00.000Z",
-          "value": 36,
+          "value": 35.9,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T02:00:00.000Z",
-          "value": 37.1,
+          "value": 36.7,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T03:00:00.000Z",
-          "value": 38,
+          "value": 37.6,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T04:00:00.000Z",
-          "value": 38.6,
+          "value": 38.3,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T05:00:00.000Z",
-          "value": 38.7,
+          "value": 38.4,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T06:00:00.000Z",
-          "value": 37.9,
+          "value": 38.1,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T07:00:00.000Z",
-          "value": 37.6,
+          "value": 38.1,
           "band": "Extreme Caution"
         },
         {
@@ -4729,32 +4729,32 @@
         },
         {
           "date_time": "2026-09-02T09:00:00.000Z",
-          "value": 36,
+          "value": 35.9,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T10:00:00.000Z",
-          "value": 34.3,
+          "value": 33.9,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T11:00:00.000Z",
-          "value": 33.1,
+          "value": 33.7,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T12:00:00.000Z",
-          "value": 32.3,
+          "value": 33.1,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T13:00:00.000Z",
-          "value": 31.3,
+          "value": 31.9,
           "band": "Caution"
         },
         {
           "date_time": "2026-09-02T14:00:00.000Z",
-          "value": 30.6,
+          "value": 30.8,
           "band": "Caution"
         },
         {
@@ -4770,13 +4770,13 @@
       "longitude": 124.260689,
       "elevation_m": 7,
       "current": {
-        "date_time": "2026-09-02T03:30:00.000Z",
-        "value": 39.8,
+        "date_time": "2026-09-02T07:00:00.000Z",
+        "value": 39.6,
         "band": "Extreme Caution"
       },
       "today_peak": {
-        "date_time": "2026-09-02T06:00:00.000Z",
-        "value": 40,
+        "date_time": "2026-09-02T07:00:00.000Z",
+        "value": 39.6,
         "band": "Extreme Caution"
       },
       "hourly": [
@@ -4822,42 +4822,42 @@
         },
         {
           "date_time": "2026-09-02T00:00:00.000Z",
-          "value": 34.3,
+          "value": 35.2,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T01:00:00.000Z",
-          "value": 35.8,
+          "value": 36.3,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T02:00:00.000Z",
-          "value": 37.7,
+          "value": 37.6,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T03:00:00.000Z",
-          "value": 38.9,
+          "value": 38.8,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T04:00:00.000Z",
-          "value": 39.8,
+          "value": 39.5,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T05:00:00.000Z",
-          "value": 39.9,
+          "value": 39.5,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T06:00:00.000Z",
-          "value": 40,
+          "value": 39,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T07:00:00.000Z",
-          "value": 39.1,
+          "value": 39.6,
           "band": "Extreme Caution"
         },
         {
@@ -4867,7 +4867,7 @@
         },
         {
           "date_time": "2026-09-02T09:00:00.000Z",
-          "value": 36.8,
+          "value": 36.9,
           "band": "Extreme Caution"
         },
         {
@@ -4882,23 +4882,23 @@
         },
         {
           "date_time": "2026-09-02T12:00:00.000Z",
-          "value": 34,
+          "value": 34.7,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T13:00:00.000Z",
-          "value": 33.4,
+          "value": 34.2,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T14:00:00.000Z",
-          "value": 32.8,
+          "value": 33.5,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T15:00:00.000Z",
-          "value": 32.1,
-          "band": "Caution"
+          "value": 32.5,
+          "band": "Extreme Caution"
         }
       ]
     },
@@ -4908,8 +4908,8 @@
       "longitude": 124.24446,
       "elevation_m": 5,
       "current": {
-        "date_time": "2026-09-02T03:30:00.000Z",
-        "value": 39.7,
+        "date_time": "2026-09-02T07:00:00.000Z",
+        "value": 39.4,
         "band": "Extreme Caution"
       },
       "today_peak": {
@@ -4960,27 +4960,27 @@
         },
         {
           "date_time": "2026-09-02T00:00:00.000Z",
-          "value": 36.1,
+          "value": 36.3,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T01:00:00.000Z",
-          "value": 37.6,
+          "value": 37.4,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T02:00:00.000Z",
-          "value": 38.6,
+          "value": 38.1,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T03:00:00.000Z",
-          "value": 39.4,
+          "value": 39,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T04:00:00.000Z",
-          "value": 39.8,
+          "value": 39.5,
           "band": "Extreme Caution"
         },
         {
@@ -4990,47 +4990,47 @@
         },
         {
           "date_time": "2026-09-02T06:00:00.000Z",
-          "value": 39.2,
+          "value": 39.7,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T07:00:00.000Z",
-          "value": 39,
+          "value": 39.4,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T08:00:00.000Z",
-          "value": 38.7,
+          "value": 38.4,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T09:00:00.000Z",
-          "value": 38,
+          "value": 37.5,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T10:00:00.000Z",
-          "value": 36,
+          "value": 35.5,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T11:00:00.000Z",
-          "value": 34.8,
+          "value": 35.2,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T12:00:00.000Z",
-          "value": 34,
+          "value": 34.7,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T13:00:00.000Z",
-          "value": 32.9,
+          "value": 33.3,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T14:00:00.000Z",
-          "value": 32,
+          "value": 32.2,
           "band": "Caution"
         },
         {
@@ -5046,8 +5046,8 @@
       "longitude": 124.252966,
       "elevation_m": 7,
       "current": {
-        "date_time": "2026-09-02T03:30:00.000Z",
-        "value": 39.7,
+        "date_time": "2026-09-02T07:00:00.000Z",
+        "value": 39.4,
         "band": "Extreme Caution"
       },
       "today_peak": {
@@ -5098,27 +5098,27 @@
         },
         {
           "date_time": "2026-09-02T00:00:00.000Z",
-          "value": 36.1,
+          "value": 36.3,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T01:00:00.000Z",
-          "value": 37.6,
+          "value": 37.4,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T02:00:00.000Z",
-          "value": 38.6,
+          "value": 38.1,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T03:00:00.000Z",
-          "value": 39.4,
+          "value": 39,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T04:00:00.000Z",
-          "value": 39.8,
+          "value": 39.5,
           "band": "Extreme Caution"
         },
         {
@@ -5128,47 +5128,47 @@
         },
         {
           "date_time": "2026-09-02T06:00:00.000Z",
-          "value": 39.2,
+          "value": 39.7,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T07:00:00.000Z",
-          "value": 39,
+          "value": 39.4,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T08:00:00.000Z",
-          "value": 38.7,
+          "value": 38.4,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T09:00:00.000Z",
-          "value": 38,
+          "value": 37.5,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T10:00:00.000Z",
-          "value": 36,
+          "value": 35.5,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T11:00:00.000Z",
-          "value": 34.8,
+          "value": 35.2,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T12:00:00.000Z",
-          "value": 34,
+          "value": 34.7,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T13:00:00.000Z",
-          "value": 32.9,
+          "value": 33.3,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T14:00:00.000Z",
-          "value": 32,
+          "value": 32.2,
           "band": "Caution"
         },
         {
@@ -5184,13 +5184,13 @@
       "longitude": 124.235559,
       "elevation_m": 0,
       "current": {
-        "date_time": "2026-09-02T03:30:00.000Z",
-        "value": 39.9,
+        "date_time": "2026-09-02T07:00:00.000Z",
+        "value": 39.6,
         "band": "Extreme Caution"
       },
       "today_peak": {
         "date_time": "2026-09-02T05:00:00.000Z",
-        "value": 40.1,
+        "value": 39.9,
         "band": "Extreme Caution"
       },
       "hourly": [
@@ -5236,77 +5236,77 @@
         },
         {
           "date_time": "2026-09-02T00:00:00.000Z",
-          "value": 36.4,
+          "value": 36.5,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T01:00:00.000Z",
-          "value": 37.8,
+          "value": 37.4,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T02:00:00.000Z",
-          "value": 38.6,
+          "value": 38.1,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T03:00:00.000Z",
-          "value": 39.4,
+          "value": 39,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T04:00:00.000Z",
-          "value": 40,
+          "value": 39.7,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T05:00:00.000Z",
-          "value": 40.1,
+          "value": 39.9,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T06:00:00.000Z",
-          "value": 39.4,
+          "value": 39.9,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T07:00:00.000Z",
-          "value": 39.2,
+          "value": 39.6,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T08:00:00.000Z",
-          "value": 38.7,
+          "value": 38.6,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T09:00:00.000Z",
-          "value": 38,
+          "value": 37.5,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T10:00:00.000Z",
-          "value": 36.3,
+          "value": 35.5,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T11:00:00.000Z",
-          "value": 34.8,
+          "value": 35.5,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T12:00:00.000Z",
-          "value": 34,
+          "value": 34.9,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T13:00:00.000Z",
-          "value": 32.9,
+          "value": 33.6,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T14:00:00.000Z",
-          "value": 32.3,
+          "value": 32.4,
           "band": "Extreme Caution"
         },
         {
@@ -5322,13 +5322,13 @@
       "longitude": 124.217092,
       "elevation_m": 51,
       "current": {
-        "date_time": "2026-09-02T03:30:00.000Z",
-        "value": 38.5,
+        "date_time": "2026-09-02T07:00:00.000Z",
+        "value": 38.1,
         "band": "Extreme Caution"
       },
       "today_peak": {
         "date_time": "2026-09-02T05:00:00.000Z",
-        "value": 38.7,
+        "value": 38.4,
         "band": "Extreme Caution"
       },
       "hourly": [
@@ -5374,42 +5374,42 @@
         },
         {
           "date_time": "2026-09-02T00:00:00.000Z",
-          "value": 34.7,
+          "value": 34.9,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T01:00:00.000Z",
-          "value": 36,
+          "value": 35.9,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T02:00:00.000Z",
-          "value": 37.1,
+          "value": 36.7,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T03:00:00.000Z",
-          "value": 38,
+          "value": 37.6,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T04:00:00.000Z",
-          "value": 38.6,
+          "value": 38.3,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T05:00:00.000Z",
-          "value": 38.7,
+          "value": 38.4,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T06:00:00.000Z",
-          "value": 37.9,
+          "value": 38.1,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T07:00:00.000Z",
-          "value": 37.6,
+          "value": 38.1,
           "band": "Extreme Caution"
         },
         {
@@ -5419,32 +5419,32 @@
         },
         {
           "date_time": "2026-09-02T09:00:00.000Z",
-          "value": 36,
+          "value": 35.9,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T10:00:00.000Z",
-          "value": 34.3,
+          "value": 33.9,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T11:00:00.000Z",
-          "value": 33.1,
+          "value": 33.7,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T12:00:00.000Z",
-          "value": 32.3,
+          "value": 33.1,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T13:00:00.000Z",
-          "value": 31.3,
+          "value": 31.9,
           "band": "Caution"
         },
         {
           "date_time": "2026-09-02T14:00:00.000Z",
-          "value": 30.6,
+          "value": 30.8,
           "band": "Caution"
         },
         {
@@ -5460,8 +5460,8 @@
       "longitude": 124.234526,
       "elevation_m": 5,
       "current": {
-        "date_time": "2026-09-02T03:30:00.000Z",
-        "value": 39.7,
+        "date_time": "2026-09-02T07:00:00.000Z",
+        "value": 39.4,
         "band": "Extreme Caution"
       },
       "today_peak": {
@@ -5512,27 +5512,27 @@
         },
         {
           "date_time": "2026-09-02T00:00:00.000Z",
-          "value": 36.1,
+          "value": 36.3,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T01:00:00.000Z",
-          "value": 37.6,
+          "value": 37.4,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T02:00:00.000Z",
-          "value": 38.6,
+          "value": 38.1,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T03:00:00.000Z",
-          "value": 39.4,
+          "value": 39,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T04:00:00.000Z",
-          "value": 39.8,
+          "value": 39.5,
           "band": "Extreme Caution"
         },
         {
@@ -5542,47 +5542,47 @@
         },
         {
           "date_time": "2026-09-02T06:00:00.000Z",
-          "value": 39.2,
+          "value": 39.7,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T07:00:00.000Z",
-          "value": 39,
+          "value": 39.4,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T08:00:00.000Z",
-          "value": 38.7,
+          "value": 38.4,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T09:00:00.000Z",
-          "value": 38,
+          "value": 37.5,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T10:00:00.000Z",
-          "value": 36,
+          "value": 35.5,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T11:00:00.000Z",
-          "value": 34.8,
+          "value": 35.2,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T12:00:00.000Z",
-          "value": 34,
+          "value": 34.7,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T13:00:00.000Z",
-          "value": 32.9,
+          "value": 33.3,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T14:00:00.000Z",
-          "value": 32,
+          "value": 32.2,
           "band": "Caution"
         },
         {
@@ -5598,13 +5598,13 @@
       "longitude": 124.240781,
       "elevation_m": 3,
       "current": {
-        "date_time": "2026-09-02T03:30:00.000Z",
-        "value": 39.9,
+        "date_time": "2026-09-02T07:00:00.000Z",
+        "value": 39.6,
         "band": "Extreme Caution"
       },
       "today_peak": {
         "date_time": "2026-09-02T05:00:00.000Z",
-        "value": 40.1,
+        "value": 39.9,
         "band": "Extreme Caution"
       },
       "hourly": [
@@ -5650,77 +5650,77 @@
         },
         {
           "date_time": "2026-09-02T00:00:00.000Z",
-          "value": 36.4,
+          "value": 36.5,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T01:00:00.000Z",
-          "value": 37.8,
+          "value": 37.4,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T02:00:00.000Z",
-          "value": 38.6,
+          "value": 38.1,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T03:00:00.000Z",
-          "value": 39.4,
+          "value": 39,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T04:00:00.000Z",
-          "value": 40,
+          "value": 39.7,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T05:00:00.000Z",
-          "value": 40.1,
+          "value": 39.9,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T06:00:00.000Z",
-          "value": 39.4,
+          "value": 39.9,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T07:00:00.000Z",
-          "value": 39.2,
+          "value": 39.6,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T08:00:00.000Z",
-          "value": 38.7,
+          "value": 38.6,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T09:00:00.000Z",
-          "value": 38,
+          "value": 37.5,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T10:00:00.000Z",
-          "value": 36.3,
+          "value": 35.5,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T11:00:00.000Z",
-          "value": 34.8,
+          "value": 35.5,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T12:00:00.000Z",
-          "value": 34,
+          "value": 34.9,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T13:00:00.000Z",
-          "value": 32.9,
+          "value": 33.6,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T14:00:00.000Z",
-          "value": 32.3,
+          "value": 32.4,
           "band": "Extreme Caution"
         },
         {
@@ -5736,8 +5736,8 @@
       "longitude": 124.250993,
       "elevation_m": 20,
       "current": {
-        "date_time": "2026-09-02T03:30:00.000Z",
-        "value": 39.5,
+        "date_time": "2026-09-02T07:00:00.000Z",
+        "value": 39.2,
         "band": "Extreme Caution"
       },
       "today_peak": {
@@ -5788,27 +5788,27 @@
         },
         {
           "date_time": "2026-09-02T00:00:00.000Z",
-          "value": 35.9,
+          "value": 36.1,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T01:00:00.000Z",
-          "value": 37.4,
+          "value": 37.2,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T02:00:00.000Z",
-          "value": 38.4,
+          "value": 37.9,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T03:00:00.000Z",
-          "value": 39.2,
+          "value": 38.8,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T04:00:00.000Z",
-          "value": 39.5,
+          "value": 39.3,
           "band": "Extreme Caution"
         },
         {
@@ -5818,47 +5818,47 @@
         },
         {
           "date_time": "2026-09-02T06:00:00.000Z",
-          "value": 39,
+          "value": 39.5,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T07:00:00.000Z",
-          "value": 38.7,
+          "value": 39.2,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T08:00:00.000Z",
-          "value": 38.5,
+          "value": 38.2,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T09:00:00.000Z",
-          "value": 37.8,
+          "value": 37.3,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T10:00:00.000Z",
-          "value": 35.8,
+          "value": 35.3,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T11:00:00.000Z",
-          "value": 34.5,
+          "value": 35,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T12:00:00.000Z",
-          "value": 33.7,
+          "value": 34.4,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T13:00:00.000Z",
-          "value": 32.7,
+          "value": 33.1,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T14:00:00.000Z",
-          "value": 31.8,
+          "value": 31.9,
           "band": "Caution"
         },
         {
@@ -5874,13 +5874,13 @@
       "longitude": 124.227487,
       "elevation_m": 51,
       "current": {
-        "date_time": "2026-09-02T03:30:00.000Z",
-        "value": 38.5,
+        "date_time": "2026-09-02T07:00:00.000Z",
+        "value": 38.1,
         "band": "Extreme Caution"
       },
       "today_peak": {
         "date_time": "2026-09-02T05:00:00.000Z",
-        "value": 38.7,
+        "value": 38.4,
         "band": "Extreme Caution"
       },
       "hourly": [
@@ -5926,42 +5926,42 @@
         },
         {
           "date_time": "2026-09-02T00:00:00.000Z",
-          "value": 34.7,
+          "value": 34.9,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T01:00:00.000Z",
-          "value": 36,
+          "value": 35.9,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T02:00:00.000Z",
-          "value": 37.1,
+          "value": 36.7,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T03:00:00.000Z",
-          "value": 38,
+          "value": 37.6,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T04:00:00.000Z",
-          "value": 38.6,
+          "value": 38.3,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T05:00:00.000Z",
-          "value": 38.7,
+          "value": 38.4,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T06:00:00.000Z",
-          "value": 37.9,
+          "value": 38.1,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T07:00:00.000Z",
-          "value": 37.6,
+          "value": 38.1,
           "band": "Extreme Caution"
         },
         {
@@ -5971,32 +5971,32 @@
         },
         {
           "date_time": "2026-09-02T09:00:00.000Z",
-          "value": 36,
+          "value": 35.9,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T10:00:00.000Z",
-          "value": 34.3,
+          "value": 33.9,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T11:00:00.000Z",
-          "value": 33.1,
+          "value": 33.7,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T12:00:00.000Z",
-          "value": 32.3,
+          "value": 33.1,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T13:00:00.000Z",
-          "value": 31.3,
+          "value": 31.9,
           "band": "Caution"
         },
         {
           "date_time": "2026-09-02T14:00:00.000Z",
-          "value": 30.6,
+          "value": 30.8,
           "band": "Caution"
         },
         {
@@ -6012,13 +6012,13 @@
       "longitude": 124.24302,
       "elevation_m": 14,
       "current": {
-        "date_time": "2026-09-02T03:30:00.000Z",
-        "value": 38.5,
+        "date_time": "2026-09-02T07:00:00.000Z",
+        "value": 38.1,
         "band": "Extreme Caution"
       },
       "today_peak": {
         "date_time": "2026-09-02T05:00:00.000Z",
-        "value": 38.7,
+        "value": 38.4,
         "band": "Extreme Caution"
       },
       "hourly": [
@@ -6064,42 +6064,42 @@
         },
         {
           "date_time": "2026-09-02T00:00:00.000Z",
-          "value": 34.7,
+          "value": 34.9,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T01:00:00.000Z",
-          "value": 36,
+          "value": 35.9,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T02:00:00.000Z",
-          "value": 37.1,
+          "value": 36.7,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T03:00:00.000Z",
-          "value": 38,
+          "value": 37.6,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T04:00:00.000Z",
-          "value": 38.6,
+          "value": 38.3,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T05:00:00.000Z",
-          "value": 38.7,
+          "value": 38.4,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T06:00:00.000Z",
-          "value": 37.9,
+          "value": 38.1,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T07:00:00.000Z",
-          "value": 37.6,
+          "value": 38.1,
           "band": "Extreme Caution"
         },
         {
@@ -6109,32 +6109,32 @@
         },
         {
           "date_time": "2026-09-02T09:00:00.000Z",
-          "value": 36,
+          "value": 35.9,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T10:00:00.000Z",
-          "value": 34.3,
+          "value": 33.9,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T11:00:00.000Z",
-          "value": 33.1,
+          "value": 33.7,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T12:00:00.000Z",
-          "value": 32.3,
+          "value": 33.1,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T13:00:00.000Z",
-          "value": 31.3,
+          "value": 31.9,
           "band": "Caution"
         },
         {
           "date_time": "2026-09-02T14:00:00.000Z",
-          "value": 30.6,
+          "value": 30.8,
           "band": "Caution"
         },
         {
@@ -6150,8 +6150,8 @@
       "longitude": 124.244723,
       "elevation_m": 11,
       "current": {
-        "date_time": "2026-09-02T03:30:00.000Z",
-        "value": 39.7,
+        "date_time": "2026-09-02T07:00:00.000Z",
+        "value": 39.4,
         "band": "Extreme Caution"
       },
       "today_peak": {
@@ -6202,27 +6202,27 @@
         },
         {
           "date_time": "2026-09-02T00:00:00.000Z",
-          "value": 36.1,
+          "value": 36.3,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T01:00:00.000Z",
-          "value": 37.6,
+          "value": 37.4,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T02:00:00.000Z",
-          "value": 38.6,
+          "value": 38.1,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T03:00:00.000Z",
-          "value": 39.4,
+          "value": 39,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T04:00:00.000Z",
-          "value": 39.8,
+          "value": 39.5,
           "band": "Extreme Caution"
         },
         {
@@ -6232,47 +6232,47 @@
         },
         {
           "date_time": "2026-09-02T06:00:00.000Z",
-          "value": 39.2,
+          "value": 39.7,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T07:00:00.000Z",
-          "value": 39,
+          "value": 39.4,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T08:00:00.000Z",
-          "value": 38.7,
+          "value": 38.4,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T09:00:00.000Z",
-          "value": 38,
+          "value": 37.5,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T10:00:00.000Z",
-          "value": 36,
+          "value": 35.5,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T11:00:00.000Z",
-          "value": 34.8,
+          "value": 35.2,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T12:00:00.000Z",
-          "value": 34,
+          "value": 34.7,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T13:00:00.000Z",
-          "value": 32.9,
+          "value": 33.3,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T14:00:00.000Z",
-          "value": 32,
+          "value": 32.2,
           "band": "Caution"
         },
         {
@@ -6288,13 +6288,13 @@
       "longitude": 124.268887,
       "elevation_m": 11,
       "current": {
-        "date_time": "2026-09-02T03:30:00.000Z",
-        "value": 39.8,
+        "date_time": "2026-09-02T07:00:00.000Z",
+        "value": 39.3,
         "band": "Extreme Caution"
       },
       "today_peak": {
-        "date_time": "2026-09-02T06:00:00.000Z",
-        "value": 40,
+        "date_time": "2026-09-02T04:00:00.000Z",
+        "value": 39.5,
         "band": "Extreme Caution"
       },
       "hourly": [
@@ -6340,52 +6340,52 @@
         },
         {
           "date_time": "2026-09-02T00:00:00.000Z",
-          "value": 34.3,
+          "value": 35.2,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T01:00:00.000Z",
-          "value": 35.8,
+          "value": 36.1,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T02:00:00.000Z",
-          "value": 37.5,
+          "value": 37.6,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T03:00:00.000Z",
-          "value": 38.9,
+          "value": 38.5,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T04:00:00.000Z",
-          "value": 39.8,
+          "value": 39.5,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T05:00:00.000Z",
-          "value": 39.7,
+          "value": 39.3,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T06:00:00.000Z",
-          "value": 40,
+          "value": 38.8,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T07:00:00.000Z",
-          "value": 38.9,
+          "value": 39.3,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T08:00:00.000Z",
-          "value": 38.1,
+          "value": 38.3,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T09:00:00.000Z",
-          "value": 36.8,
+          "value": 36.9,
           "band": "Extreme Caution"
         },
         {
@@ -6400,23 +6400,23 @@
         },
         {
           "date_time": "2026-09-02T12:00:00.000Z",
-          "value": 34,
+          "value": 34.5,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T13:00:00.000Z",
-          "value": 33.2,
+          "value": 33.9,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T14:00:00.000Z",
-          "value": 32.8,
+          "value": 33.5,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T15:00:00.000Z",
-          "value": 31.9,
-          "band": "Caution"
+          "value": 32.5,
+          "band": "Extreme Caution"
         }
       ]
     },
@@ -6426,13 +6426,13 @@
       "longitude": 124.224324,
       "elevation_m": 180,
       "current": {
-        "date_time": "2026-09-02T03:30:00.000Z",
-        "value": 38.5,
+        "date_time": "2026-09-02T07:00:00.000Z",
+        "value": 38.1,
         "band": "Extreme Caution"
       },
       "today_peak": {
         "date_time": "2026-09-02T05:00:00.000Z",
-        "value": 38.7,
+        "value": 38.4,
         "band": "Extreme Caution"
       },
       "hourly": [
@@ -6478,42 +6478,42 @@
         },
         {
           "date_time": "2026-09-02T00:00:00.000Z",
-          "value": 34.7,
+          "value": 34.9,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T01:00:00.000Z",
-          "value": 36,
+          "value": 35.9,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T02:00:00.000Z",
-          "value": 37.1,
+          "value": 36.7,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T03:00:00.000Z",
-          "value": 38,
+          "value": 37.6,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T04:00:00.000Z",
-          "value": 38.6,
+          "value": 38.3,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T05:00:00.000Z",
-          "value": 38.7,
+          "value": 38.4,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T06:00:00.000Z",
-          "value": 37.9,
+          "value": 38.1,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T07:00:00.000Z",
-          "value": 37.6,
+          "value": 38.1,
           "band": "Extreme Caution"
         },
         {
@@ -6523,32 +6523,32 @@
         },
         {
           "date_time": "2026-09-02T09:00:00.000Z",
-          "value": 36,
+          "value": 35.9,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T10:00:00.000Z",
-          "value": 34.3,
+          "value": 33.9,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T11:00:00.000Z",
-          "value": 33.1,
+          "value": 33.7,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T12:00:00.000Z",
-          "value": 32.3,
+          "value": 33.1,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T13:00:00.000Z",
-          "value": 31.3,
+          "value": 31.9,
           "band": "Caution"
         },
         {
           "date_time": "2026-09-02T14:00:00.000Z",
-          "value": 30.6,
+          "value": 30.8,
           "band": "Caution"
         },
         {
@@ -6564,8 +6564,8 @@
       "longitude": 124.242997,
       "elevation_m": 6,
       "current": {
-        "date_time": "2026-09-02T03:30:00.000Z",
-        "value": 39.7,
+        "date_time": "2026-09-02T07:00:00.000Z",
+        "value": 39.4,
         "band": "Extreme Caution"
       },
       "today_peak": {
@@ -6616,27 +6616,27 @@
         },
         {
           "date_time": "2026-09-02T00:00:00.000Z",
-          "value": 36.1,
+          "value": 36.3,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T01:00:00.000Z",
-          "value": 37.6,
+          "value": 37.4,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T02:00:00.000Z",
-          "value": 38.6,
+          "value": 38.1,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T03:00:00.000Z",
-          "value": 39.4,
+          "value": 39,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T04:00:00.000Z",
-          "value": 39.8,
+          "value": 39.5,
           "band": "Extreme Caution"
         },
         {
@@ -6646,47 +6646,47 @@
         },
         {
           "date_time": "2026-09-02T06:00:00.000Z",
-          "value": 39.2,
+          "value": 39.7,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T07:00:00.000Z",
-          "value": 39,
+          "value": 39.4,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T08:00:00.000Z",
-          "value": 38.7,
+          "value": 38.4,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T09:00:00.000Z",
-          "value": 38,
+          "value": 37.5,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T10:00:00.000Z",
-          "value": 36,
+          "value": 35.5,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T11:00:00.000Z",
-          "value": 34.8,
+          "value": 35.2,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T12:00:00.000Z",
-          "value": 34,
+          "value": 34.7,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T13:00:00.000Z",
-          "value": 32.9,
+          "value": 33.3,
           "band": "Extreme Caution"
         },
         {
           "date_time": "2026-09-02T14:00:00.000Z",
-          "value": 32,
+          "value": 32.2,
           "band": "Caution"
         },
         {

@@ -51,10 +51,14 @@ Out of scope until these 8 are flowing: sensors, ML forecasting, mobile app,
 citizen reporting portal, authentication, database.
 
 ## Phase 2 (deferred — do not build yet)
-- Map view: Leaflet or MapLibre with barangay GeoJSON/boundaries.
-- Anything that depends on real barangay boundary polygons (NAMRIA/PhilGIS/
-  City CPDO) rather than the reference points in
-  data/barangay_reference_points.json.
+- A choropleth/boundary map: filled barangay polygons imply area coverage we
+  don't have. Still deferred until NAMRIA/PhilGIS/City CPDO boundary data
+  exists.
+- A point map (44 markers from data/barangay_reference_points.json, no
+  polygons) is in scope now — it doesn't claim boundary coverage, just plots
+  the same reference points already used to sample the weather grid, and is
+  itself the honest way to show that the data is point-sampled, not an area
+  average.
 
 ## Tech constraints
 - Static frontend + scheduled fetch job writing JSON. No database yet.
