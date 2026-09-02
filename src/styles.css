@@ -1,0 +1,505 @@
+/* ---------------------------------------------------------------------
+   Design tokens. Dark is the authored default (:root). Light overrides
+   apply under prefers-color-scheme AND via an explicit [data-theme]
+   attribute the toggle button sets, so a manual choice always wins over
+   the system preference in either direction.
+   The heat band ramp is semantic and constant across both themes — it is
+   never used for anything other than a heat index band.
+--------------------------------------------------------------------- */
+:root {
+  --bg: #0e1418;
+  --surface: #161e24;
+  --surface-2: #1b242b;
+  --border: #1f2a31;
+  --text: #e7edf1;
+  --text-muted: #9bA8b0;
+  --accent: #4fa8ff;
+  --accent-fg: #04141f;
+  --focus-ring: #7cc4ff;
+
+  --stale-bg: #4a2e00;
+  --stale-fg: #ffd699;
+  --stale-border: #b45309;
+  --fresh-fg: #9bA8b0;
+
+  --band-caution-bg: #3e9c8f;
+  --band-caution-fg: #04211b;
+  --band-extreme-caution-bg: #e0a93b;
+  --band-extreme-caution-fg: #3a2400;
+  --band-danger-bg: #de6b3c;
+  --band-danger-fg: #2a0e00;
+  --band-extreme-danger-bg: #c2384a;
+  --band-extreme-danger-fg: #ffffff;
+
+  --font-ui: "IBM Plex Sans", -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-mono: "IBM Plex Mono", "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+
+  color-scheme: dark;
+}
+
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme="dark"]) {
+    --bg: #f4f6f8;
+    --surface: #ffffff;
+    --surface-2: #eef1f4;
+    --border: #d7dce1;
+    --text: #12181f;
+    --text-muted: #4b555e;
+    --accent: #0b63c2;
+    --accent-fg: #ffffff;
+    --focus-ring: #0b63c2;
+
+    --stale-bg: #fff1d6;
+    --stale-fg: #6b3d00;
+    --stale-border: #b45309;
+    --fresh-fg: #4b555e;
+
+    color-scheme: light;
+  }
+}
+
+:root[data-theme="light"] {
+  --bg: #f4f6f8;
+  --surface: #ffffff;
+  --surface-2: #eef1f4;
+  --border: #d7dce1;
+  --text: #12181f;
+  --text-muted: #4b555e;
+  --accent: #0b63c2;
+  --accent-fg: #ffffff;
+  --focus-ring: #0b63c2;
+
+  --stale-bg: #fff1d6;
+  --stale-fg: #6b3d00;
+  --stale-border: #b45309;
+  --fresh-fg: #4b555e;
+
+  color-scheme: light;
+}
+
+:root[data-theme="dark"] {
+  --bg: #0e1418;
+  --surface: #161e24;
+  --surface-2: #1b242b;
+  --border: #1f2a31;
+  --text: #e7edf1;
+  --text-muted: #9bA8b0;
+  --accent: #4fa8ff;
+  --accent-fg: #04141f;
+  --focus-ring: #7cc4ff;
+
+  --stale-bg: #4a2e00;
+  --stale-fg: #ffd699;
+  --stale-border: #b45309;
+  --fresh-fg: #9bA8b0;
+
+  color-scheme: dark;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-ui);
+  line-height: 1.45;
+  font-size: 15px;
+}
+
+:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* ---------------------------------------------------------------------
+   Header
+--------------------------------------------------------------------- */
+.topbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  padding: 0.75rem 1.25rem;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.brand {
+  margin: 0;
+  font-size: 1.05rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+.topbar-chips {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.3rem 0.65rem;
+  border-radius: 999px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+  font-family: var(--font-mono);
+}
+
+.chip-outline {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+}
+
+.chip-fresh {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--fresh-fg);
+}
+
+.chip-stale {
+  background: var(--stale-bg);
+  border: 1px solid var(--stale-border);
+  color: var(--stale-fg);
+}
+
+.icon-btn {
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  color: var(--text);
+  border-radius: 999px;
+  padding: 0.35rem 0.8rem;
+  font-family: var(--font-ui);
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+.icon-btn:hover { border-color: var(--accent); }
+
+/* ---------------------------------------------------------------------
+   Layout
+--------------------------------------------------------------------- */
+main {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 1.25rem;
+}
+
+.panel {
+  margin-bottom: 1.5rem;
+}
+
+.panel-title {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-muted);
+  margin: 0 0 0.6rem;
+  font-weight: 600;
+}
+
+.panel-subtitle {
+  margin: -0.3rem 0 0.75rem;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}
+
+.panel-header-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+/* ---------------------------------------------------------------------
+   ESG scorecard
+--------------------------------------------------------------------- */
+.scorecard {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+}
+
+.tile {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--accent);
+  border-radius: 8px;
+  padding: 1rem 1.1rem;
+}
+.tile.tile-pending { border-left-color: var(--border); }
+
+.tile h3 {
+  margin: 0 0 0.4rem;
+  font-size: 0.95rem;
+}
+
+.metric {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin: 0.1rem 0;
+}
+
+.metric-detail {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-bottom: 0.5rem;
+}
+
+.pending-list {
+  margin: 0.5rem 0 0;
+  padding-left: 1.05rem;
+  font-size: 0.85rem;
+}
+.pending-list li { margin-bottom: 0.55rem; }
+
+.pending-tag {
+  display: inline-block;
+  background: var(--surface-2);
+  color: var(--text-muted);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 0.05rem 0.4rem;
+  font-weight: 700;
+  font-size: 0.68rem;
+  font-family: var(--font-mono);
+  letter-spacing: 0.03em;
+}
+
+.owner {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+
+/* ---------------------------------------------------------------------
+   Hero
+--------------------------------------------------------------------- */
+.hero {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1.1rem 1.25rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.5rem;
+  box-shadow: 0 0 0 1px rgba(79, 168, 255, 0.08), 0 0 24px rgba(79, 168, 255, 0.06);
+}
+
+.hero-label {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+  margin-bottom: 0.15rem;
+}
+
+.hero-names {
+  font-size: 1.15rem;
+  font-weight: 700;
+  max-width: 26rem;
+}
+
+.hero-value {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+  font-size: 2.1rem;
+  font-weight: 600;
+  color: var(--accent);
+}
+
+.hero-time {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+/* ---------------------------------------------------------------------
+   Band badges — color + text always together
+--------------------------------------------------------------------- */
+.band-badge {
+  display: inline-block;
+  padding: 0.15rem 0.55rem;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 0.72rem;
+  font-family: var(--font-mono);
+  white-space: nowrap;
+}
+.band-caution { background: var(--band-caution-bg); color: var(--band-caution-fg); }
+.band-extreme-caution { background: var(--band-extreme-caution-bg); color: var(--band-extreme-caution-fg); }
+.band-danger { background: var(--band-danger-bg); color: var(--band-danger-fg); }
+.band-extreme-danger { background: var(--band-extreme-danger-bg); color: var(--band-extreme-danger-fg); }
+
+/* ---------------------------------------------------------------------
+   Charts
+--------------------------------------------------------------------- */
+.chart-wrap {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1rem;
+  height: 320px;
+  position: relative;
+}
+.chart-wrap-tall { height: 380px; }
+.chart-wrap-strip { height: 90px; }
+
+.segmented {
+  display: inline-flex;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  overflow: hidden;
+}
+.segmented-btn {
+  background: var(--surface);
+  color: var(--text-muted);
+  border: none;
+  padding: 0.3rem 0.75rem;
+  font-family: var(--font-ui);
+  font-size: 0.78rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+.segmented-btn.is-active {
+  background: var(--accent);
+  color: var(--accent-fg);
+}
+
+/* ---------------------------------------------------------------------
+   Table
+--------------------------------------------------------------------- */
+.table-wrap {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+  min-width: 640px;
+}
+
+thead th {
+  position: sticky;
+  top: 0;
+  background: var(--surface-2);
+  color: var(--text);
+  text-align: left;
+  padding: 0.55rem 0.7rem;
+  font-weight: 600;
+  white-space: nowrap;
+  border-bottom: 1px solid var(--border);
+}
+thead th[data-sort] { cursor: pointer; user-select: none; }
+thead th[data-sort]:hover { color: var(--accent); }
+
+tbody td {
+  padding: 0.45rem 0.7rem;
+  border-bottom: 1px solid var(--border);
+  vertical-align: middle;
+}
+tbody tr:nth-child(even) { background: var(--surface-2); }
+
+tbody tr {
+  border-left: 4px solid transparent;
+}
+tbody tr.row-caution { border-left-color: var(--band-caution-bg); }
+tbody tr.row-extreme-caution { border-left-color: var(--band-extreme-caution-bg); }
+tbody tr.row-danger { border-left-color: var(--band-danger-bg); }
+tbody tr.row-extreme-danger { border-left-color: var(--band-extreme-danger-bg); }
+
+.rank-cell, .value-cell, .peak-time-cell {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}
+.rank-cell { color: var(--text-muted); width: 3rem; }
+.value-cell { font-weight: 600; }
+
+.sparkline { display: block; }
+
+.table-note {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  margin: 0.6rem 0.2rem 0;
+}
+
+/* ---------------------------------------------------------------------
+   Footer / load state
+--------------------------------------------------------------------- */
+footer {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 1rem 1.25rem 2.5rem;
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  border-top: 1px solid var(--border);
+  font-family: var(--font-mono);
+}
+footer p { margin: 0.3rem 0; }
+footer a { color: var(--accent); }
+
+.load-state {
+  max-width: 1180px;
+  margin: 2rem auto;
+  padding: 1rem 1.25rem;
+  font-weight: 600;
+}
+.load-state.error {
+  background: var(--stale-bg);
+  color: var(--stale-fg);
+  border: 1px solid var(--stale-border);
+  border-radius: 8px;
+  margin: 1rem 1.25rem;
+}
+
+/* ---------------------------------------------------------------------
+   Responsive
+--------------------------------------------------------------------- */
+@media (max-width: 640px) {
+  .brand { font-size: 0.95rem; }
+  .hero-value { font-size: 1.7rem; }
+  .chart-wrap { height: 260px; padding: 0.75rem; }
+  .chart-wrap-tall { height: 300px; }
+  table { font-size: 0.78rem; }
+  thead th, tbody td { padding: 0.4rem 0.5rem; }
+
+  /* The derived-indicator chip's text is wider than a phone viewport as one
+     unbroken line — let it wrap onto two lines rather than force nowrap and
+     overflow the page horizontally. Staying legible matters more than
+     staying on one line. */
+  .chip { white-space: normal; text-align: center; }
+  .topbar-chips { width: 100%; }
+}

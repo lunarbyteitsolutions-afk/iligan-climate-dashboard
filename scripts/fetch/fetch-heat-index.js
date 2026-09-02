@@ -1,10 +1,16 @@
 'use strict';
 
 /**
- * Fetches current temperature and humidity for all 44 Iligan barangay
- * reference points from Open-Meteo in a single batched call, computes the
- * NWS/Rothfusz heat index (see heat-index.js) for each, and writes
- * data/heat-index-latest.json in the schema/record.schema.json shape.
+ * Fetches current + today's hourly temperature and humidity for all 44
+ * Iligan barangay reference points from Open-Meteo in a single batched
+ * call, computes the NWS/Rothfusz heat index (see heat-index.js) for each,
+ * and writes data/heat-index-latest.json with:
+ *   - `records`: one schema/record.schema.json-compliant current reading
+ *     per barangay (unchanged shape from earlier versions of this script).
+ *   - `barangays`: a richer per-barangay object (elevation, current, today's
+ *     peak, and the full 24-hour curve) that the dashboard's charts/table
+ *     consume. This is additional derived data, not itself a "record" in
+ *     the schema sense — it doesn't replace `records`.
  *
  * PAGASA's iHeatMAP/Heat Index page is the authoritative source for heat
  * index in the Philippines. This script's output is a supplementary,
@@ -32,13 +38,15 @@ function loadReferencePoints() {
  * @param {Array<{latitude:number, longitude:number}>} points
  * @returns {Promise<Array<object>>} one Open-Meteo location object per point, same order as input
  */
-async function fetchCurrentWeather(points) {
+async function fetchWeather(points) {
   const latitudes = points.map((p) => p.latitude).join(',');
   const longitudes = points.map((p) => p.longitude).join(',');
   const url =
     'https://api.open-meteo.com/v1/forecast' +
     `?latitude=${latitudes}&longitude=${longitudes}` +
-    '&current=temperature_2m,relative_humidity_2m&timezone=UTC';
+    '&current=temperature_2m,relative_humidity_2m' +
+    '&hourly=temperature_2m,relative_humidity_2m' +
+    '&forecast_days=1&timezone=Asia%2FManila';
 
   const res = await fetch(url);
   if (!res.ok) {
@@ -56,21 +64,26 @@ async function fetchCurrentWeather(points) {
   return results;
 }
 
-function toUtcIso8601(openMeteoUtcTime) {
-  // With timezone=UTC, Open-Meteo returns e.g. "2026-09-02T02:30" (no seconds, no offset).
-  return `${openMeteoUtcTime}:00Z`;
+/**
+ * Open-Meteo, requested with timezone=Asia/Manila, returns bare local
+ * wall-clock strings like "2026-09-02T13:00" (no offset). Manila is a fixed
+ * UTC+8 with no DST, so appending the offset and letting Date parse it gives
+ * the correct UTC instant for storage (CLAUDE.md: store UTC, display Manila).
+ */
+function manilaLocalToUtcIso(manilaLocalTime) {
+  return new Date(`${manilaLocalTime}:00+08:00`).toISOString();
 }
 
-function buildRecord(barangayPoint, weather) {
-  const temperatureC = weather.current.temperature_2m;
-  const relativeHumidityPct = weather.current.relative_humidity_2m;
-  const hiC = heatIndexCelsius(temperatureC, relativeHumidityPct);
-  const hiBand = band(hiC);
+function hiPoint(temperatureC, relativeHumidityPct) {
+  const value = Number(heatIndexCelsius(temperatureC, relativeHumidityPct).toFixed(1));
+  return { value, band: band(value) };
+}
 
+function buildRecord(barangayPoint, weather, currentPoint, currentUtcIso) {
   const remarksParts = [
     DERIVED_LABEL,
     'Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature).',
-    `Inputs: ${temperatureC.toFixed(1)}°C, ${relativeHumidityPct}% RH.`,
+    `Inputs: ${weather.current.temperature_2m.toFixed(1)}°C, ${weather.current.relative_humidity_2m}% RH.`,
   ];
   if (barangayPoint.coordinate_confidence === 'low') {
     remarksParts.push(
@@ -79,14 +92,14 @@ function buildRecord(barangayPoint, weather) {
   }
 
   return {
-    date_time: toUtcIso8601(weather.current.time),
+    date_time: currentUtcIso,
     barangay: barangayPoint.name,
     latitude: barangayPoint.latitude,
     longitude: barangayPoint.longitude,
     indicator: 'heat_index',
-    value: Number(hiC.toFixed(1)),
+    value: currentPoint.value,
     unit: '°C',
-    band: hiBand,
+    band: currentPoint.band,
     source: SOURCE_LABEL,
     responsible_office: null,
     status: 'derived',
@@ -94,11 +107,36 @@ function buildRecord(barangayPoint, weather) {
   };
 }
 
-async function main() {
-  const barangays = loadReferencePoints();
-  const weatherResults = await fetchCurrentWeather(barangays);
+function buildBarangayEntry(barangayPoint, weather) {
+  const currentUtcIso = manilaLocalToUtcIso(weather.current.time);
+  const currentPoint = hiPoint(weather.current.temperature_2m, weather.current.relative_humidity_2m);
 
-  const records = barangays.map((barangayPoint, i) => buildRecord(barangayPoint, weatherResults[i]));
+  const hourly = weather.hourly.time.map((localTime, i) => {
+    const point = hiPoint(weather.hourly.temperature_2m[i], weather.hourly.relative_humidity_2m[i]);
+    return { date_time: manilaLocalToUtcIso(localTime), value: point.value, band: point.band };
+  });
+
+  const peak = hourly.reduce((best, h) => (h.value > best.value ? h : best), hourly[0]);
+
+  return {
+    name: barangayPoint.name,
+    latitude: barangayPoint.latitude,
+    longitude: barangayPoint.longitude,
+    elevation_m: weather.elevation,
+    current: { date_time: currentUtcIso, value: currentPoint.value, band: currentPoint.band },
+    today_peak: peak,
+    hourly,
+    record: buildRecord(barangayPoint, weather, currentPoint, currentUtcIso),
+  };
+}
+
+async function main() {
+  const barangayPoints = loadReferencePoints();
+  const weatherResults = await fetchWeather(barangayPoints);
+
+  const entries = barangayPoints.map((bp, i) => buildBarangayEntry(bp, weatherResults[i]));
+  const records = entries.map((e) => e.record);
+  const barangays = entries.map(({ record, ...rest }) => rest);
 
   const output = {
     generated_at: new Date().toISOString(),
@@ -106,12 +144,15 @@ async function main() {
     label: DERIVED_LABEL,
     schema: 'schema/record.schema.json',
     coordinate_note:
-      'latitude/longitude are the barangay reference points from data/barangay_reference_points.json; Open-Meteo samples its own weather grid nearest to each point, which may snap several km away from the point itself.',
+      'latitude/longitude are the barangay reference points from data/barangay_reference_points.json; Open-Meteo samples its own weather grid nearest to each point, which may snap several km away from the point itself. elevation_m is Open-Meteo\'s grid-cell elevation, not a surveyed barangay elevation.',
+    grid_resolution_note:
+      'Several barangays fall in the same Open-Meteo weather grid cell and so share an identical modeled value. This is expected model resolution, not measurement precision at the barangay level — do not read tied values as coincidence.',
     records,
+    barangays,
   };
 
   fs.writeFileSync(OUTPUT_PATH, JSON.stringify(output, null, 2) + '\n');
-  console.log(`Wrote ${records.length} heat_index records to ${path.relative(process.cwd(), OUTPUT_PATH)}`);
+  console.log(`Wrote ${records.length} heat_index records + ${barangays.length} barangay hourly series to ${path.relative(process.cwd(), OUTPUT_PATH)}`);
 }
 
 if (require.main === module) {
@@ -121,4 +162,4 @@ if (require.main === module) {
   });
 }
 
-module.exports = { fetchCurrentWeather, buildRecord, toUtcIso8601 };
+module.exports = { fetchWeather, buildRecord, buildBarangayEntry, manilaLocalToUtcIso };
