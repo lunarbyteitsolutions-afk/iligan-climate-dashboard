@@ -29,6 +29,61 @@ const ICONS = {
 export function icon(name) { return ICONS[name] || ''; }
 
 // -----------------------------------------------------------------------
+// Attribution & disclaimer copy — written once here, identical on every
+// page. See CLAUDE.md's "Who we are" and non-negotiable #2: this project
+// is a City Government of Iligan initiative (CDIIS, via the Digital
+// Creatives Hub, in collaboration with DEVCON Iligan), so every figure on
+// it reads as official — which makes the modelled-vs-authoritative and
+// monitoring-tool-not-advisory distinctions MORE important, not less.
+// Never re-type any of these strings inline; import them from here.
+// -----------------------------------------------------------------------
+export const FOOTER_ATTRIBUTION_FULL =
+  'An initiative of the Center for Digital Iligan, Innovation and Sustainability (CDIIS), ' +
+  'City Government of Iligan, through its Digital Creatives Hub, in collaboration with ' +
+  'DEVCON Iligan — Developers Connect Philippines, Iligan Chapter.';
+
+export const FOOTER_ATTRIBUTION_COMPACT = 'CDIIS · City Government of Iligan × DEVCON Iligan';
+
+export const DERIVED_DISCLAIMER =
+  'Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, ' +
+  'the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference ' +
+  'for official heat index values and El Niño declarations. Values marked derived are modelled, not observed.';
+
+export const MONITORING_TOOL_NOTICE =
+  'This is a monitoring tool, not an advisory. Official heat and El Niño advisories for Iligan ' +
+  'are issued by PAGASA and by the City Government of Iligan through its authorized offices.';
+
+export const HEADER_CHIP_TEXT = 'DERIVED · MODELLED FROM OPEN-METEO · PAGASA IS AUTHORITATIVE';
+
+/**
+ * Fills in the standard header derived-chip and footer disclosure copy.
+ * Every page calls this once at boot rather than hand-typing any of the
+ * strings above. `#derived-chip` and the three footer element ids are
+ * optional per page (a page just omits the ones it doesn't have), so this
+ * is safe to call unconditionally.
+ */
+export function renderDisclosureCopy() {
+  const chip = document.getElementById('derived-chip');
+  if (chip) {
+    chip.textContent = HEADER_CHIP_TEXT;
+    chip.title = DERIVED_DISCLAIMER;
+  }
+
+  const attribution = document.getElementById('footer-attribution');
+  if (attribution) {
+    attribution.innerHTML =
+      '<span class="attribution-full">' + FOOTER_ATTRIBUTION_FULL + '</span>' +
+      '<span class="attribution-compact">' + FOOTER_ATTRIBUTION_COMPACT + '</span>';
+  }
+
+  const derivedNote = document.getElementById('footer-derived-note');
+  if (derivedNote) derivedNote.textContent = DERIVED_DISCLAIMER;
+
+  const monitoringNotice = document.getElementById('footer-monitoring-notice');
+  if (monitoringNotice) monitoringNotice.textContent = MONITORING_TOOL_NOTICE;
+}
+
+// -----------------------------------------------------------------------
 // Shared nav — one list, edited in the step that makes a page live
 // (remove `pending: true` from that page's entry), so every page's nav
 // bar stays in sync automatically.

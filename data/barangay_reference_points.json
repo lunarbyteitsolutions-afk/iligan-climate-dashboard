@@ -3,7 +3,7 @@
     "barangay_count": 44,
     "name_and_code_source": "PSA PSGC (via psgc.gitlab.io community mirror) — status: reported, pending direct psa.gov.ph verification",
     "coordinate_source": "OpenStreetMap contributors, ODbL 1.0, via Overpass API",
-    "label": "Derived DEVCON Iligan indicator — coordinates are approximate reference points for weather-grid sampling only. Not an official PAGASA declaration or City of Iligan figure. Not survey-grade and not a legal boundary.",
+    "label": "Coordinates are approximate reference points for weather-grid sampling only, sourced from OpenStreetMap (community-contributed) — not an official City of Iligan, NAMRIA, or PhilGIS survey. Not survey-grade and not a legal boundary.",
     "known_limitations": [
       "These are POINTS, not boundaries, so any barangay figure derived from them describes that point, not an area average.",
       "Tambacan has no admin_level=10 feature in OSM — OSM currently nests it inside Mahayahay — so its point is low confidence and must be replaced with an official boundary.",

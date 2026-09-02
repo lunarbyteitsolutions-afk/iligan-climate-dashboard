@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Iligan Farmers &amp; Hectares Affected</title>
+<title>Farmers & Hectares Affected · Iligan Climate+</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -12,9 +12,10 @@
 <body>
 
 <header class="landing-header">
-  <div class="wordmark"><span class="wordmark-dot" id="wordmark-dot"></span>ILIGAN CLIMATE</div>
+  <div class="wordmark"><span class="wordmark-dot" id="wordmark-dot"></span>Iligan Climate<span class="wordmark-plus">+</span></div>
   <nav class="site-nav" id="site-nav" aria-label="Indicator pages"></nav>
   <div class="topbar-chips">
+    <span class="chip chip-outline" id="derived-chip"></span>
     <span class="chip chip-fresh" id="freshness-chip">UPDATED —</span>
     <button type="button" id="theme-toggle" class="icon-btn" aria-label="Switch color theme">
       <span id="theme-toggle-label">Light theme</span>
@@ -77,9 +78,10 @@
 
 <footer>
   <div class="container" style="padding:0;">
-    <p>Built by DEVCON Iligan (volunteer civic-tech) — not a City of Iligan office. City data owned and confirmed by the city.</p>
+    <p id="footer-attribution"></p>
     <p><strong>Last updated:</strong> <span id="footer-updated">—</span></p>
-    <p>Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure.</p>
+    <p id="footer-derived-note"></p>
+    <p id="footer-monitoring-notice"></p>
   </div>
 </footer>
 

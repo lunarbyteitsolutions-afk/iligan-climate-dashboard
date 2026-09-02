@@ -5,7 +5,7 @@ import {
   loadDashboardData, loadRainfallData, loadPopulationData, computeExposureByBand,
   MVP_INDICATORS, indicatorCompleteness, pillarIndicators
 } from './js/data.js';
-import { initThemeToggle, initFreshnessChip, setFooterUpdated, icon, renderNav, initScrollReveal } from './js/chrome.js';
+import { initThemeToggle, initFreshnessChip, setFooterUpdated, icon, renderNav, initScrollReveal, renderDisclosureCopy } from './js/chrome.js';
 
 let citySeries = null;
 
@@ -275,6 +275,7 @@ function renderReframeCompleteness() {
 // Boot
 // ---------------------------------------------------------------------
 renderNav('site-nav', 'overview');
+renderDisclosureCopy();
 renderReframeIcons();
 renderReframeCompleteness();
 

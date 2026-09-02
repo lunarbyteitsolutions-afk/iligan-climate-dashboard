@@ -1,7 +1,7 @@
 'use strict';
 
 import { DRY_DAY_THRESHOLD_MM, loadRainfallData } from './js/data.js';
-import { initThemeToggle, initFreshnessChip, setFooterUpdated, renderNav, initScrollReveal } from './js/chrome.js';
+import { initThemeToggle, initFreshnessChip, setFooterUpdated, renderNav, initScrollReveal, renderDisclosureCopy } from './js/chrome.js';
 
 // ---------------------------------------------------------------------
 // "Right now" summary — tie-safe, same pattern as the heat hero: all
@@ -103,6 +103,7 @@ function renderTable(data) {
 // Boot
 // ---------------------------------------------------------------------
 renderNav('site-nav', 'rainfall');
+renderDisclosureCopy();
 initThemeToggle('theme-toggle', 'theme-toggle-label', () => {});
 document.getElementById('dry-threshold-text').textContent = DRY_DAY_THRESHOLD_MM.toFixed(1) + 'mm';
 

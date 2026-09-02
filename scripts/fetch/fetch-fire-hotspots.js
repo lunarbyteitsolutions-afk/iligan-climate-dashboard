@@ -25,7 +25,7 @@ const REFERENCE_POINTS_PATH = path.join(__dirname, '..', '..', 'data', 'barangay
 const OUTPUT_PATH = path.join(__dirname, '..', '..', 'data', 'fire-hotspots-latest.json');
 
 const DERIVED_LABEL =
-  'Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure.';
+  'Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed.';
 const DISCLAIMER =
   'These are satellite-detected thermal anomalies (NASA FIRMS), NOT confirmed fire incidents. ' +
   'A hotspot can be a grass fire, agricultural burning, industrial heat, or a false positive; a real ' +

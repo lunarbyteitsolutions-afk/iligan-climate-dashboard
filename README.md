@@ -1,4 +1,4 @@
-# Iligan El Niño ESG Resilience Dashboard
+# Iligan Climate+
 
 A public, barangay-level dashboard tracking El Niño / heat and drought risk
 across Iligan City's 44 barangays, organized on three pillars: Environmental
@@ -7,11 +7,18 @@ is doing).
 
 ## Who we are
 
-DEVCON Iligan (Developers Connect Philippines, Iligan chapter) is a volunteer
-civic-tech community. We are building this dashboard independently, without
-an MOU or mandate from the City of Iligan. The City of Iligan is the
-beneficiary and the owner of any operational data referenced here — this
-project does not speak for the city and is not a city office.
+This is a City Government of Iligan initiative, from CDIIS — Center for
+Digital Iligan, Innovation and Sustainability — via the Digital Creatives
+Hub, in collaboration with DEVCON Iligan (Developers Connect Philippines,
+Iligan Chapter), whose resources were used. The collaboration is confirmed
+by CDIIS.
+
+Because a city office's name is on this dashboard, every figure on it reads
+as official, so the modelled-vs-authoritative distinction matters more, not
+less: PAGASA remains the authoritative source for heat index and El Niño
+advisories, this dashboard is a monitoring tool and never an advisory, and
+data ownership stays with whichever office actually produces each dataset.
+See `CLAUDE.md` for the full rules.
 
 ## Status: pre-alpha, open data only
 

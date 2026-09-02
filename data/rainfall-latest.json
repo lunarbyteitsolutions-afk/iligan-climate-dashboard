@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-02T09:26:56.384Z",
+  "generated_at": "2026-09-02T10:03:14.761Z",
   "indicator": "rainfall",
-  "label": "Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure.",
+  "label": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed.",
   "schema": "schema/record.schema.json",
   "dry_day_threshold_mm": 1,
   "coordinate_note": "latitude/longitude are the barangay reference points from data/barangay_reference_points.json; Open-Meteo samples its own weather grid nearest to each point, which may snap several km away from the point itself.",
@@ -18,7 +18,7 @@
       "source": "Open-Meteo (supplementary) — PAGASA is the authoritative rainfall reference for the Philippines",
       "responsible_office": "PAGASA (authoritative); CDRRMO for local rain gauges",
       "status": "derived",
-      "remarks": "Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure. 7-day accumulated rainfall (today + previous 6 days). Dry day = under 1.0mm. Today: 0.1mm. Dry days in this window: 4 of 7. Consecutive dry days (through today): 1."
+      "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. 7-day accumulated rainfall (today + previous 6 days). Dry day = under 1.0mm. Today: 0.1mm. Dry days in this window: 4 of 7. Consecutive dry days (through today): 1."
     },
     {
       "date_time": "2026-09-01T16:00:00.000Z",
@@ -31,7 +31,7 @@
       "source": "Open-Meteo (supplementary) — PAGASA is the authoritative rainfall reference for the Philippines",
       "responsible_office": "PAGASA (authoritative); CDRRMO for local rain gauges",
       "status": "derived",
-      "remarks": "Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure. 7-day accumulated rainfall (today + previous 6 days). Dry day = under 1.0mm. Today: 0mm. Dry days in this window: 6 of 7. Consecutive dry days (through today): 5."
+      "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. 7-day accumulated rainfall (today + previous 6 days). Dry day = under 1.0mm. Today: 0mm. Dry days in this window: 6 of 7. Consecutive dry days (through today): 5."
     },
     {
       "date_time": "2026-09-01T16:00:00.000Z",
@@ -44,7 +44,7 @@
       "source": "Open-Meteo (supplementary) — PAGASA is the authoritative rainfall reference for the Philippines",
       "responsible_office": "PAGASA (authoritative); CDRRMO for local rain gauges",
       "status": "derived",
-      "remarks": "Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure. 7-day accumulated rainfall (today + previous 6 days). Dry day = under 1.0mm. Today: 0.1mm. Dry days in this window: 4 of 7. Consecutive dry days (through today): 1."
+      "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. 7-day accumulated rainfall (today + previous 6 days). Dry day = under 1.0mm. Today: 0.1mm. Dry days in this window: 4 of 7. Consecutive dry days (through today): 1."
     },
     {
       "date_time": "2026-09-01T16:00:00.000Z",
@@ -57,7 +57,7 @@
       "source": "Open-Meteo (supplementary) — PAGASA is the authoritative rainfall reference for the Philippines",
       "responsible_office": "PAGASA (authoritative); CDRRMO for local rain gauges",
       "status": "derived",
-      "remarks": "Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure. 7-day accumulated rainfall (today + previous 6 days). Dry day = under 1.0mm. Today: 0mm. Dry days in this window: 4 of 7. Consecutive dry days (through today): 1."
+      "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. 7-day accumulated rainfall (today + previous 6 days). Dry day = under 1.0mm. Today: 0mm. Dry days in this window: 4 of 7. Consecutive dry days (through today): 1."
     },
     {
       "date_time": "2026-09-01T16:00:00.000Z",
@@ -70,7 +70,7 @@
       "source": "Open-Meteo (supplementary) — PAGASA is the authoritative rainfall reference for the Philippines",
       "responsible_office": "PAGASA (authoritative); CDRRMO for local rain gauges",
       "status": "derived",
-      "remarks": "Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure. 7-day accumulated rainfall (today + previous 6 days). Dry day = under 1.0mm. Today: 0mm. Dry days in this window: 4 of 7. Consecutive dry days (through today): 1."
+      "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. 7-day accumulated rainfall (today + previous 6 days). Dry day = under 1.0mm. Today: 0mm. Dry days in this window: 4 of 7. Consecutive dry days (through today): 1."
     },
     {
       "date_time": "2026-09-01T16:00:00.000Z",
@@ -83,7 +83,7 @@
       "source": "Open-Meteo (supplementary) — PAGASA is the authoritative rainfall reference for the Philippines",
       "responsible_office": "PAGASA (authoritative); CDRRMO for local rain gauges",
       "status": "derived",
-      "remarks": "Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure. 7-day accumulated rainfall (today + previous 6 days). Dry day = under 1.0mm. Today: 0mm. Dry days in this window: 7 of 7. Consecutive dry days (through today): 8."
+      "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. 7-day accumulated rainfall (today + previous 6 days). Dry day = under 1.0mm. Today: 0mm. Dry days in this window: 7 of 7. Consecutive dry days (through today): 8."
     },
     {
       "date_time": "2026-09-01T16:00:00.000Z",
@@ -96,7 +96,7 @@
       "source": "Open-Meteo (supplementary) — PAGASA is the authoritative rainfall reference for the Philippines",
       "responsible_office": "PAGASA (authoritative); CDRRMO for local rain gauges",
       "status": "derived",
-      "remarks": "Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure. 7-day accumulated rainfall (today + previous 6 days). Dry day = under 1.0mm. Today: 0mm. Dry days in this window: 6 of 7. Consecutive dry days (through today): 5."
+      "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. 7-day accumulated rainfall (today + previous 6 days). Dry day = under 1.0mm. Today: 0mm. Dry days in this window: 6 of 7. Consecutive dry days (through today): 5."
     },
     {
       "date_time": "2026-09-01T16:00:00.000Z",
@@ -109,7 +109,7 @@
       "source": "Open-Meteo (supplementary) — PAGASA is the authoritative rainfall reference for the Philippines",
       "responsible_office": "PAGASA (authoritative); CDRRMO for local rain gauges",
       "status": "derived",
-      "remarks": "Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure. 7-day accumulated rainfall (today + previous 6 days). Dry day = under 1.0mm. Today: 0.1mm. Dry days in this window: 4 of 7. Consecutive dry days (through today): 1."
+      "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. 7-day accumulated rainfall (today + previous 6 days). Dry day = under 1.0mm. Today: 0.1mm. Dry days in this window: 4 of 7. Consecutive dry days (through today): 1."
     },
     {
       "date_time": "2026-09-01T16:00:00.000Z",
@@ -122,7 +122,7 @@
       "source": "Open-Meteo (supplementary) — PAGASA is the authoritative rainfall reference for the Philippines",
       "responsible_office": "PAGASA (authoritative); CDRRMO for local rain gauges",
       "status": "derived",
-      "remarks": "Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure. 7-day accumulated rainfall (today + previous 6 days). Dry day = under 1.0mm. Today: 0mm. Dry days in this window: 4 of 7. Consecutive dry days (through today): 1."
+      "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. 7-day accumulated rainfall (today + previous 6 days). Dry day = under 1.0mm. Today: 0mm. Dry days in this window: 4 of 7. Consecutive dry days (through today): 1."
     },
     {
       "date_time": "2026-09-01T16:00:00.000Z",
@@ -135,7 +135,7 @@
       "source": "Open-Meteo (supplementary) — PAGASA is the authoritative rainfall reference for the Philippines",
       "responsible_office": "PAGASA (authoritative); CDRRMO for local rain gauges",
       "status": "derived",
-      "remarks": "Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure. 7-day accumulated rainfall (today + previous 6 days). Dry day = under 1.0mm. Today: 0.1mm. Dry days in this window: 4 of 7. Consecutive dry days (through today): 1."
+      "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. 7-day accumulated rainfall (today + previous 6 days). Dry day = under 1.0mm. Today: 0.1mm. Dry days in this window: 4 of 7. Consecutive dry days (through today): 1."
     },
     {
       "date_time": "2026-09-01T16:00:00.000Z",
@@ -148,7 +148,7 @@
       "source": "Open-Meteo (supplementary) — PAGASA is the authoritative rainfall reference for the Philippines",
       "responsible_office": "PAGASA (authoritative); CDRRMO for local rain gauges",
       "status": "derived",
-      "remarks": "Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure. 7-day accumulated rainfall (today + previous 6 days). Dry day = under 1.0mm. Today: 1.5mm. Dry days in this window: 1 of 7. Consecutive dry days (through today): 0."
+      "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. 7-day accumulated rainfall (today + previous 6 days). Dry day = under 1.0mm. Today: 1.5mm. Dry days in this window: 1 of 7. Consecutive dry days (through today): 0."
     },
     {
       "date_time": "2026-09-01T16:00:00.000Z",
@@ -161,7 +161,7 @@
       "source": "Open-Meteo (supplementary) — PAGASA is the authoritative rainfall reference for the Philippines",
       "responsible_office": "PAGASA (authoritative); CDRRMO for local rain gauges",
       "status": "derived",
-      "remarks": "Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure. 7-day accumulated rainfall (today + previous 6 days). Dry day = under 1.0mm. Today: 0mm. Dry days in this window: 6 of 7. Consecutive dry days (through today): 5."
+      "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. 7-day accumulated rainfall (today + previous 6 days). Dry day = under 1.0mm. Today: 0mm. Dry days in this window: 6 of 7. Consecutive dry days (through today): 5."
     },
     {
       "date_time": "2026-09-01T16:00:00.000Z",
@@ -174,7 +174,7 @@
       "source": "Open-Meteo (supplementary) — PAGASA is the authoritative rainfall reference for the Philippines",
       "responsible_office": "PAGASA (authoritative); CDRRMO for local rain gauges",
       "status": "derived",
-      "remarks": "Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure. 7-day accumulated rainfall (today + previous 6 days). Dry day = under 1.0mm. Today: 0mm. Dry days in this window: 4 of 7. Consecutive dry days (through today): 1."
+      "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. 7-day accumulated rainfall (today + previous 6 days). Dry day = under 1.0mm. Today: 0mm. Dry days in this window: 4 of 7. Consecutive dry days (through today): 1."
     },
     {
       "date_time": "2026-09-01T16:00:00.000Z",
@@ -187,7 +187,7 @@
       "source": "Open-Meteo (supplementary) — PAGASA is the authoritative rainfall reference for the Philippines",
       "responsible_office": "PAGASA (authoritative); CDRRMO for local rain gauges",
       "status": "derived",
-      "remarks": "Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure. 7-day accumulated rainfall (today + previous 6 days). Dry day = under 1.0mm. Today: 0mm. Dry days in this window: 4 of 7. Consecutive dry days (through today): 1."
+      "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. 7-day accumulated rainfall (today + previous 6 days). Dry day = under 1.0mm. Today: 0mm. Dry days in this window: 4 of 7. Consecutive dry days (through today): 1."
     },
     {
       "date_time": "2026-09-01T16:00:00.000Z",
@@ -200,7 +200,7 @@
       "source": "Open-Meteo (supplementary) — PAGASA is the authoritative rainfall reference for the Philippines",
       "responsible_office": "PAGASA (authoritative); CDRRMO for local rain gauges",
       "status": "derived",
-      "remarks": "Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure. 7-day accumulated rainfall (today + previous 6 days). Dry day = under 1.0mm. Today: 1.5mm. Dry days in this window: 1 of 7. Consecutive dry days (through today): 0."
+      "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. 7-day accumulated rainfall (today + previous 6 days). Dry day = under 1.0mm. Today: 1.5mm. Dry days in this window: 1 of 7. Consecutive dry days (through today): 0."
     },
     {
       "date_time": "2026-09-01T16:00:00.000Z",
@@ -213,7 +213,7 @@
       "source": "Open-Meteo (supplementary) — PAGASA is the authoritative rainfall reference for the Philippines",
       "responsible_office": "PAGASA (authoritative); CDRRMO for local rain gauges",
       "status": "derived",
-      "remarks": "Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure. 7-day accumulated rainfall (today + previous 6 days). Dry day = under 1.0mm. Today: 0mm. Dry days in this window: 4 of 7. Consecutive dry days (through today): 1."
+      "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. 7-day accumulated rainfall (today + previous 6 days). Dry day = under 1.0mm. Today: 0mm. Dry days in this window: 4 of 7. Consecutive dry days (through today): 1."
     },
     {
       "date_time": "2026-09-01T16:00:00.000Z",
@@ -226,7 +226,7 @@
       "source": "Open-Meteo (supplementary) — PAGASA is the authoritative rainfall reference for the Philippines",
       "responsible_office": "PAGASA (authoritative); CDRRMO for local rain gauges",
       "status": "derived",
-      "remarks": "Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure. 7-day accumulated rainfall (today + previous 6 days). Dry day = under 1.0mm. Today: 0mm. Dry days in this window: 4 of 7. Consecutive dry days (through today): 1."
+      "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. 7-day accumulated rainfall (today + previous 6 days). Dry day = under 1.0mm. Today: 0mm. Dry days in this window: 4 of 7. Consecutive dry days (through today): 1."
     },
     {
       "date_time": "2026-09-01T16:00:00.000Z",
@@ -239,7 +239,7 @@
       "source": "Open-Meteo (supplementary) — PAGASA is the authoritative rainfall reference for the Philippines",
       "responsible_office": "PAGASA (authoritative); CDRRMO for local rain gauges",
       "status": "derived",
-      "remarks": "Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure. 7-day accumulated rainfall (today + previous 6 days). Dry day = under 1.0mm. Today: 0mm. Dry days in this window: 6 of 7. Consecutive dry days (through today): 5."
+      "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. 7-day accumulated rainfall (today + previous 6 days). Dry day = under 1.0mm. Today: 0mm. Dry days in this window: 6 of 7. Consecutive dry days (through today): 5."
     },
     {
       "date_time": "2026-09-01T16:00:00.000Z",
@@ -252,7 +252,7 @@
       "source": "Open-Meteo (supplementary) — PAGASA is the authoritative rainfall reference for the Philippines",
       "responsible_office": "PAGASA (authoritative); CDRRMO for local rain gauges",
       "status": "derived",
-      "remarks": "Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure. 7-day accumulated rainfall (today + previous 6 days). Dry day = under 1.0mm. Today: 0.1mm. Dry days in this window: 4 of 7. Consecutive dry days (through today): 1."
+      "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. 7-day accumulated rainfall (today + previous 6 days). Dry day = under 1.0mm. Today: 0.1mm. Dry days in this window: 4 of 7. Consecutive dry days (through today): 1."
     },
     {
       "date_time": "2026-09-01T16:00:00.000Z",
@@ -265,7 +265,7 @@
       "source": "Open-Meteo (supplementary) — PAGASA is the authoritative rainfall reference for the Philippines",
       "responsible_office": "PAGASA (authoritative); CDRRMO for local rain gauges",
       "status": "derived",
-      "remarks": "Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure. 7-day accumulated rainfall (today + previous 6 days). Dry day = under 1.0mm. Today: 0.5mm. Dry days in this window: 4 of 7. Consecutive dry days (through today): 1."
+      "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. 7-day accumulated rainfall (today + previous 6 days). Dry day = under 1.0mm. Today: 0.5mm. Dry days in this window: 4 of 7. Consecutive dry days (through today): 1."
     },
     {
       "date_time": "2026-09-01T16:00:00.000Z",
@@ -278,7 +278,7 @@
       "source": "Open-Meteo (supplementary) — PAGASA is the authoritative rainfall reference for the Philippines",
       "responsible_office": "PAGASA (authoritative); CDRRMO for local rain gauges",
       "status": "derived",
-      "remarks": "Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure. 7-day accumulated rainfall (today + previous 6 days). Dry day = under 1.0mm. Today: 0mm. Dry days in this window: 4 of 7. Consecutive dry days (through today): 1."
+      "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. 7-day accumulated rainfall (today + previous 6 days). Dry day = under 1.0mm. Today: 0mm. Dry days in this window: 4 of 7. Consecutive dry days (through today): 1."
     },
     {
       "date_time": "2026-09-01T16:00:00.000Z",
@@ -291,7 +291,7 @@
       "source": "Open-Meteo (supplementary) — PAGASA is the authoritative rainfall reference for the Philippines",
       "responsible_office": "PAGASA (authoritative); CDRRMO for local rain gauges",
       "status": "derived",
-      "remarks": "Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure. 7-day accumulated rainfall (today + previous 6 days). Dry day = under 1.0mm. Today: 0.1mm. Dry days in this window: 4 of 7. Consecutive dry days (through today): 1."
+      "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. 7-day accumulated rainfall (today + previous 6 days). Dry day = under 1.0mm. Today: 0.1mm. Dry days in this window: 4 of 7. Consecutive dry days (through today): 1."
     },
     {
       "date_time": "2026-09-01T16:00:00.000Z",
@@ -304,7 +304,7 @@
       "source": "Open-Meteo (supplementary) — PAGASA is the authoritative rainfall reference for the Philippines",
       "responsible_office": "PAGASA (authoritative); CDRRMO for local rain gauges",
       "status": "derived",
-      "remarks": "Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure. 7-day accumulated rainfall (today + previous 6 days). Dry day = under 1.0mm. Today: 0.1mm. Dry days in this window: 4 of 7. Consecutive dry days (through today): 1."
+      "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. 7-day accumulated rainfall (today + previous 6 days). Dry day = under 1.0mm. Today: 0.1mm. Dry days in this window: 4 of 7. Consecutive dry days (through today): 1."
     },
     {
       "date_time": "2026-09-01T16:00:00.000Z",
@@ -317,7 +317,7 @@
       "source": "Open-Meteo (supplementary) — PAGASA is the authoritative rainfall reference for the Philippines",
       "responsible_office": "PAGASA (authoritative); CDRRMO for local rain gauges",
       "status": "derived",
-      "remarks": "Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure. 7-day accumulated rainfall (today + previous 6 days). Dry day = under 1.0mm. Today: 0.9mm. Dry days in this window: 2 of 7. Consecutive dry days (through today): 1."
+      "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. 7-day accumulated rainfall (today + previous 6 days). Dry day = under 1.0mm. Today: 0.9mm. Dry days in this window: 2 of 7. Consecutive dry days (through today): 1."
     },
     {
       "date_time": "2026-09-01T16:00:00.000Z",
@@ -330,7 +330,7 @@
       "source": "Open-Meteo (supplementary) — PAGASA is the authoritative rainfall reference for the Philippines",
       "responsible_office": "PAGASA (authoritative); CDRRMO for local rain gauges",
       "status": "derived",
-      "remarks": "Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure. 7-day accumulated rainfall (today + previous 6 days). Dry day = under 1.0mm. Today: 0.1mm. Dry days in this window: 4 of 7. Consecutive dry days (through today): 1."
+      "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. 7-day accumulated rainfall (today + previous 6 days). Dry day = under 1.0mm. Today: 0.1mm. Dry days in this window: 4 of 7. Consecutive dry days (through today): 1."
     },
     {
       "date_time": "2026-09-01T16:00:00.000Z",
@@ -343,7 +343,7 @@
       "source": "Open-Meteo (supplementary) — PAGASA is the authoritative rainfall reference for the Philippines",
       "responsible_office": "PAGASA (authoritative); CDRRMO for local rain gauges",
       "status": "derived",
-      "remarks": "Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure. 7-day accumulated rainfall (today + previous 6 days). Dry day = under 1.0mm. Today: 0.1mm. Dry days in this window: 4 of 7. Consecutive dry days (through today): 1."
+      "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. 7-day accumulated rainfall (today + previous 6 days). Dry day = under 1.0mm. Today: 0.1mm. Dry days in this window: 4 of 7. Consecutive dry days (through today): 1."
     },
     {
       "date_time": "2026-09-01T16:00:00.000Z",
@@ -356,7 +356,7 @@
       "source": "Open-Meteo (supplementary) — PAGASA is the authoritative rainfall reference for the Philippines",
       "responsible_office": "PAGASA (authoritative); CDRRMO for local rain gauges",
       "status": "derived",
-      "remarks": "Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure. 7-day accumulated rainfall (today + previous 6 days). Dry day = under 1.0mm. Today: 1.5mm. Dry days in this window: 2 of 7. Consecutive dry days (through today): 0."
+      "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. 7-day accumulated rainfall (today + previous 6 days). Dry day = under 1.0mm. Today: 1.5mm. Dry days in this window: 2 of 7. Consecutive dry days (through today): 0."
     },
     {
       "date_time": "2026-09-01T16:00:00.000Z",
@@ -369,7 +369,7 @@
       "source": "Open-Meteo (supplementary) — PAGASA is the authoritative rainfall reference for the Philippines",
       "responsible_office": "PAGASA (authoritative); CDRRMO for local rain gauges",
       "status": "derived",
-      "remarks": "Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure. 7-day accumulated rainfall (today + previous 6 days). Dry day = under 1.0mm. Today: 0.1mm. Dry days in this window: 4 of 7. Consecutive dry days (through today): 1."
+      "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. 7-day accumulated rainfall (today + previous 6 days). Dry day = under 1.0mm. Today: 0.1mm. Dry days in this window: 4 of 7. Consecutive dry days (through today): 1."
     },
     {
       "date_time": "2026-09-01T16:00:00.000Z",
@@ -382,7 +382,7 @@
       "source": "Open-Meteo (supplementary) — PAGASA is the authoritative rainfall reference for the Philippines",
       "responsible_office": "PAGASA (authoritative); CDRRMO for local rain gauges",
       "status": "derived",
-      "remarks": "Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure. 7-day accumulated rainfall (today + previous 6 days). Dry day = under 1.0mm. Today: 0mm. Dry days in this window: 6 of 7. Consecutive dry days (through today): 5."
+      "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. 7-day accumulated rainfall (today + previous 6 days). Dry day = under 1.0mm. Today: 0mm. Dry days in this window: 6 of 7. Consecutive dry days (through today): 5."
     },
     {
       "date_time": "2026-09-01T16:00:00.000Z",
@@ -395,7 +395,7 @@
       "source": "Open-Meteo (supplementary) — PAGASA is the authoritative rainfall reference for the Philippines",
       "responsible_office": "PAGASA (authoritative); CDRRMO for local rain gauges",
       "status": "derived",
-      "remarks": "Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure. 7-day accumulated rainfall (today + previous 6 days). Dry day = under 1.0mm. Today: 0.1mm. Dry days in this window: 4 of 7. Consecutive dry days (through today): 1."
+      "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. 7-day accumulated rainfall (today + previous 6 days). Dry day = under 1.0mm. Today: 0.1mm. Dry days in this window: 4 of 7. Consecutive dry days (through today): 1."
     },
     {
       "date_time": "2026-09-01T16:00:00.000Z",
@@ -408,7 +408,7 @@
       "source": "Open-Meteo (supplementary) — PAGASA is the authoritative rainfall reference for the Philippines",
       "responsible_office": "PAGASA (authoritative); CDRRMO for local rain gauges",
       "status": "derived",
-      "remarks": "Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure. 7-day accumulated rainfall (today + previous 6 days). Dry day = under 1.0mm. Today: 0mm. Dry days in this window: 6 of 7. Consecutive dry days (through today): 5."
+      "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. 7-day accumulated rainfall (today + previous 6 days). Dry day = under 1.0mm. Today: 0mm. Dry days in this window: 6 of 7. Consecutive dry days (through today): 5."
     },
     {
       "date_time": "2026-09-01T16:00:00.000Z",
@@ -421,7 +421,7 @@
       "source": "Open-Meteo (supplementary) — PAGASA is the authoritative rainfall reference for the Philippines",
       "responsible_office": "PAGASA (authoritative); CDRRMO for local rain gauges",
       "status": "derived",
-      "remarks": "Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure. 7-day accumulated rainfall (today + previous 6 days). Dry day = under 1.0mm. Today: 0.1mm. Dry days in this window: 4 of 7. Consecutive dry days (through today): 1."
+      "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. 7-day accumulated rainfall (today + previous 6 days). Dry day = under 1.0mm. Today: 0.1mm. Dry days in this window: 4 of 7. Consecutive dry days (through today): 1."
     },
     {
       "date_time": "2026-09-01T16:00:00.000Z",
@@ -434,7 +434,7 @@
       "source": "Open-Meteo (supplementary) — PAGASA is the authoritative rainfall reference for the Philippines",
       "responsible_office": "PAGASA (authoritative); CDRRMO for local rain gauges",
       "status": "derived",
-      "remarks": "Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure. 7-day accumulated rainfall (today + previous 6 days). Dry day = under 1.0mm. Today: 0.1mm. Dry days in this window: 4 of 7. Consecutive dry days (through today): 1."
+      "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. 7-day accumulated rainfall (today + previous 6 days). Dry day = under 1.0mm. Today: 0.1mm. Dry days in this window: 4 of 7. Consecutive dry days (through today): 1."
     },
     {
       "date_time": "2026-09-01T16:00:00.000Z",
@@ -447,7 +447,7 @@
       "source": "Open-Meteo (supplementary) — PAGASA is the authoritative rainfall reference for the Philippines",
       "responsible_office": "PAGASA (authoritative); CDRRMO for local rain gauges",
       "status": "derived",
-      "remarks": "Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure. 7-day accumulated rainfall (today + previous 6 days). Dry day = under 1.0mm. Today: 0.1mm. Dry days in this window: 4 of 7. Consecutive dry days (through today): 1."
+      "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. 7-day accumulated rainfall (today + previous 6 days). Dry day = under 1.0mm. Today: 0.1mm. Dry days in this window: 4 of 7. Consecutive dry days (through today): 1."
     },
     {
       "date_time": "2026-09-01T16:00:00.000Z",
@@ -460,7 +460,7 @@
       "source": "Open-Meteo (supplementary) — PAGASA is the authoritative rainfall reference for the Philippines",
       "responsible_office": "PAGASA (authoritative); CDRRMO for local rain gauges",
       "status": "derived",
-      "remarks": "Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure. 7-day accumulated rainfall (today + previous 6 days). Dry day = under 1.0mm. Today: 0.1mm. Dry days in this window: 4 of 7. Consecutive dry days (through today): 1."
+      "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. 7-day accumulated rainfall (today + previous 6 days). Dry day = under 1.0mm. Today: 0.1mm. Dry days in this window: 4 of 7. Consecutive dry days (through today): 1."
     },
     {
       "date_time": "2026-09-01T16:00:00.000Z",
@@ -473,7 +473,7 @@
       "source": "Open-Meteo (supplementary) — PAGASA is the authoritative rainfall reference for the Philippines",
       "responsible_office": "PAGASA (authoritative); CDRRMO for local rain gauges",
       "status": "derived",
-      "remarks": "Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure. 7-day accumulated rainfall (today + previous 6 days). Dry day = under 1.0mm. Today: 0.1mm. Dry days in this window: 4 of 7. Consecutive dry days (through today): 1. Reference point coordinate_confidence is \"low\" (nominatim_place_quarter) — treat this reading as indicative only."
+      "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. 7-day accumulated rainfall (today + previous 6 days). Dry day = under 1.0mm. Today: 0.1mm. Dry days in this window: 4 of 7. Consecutive dry days (through today): 1. Reference point coordinate_confidence is \"low\" (nominatim_place_quarter) — treat this reading as indicative only."
     },
     {
       "date_time": "2026-09-01T16:00:00.000Z",
@@ -486,7 +486,7 @@
       "source": "Open-Meteo (supplementary) — PAGASA is the authoritative rainfall reference for the Philippines",
       "responsible_office": "PAGASA (authoritative); CDRRMO for local rain gauges",
       "status": "derived",
-      "remarks": "Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure. 7-day accumulated rainfall (today + previous 6 days). Dry day = under 1.0mm. Today: 0.1mm. Dry days in this window: 4 of 7. Consecutive dry days (through today): 1."
+      "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. 7-day accumulated rainfall (today + previous 6 days). Dry day = under 1.0mm. Today: 0.1mm. Dry days in this window: 4 of 7. Consecutive dry days (through today): 1."
     },
     {
       "date_time": "2026-09-01T16:00:00.000Z",
@@ -499,7 +499,7 @@
       "source": "Open-Meteo (supplementary) — PAGASA is the authoritative rainfall reference for the Philippines",
       "responsible_office": "PAGASA (authoritative); CDRRMO for local rain gauges",
       "status": "derived",
-      "remarks": "Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure. 7-day accumulated rainfall (today + previous 6 days). Dry day = under 1.0mm. Today: 0.1mm. Dry days in this window: 4 of 7. Consecutive dry days (through today): 1."
+      "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. 7-day accumulated rainfall (today + previous 6 days). Dry day = under 1.0mm. Today: 0.1mm. Dry days in this window: 4 of 7. Consecutive dry days (through today): 1."
     },
     {
       "date_time": "2026-09-01T16:00:00.000Z",
@@ -512,7 +512,7 @@
       "source": "Open-Meteo (supplementary) — PAGASA is the authoritative rainfall reference for the Philippines",
       "responsible_office": "PAGASA (authoritative); CDRRMO for local rain gauges",
       "status": "derived",
-      "remarks": "Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure. 7-day accumulated rainfall (today + previous 6 days). Dry day = under 1.0mm. Today: 0.1mm. Dry days in this window: 4 of 7. Consecutive dry days (through today): 1."
+      "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. 7-day accumulated rainfall (today + previous 6 days). Dry day = under 1.0mm. Today: 0.1mm. Dry days in this window: 4 of 7. Consecutive dry days (through today): 1."
     },
     {
       "date_time": "2026-09-01T16:00:00.000Z",
@@ -525,7 +525,7 @@
       "source": "Open-Meteo (supplementary) — PAGASA is the authoritative rainfall reference for the Philippines",
       "responsible_office": "PAGASA (authoritative); CDRRMO for local rain gauges",
       "status": "derived",
-      "remarks": "Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure. 7-day accumulated rainfall (today + previous 6 days). Dry day = under 1.0mm. Today: 0.1mm. Dry days in this window: 4 of 7. Consecutive dry days (through today): 1."
+      "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. 7-day accumulated rainfall (today + previous 6 days). Dry day = under 1.0mm. Today: 0.1mm. Dry days in this window: 4 of 7. Consecutive dry days (through today): 1."
     },
     {
       "date_time": "2026-09-01T16:00:00.000Z",
@@ -538,7 +538,7 @@
       "source": "Open-Meteo (supplementary) — PAGASA is the authoritative rainfall reference for the Philippines",
       "responsible_office": "PAGASA (authoritative); CDRRMO for local rain gauges",
       "status": "derived",
-      "remarks": "Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure. 7-day accumulated rainfall (today + previous 6 days). Dry day = under 1.0mm. Today: 0.1mm. Dry days in this window: 4 of 7. Consecutive dry days (through today): 1."
+      "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. 7-day accumulated rainfall (today + previous 6 days). Dry day = under 1.0mm. Today: 0.1mm. Dry days in this window: 4 of 7. Consecutive dry days (through today): 1."
     },
     {
       "date_time": "2026-09-01T16:00:00.000Z",
@@ -551,7 +551,7 @@
       "source": "Open-Meteo (supplementary) — PAGASA is the authoritative rainfall reference for the Philippines",
       "responsible_office": "PAGASA (authoritative); CDRRMO for local rain gauges",
       "status": "derived",
-      "remarks": "Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure. 7-day accumulated rainfall (today + previous 6 days). Dry day = under 1.0mm. Today: 0mm. Dry days in this window: 6 of 7. Consecutive dry days (through today): 5."
+      "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. 7-day accumulated rainfall (today + previous 6 days). Dry day = under 1.0mm. Today: 0mm. Dry days in this window: 6 of 7. Consecutive dry days (through today): 5."
     },
     {
       "date_time": "2026-09-01T16:00:00.000Z",
@@ -564,7 +564,7 @@
       "source": "Open-Meteo (supplementary) — PAGASA is the authoritative rainfall reference for the Philippines",
       "responsible_office": "PAGASA (authoritative); CDRRMO for local rain gauges",
       "status": "derived",
-      "remarks": "Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure. 7-day accumulated rainfall (today + previous 6 days). Dry day = under 1.0mm. Today: 0.1mm. Dry days in this window: 4 of 7. Consecutive dry days (through today): 1."
+      "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. 7-day accumulated rainfall (today + previous 6 days). Dry day = under 1.0mm. Today: 0.1mm. Dry days in this window: 4 of 7. Consecutive dry days (through today): 1."
     },
     {
       "date_time": "2026-09-01T16:00:00.000Z",
@@ -577,7 +577,7 @@
       "source": "Open-Meteo (supplementary) — PAGASA is the authoritative rainfall reference for the Philippines",
       "responsible_office": "PAGASA (authoritative); CDRRMO for local rain gauges",
       "status": "derived",
-      "remarks": "Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure. 7-day accumulated rainfall (today + previous 6 days). Dry day = under 1.0mm. Today: 0.1mm. Dry days in this window: 4 of 7. Consecutive dry days (through today): 1."
+      "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. 7-day accumulated rainfall (today + previous 6 days). Dry day = under 1.0mm. Today: 0.1mm. Dry days in this window: 4 of 7. Consecutive dry days (through today): 1."
     }
   ],
   "barangays": [

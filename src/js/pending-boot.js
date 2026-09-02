@@ -1,16 +1,18 @@
 'use strict';
 
 /**
- * Shared boot for the "pending" data-request pages (rainfall, fire,
- * exposure, water, agri, response before their own step ships): nav,
- * theme toggle, and the freshness/footer timestamp every view must show
- * per CLAUDE.md, even a page with no data of its own to show yet.
+ * Shared boot for the remaining "pending" data-request pages (water, agri,
+ * response, until their own step ships): nav, theme toggle, the derived
+ * indicator's disclosure copy, and the freshness/footer timestamp every
+ * view must show per CLAUDE.md, even a page with no data of its own to
+ * show yet.
  */
 
-import { initThemeToggle, initFreshnessChip, setFooterUpdated, renderNav } from './chrome.js';
+import { initThemeToggle, initFreshnessChip, setFooterUpdated, renderNav, renderDisclosureCopy } from './chrome.js';
 
 export function initPendingPage(pageId) {
   renderNav('site-nav', pageId);
+  renderDisclosureCopy();
   initThemeToggle('theme-toggle', 'theme-toggle-label', () => {});
 
   fetch('data/heat-index-latest.json')

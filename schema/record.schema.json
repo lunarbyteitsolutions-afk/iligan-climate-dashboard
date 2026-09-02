@@ -89,7 +89,7 @@
     "status": {
       "type": "string",
       "enum": ["verified", "reported", "estimated", "derived"],
-      "description": "verified = confirmed against an authoritative source; reported = as given by the owning office, unverified; estimated = official estimate; derived = calculated by this project (must also carry the 'Derived DEVCON Iligan indicator' label in the UI)."
+      "description": "verified = confirmed against an authoritative source; reported = as given by the owning office, unverified; estimated = official estimate; derived = calculated by this project (must also carry the modelled-vs-authoritative disclosure label in the UI — see src/js/chrome.js's DERIVED_DISCLAIMER)."
     },
     "remarks": {
       "type": ["string", "null"],

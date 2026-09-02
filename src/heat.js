@@ -7,7 +7,7 @@ import { ensureAnnotationPluginRegistered, sparklineSvg, buildElevationChart } f
 import { applyMapTileTheme, createBaseMap, createMarkers, updateMarkerBands, renderMapLegend } from './js/map.js';
 import { initDrawer, openDrawer, openFromHash } from './js/drawer.js';
 import { initScrubber } from './js/scrubber.js';
-import { initThemeToggle, initFreshnessChip, setFooterUpdated, renderNav, initScrollReveal } from './js/chrome.js';
+import { initThemeToggle, initFreshnessChip, setFooterUpdated, renderNav, initScrollReveal, renderDisclosureCopy } from './js/chrome.js';
 
 let lastData = null;
 let referenceByName = {};
@@ -128,6 +128,7 @@ function renderElevationSentence(data) {
 // Boot
 // ---------------------------------------------------------------------
 renderNav('site-nav', 'heat');
+renderDisclosureCopy();
 ensureAnnotationPluginRegistered();
 
 initThemeToggle('theme-toggle', 'theme-toggle-label', () => applyMapTileTheme('public-map'));

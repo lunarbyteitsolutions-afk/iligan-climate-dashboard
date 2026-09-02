@@ -2,7 +2,7 @@
 
 import { loadFireHotspotsData, formatManilaFull } from './js/data.js';
 import { applyMapTileTheme, createBaseMap, createHotspotMarkers } from './js/map.js';
-import { initThemeToggle, initFreshnessChip, setFooterUpdated, renderNav, initScrollReveal } from './js/chrome.js';
+import { initThemeToggle, initFreshnessChip, setFooterUpdated, renderNav, initScrollReveal, renderDisclosureCopy } from './js/chrome.js';
 
 let map = null;
 
@@ -66,6 +66,7 @@ function renderMap(data) {
 // Boot
 // ---------------------------------------------------------------------
 renderNav('site-nav', 'fire');
+renderDisclosureCopy();
 initThemeToggle('theme-toggle', 'theme-toggle-label', () => { if (map) applyMapTileTheme('map'); });
 
 loadFireHotspotsData()

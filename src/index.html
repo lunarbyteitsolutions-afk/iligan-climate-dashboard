@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Iligan El Niño ESG Resilience Dashboard</title>
+<title>Iligan Climate+</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -14,7 +14,7 @@
 <header class="landing-header">
   <div class="wordmark">
     <span class="wordmark-dot" id="wordmark-dot"></span>
-    ILIGAN CLIMATE
+    Iligan Climate<span class="wordmark-plus">+</span>
   </div>
   <nav class="site-nav" id="site-nav" aria-label="Indicator pages"></nav>
   <div class="topbar-chips">
@@ -28,7 +28,7 @@
 
   <section class="landing-hero reveal" id="hero">
     <div class="hero-gradient" id="hero-gradient" aria-hidden="true"></div>
-    <span class="chip chip-outline hero-derived-chip" id="derived-chip" title="Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure.">DERIVED INDICATOR &middot; NOT OFFICIAL PAGASA OR CITY DATA</span>
+    <span class="chip chip-outline hero-derived-chip" id="derived-chip"></span>
 
     <div class="hero-eyebrow">ILIGAN CITY &middot; RIGHT NOW</div>
     <div class="hero-number" id="hero-number">—</div>
@@ -98,10 +98,11 @@
 
 <footer>
   <div class="container" style="padding:0;">
-    <p>Built by DEVCON Iligan (volunteer civic-tech) — not a City of Iligan office. City data owned and confirmed by the city.</p>
+    <p id="footer-attribution"></p>
     <p><strong>Last updated:</strong> <span id="footer-updated">—</span></p>
     <p><strong>Data source:</strong> Open-Meteo (supplementary) — PAGASA iHeatMAP is the authoritative reference for heat index in the Philippines.</p>
-    <p>Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure.</p>
+    <p id="footer-derived-note"></p>
+    <p id="footer-monitoring-notice"></p>
     <p>Barangay reference points and map tiles: © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap contributors</a>, ODbL 1.0.</p>
   </div>
 </footer>

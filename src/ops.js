@@ -14,7 +14,7 @@ import {
 import { applyMapTileTheme, createBaseMap, createMarkers, updateMarkerBands, highlightMarker, renderMapLegend } from './js/map.js';
 import { initDrawer, openDrawer, openFromHash } from './js/drawer.js';
 import { initScrubber } from './js/scrubber.js';
-import { initThemeToggle, initFreshnessChip, initPeakChip, setFooterUpdated, renderNav } from './js/chrome.js';
+import { initThemeToggle, initFreshnessChip, initPeakChip, setFooterUpdated, renderNav, renderDisclosureCopy } from './js/chrome.js';
 
 let lastData = null;
 let referenceByName = {};
@@ -312,6 +312,7 @@ function runEntranceAnimation() {
 // Boot
 // ---------------------------------------------------------------------
 renderNav('site-nav', 'ops');
+renderDisclosureCopy();
 renderScorecardCompleteness();
 ensureAnnotationPluginRegistered();
 

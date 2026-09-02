@@ -1,10 +1,25 @@
-# Iligan El Niño ESG Resilience Dashboard
+# Iligan Climate+
 
 ## Who we are
-DEVCON Iligan (Developers Connect Philippines, Iligan chapter) — a volunteer
-civic-tech community. We are the BUILDER. The City of Iligan is the
-BENEFICIARY and owns all operational data. We are not a city office and never
-write or present as one. We have no MOU or city mandate unless stated.
+This is a City Government of Iligan initiative, from CDIIS — Center for
+Digital Iligan, Innovation and Sustainability — via the Digital Creatives
+Hub, in collaboration with DEVCON Iligan (Developers Connect Philippines,
+Iligan Chapter), whose resources were used. The collaboration is confirmed
+by CDIIS.
+
+Because a city office's name is on this dashboard, every figure on it reads
+as official. That makes the modelled-vs-authoritative distinction MORE
+important, not less:
+- PAGASA remains the authoritative source for heat index and El Niño
+  advisories. Open-Meteo is model data and must always be labelled as such.
+- This dashboard is a MONITORING TOOL, not an advisory. It must never be
+  worded as though the City is issuing a warning, declaration, or advisory.
+- Never imply City endorsement of a figure the owning office has not
+  confirmed. NO DATA / PENDING and the named owning office stay exactly as
+  they are.
+- Data ownership is unchanged: each operational dataset belongs to the
+  office that produces it and is displayed only once that office confirms
+  it.
 
 ## What this is
 A public-management dashboard for El Niño / heat and drought risk across all
@@ -19,8 +34,15 @@ Capacity.
 ## Non-negotiables — apply to code, comments, UI copy and docs
 1. PAGASA is authoritative (iHeatMAP, Heat Index page, AWS, ENSO advisories).
    Open-Meteo and other model data are SUPPLEMENTARY ONLY.
-2. Every derived value must render with the label: "Derived DEVCON Iligan
-   indicator — not an official PAGASA declaration or City of Iligan figure."
+2. Every derived value must render with the label: "Heat index values shown
+   here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat
+   Index page, AWS readings and ENSO advisories — remains the authoritative
+   reference for official heat index values and El Niño declarations. Values
+   marked derived are modelled, not observed." Every page must also carry:
+   "This is a monitoring tool, not an advisory. Official heat and El Niño
+   advisories for Iligan are issued by PAGASA and by the City Government of
+   Iligan through its authorized offices." See src/js/chrome.js for the
+   single source of truth for both — never re-type them inline.
 3. Never fabricate figures. Unknown = `null` in data, "NO DATA / PENDING" in
    UI, plus the office that owns it. Any sample data file must be named
    `*.sample.json` and the UI must show a SAMPLE — NOT REAL DATA banner.
@@ -76,4 +98,7 @@ for vulnerable groups (PWDs, seniors, patients, beneficiaries) — counts only.
 - Lead with the answer. Be concise.
 - Ask before assuming an indicator definition, threshold, or data owner.
 - Push back if a change adds complexity before the 8 MVP indicators flow.
-- Flag anything that could read as an official government statement.
+- Flag anything that could read as an official advisory, warning, or
+  declaration that the owning office hasn't actually confirmed — this
+  dashboard carries the City's name now, so that distinction matters more,
+  not less.

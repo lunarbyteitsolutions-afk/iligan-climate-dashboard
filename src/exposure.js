@@ -4,7 +4,7 @@ import {
   BAND_ORDER, bandVarColor, bandBadge, manilaHourLabel, nowHourIndex,
   loadDashboardData, loadPopulationData, computeExposureByBand, scrubbedView
 } from './js/data.js';
-import { initThemeToggle, initFreshnessChip, setFooterUpdated, renderNav, initScrollReveal } from './js/chrome.js';
+import { initThemeToggle, initFreshnessChip, setFooterUpdated, renderNav, initScrollReveal, renderDisclosureCopy } from './js/chrome.js';
 import { initScrubber } from './js/scrubber.js';
 
 let lastData = null;
@@ -101,6 +101,7 @@ function onHourChange(index) {
 // Boot
 // ---------------------------------------------------------------------
 renderNav('site-nav', 'exposure');
+renderDisclosureCopy();
 initThemeToggle('theme-toggle', 'theme-toggle-label', () => {});
 
 window.addEventListener('hourchange', (e) => onHourChange(e.detail.index));

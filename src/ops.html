@@ -16,7 +16,7 @@
   <h1 class="brand">Iligan Operations Console</h1>
   <nav class="site-nav" id="site-nav" aria-label="Indicator pages"></nav>
   <div class="topbar-chips">
-    <span class="chip chip-outline" id="derived-chip" title="Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure.">DERIVED INDICATOR &middot; NOT OFFICIAL PAGASA OR CITY DATA</span>
+    <span class="chip chip-outline" id="derived-chip"></span>
     <span class="chip chip-peak" id="peak-chip">PEAK —</span>
     <span class="chip chip-fresh" id="freshness-chip">UPDATED —</span>
     <button type="button" id="theme-toggle" class="icon-btn" aria-label="Switch color theme">
@@ -199,10 +199,11 @@
 </aside>
 
 <footer>
-  <p>Built by DEVCON Iligan (volunteer civic-tech) — not a City of Iligan office. City data owned and confirmed by the city.</p>
+  <p id="footer-attribution"></p>
   <p><strong>Last updated:</strong> <span id="footer-updated">—</span></p>
   <p><strong>Data source:</strong> Open-Meteo (supplementary) — PAGASA iHeatMAP is the authoritative reference for heat index in the Philippines.</p>
-  <p>Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure.</p>
+  <p id="footer-derived-note"></p>
+  <p id="footer-monitoring-notice"></p>
   <p>Barangay reference points and map tiles: © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap contributors</a>, ODbL 1.0.</p>
 </footer>
 
