@@ -130,6 +130,55 @@ function buildBarangayEntry(barangayPoint, weather) {
   };
 }
 
+const EXPECTED_BARANGAY_COUNT = 44;
+const EXPECTED_HOURLY_COUNT = 24;
+
+/**
+ * Refuse to publish a partial/corrupt fetch. Returns a list of problems;
+ * an empty list means the output is safe to write. Called before
+ * fs.writeFileSync so a failed validation never touches the existing file
+ * on disk — a bad run leaves last run's good data in place.
+ */
+function validateOutput(output) {
+  const problems = [];
+
+  if (output.records.length !== EXPECTED_BARANGAY_COUNT) {
+    problems.push(`expected ${EXPECTED_BARANGAY_COUNT} records, got ${output.records.length}`);
+  }
+  if (output.barangays.length !== EXPECTED_BARANGAY_COUNT) {
+    problems.push(`expected ${EXPECTED_BARANGAY_COUNT} barangays, got ${output.barangays.length}`);
+  }
+
+  output.records.forEach((r) => {
+    if (typeof r.value !== 'number' || !Number.isFinite(r.value)) {
+      problems.push(`record for ${r.barangay}: non-finite value ${r.value}`);
+    }
+  });
+
+  output.barangays.forEach((b) => {
+    if (typeof b.current.value !== 'number' || !Number.isFinite(b.current.value)) {
+      problems.push(`${b.name}: non-finite current.value ${b.current.value}`);
+    }
+    if (typeof b.today_peak.value !== 'number' || !Number.isFinite(b.today_peak.value)) {
+      problems.push(`${b.name}: non-finite today_peak.value ${b.today_peak.value}`);
+    }
+    if (typeof b.elevation_m !== 'number' || !Number.isFinite(b.elevation_m)) {
+      problems.push(`${b.name}: non-finite elevation_m ${b.elevation_m}`);
+    }
+    if (!Array.isArray(b.hourly) || b.hourly.length !== EXPECTED_HOURLY_COUNT) {
+      problems.push(`${b.name}: hourly series has ${Array.isArray(b.hourly) ? b.hourly.length : 'no'} entries, expected ${EXPECTED_HOURLY_COUNT}`);
+    } else {
+      b.hourly.forEach((h, i) => {
+        if (typeof h.value !== 'number' || !Number.isFinite(h.value)) {
+          problems.push(`${b.name}: non-finite hourly[${i}] value ${h.value}`);
+        }
+      });
+    }
+  });
+
+  return problems;
+}
+
 async function main() {
   const barangayPoints = loadReferencePoints();
   const weatherResults = await fetchWeather(barangayPoints);
@@ -151,6 +200,14 @@ async function main() {
     barangays,
   };
 
+  const problems = validateOutput(output);
+  if (problems.length) {
+    throw new Error(
+      `Refusing to write ${path.relative(process.cwd(), OUTPUT_PATH)} — this fetch produced ${problems.length} problem(s); ` +
+      `the existing file is left untouched:\n` + problems.map((p) => ' - ' + p).join('\n')
+    );
+  }
+
   fs.writeFileSync(OUTPUT_PATH, JSON.stringify(output, null, 2) + '\n');
   console.log(`Wrote ${records.length} heat_index records + ${barangays.length} barangay hourly series to ${path.relative(process.cwd(), OUTPUT_PATH)}`);
 }
@@ -162,4 +219,4 @@ if (require.main === module) {
   });
 }
 
-module.exports = { fetchWeather, buildRecord, buildBarangayEntry, manilaLocalToUtcIso };
+module.exports = { fetchWeather, buildRecord, buildBarangayEntry, manilaLocalToUtcIso, validateOutput };

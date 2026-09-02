@@ -1,0 +1,48 @@
+name: Fetch heat index
+
+on:
+  schedule:
+    - cron: '0 * * * *' # hourly, on the hour, UTC
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: fetch-heat-index
+  cancel-in-progress: false
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      # scripts/fetch/fetch-heat-index.js validates its own output (44
+      # barangays, no null/NaN heat index values) before writing the file.
+      # A bad or partial Open-Meteo response makes this step fail and exit
+      # non-zero, which stops the job here — the commit step below never
+      # runs, so the last good data/heat-index-latest.json is left in place.
+      - name: Run fetch
+        run: node scripts/fetch/fetch-heat-index.js
+
+      - name: Configure git identity
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Commit data if it changed
+        run: |
+          if git diff --quiet -- data/heat-index-latest.json; then
+            echo "No change to data/heat-index-latest.json — nothing to commit."
+            exit 0
+          fi
+          git add data/heat-index-latest.json
+          git commit -m "chore: update heat index data"
+          git push

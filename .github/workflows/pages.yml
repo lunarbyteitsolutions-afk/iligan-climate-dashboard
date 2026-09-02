@@ -1,0 +1,49 @@
+name: Deploy Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      # GitHub Pages' "deploy from a branch" source only supports the repo
+      # root or /docs as the served folder — it cannot serve an arbitrary
+      # /src folder as site root. So instead we stage src/ (the dashboard)
+      # and data/ (what it fetches) as siblings in one artifact and deploy
+      # that via Actions, which puts index.html at the true site root.
+      - name: Stage site (src/ as root, data/ alongside)
+        run: |
+          mkdir -p _site
+          cp -r src/. _site/
+          cp -r data _site/data
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

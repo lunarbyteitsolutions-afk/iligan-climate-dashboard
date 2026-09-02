@@ -608,7 +608,13 @@
     });
   }
 
-  fetch('../data/heat-index-latest.json')
+  // Relative, no leading "../": in the deployed Pages artifact (see
+  // .github/workflows/pages.yml) index.html and data/ are staged as siblings
+  // at the site root, not one level down inside a src/ folder — so this must
+  // resolve against index.html's own location, not the one above it. It
+  // also stays correct under a GitHub Pages project subpath (e.g.
+  // /reponame/), unlike a root-absolute "/data/..." path would.
+  fetch('data/heat-index-latest.json')
     .then(function (res) {
       if (!res.ok) throw new Error('HTTP ' + res.status);
       return res.json();
