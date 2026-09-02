@@ -1467,6 +1467,63 @@ footer a { color: var(--accent); }
   padding: 0.2rem 0.6rem;
   margin-bottom: 0.8rem;
 }
+
+/* Always-visible caveat callout — same attention-amber tokens as
+   .sample-block, but a solid (not dashed) border: this isn't a
+   placeholder, it's a real number with real, permanent caveats. */
+.caveat-block {
+  border: 2px solid var(--stale-border);
+  background: var(--stale-bg);
+  padding: 1rem 1.1rem;
+  margin-top: 1.5rem;
+}
+.caveat-banner {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: var(--stale-fg);
+  border: 1px solid var(--stale-border);
+  padding: 0.2rem 0.6rem;
+  margin-bottom: 0.8rem;
+}
+.caveat-block ol { margin: 0; padding-left: 1.2rem; }
+.caveat-block li { margin-bottom: 0.6rem; }
+.caveat-block li:last-child { margin-bottom: 0; }
+
+/* ---------------------------------------------------------------------
+   Population-by-band split
+--------------------------------------------------------------------- */
+.exposure-bands { display: flex; flex-direction: column; gap: 0.7rem; }
+.exposure-band-row {
+  display: grid;
+  grid-template-columns: 9.5rem 1fr 9rem;
+  align-items: center;
+  gap: 0.8rem;
+}
+.exposure-band-bar-track {
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  height: 20px;
+  overflow: hidden;
+}
+.exposure-band-bar-fill {
+  height: 100%;
+  min-width: 2px;
+  transition: width 0.4s ease;
+}
+.exposure-band-value {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+  font-size: 0.82rem;
+  text-align: right;
+  white-space: nowrap;
+}
+@media (max-width: 640px) {
+  .exposure-band-row { grid-template-columns: 6.5rem 1fr 6rem; gap: 0.5rem; }
+  .exposure-band-value { font-size: 0.72rem; }
+}
 .sample-block table { background: transparent; }
 
 /* -----------------------------------------------------------------------

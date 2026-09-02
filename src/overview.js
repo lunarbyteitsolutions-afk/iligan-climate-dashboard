@@ -1,6 +1,9 @@
 'use strict';
 
-import { HERO_BAND_COLORS, BAND_CLASS, tweenNumber, manilaHourLabel, loadDashboardData, loadRainfallData } from './js/data.js';
+import {
+  HERO_BAND_COLORS, BAND_CLASS, BAND_ORDER, tweenNumber, manilaHourLabel,
+  loadDashboardData, loadRainfallData, loadPopulationData, computeExposureByBand
+} from './js/data.js';
 import { initThemeToggle, initFreshnessChip, setFooterUpdated, icon, renderNav, initScrollReveal } from './js/chrome.js';
 
 let citySeries = null;
@@ -108,10 +111,29 @@ function rainfallCard(rainfallData) {
   };
 }
 
-function renderIndicatorCards(data, rainfallData) {
+/**
+ * Population exposed card — needs BOTH heat data and population data, so
+ * it stays NO DATA until both have loaded, whichever order they resolve.
+ */
+function exposureCard(heatData, populationData) {
+  if (!heatData || !populationData) {
+    return { value: 'NO DATA', meta: 'owning office: CSWDO' };
+  }
+  const exposure = computeExposureByBand(heatData.barangays, populationData);
+  const dominant = BAND_ORDER.slice().sort((a, b) => exposure.byBand[b] - exposure.byBand[a])[0];
+  const pop = exposure.byBand[dominant];
+  const pct = exposure.totalPopulation ? Math.round((pop / exposure.totalPopulation) * 100) : 0;
+  return {
+    value: pct + '% ' + dominant,
+    meta: pop.toLocaleString('en-US') + ' Iliganons · pending PSA verification · derived'
+  };
+}
+
+function renderIndicatorCards(data, rainfallData, populationData) {
   const barangays = data.barangays;
   const hottest = barangays.reduce((a, b) => (b.current.value > a.current.value ? b : a));
   const rainfall = rainfallCard(rainfallData);
+  const exposure = exposureCard(data, populationData);
 
   const cards = [
     {
@@ -141,7 +163,7 @@ function renderIndicatorCards(data, rainfallData) {
     {
       id: 'card-exposure', href: 'exposure.html',
       icon: icon('social'), name: 'Population exposed',
-      value: 'NO DATA', meta: 'owning office: CSWDO',
+      value: exposure.value, meta: exposure.meta,
       linkLabel: 'View exposure'
     },
     {
@@ -186,6 +208,15 @@ function upgradeRainfallCard(rainfallData) {
   card.querySelector('.indicator-card-meta').textContent = rainfall.meta;
 }
 
+/** Patches just the exposure card in place, for whichever of heat/population data resolves last. */
+function upgradeExposureCard(heatData, populationData) {
+  const card = document.getElementById('card-exposure');
+  if (!card) return;
+  const exposure = exposureCard(heatData, populationData);
+  card.querySelector('.indicator-card-value').textContent = exposure.value;
+  card.querySelector('.indicator-card-meta').textContent = exposure.meta;
+}
+
 // ---------------------------------------------------------------------
 // ESG reframe icons (headline/count stays as committed; step 6 makes the
 // fraction data-driven)
@@ -219,25 +250,35 @@ renderReframeIcons();
 // hero-gradient's colors are fixed per band, not per theme.
 initThemeToggle('theme-toggle', 'theme-toggle-label', () => {});
 
-// Rainfall loads independently of heat data — whichever resolves first
-// renders with what it has; a late rainfall response upgrades the
-// already-rendered card in place rather than blocking on it.
+// Rainfall and population both load independently of heat data (and of
+// each other) — whichever resolves first renders with what it has so far;
+// a late response upgrades its card in place rather than blocking on it.
+// Population exposed needs BOTH heat data and population data, so its
+// card only goes live once both caches are filled, in whichever order.
 let rainfallDataCache = null;
+let heatDataCache = null;
+let populationDataCache = null;
+
 loadRainfallData()
   .then((rainfallData) => { rainfallDataCache = rainfallData; upgradeRainfallCard(rainfallData); })
+  .catch(() => { /* card already shows NO DATA */ });
+
+loadPopulationData()
+  .then((popData) => { populationDataCache = popData; if (heatDataCache) upgradeExposureCard(heatDataCache, popData); })
   .catch(() => { /* card already shows NO DATA */ });
 
 loadDashboardData()
   .then((result) => {
     const data = result.data;
     citySeries = result.citySeries;
+    heatDataCache = data;
 
     initFreshnessChip('freshness-chip', data.generated_at);
     tickHeroPeak();
     setInterval(tickHeroPeak, 1000);
 
     renderHero(data);
-    renderIndicatorCards(data, rainfallDataCache);
+    renderIndicatorCards(data, rainfallDataCache, populationDataCache);
     renderReframeMetric(data);
     setFooterUpdated('footer-updated', data.generated_at);
 

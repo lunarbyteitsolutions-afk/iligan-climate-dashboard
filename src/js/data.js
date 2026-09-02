@@ -219,6 +219,51 @@ export function scrubbedView(data, hourIndex) {
 }
 
 // ---------------------------------------------------------------------
+// Population exposed — crosses each barangay's population baseline
+// against its current heat band. This is an EXPOSURE ESTIMATE, never a
+// count of people harmed: never phrase it as "affected", "at risk of heat
+// stroke", or any health outcome — "in these conditions" is the honest
+// phrasing. It assumes barangay-wide exposure at the reference point's
+// heat index; actual exposure varies with elevation, shade, housing, and
+// outdoor work. The population baseline itself is pending PSA
+// verification (data/barangays.json's population_dispute). All three
+// caveats must stay visible wherever a number from this function is
+// shown — see exposure.html.
+// ---------------------------------------------------------------------
+export function loadPopulationData() {
+  return fetch('data/barangays.json').then((res) => {
+    if (!res.ok) throw new Error('HTTP ' + res.status + ' loading barangays.json');
+    return res.json();
+  });
+}
+
+/**
+ * @param {Array<{name:string, current:{band:string}}>} barangaysWithCurrent - data.barangays, or scrubbedView(...).barangays for a specific hour
+ * @param {object} populationData - the parsed data/barangays.json contents
+ * @returns {{byBand: Record<string, number>, totalPopulation: number, unmatchedNames: string[]}}
+ */
+export function computeExposureByBand(barangaysWithCurrent, populationData) {
+  const popByName = {};
+  let totalPopulation = 0;
+  populationData.barangays.forEach((p) => {
+    popByName[p.name] = p.population_2024;
+    totalPopulation += p.population_2024;
+  });
+
+  const byBand = {};
+  BAND_ORDER.forEach((band) => { byBand[band] = 0; });
+  const unmatchedNames = [];
+
+  barangaysWithCurrent.forEach((b) => {
+    const pop = popByName[b.name];
+    if (typeof pop !== 'number') { unmatchedNames.push(b.name); return; }
+    byBand[b.current.band] = (byBand[b.current.band] || 0) + pop;
+  });
+
+  return { byBand, totalPopulation, unmatchedNames };
+}
+
+// ---------------------------------------------------------------------
 // Loading — the one place every page fetches from.
 // ---------------------------------------------------------------------
 export function loadDashboardData() {

@@ -38,7 +38,7 @@ export const NAV_ITEMS = [
   { id: 'heat', label: 'Heat', href: 'heat.html' },
   { id: 'rainfall', label: 'Rainfall', href: 'rainfall.html' },
   { id: 'fire', label: 'Fire', href: 'fire.html' },
-  { id: 'exposure', label: 'Exposure', href: 'exposure.html', pending: true },
+  { id: 'exposure', label: 'Exposure', href: 'exposure.html' },
   { id: 'water', label: 'Water', href: 'water.html', pending: true },
   { id: 'agri', label: 'Agriculture', href: 'agri.html', pending: true },
   { id: 'response', label: 'Response', href: 'response.html', pending: true },
