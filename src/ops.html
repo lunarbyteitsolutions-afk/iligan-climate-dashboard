@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Iligan Operations Console</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.css">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="topbar">
+  <h1 class="brand">Iligan Operations Console</h1>
+  <div class="topbar-chips">
+    <span class="chip chip-outline" id="derived-chip" title="Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure.">DERIVED INDICATOR &middot; NOT OFFICIAL PAGASA OR CITY DATA</span>
+    <span class="chip chip-peak" id="peak-chip">PEAK —</span>
+    <span class="chip chip-fresh" id="freshness-chip">UPDATED —</span>
+    <button type="button" id="theme-toggle" class="icon-btn" aria-label="Switch color theme">
+      <span id="theme-toggle-label">Theme</span>
+    </button>
+  </div>
+</header>
+
+<main id="app" hidden>
+
+  <section aria-labelledby="scorecard-heading" class="panel stagger" data-stagger="0">
+    <h2 id="scorecard-heading" class="panel-title">ESG Scorecard</h2>
+    <div class="scorecard">
+
+      <div class="tile" id="tile-e">
+        <h3>Environmental</h3>
+        <div class="metric" id="e-metric">—</div>
+        <div class="metric-detail" id="e-detail"></div>
+        <ul class="pending-list">
+          <li>Rainfall — <span class="pending-tag">NO DATA / PENDING</span><br><span class="owner">owning office: PAGASA (authoritative); CDRRMO for local rain gauges — pending confirmation with the office</span></li>
+          <li>Water level / availability — <span class="pending-tag">NO DATA / PENDING</span><br><span class="owner">owning office: CDRRMO (river and water-source levels); Iligan City Water District (supply and service interruptions) — pending confirmation with the office</span></li>
+          <li>Fire incidents — <span class="pending-tag">NO DATA / PENDING</span><br><span class="owner">owning office: BFP Iligan City (structural/grass); ICENRO (vegetation/watershed) — pending confirmation with the office</span></li>
+        </ul>
+      </div>
+
+      <div class="tile tile-pending" id="tile-s">
+        <h3>Social</h3>
+        <div class="metric"><span class="pending-tag">NO DATA / PENDING</span></div>
+        <ul class="pending-list">
+          <li>Population exposed — <span class="owner">owning office: CSWDO</span></li>
+          <li>Households with water shortage — <span class="owner">owning office: City Health</span></li>
+          <li>Farmers &amp; hectares affected — <span class="owner">owning office: City Agriculture</span></li>
+        </ul>
+      </div>
+
+      <div class="tile tile-pending" id="tile-g">
+        <h3>Governance</h3>
+        <div class="metric"><span class="pending-tag">NO DATA / PENDING</span></div>
+        <ul class="pending-list">
+          <li>Government intervention / response status — <span class="owner">owning office: City Administrator's Office</span></li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="viewing-banner" id="viewing-banner" hidden>
+    <span id="viewing-banner-text">VIEWING —</span>
+    <button type="button" id="return-to-now">Return to now</button>
+  </div>
+
+  <section aria-labelledby="hero-heading" class="panel stagger" data-stagger="1">
+    <h2 id="hero-heading" class="panel-title">Hottest Barangays Right Now</h2>
+    <div class="hero">
+      <div class="hero-field">
+        <div class="hero-label">Barangay<span id="hero-count-suffix"></span></div>
+        <div class="hero-names" id="hero-names">—</div>
+      </div>
+      <div class="hero-field">
+        <div class="hero-label">Heat Index</div>
+        <div class="hero-value" id="hero-value">—</div>
+      </div>
+      <div class="hero-field">
+        <div class="hero-label">Band</div>
+        <div id="hero-band">—</div>
+      </div>
+      <div class="hero-field">
+        <div class="hero-label">Observed</div>
+        <div class="hero-time" id="hero-time">—</div>
+      </div>
+    </div>
+  </section>
+
+  <section aria-labelledby="curve-heading" class="panel stagger" data-stagger="2">
+    <h2 id="curve-heading" class="panel-title">Today's Heat Curve</h2>
+    <p class="panel-subtitle">City-wide range (min–max across all 44 barangays) and median, by hour, Asia/Manila.</p>
+    <div class="chart-wrap chart-wrap-tall">
+      <canvas id="chart-curve"></canvas>
+    </div>
+    <div class="scrubber">
+      <button type="button" class="scrubber-play" id="scrubber-play" aria-label="Play 24-hour animation">&#9654;</button>
+      <div class="scrubber-track">
+        <input type="range" id="scrubber-range" min="0" max="23" step="1" value="0"
+          aria-label="Scrub through today's 24 hours">
+        <div class="scrubber-ticks">
+          <span>00:00</span><span>06:00</span><span>12:00</span><span>18:00</span><span>23:00</span>
+        </div>
+      </div>
+      <div class="scrubber-readout" id="scrubber-readout">--:--</div>
+    </div>
+  </section>
+
+  <section aria-labelledby="ranked-heading" class="panel stagger" data-stagger="3">
+    <div class="panel-header-row">
+      <h2 id="ranked-heading" class="panel-title">Ranked Barangays</h2>
+      <div class="segmented" role="group" aria-label="Ranking basis">
+        <button type="button" class="segmented-btn is-active" data-rank-mode="current">Now</button>
+        <button type="button" class="segmented-btn" data-rank-mode="peak">Today's Peak</button>
+      </div>
+    </div>
+    <p class="panel-subtitle">Top 15 by heat index. All 44 are in the table below.</p>
+    <div class="chart-wrap">
+      <canvas id="chart-ranked"></canvas>
+    </div>
+  </section>
+
+  <section aria-labelledby="map-heading" class="panel stagger" data-stagger="3">
+    <h2 id="map-heading" class="panel-title">City Map</h2>
+    <p class="panel-subtitle">44 reference points, not barangay boundaries — this data is point-sampled from a weather grid, so a filled area map would imply coverage we don't have.</p>
+    <div class="map-wrap">
+      <div id="map"></div>
+    </div>
+    <div class="map-legend" id="map-legend"></div>
+  </section>
+
+  <section aria-labelledby="elevation-heading" class="panel stagger" data-stagger="4">
+    <h2 id="elevation-heading" class="panel-title">Heat vs. Elevation</h2>
+    <p class="panel-subtitle">Each point is one barangay's current heat index against its reference point's elevation.</p>
+    <div class="chart-wrap">
+      <canvas id="chart-elevation"></canvas>
+    </div>
+  </section>
+
+  <section aria-labelledby="distribution-heading" class="panel stagger" data-stagger="4">
+    <h2 id="distribution-heading" class="panel-title">Band Distribution</h2>
+    <div class="chart-wrap chart-wrap-strip">
+      <canvas id="chart-distribution"></canvas>
+    </div>
+  </section>
+
+  <section aria-labelledby="table-heading" class="panel stagger" data-stagger="4">
+    <h2 id="table-heading" class="panel-title">All 44 Barangays</h2>
+    <div class="table-wrap">
+      <table id="barangay-table">
+        <thead>
+          <tr>
+            <th scope="col">Rank</th>
+            <th scope="col" data-sort="name" tabindex="0">Barangay <span aria-hidden="true">⇅</span></th>
+            <th scope="col" data-sort="current" tabindex="0" id="th-now">Now (°C) <span aria-hidden="true">⇅</span></th>
+            <th scope="col">Band</th>
+            <th scope="col" data-sort="peak" tabindex="0">Today's Peak <span aria-hidden="true">⇅</span></th>
+            <th scope="col">Peak Time</th>
+            <th scope="col">24h Trend</th>
+          </tr>
+        </thead>
+        <tbody id="table-body"></tbody>
+      </table>
+    </div>
+    <p class="table-note">Values are modelled from a weather grid coarser than a barangay, so adjacent barangays may share an identical value — tied barangays share the same rank. Click any row for detail.</p>
+  </section>
+
+</main>
+
+<div id="load-state" class="load-state">Loading heat index data…</div>
+
+<div class="drawer-backdrop" id="drawer-backdrop"></div>
+<aside class="drawer" id="drawer" role="dialog" aria-modal="true" aria-labelledby="drawer-title" hidden>
+  <button type="button" class="drawer-close" id="drawer-close" aria-label="Close detail panel">&#10005;</button>
+  <h2 id="drawer-title">—</h2>
+  <div class="drawer-kv" id="drawer-basics"></div>
+
+  <div class="drawer-section">
+    <h3>Current</h3>
+    <div class="drawer-kv" id="drawer-current"></div>
+  </div>
+
+  <div class="drawer-section">
+    <h3>24-Hour Curve</h3>
+    <div class="drawer-chart-wrap">
+      <canvas id="drawer-chart"></canvas>
+    </div>
+  </div>
+
+  <div class="drawer-section">
+    <h3>Band Timeline (24h)</h3>
+    <div class="band-timeline" id="drawer-timeline"></div>
+  </div>
+
+  <div class="drawer-section">
+    <h3>Data Owed</h3>
+    <ul class="drawer-owed-list" id="drawer-owed"></ul>
+  </div>
+
+  <div class="drawer-section">
+    <h3>Coordinate Provenance</h3>
+    <div class="drawer-kv" id="drawer-provenance"></div>
+  </div>
+</aside>
+
+<footer>
+  <p>Built by DEVCON Iligan (volunteer civic-tech) — not a City of Iligan office. City data owned and confirmed by the city.</p>
+  <p><strong>Last updated:</strong> <span id="footer-updated">—</span></p>
+  <p><strong>Data source:</strong> Open-Meteo (supplementary) — PAGASA iHeatMAP is the authoritative reference for heat index in the Philippines.</p>
+  <p>Derived DEVCON Iligan indicator — not an official PAGASA declaration or City of Iligan figure.</p>
+  <p>Barangay reference points and map tiles: © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap contributors</a>, ODbL 1.0.</p>
+  <p><a class="ops-link" href="index.html">&larr; PUBLIC VIEW</a></p>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.5.0/chart.umd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-annotation/3.1.0/chartjs-plugin-annotation.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js"></script>
+<script type="module" src="ops.js"></script>
+
+</body>
+</html>
