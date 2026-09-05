@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-04T03:12:38.812Z",
+  "generated_at": "2026-09-05T03:12:23.990Z",
   "indicator": "fire_hotspots",
   "label": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed.",
   "schema": "schema/record.schema.json",
@@ -11,12 +11,8 @@
     "lon_min": 124.15,
     "lon_max": 124.62
   },
-  "count_7day": 5,
+  "count_7day": 9,
   "by_day": [
-    {
-      "date": "2026-08-29",
-      "count": 0
-    },
     {
       "date": "2026-08-30",
       "count": 1
@@ -39,7 +35,11 @@
     },
     {
       "date": "2026-09-04",
-      "count": 1
+      "count": 5
+    },
+    {
+      "date": "2026-09-05",
+      "count": 0
     }
   ],
   "sources": [
@@ -48,6 +48,58 @@
     "modis-c6.1"
   ],
   "records": [
+    {
+      "date_time": "2026-09-04T05:29:00.000Z",
+      "barangay": "Panoroganan",
+      "latitude": 8.08184,
+      "longitude": 124.58369,
+      "indicator": "fire_hotspot_detection",
+      "value": 2.91,
+      "unit": "MW",
+      "source": "NASA FIRMS (noaa-20-viirs) — satellite thermal anomaly detection, not a confirmed fire incident",
+      "responsible_office": "None — satellite detection only. BFP Iligan City / ICENRO would confirm any actual incident.",
+      "status": "reported",
+      "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. Detected by noaa-20-viirs. Confidence: nominal. Nearest reference point: Panoroganan (12.01km). This is a satellite thermal anomaly, not a confirmed fire incident."
+    },
+    {
+      "date_time": "2026-09-04T05:29:00.000Z",
+      "barangay": "Mainit",
+      "latitude": 8.38449,
+      "longitude": 124.4024,
+      "indicator": "fire_hotspot_detection",
+      "value": 3.82,
+      "unit": "MW",
+      "source": "NASA FIRMS (noaa-20-viirs) — satellite thermal anomaly detection, not a confirmed fire incident",
+      "responsible_office": "None — satellite detection only. BFP Iligan City / ICENRO would confirm any actual incident.",
+      "status": "reported",
+      "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. Detected by noaa-20-viirs. Confidence: nominal. Nearest reference point: Mainit (10.08km). This is a satellite thermal anomaly, not a confirmed fire incident."
+    },
+    {
+      "date_time": "2026-09-04T05:10:00.000Z",
+      "barangay": "Rogongon",
+      "latitude": 8.11894,
+      "longitude": 124.54118,
+      "indicator": "fire_hotspot_detection",
+      "value": 9.26,
+      "unit": "MW",
+      "source": "NASA FIRMS (suomi-npp-viirs) — satellite thermal anomaly detection, not a confirmed fire incident",
+      "responsible_office": "None — satellite detection only. BFP Iligan City / ICENRO would confirm any actual incident.",
+      "status": "reported",
+      "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. Detected by suomi-npp-viirs. Confidence: nominal. Nearest reference point: Rogongon (6.66km). This is a satellite thermal anomaly, not a confirmed fire incident."
+    },
+    {
+      "date_time": "2026-09-04T05:10:00.000Z",
+      "barangay": "Mainit",
+      "latitude": 8.38095,
+      "longitude": 124.51266,
+      "indicator": "fire_hotspot_detection",
+      "value": 4.17,
+      "unit": "MW",
+      "source": "NASA FIRMS (suomi-npp-viirs) — satellite thermal anomaly detection, not a confirmed fire incident",
+      "responsible_office": "None — satellite detection only. BFP Iligan City / ICENRO would confirm any actual incident.",
+      "status": "reported",
+      "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. Detected by suomi-npp-viirs. Confidence: nominal. Nearest reference point: Mainit (17.4km). This is a satellite thermal anomaly, not a confirmed fire incident."
+    },
     {
       "date_time": "2026-09-03T16:43:00.000Z",
       "barangay": "Rogongon",
@@ -115,6 +167,58 @@
     }
   ],
   "hotspots": [
+    {
+      "date_time": "2026-09-04T05:29:00.000Z",
+      "latitude": 8.08184,
+      "longitude": 124.58369,
+      "confidence": "nominal",
+      "frp": 2.91,
+      "satellite": "noaa-20-viirs",
+      "satellites": [
+        "noaa-20-viirs"
+      ],
+      "nearest_barangay": "Panoroganan",
+      "distance_km": 12.01
+    },
+    {
+      "date_time": "2026-09-04T05:29:00.000Z",
+      "latitude": 8.38449,
+      "longitude": 124.4024,
+      "confidence": "nominal",
+      "frp": 3.82,
+      "satellite": "noaa-20-viirs",
+      "satellites": [
+        "noaa-20-viirs"
+      ],
+      "nearest_barangay": "Mainit",
+      "distance_km": 10.08
+    },
+    {
+      "date_time": "2026-09-04T05:10:00.000Z",
+      "latitude": 8.11894,
+      "longitude": 124.54118,
+      "confidence": "nominal",
+      "frp": 9.26,
+      "satellite": "suomi-npp-viirs",
+      "satellites": [
+        "suomi-npp-viirs"
+      ],
+      "nearest_barangay": "Rogongon",
+      "distance_km": 6.66
+    },
+    {
+      "date_time": "2026-09-04T05:10:00.000Z",
+      "latitude": 8.38095,
+      "longitude": 124.51266,
+      "confidence": "nominal",
+      "frp": 4.17,
+      "satellite": "suomi-npp-viirs",
+      "satellites": [
+        "suomi-npp-viirs"
+      ],
+      "nearest_barangay": "Mainit",
+      "distance_km": 17.4
+    },
     {
       "date_time": "2026-09-03T16:43:00.000Z",
       "latitude": 8.12347,
