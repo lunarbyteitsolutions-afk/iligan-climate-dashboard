@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-07T03:13:09.872Z",
+  "generated_at": "2026-09-08T03:12:55.694Z",
   "indicator": "fire_hotspots",
   "label": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed.",
   "schema": "schema/record.schema.json",
@@ -11,12 +11,8 @@
     "lon_min": 124.15,
     "lon_max": 124.62
   },
-  "count_7day": 13,
+  "count_7day": 14,
   "by_day": [
-    {
-      "date": "2026-09-01",
-      "count": 0
-    },
     {
       "date": "2026-09-02",
       "count": 0
@@ -39,6 +35,10 @@
     },
     {
       "date": "2026-09-07",
+      "count": 2
+    },
+    {
+      "date": "2026-09-08",
       "count": 0
     }
   ],
@@ -48,6 +48,32 @@
     "modis-c6.1"
   ],
   "records": [
+    {
+      "date_time": "2026-09-07T04:34:00.000Z",
+      "barangay": "Panoroganan",
+      "latitude": 8.08619,
+      "longitude": 124.53627,
+      "indicator": "fire_hotspot_detection",
+      "value": 2.56,
+      "unit": "MW",
+      "source": "NASA FIRMS (noaa-20-viirs) — satellite thermal anomaly detection, not a confirmed fire incident",
+      "responsible_office": "None — satellite detection only. BFP Iligan City / ICENRO would confirm any actual incident.",
+      "status": "reported",
+      "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. Detected by noaa-20-viirs. Confidence: nominal. Nearest reference point: Panoroganan (6.87km). This is a satellite thermal anomaly, not a confirmed fire incident."
+    },
+    {
+      "date_time": "2026-09-07T04:34:00.000Z",
+      "barangay": "Rogongon",
+      "latitude": 8.23369,
+      "longitude": 124.52229,
+      "indicator": "fire_hotspot_detection",
+      "value": 3.37,
+      "unit": "MW",
+      "source": "NASA FIRMS (noaa-20-viirs) — satellite thermal anomaly detection, not a confirmed fire incident",
+      "responsible_office": "None — satellite detection only. BFP Iligan City / ICENRO would confirm any actual incident.",
+      "status": "reported",
+      "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. Detected by noaa-20-viirs. Confidence: nominal. Nearest reference point: Rogongon (10.35km). This is a satellite thermal anomaly, not a confirmed fire incident."
+    },
     {
       "date_time": "2026-09-05T05:10:00.000Z",
       "barangay": "Panoroganan",
@@ -203,22 +229,35 @@
       "responsible_office": "None — satellite detection only. BFP Iligan City / ICENRO would confirm any actual incident.",
       "status": "reported",
       "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. Detected by suomi-npp-viirs. Confidence: nominal. Nearest reference point: Mainit (11.34km). This is a satellite thermal anomaly, not a confirmed fire incident."
-    },
-    {
-      "date_time": "2026-08-30T05:25:00.000Z",
-      "barangay": "Dulag",
-      "latitude": 8.2122,
-      "longitude": 124.42266,
-      "indicator": "fire_hotspot_detection",
-      "value": 4.67,
-      "unit": "MW",
-      "source": "NASA FIRMS (noaa-20-viirs) — satellite thermal anomaly detection, not a confirmed fire incident",
-      "responsible_office": "None — satellite detection only. BFP Iligan City / ICENRO would confirm any actual incident.",
-      "status": "reported",
-      "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. Detected by noaa-20-viirs. Confidence: nominal. Nearest reference point: Dulag (4.99km). This is a satellite thermal anomaly, not a confirmed fire incident."
     }
   ],
   "hotspots": [
+    {
+      "date_time": "2026-09-07T04:34:00.000Z",
+      "latitude": 8.08619,
+      "longitude": 124.53627,
+      "confidence": "nominal",
+      "frp": 2.56,
+      "satellite": "noaa-20-viirs",
+      "satellites": [
+        "noaa-20-viirs"
+      ],
+      "nearest_barangay": "Panoroganan",
+      "distance_km": 6.87
+    },
+    {
+      "date_time": "2026-09-07T04:34:00.000Z",
+      "latitude": 8.23369,
+      "longitude": 124.52229,
+      "confidence": "nominal",
+      "frp": 3.37,
+      "satellite": "noaa-20-viirs",
+      "satellites": [
+        "noaa-20-viirs"
+      ],
+      "nearest_barangay": "Rogongon",
+      "distance_km": 10.35
+    },
     {
       "date_time": "2026-09-05T05:10:00.000Z",
       "latitude": 8.06642,
@@ -374,19 +413,6 @@
       ],
       "nearest_barangay": "Mainit",
       "distance_km": 11.34
-    },
-    {
-      "date_time": "2026-08-30T05:25:00.000Z",
-      "latitude": 8.2122,
-      "longitude": 124.42266,
-      "confidence": "nominal",
-      "frp": 4.67,
-      "satellite": "noaa-20-viirs",
-      "satellites": [
-        "noaa-20-viirs"
-      ],
-      "nearest_barangay": "Dulag",
-      "distance_km": 4.99
     }
   ]
 }
