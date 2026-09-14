@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-14T03:13:19.187Z",
+  "generated_at": "2026-09-14T03:17:42.186Z",
   "indicator": "heat_index",
   "label": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed.",
   "schema": "schema/record.schema.json",
@@ -7,7 +7,7 @@
   "grid_resolution_note": "Several barangays fall in the same Open-Meteo weather grid cell and so share an identical modeled value. This is expected model resolution, not measurement precision at the barangay level — do not read tied values as coincidence.",
   "records": [
     {
-      "date_time": "2026-09-14T03:00:00.000Z",
+      "date_time": "2026-09-14T03:15:00.000Z",
       "barangay": "Abuno",
       "latitude": 8.184697,
       "longitude": 124.256959,
@@ -21,21 +21,21 @@
       "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 32.9°C, 53% RH."
     },
     {
-      "date_time": "2026-09-14T03:00:00.000Z",
+      "date_time": "2026-09-14T03:15:00.000Z",
       "barangay": "Acmac",
       "latitude": 8.275246,
       "longitude": 124.268353,
       "indicator": "heat_index",
-      "value": 36,
+      "value": 36.2,
       "unit": "°C",
       "band": "Extreme Caution",
       "source": "Open-Meteo (supplementary) — PAGASA iHeatMAP is the authoritative reference",
       "responsible_office": null,
       "status": "derived",
-      "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 32.6°C, 52% RH."
+      "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 32.4°C, 54% RH."
     },
     {
-      "date_time": "2026-09-14T03:00:00.000Z",
+      "date_time": "2026-09-14T03:15:00.000Z",
       "barangay": "Bagong Silang",
       "latitude": 8.241625,
       "longitude": 124.251969,
@@ -49,7 +49,7 @@
       "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 33.0°C, 53% RH."
     },
     {
-      "date_time": "2026-09-14T03:00:00.000Z",
+      "date_time": "2026-09-14T03:15:00.000Z",
       "barangay": "Bonbonon",
       "latitude": 8.266244,
       "longitude": 124.297982,
@@ -60,10 +60,10 @@
       "source": "Open-Meteo (supplementary) — PAGASA iHeatMAP is the authoritative reference",
       "responsible_office": null,
       "status": "derived",
-      "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 31.1°C, 55% RH."
+      "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 30.9°C, 57% RH."
     },
     {
-      "date_time": "2026-09-14T03:00:00.000Z",
+      "date_time": "2026-09-14T03:15:00.000Z",
       "barangay": "Bunawan",
       "latitude": 8.301856,
       "longitude": 124.308101,
@@ -74,38 +74,38 @@
       "source": "Open-Meteo (supplementary) — PAGASA iHeatMAP is the authoritative reference",
       "responsible_office": null,
       "status": "derived",
-      "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 31.1°C, 55% RH."
+      "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 30.9°C, 57% RH."
     },
     {
-      "date_time": "2026-09-14T03:00:00.000Z",
+      "date_time": "2026-09-14T03:15:00.000Z",
       "barangay": "Buru-un",
       "latitude": 8.188072,
       "longitude": 124.172216,
       "indicator": "heat_index",
-      "value": 36.9,
+      "value": 37,
       "unit": "°C",
       "band": "Extreme Caution",
       "source": "Open-Meteo (supplementary) — PAGASA iHeatMAP is the authoritative reference",
       "responsible_office": null,
       "status": "derived",
-      "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 33.0°C, 52% RH."
+      "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 32.9°C, 53% RH."
     },
     {
-      "date_time": "2026-09-14T03:00:00.000Z",
+      "date_time": "2026-09-14T03:15:00.000Z",
       "barangay": "Dalipuga",
       "latitude": 8.30596,
       "longitude": 124.258587,
       "indicator": "heat_index",
-      "value": 35.4,
+      "value": 35.6,
       "unit": "°C",
       "band": "Extreme Caution",
       "source": "Open-Meteo (supplementary) — PAGASA iHeatMAP is the authoritative reference",
       "responsible_office": null,
       "status": "derived",
-      "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 32.3°C, 52% RH."
+      "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 32.1°C, 54% RH."
     },
     {
-      "date_time": "2026-09-14T03:00:00.000Z",
+      "date_time": "2026-09-14T03:15:00.000Z",
       "barangay": "Del Carmen",
       "latitude": 8.232228,
       "longitude": 124.258058,
@@ -119,21 +119,21 @@
       "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 33.0°C, 53% RH."
     },
     {
-      "date_time": "2026-09-14T03:00:00.000Z",
+      "date_time": "2026-09-14T03:15:00.000Z",
       "barangay": "Digkilaan",
       "latitude": 8.262466,
       "longitude": 124.337034,
       "indicator": "heat_index",
-      "value": 35,
+      "value": 35.3,
       "unit": "°C",
       "band": "Extreme Caution",
       "source": "Open-Meteo (supplementary) — PAGASA iHeatMAP is the authoritative reference",
       "responsible_office": null,
       "status": "derived",
-      "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 31.7°C, 55% RH."
+      "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 31.6°C, 57% RH."
     },
     {
-      "date_time": "2026-09-14T03:00:00.000Z",
+      "date_time": "2026-09-14T03:15:00.000Z",
       "barangay": "Ditucalan",
       "latitude": 8.176033,
       "longitude": 124.192768,
@@ -147,7 +147,7 @@
       "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 32.4°C, 53% RH."
     },
     {
-      "date_time": "2026-09-14T03:00:00.000Z",
+      "date_time": "2026-09-14T03:15:00.000Z",
       "barangay": "Dulag",
       "latitude": 8.209,
       "longitude": 124.377448,
@@ -158,38 +158,38 @@
       "source": "Open-Meteo (supplementary) — PAGASA iHeatMAP is the authoritative reference",
       "responsible_office": null,
       "status": "derived",
-      "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 29.5°C, 66% RH."
+      "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 29.4°C, 67% RH."
     },
     {
-      "date_time": "2026-09-14T03:00:00.000Z",
+      "date_time": "2026-09-14T03:15:00.000Z",
       "barangay": "Hinaplanon",
       "latitude": 8.246596,
       "longitude": 124.259474,
       "indicator": "heat_index",
-      "value": 36,
+      "value": 36.2,
       "unit": "°C",
       "band": "Extreme Caution",
       "source": "Open-Meteo (supplementary) — PAGASA iHeatMAP is the authoritative reference",
       "responsible_office": null,
       "status": "derived",
-      "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 32.6°C, 52% RH."
+      "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 32.4°C, 54% RH."
     },
     {
-      "date_time": "2026-09-14T03:00:00.000Z",
+      "date_time": "2026-09-14T03:15:00.000Z",
       "barangay": "Hindang",
       "latitude": 8.304424,
       "longitude": 124.348089,
       "indicator": "heat_index",
-      "value": 32.6,
+      "value": 32.8,
       "unit": "°C",
       "band": "Extreme Caution",
       "source": "Open-Meteo (supplementary) — PAGASA iHeatMAP is the authoritative reference",
       "responsible_office": null,
       "status": "derived",
-      "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 29.8°C, 61% RH."
+      "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 29.8°C, 62% RH."
     },
     {
-      "date_time": "2026-09-14T03:00:00.000Z",
+      "date_time": "2026-09-14T03:15:00.000Z",
       "barangay": "Kabacsanan",
       "latitude": 8.288466,
       "longitude": 124.320603,
@@ -200,10 +200,10 @@
       "source": "Open-Meteo (supplementary) — PAGASA iHeatMAP is the authoritative reference",
       "responsible_office": null,
       "status": "derived",
-      "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 31.1°C, 55% RH."
+      "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 30.9°C, 57% RH."
     },
     {
-      "date_time": "2026-09-14T03:00:00.000Z",
+      "date_time": "2026-09-14T03:15:00.000Z",
       "barangay": "Kalilangan",
       "latitude": 8.157388,
       "longitude": 124.386706,
@@ -214,10 +214,10 @@
       "source": "Open-Meteo (supplementary) — PAGASA iHeatMAP is the authoritative reference",
       "responsible_office": null,
       "status": "derived",
-      "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 28.8°C, 66% RH."
+      "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 28.7°C, 67% RH."
     },
     {
-      "date_time": "2026-09-14T03:00:00.000Z",
+      "date_time": "2026-09-14T03:15:00.000Z",
       "barangay": "Kiwalan",
       "latitude": 8.288963,
       "longitude": 124.281658,
@@ -228,38 +228,38 @@
       "source": "Open-Meteo (supplementary) — PAGASA iHeatMAP is the authoritative reference",
       "responsible_office": null,
       "status": "derived",
-      "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 31.0°C, 55% RH."
+      "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 30.8°C, 57% RH."
     },
     {
-      "date_time": "2026-09-14T03:00:00.000Z",
+      "date_time": "2026-09-14T03:15:00.000Z",
       "barangay": "Lanipao",
       "latitude": 8.22364,
       "longitude": 124.343979,
       "indicator": "heat_index",
-      "value": 33.1,
+      "value": 33.2,
       "unit": "°C",
       "band": "Extreme Caution",
       "source": "Open-Meteo (supplementary) — PAGASA iHeatMAP is the authoritative reference",
       "responsible_office": null,
       "status": "derived",
-      "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 30.7°C, 55% RH."
+      "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 30.5°C, 57% RH."
     },
     {
-      "date_time": "2026-09-14T03:00:00.000Z",
+      "date_time": "2026-09-14T03:15:00.000Z",
       "barangay": "Luinab",
       "latitude": 8.247049,
       "longitude": 124.267966,
       "indicator": "heat_index",
-      "value": 36,
+      "value": 36.2,
       "unit": "°C",
       "band": "Extreme Caution",
       "source": "Open-Meteo (supplementary) — PAGASA iHeatMAP is the authoritative reference",
       "responsible_office": null,
       "status": "derived",
-      "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 32.6°C, 52% RH."
+      "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 32.4°C, 54% RH."
     },
     {
-      "date_time": "2026-09-14T03:00:00.000Z",
+      "date_time": "2026-09-14T03:15:00.000Z",
       "barangay": "Mahayahay",
       "latitude": 8.224316,
       "longitude": 124.238313,
@@ -273,7 +273,7 @@
       "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 33.1°C, 53% RH."
     },
     {
-      "date_time": "2026-09-14T03:00:00.000Z",
+      "date_time": "2026-09-14T03:15:00.000Z",
       "barangay": "Mainit",
       "latitude": 8.296761,
       "longitude": 124.379313,
@@ -284,24 +284,24 @@
       "source": "Open-Meteo (supplementary) — PAGASA iHeatMAP is the authoritative reference",
       "responsible_office": null,
       "status": "derived",
-      "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 28.8°C, 65% RH."
+      "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 28.9°C, 64% RH."
     },
     {
-      "date_time": "2026-09-14T03:00:00.000Z",
+      "date_time": "2026-09-14T03:15:00.000Z",
       "barangay": "Mandulog",
       "latitude": 8.244349,
       "longitude": 124.306129,
       "indicator": "heat_index",
-      "value": 36.3,
+      "value": 36.2,
       "unit": "°C",
       "band": "Extreme Caution",
       "source": "Open-Meteo (supplementary) — PAGASA iHeatMAP is the authoritative reference",
       "responsible_office": null,
       "status": "derived",
-      "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 32.2°C, 56% RH."
+      "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 32.0°C, 57% RH."
     },
     {
-      "date_time": "2026-09-14T03:00:00.000Z",
+      "date_time": "2026-09-14T03:15:00.000Z",
       "barangay": "Maria Cristina",
       "latitude": 8.198912,
       "longitude": 124.193998,
@@ -315,7 +315,7 @@
       "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 33.0°C, 53% RH."
     },
     {
-      "date_time": "2026-09-14T03:00:00.000Z",
+      "date_time": "2026-09-14T03:15:00.000Z",
       "barangay": "Palao",
       "latitude": 8.229264,
       "longitude": 124.254059,
@@ -329,21 +329,21 @@
       "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 33.0°C, 53% RH."
     },
     {
-      "date_time": "2026-09-14T03:00:00.000Z",
+      "date_time": "2026-09-14T03:15:00.000Z",
       "barangay": "Panoroganan",
       "latitude": 8.107555,
       "longitude": 124.477695,
       "indicator": "heat_index",
-      "value": 29.2,
+      "value": 29,
       "unit": "°C",
       "band": "Caution",
       "source": "Open-Meteo (supplementary) — PAGASA iHeatMAP is the authoritative reference",
       "responsible_office": null,
       "status": "derived",
-      "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 28.3°C, 54% RH."
+      "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 28.0°C, 56% RH."
     },
     {
-      "date_time": "2026-09-14T03:00:00.000Z",
+      "date_time": "2026-09-14T03:15:00.000Z",
       "barangay": "Poblacion",
       "latitude": 8.228898,
       "longitude": 124.234013,
@@ -357,7 +357,7 @@
       "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 33.1°C, 53% RH."
     },
     {
-      "date_time": "2026-09-14T03:00:00.000Z",
+      "date_time": "2026-09-14T03:15:00.000Z",
       "barangay": "Puga-an",
       "latitude": 8.228983,
       "longitude": 124.274745,
@@ -371,21 +371,21 @@
       "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 32.8°C, 53% RH."
     },
     {
-      "date_time": "2026-09-14T03:00:00.000Z",
+      "date_time": "2026-09-14T03:15:00.000Z",
       "barangay": "Rogongon",
       "latitude": 8.147127,
       "longitude": 124.487814,
       "indicator": "heat_index",
-      "value": 32.8,
+      "value": 33,
       "unit": "°C",
       "band": "Extreme Caution",
       "source": "Open-Meteo (supplementary) — PAGASA iHeatMAP is the authoritative reference",
       "responsible_office": null,
       "status": "derived",
-      "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 29.9°C, 61% RH."
+      "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 29.9°C, 62% RH."
     },
     {
-      "date_time": "2026-09-14T03:00:00.000Z",
+      "date_time": "2026-09-14T03:15:00.000Z",
       "barangay": "San Miguel",
       "latitude": 8.238596,
       "longitude": 124.248663,
@@ -399,21 +399,21 @@
       "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 33.0°C, 53% RH."
     },
     {
-      "date_time": "2026-09-14T03:00:00.000Z",
+      "date_time": "2026-09-14T03:15:00.000Z",
       "barangay": "San Roque",
       "latitude": 8.257546,
       "longitude": 124.261743,
       "indicator": "heat_index",
-      "value": 36,
+      "value": 36.2,
       "unit": "°C",
       "band": "Extreme Caution",
       "source": "Open-Meteo (supplementary) — PAGASA iHeatMAP is the authoritative reference",
       "responsible_office": null,
       "status": "derived",
-      "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 32.6°C, 52% RH."
+      "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 32.4°C, 54% RH."
     },
     {
-      "date_time": "2026-09-14T03:00:00.000Z",
+      "date_time": "2026-09-14T03:15:00.000Z",
       "barangay": "Santa Elena",
       "latitude": 8.195303,
       "longitude": 124.226301,
@@ -427,21 +427,21 @@
       "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 32.4°C, 53% RH."
     },
     {
-      "date_time": "2026-09-14T03:00:00.000Z",
+      "date_time": "2026-09-14T03:15:00.000Z",
       "barangay": "Santa Filomena",
       "latitude": 8.269375,
       "longitude": 124.260689,
       "indicator": "heat_index",
-      "value": 36.3,
+      "value": 36.2,
       "unit": "°C",
       "band": "Extreme Caution",
       "source": "Open-Meteo (supplementary) — PAGASA iHeatMAP is the authoritative reference",
       "responsible_office": null,
       "status": "derived",
-      "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 32.7°C, 52% RH."
+      "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 32.4°C, 54% RH."
     },
     {
-      "date_time": "2026-09-14T03:00:00.000Z",
+      "date_time": "2026-09-14T03:15:00.000Z",
       "barangay": "Santiago",
       "latitude": 8.25056,
       "longitude": 124.24446,
@@ -455,7 +455,7 @@
       "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 33.0°C, 53% RH."
     },
     {
-      "date_time": "2026-09-14T03:00:00.000Z",
+      "date_time": "2026-09-14T03:15:00.000Z",
       "barangay": "Santo Rosario",
       "latitude": 8.242852,
       "longitude": 124.252966,
@@ -469,7 +469,7 @@
       "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 33.0°C, 53% RH."
     },
     {
-      "date_time": "2026-09-14T03:00:00.000Z",
+      "date_time": "2026-09-14T03:15:00.000Z",
       "barangay": "Saray",
       "latitude": 8.234317,
       "longitude": 124.235559,
@@ -483,7 +483,7 @@
       "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 33.1°C, 53% RH."
     },
     {
-      "date_time": "2026-09-14T03:00:00.000Z",
+      "date_time": "2026-09-14T03:15:00.000Z",
       "barangay": "Suarez",
       "latitude": 8.191592,
       "longitude": 124.217092,
@@ -497,7 +497,7 @@
       "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 32.4°C, 53% RH."
     },
     {
-      "date_time": "2026-09-14T03:00:00.000Z",
+      "date_time": "2026-09-14T03:15:00.000Z",
       "barangay": "Tambacan",
       "latitude": 8.223634,
       "longitude": 124.234526,
@@ -511,7 +511,7 @@
       "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 33.0°C, 53% RH. Reference point coordinate_confidence is \"low\" (nominatim_place_quarter) — treat this reading as indicative only."
     },
     {
-      "date_time": "2026-09-14T03:00:00.000Z",
+      "date_time": "2026-09-14T03:15:00.000Z",
       "barangay": "Tibanga",
       "latitude": 8.239938,
       "longitude": 124.240781,
@@ -525,7 +525,7 @@
       "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 33.1°C, 53% RH."
     },
     {
-      "date_time": "2026-09-14T03:00:00.000Z",
+      "date_time": "2026-09-14T03:15:00.000Z",
       "barangay": "Tipanoy",
       "latitude": 8.198544,
       "longitude": 124.250993,
@@ -539,7 +539,7 @@
       "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 32.9°C, 53% RH."
     },
     {
-      "date_time": "2026-09-14T03:00:00.000Z",
+      "date_time": "2026-09-14T03:15:00.000Z",
       "barangay": "Tomas L. Cabili",
       "latitude": 8.205731,
       "longitude": 124.227487,
@@ -553,7 +553,7 @@
       "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 32.4°C, 53% RH."
     },
     {
-      "date_time": "2026-09-14T03:00:00.000Z",
+      "date_time": "2026-09-14T03:15:00.000Z",
       "barangay": "Tubod",
       "latitude": 8.213399,
       "longitude": 124.24302,
@@ -567,7 +567,7 @@
       "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 32.4°C, 53% RH."
     },
     {
-      "date_time": "2026-09-14T03:00:00.000Z",
+      "date_time": "2026-09-14T03:15:00.000Z",
       "barangay": "Ubaldo Laya",
       "latitude": 8.224089,
       "longitude": 124.244723,
@@ -581,21 +581,21 @@
       "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 33.0°C, 53% RH."
     },
     {
-      "date_time": "2026-09-14T03:00:00.000Z",
+      "date_time": "2026-09-14T03:15:00.000Z",
       "barangay": "Upper Hinaplanon",
       "latitude": 8.255802,
       "longitude": 124.268887,
       "indicator": "heat_index",
-      "value": 36,
+      "value": 36.2,
       "unit": "°C",
       "band": "Extreme Caution",
       "source": "Open-Meteo (supplementary) — PAGASA iHeatMAP is the authoritative reference",
       "responsible_office": null,
       "status": "derived",
-      "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 32.6°C, 52% RH."
+      "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 32.4°C, 54% RH."
     },
     {
-      "date_time": "2026-09-14T03:00:00.000Z",
+      "date_time": "2026-09-14T03:15:00.000Z",
       "barangay": "Upper Tominobo",
       "latitude": 8.172752,
       "longitude": 124.224324,
@@ -609,7 +609,7 @@
       "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. Computed from Open-Meteo temperature_2m + relative_humidity_2m via the NWS/Rothfusz formula (not Open-Meteo apparent_temperature). Inputs: 32.4°C, 53% RH."
     },
     {
-      "date_time": "2026-09-14T03:00:00.000Z",
+      "date_time": "2026-09-14T03:15:00.000Z",
       "barangay": "Villa Verde",
       "latitude": 8.232672,
       "longitude": 124.242997,
@@ -630,7 +630,7 @@
       "longitude": 124.256959,
       "elevation_m": 31,
       "current": {
-        "date_time": "2026-09-14T03:00:00.000Z",
+        "date_time": "2026-09-14T03:15:00.000Z",
         "value": 37,
         "band": "Extreme Caution"
       },
@@ -768,8 +768,8 @@
       "longitude": 124.268353,
       "elevation_m": 12,
       "current": {
-        "date_time": "2026-09-14T03:00:00.000Z",
-        "value": 36,
+        "date_time": "2026-09-14T03:15:00.000Z",
+        "value": 36.2,
         "band": "Extreme Caution"
       },
       "today_peak": {
@@ -906,7 +906,7 @@
       "longitude": 124.251969,
       "elevation_m": 8,
       "current": {
-        "date_time": "2026-09-14T03:00:00.000Z",
+        "date_time": "2026-09-14T03:15:00.000Z",
         "value": 37.2,
         "band": "Extreme Caution"
       },
@@ -1044,7 +1044,7 @@
       "longitude": 124.297982,
       "elevation_m": 142,
       "current": {
-        "date_time": "2026-09-14T03:00:00.000Z",
+        "date_time": "2026-09-14T03:15:00.000Z",
         "value": 33.9,
         "band": "Extreme Caution"
       },
@@ -1182,7 +1182,7 @@
       "longitude": 124.308101,
       "elevation_m": 289,
       "current": {
-        "date_time": "2026-09-14T03:00:00.000Z",
+        "date_time": "2026-09-14T03:15:00.000Z",
         "value": 33.9,
         "band": "Extreme Caution"
       },
@@ -1320,8 +1320,8 @@
       "longitude": 124.172216,
       "elevation_m": 6,
       "current": {
-        "date_time": "2026-09-14T03:00:00.000Z",
-        "value": 36.9,
+        "date_time": "2026-09-14T03:15:00.000Z",
+        "value": 37,
         "band": "Extreme Caution"
       },
       "today_peak": {
@@ -1458,8 +1458,8 @@
       "longitude": 124.258587,
       "elevation_m": 8,
       "current": {
-        "date_time": "2026-09-14T03:00:00.000Z",
-        "value": 35.4,
+        "date_time": "2026-09-14T03:15:00.000Z",
+        "value": 35.6,
         "band": "Extreme Caution"
       },
       "today_peak": {
@@ -1596,7 +1596,7 @@
       "longitude": 124.258058,
       "elevation_m": 15,
       "current": {
-        "date_time": "2026-09-14T03:00:00.000Z",
+        "date_time": "2026-09-14T03:15:00.000Z",
         "value": 37.2,
         "band": "Extreme Caution"
       },
@@ -1734,8 +1734,8 @@
       "longitude": 124.337034,
       "elevation_m": 102,
       "current": {
-        "date_time": "2026-09-14T03:00:00.000Z",
-        "value": 35,
+        "date_time": "2026-09-14T03:15:00.000Z",
+        "value": 35.3,
         "band": "Extreme Caution"
       },
       "today_peak": {
@@ -1872,7 +1872,7 @@
       "longitude": 124.192768,
       "elevation_m": 202,
       "current": {
-        "date_time": "2026-09-14T03:00:00.000Z",
+        "date_time": "2026-09-14T03:15:00.000Z",
         "value": 35.9,
         "band": "Extreme Caution"
       },
@@ -2010,7 +2010,7 @@
       "longitude": 124.377448,
       "elevation_m": 342,
       "current": {
-        "date_time": "2026-09-14T03:00:00.000Z",
+        "date_time": "2026-09-14T03:15:00.000Z",
         "value": 33,
         "band": "Extreme Caution"
       },
@@ -2148,8 +2148,8 @@
       "longitude": 124.259474,
       "elevation_m": 9,
       "current": {
-        "date_time": "2026-09-14T03:00:00.000Z",
-        "value": 36,
+        "date_time": "2026-09-14T03:15:00.000Z",
+        "value": 36.2,
         "band": "Extreme Caution"
       },
       "today_peak": {
@@ -2286,8 +2286,8 @@
       "longitude": 124.348089,
       "elevation_m": 369,
       "current": {
-        "date_time": "2026-09-14T03:00:00.000Z",
-        "value": 32.6,
+        "date_time": "2026-09-14T03:15:00.000Z",
+        "value": 32.8,
         "band": "Extreme Caution"
       },
       "today_peak": {
@@ -2424,7 +2424,7 @@
       "longitude": 124.320603,
       "elevation_m": 182,
       "current": {
-        "date_time": "2026-09-14T03:00:00.000Z",
+        "date_time": "2026-09-14T03:15:00.000Z",
         "value": 33.9,
         "band": "Extreme Caution"
       },
@@ -2562,7 +2562,7 @@
       "longitude": 124.386706,
       "elevation_m": 557,
       "current": {
-        "date_time": "2026-09-14T03:00:00.000Z",
+        "date_time": "2026-09-14T03:15:00.000Z",
         "value": 31.6,
         "band": "Caution"
       },
@@ -2700,7 +2700,7 @@
       "longitude": 124.281658,
       "elevation_m": 219,
       "current": {
-        "date_time": "2026-09-14T03:00:00.000Z",
+        "date_time": "2026-09-14T03:15:00.000Z",
         "value": 33.7,
         "band": "Extreme Caution"
       },
@@ -2838,8 +2838,8 @@
       "longitude": 124.343979,
       "elevation_m": 265,
       "current": {
-        "date_time": "2026-09-14T03:00:00.000Z",
-        "value": 33.1,
+        "date_time": "2026-09-14T03:15:00.000Z",
+        "value": 33.2,
         "band": "Extreme Caution"
       },
       "today_peak": {
@@ -2976,8 +2976,8 @@
       "longitude": 124.267966,
       "elevation_m": 14,
       "current": {
-        "date_time": "2026-09-14T03:00:00.000Z",
-        "value": 36,
+        "date_time": "2026-09-14T03:15:00.000Z",
+        "value": 36.2,
         "band": "Extreme Caution"
       },
       "today_peak": {
@@ -3114,7 +3114,7 @@
       "longitude": 124.238313,
       "elevation_m": 1,
       "current": {
-        "date_time": "2026-09-14T03:00:00.000Z",
+        "date_time": "2026-09-14T03:15:00.000Z",
         "value": 37.4,
         "band": "Extreme Caution"
       },
@@ -3252,7 +3252,7 @@
       "longitude": 124.379313,
       "elevation_m": 379,
       "current": {
-        "date_time": "2026-09-14T03:00:00.000Z",
+        "date_time": "2026-09-14T03:15:00.000Z",
         "value": 31.5,
         "band": "Caution"
       },
@@ -3390,8 +3390,8 @@
       "longitude": 124.306129,
       "elevation_m": 31,
       "current": {
-        "date_time": "2026-09-14T03:00:00.000Z",
-        "value": 36.3,
+        "date_time": "2026-09-14T03:15:00.000Z",
+        "value": 36.2,
         "band": "Extreme Caution"
       },
       "today_peak": {
@@ -3528,7 +3528,7 @@
       "longitude": 124.193998,
       "elevation_m": 5,
       "current": {
-        "date_time": "2026-09-14T03:00:00.000Z",
+        "date_time": "2026-09-14T03:15:00.000Z",
         "value": 37.2,
         "band": "Extreme Caution"
       },
@@ -3666,7 +3666,7 @@
       "longitude": 124.254059,
       "elevation_m": 11,
       "current": {
-        "date_time": "2026-09-14T03:00:00.000Z",
+        "date_time": "2026-09-14T03:15:00.000Z",
         "value": 37.2,
         "band": "Extreme Caution"
       },
@@ -3804,8 +3804,8 @@
       "longitude": 124.477695,
       "elevation_m": 873,
       "current": {
-        "date_time": "2026-09-14T03:00:00.000Z",
-        "value": 29.2,
+        "date_time": "2026-09-14T03:15:00.000Z",
+        "value": 29,
         "band": "Caution"
       },
       "today_peak": {
@@ -3942,7 +3942,7 @@
       "longitude": 124.234013,
       "elevation_m": 4,
       "current": {
-        "date_time": "2026-09-14T03:00:00.000Z",
+        "date_time": "2026-09-14T03:15:00.000Z",
         "value": 37.4,
         "band": "Extreme Caution"
       },
@@ -4080,7 +4080,7 @@
       "longitude": 124.274745,
       "elevation_m": 37,
       "current": {
-        "date_time": "2026-09-14T03:00:00.000Z",
+        "date_time": "2026-09-14T03:15:00.000Z",
         "value": 36.8,
         "band": "Extreme Caution"
       },
@@ -4218,8 +4218,8 @@
       "longitude": 124.487814,
       "elevation_m": 423,
       "current": {
-        "date_time": "2026-09-14T03:00:00.000Z",
-        "value": 32.8,
+        "date_time": "2026-09-14T03:15:00.000Z",
+        "value": 33,
         "band": "Extreme Caution"
       },
       "today_peak": {
@@ -4356,7 +4356,7 @@
       "longitude": 124.248663,
       "elevation_m": 8,
       "current": {
-        "date_time": "2026-09-14T03:00:00.000Z",
+        "date_time": "2026-09-14T03:15:00.000Z",
         "value": 37.2,
         "band": "Extreme Caution"
       },
@@ -4494,8 +4494,8 @@
       "longitude": 124.261743,
       "elevation_m": 10,
       "current": {
-        "date_time": "2026-09-14T03:00:00.000Z",
-        "value": 36,
+        "date_time": "2026-09-14T03:15:00.000Z",
+        "value": 36.2,
         "band": "Extreme Caution"
       },
       "today_peak": {
@@ -4632,7 +4632,7 @@
       "longitude": 124.226301,
       "elevation_m": 20,
       "current": {
-        "date_time": "2026-09-14T03:00:00.000Z",
+        "date_time": "2026-09-14T03:15:00.000Z",
         "value": 35.9,
         "band": "Extreme Caution"
       },
@@ -4770,8 +4770,8 @@
       "longitude": 124.260689,
       "elevation_m": 7,
       "current": {
-        "date_time": "2026-09-14T03:00:00.000Z",
-        "value": 36.3,
+        "date_time": "2026-09-14T03:15:00.000Z",
+        "value": 36.2,
         "band": "Extreme Caution"
       },
       "today_peak": {
@@ -4908,7 +4908,7 @@
       "longitude": 124.24446,
       "elevation_m": 5,
       "current": {
-        "date_time": "2026-09-14T03:00:00.000Z",
+        "date_time": "2026-09-14T03:15:00.000Z",
         "value": 37.2,
         "band": "Extreme Caution"
       },
@@ -5046,7 +5046,7 @@
       "longitude": 124.252966,
       "elevation_m": 7,
       "current": {
-        "date_time": "2026-09-14T03:00:00.000Z",
+        "date_time": "2026-09-14T03:15:00.000Z",
         "value": 37.2,
         "band": "Extreme Caution"
       },
@@ -5184,7 +5184,7 @@
       "longitude": 124.235559,
       "elevation_m": 0,
       "current": {
-        "date_time": "2026-09-14T03:00:00.000Z",
+        "date_time": "2026-09-14T03:15:00.000Z",
         "value": 37.4,
         "band": "Extreme Caution"
       },
@@ -5322,7 +5322,7 @@
       "longitude": 124.217092,
       "elevation_m": 51,
       "current": {
-        "date_time": "2026-09-14T03:00:00.000Z",
+        "date_time": "2026-09-14T03:15:00.000Z",
         "value": 35.9,
         "band": "Extreme Caution"
       },
@@ -5460,7 +5460,7 @@
       "longitude": 124.234526,
       "elevation_m": 5,
       "current": {
-        "date_time": "2026-09-14T03:00:00.000Z",
+        "date_time": "2026-09-14T03:15:00.000Z",
         "value": 37.2,
         "band": "Extreme Caution"
       },
@@ -5598,7 +5598,7 @@
       "longitude": 124.240781,
       "elevation_m": 3,
       "current": {
-        "date_time": "2026-09-14T03:00:00.000Z",
+        "date_time": "2026-09-14T03:15:00.000Z",
         "value": 37.4,
         "band": "Extreme Caution"
       },
@@ -5736,7 +5736,7 @@
       "longitude": 124.250993,
       "elevation_m": 20,
       "current": {
-        "date_time": "2026-09-14T03:00:00.000Z",
+        "date_time": "2026-09-14T03:15:00.000Z",
         "value": 37,
         "band": "Extreme Caution"
       },
@@ -5874,7 +5874,7 @@
       "longitude": 124.227487,
       "elevation_m": 51,
       "current": {
-        "date_time": "2026-09-14T03:00:00.000Z",
+        "date_time": "2026-09-14T03:15:00.000Z",
         "value": 35.9,
         "band": "Extreme Caution"
       },
@@ -6012,7 +6012,7 @@
       "longitude": 124.24302,
       "elevation_m": 14,
       "current": {
-        "date_time": "2026-09-14T03:00:00.000Z",
+        "date_time": "2026-09-14T03:15:00.000Z",
         "value": 35.9,
         "band": "Extreme Caution"
       },
@@ -6150,7 +6150,7 @@
       "longitude": 124.244723,
       "elevation_m": 11,
       "current": {
-        "date_time": "2026-09-14T03:00:00.000Z",
+        "date_time": "2026-09-14T03:15:00.000Z",
         "value": 37.2,
         "band": "Extreme Caution"
       },
@@ -6288,8 +6288,8 @@
       "longitude": 124.268887,
       "elevation_m": 11,
       "current": {
-        "date_time": "2026-09-14T03:00:00.000Z",
-        "value": 36,
+        "date_time": "2026-09-14T03:15:00.000Z",
+        "value": 36.2,
         "band": "Extreme Caution"
       },
       "today_peak": {
@@ -6426,7 +6426,7 @@
       "longitude": 124.224324,
       "elevation_m": 180,
       "current": {
-        "date_time": "2026-09-14T03:00:00.000Z",
+        "date_time": "2026-09-14T03:15:00.000Z",
         "value": 35.9,
         "band": "Extreme Caution"
       },
@@ -6564,7 +6564,7 @@
       "longitude": 124.242997,
       "elevation_m": 6,
       "current": {
-        "date_time": "2026-09-14T03:00:00.000Z",
+        "date_time": "2026-09-14T03:15:00.000Z",
         "value": 37.2,
         "band": "Extreme Caution"
       },
