@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-20T03:12:36.357Z",
+  "generated_at": "2026-09-21T03:12:55.541Z",
   "indicator": "fire_hotspots",
   "label": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed.",
   "schema": "schema/record.schema.json",
@@ -11,12 +11,8 @@
     "lon_min": 124.15,
     "lon_max": 124.62
   },
-  "count_7day": 2,
+  "count_7day": 3,
   "by_day": [
-    {
-      "date": "2026-09-14",
-      "count": 0
-    },
     {
       "date": "2026-09-15",
       "count": 1
@@ -39,6 +35,10 @@
     },
     {
       "date": "2026-09-20",
+      "count": 1
+    },
+    {
+      "date": "2026-09-21",
       "count": 0
     }
   ],
@@ -48,6 +48,19 @@
     "modis-c6.1"
   ],
   "records": [
+    {
+      "date_time": "2026-09-20T05:29:00.000Z",
+      "barangay": "Rogongon",
+      "latitude": 8.15905,
+      "longitude": 124.53014,
+      "indicator": "fire_hotspot_detection",
+      "value": 11.55,
+      "unit": "MW",
+      "source": "NASA FIRMS (noaa-20-viirs) — satellite thermal anomaly detection, not a confirmed fire incident",
+      "responsible_office": "None — satellite detection only. BFP Iligan City / ICENRO would confirm any actual incident.",
+      "status": "reported",
+      "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. Detected by noaa-20-viirs. Confidence: nominal. Nearest reference point: Rogongon (4.84km). This is a satellite thermal anomaly, not a confirmed fire incident."
+    },
     {
       "date_time": "2026-09-19T05:29:00.000Z",
       "barangay": "Rogongon",
@@ -76,6 +89,19 @@
     }
   ],
   "hotspots": [
+    {
+      "date_time": "2026-09-20T05:29:00.000Z",
+      "latitude": 8.15905,
+      "longitude": 124.53014,
+      "confidence": "nominal",
+      "frp": 11.55,
+      "satellite": "noaa-20-viirs",
+      "satellites": [
+        "noaa-20-viirs"
+      ],
+      "nearest_barangay": "Rogongon",
+      "distance_km": 4.84
+    },
     {
       "date_time": "2026-09-19T05:29:00.000Z",
       "latitude": 8.11769,
