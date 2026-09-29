@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-29T07:19:08.428Z",
+  "generated_at": "2026-09-29T08:20:12.458Z",
   "indicator": "rainfall",
   "label": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed.",
   "schema": "schema/record.schema.json",
