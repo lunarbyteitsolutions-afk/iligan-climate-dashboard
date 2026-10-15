@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-15T04:17:03.637Z",
+  "generated_at": "2026-10-15T08:03:35.070Z",
   "indicator": "rainfall",
   "label": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed.",
   "schema": "schema/record.schema.json",
@@ -31,7 +31,7 @@
       "source": "Open-Meteo (supplementary) — PAGASA is the authoritative rainfall reference for the Philippines",
       "responsible_office": "PAGASA (authoritative); CDRRMO for local rain gauges",
       "status": "derived",
-      "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. 7-day accumulated rainfall (today + previous 6 days). Dry day = under 1.0mm. Today: 10.8mm. Dry days in this window: 0 of 7. Consecutive dry days (through today): 0."
+      "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. 7-day accumulated rainfall (today + previous 6 days). Dry day = under 1.0mm. Today: 10.9mm. Dry days in this window: 0 of 7. Consecutive dry days (through today): 0."
     },
     {
       "date_time": "2026-10-14T16:00:00.000Z",
@@ -52,12 +52,12 @@
       "latitude": 8.266244,
       "longitude": 124.297982,
       "indicator": "rainfall_7day_mm",
-      "value": 93.9,
+      "value": 93.8,
       "unit": "mm",
       "source": "Open-Meteo (supplementary) — PAGASA is the authoritative rainfall reference for the Philippines",
       "responsible_office": "PAGASA (authoritative); CDRRMO for local rain gauges",
       "status": "derived",
-      "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. 7-day accumulated rainfall (today + previous 6 days). Dry day = under 1.0mm. Today: 15.7mm. Dry days in this window: 0 of 7. Consecutive dry days (through today): 0."
+      "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. 7-day accumulated rainfall (today + previous 6 days). Dry day = under 1.0mm. Today: 15.6mm. Dry days in this window: 0 of 7. Consecutive dry days (through today): 0."
     },
     {
       "date_time": "2026-10-14T16:00:00.000Z",
@@ -65,12 +65,12 @@
       "latitude": 8.301856,
       "longitude": 124.308101,
       "indicator": "rainfall_7day_mm",
-      "value": 93.9,
+      "value": 93.8,
       "unit": "mm",
       "source": "Open-Meteo (supplementary) — PAGASA is the authoritative rainfall reference for the Philippines",
       "responsible_office": "PAGASA (authoritative); CDRRMO for local rain gauges",
       "status": "derived",
-      "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. 7-day accumulated rainfall (today + previous 6 days). Dry day = under 1.0mm. Today: 15.7mm. Dry days in this window: 0 of 7. Consecutive dry days (through today): 0."
+      "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. 7-day accumulated rainfall (today + previous 6 days). Dry day = under 1.0mm. Today: 15.6mm. Dry days in this window: 0 of 7. Consecutive dry days (through today): 0."
     },
     {
       "date_time": "2026-10-14T16:00:00.000Z",
@@ -96,7 +96,7 @@
       "source": "Open-Meteo (supplementary) — PAGASA is the authoritative rainfall reference for the Philippines",
       "responsible_office": "PAGASA (authoritative); CDRRMO for local rain gauges",
       "status": "derived",
-      "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. 7-day accumulated rainfall (today + previous 6 days). Dry day = under 1.0mm. Today: 10.8mm. Dry days in this window: 0 of 7. Consecutive dry days (through today): 0."
+      "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. 7-day accumulated rainfall (today + previous 6 days). Dry day = under 1.0mm. Today: 10.9mm. Dry days in this window: 0 of 7. Consecutive dry days (through today): 0."
     },
     {
       "date_time": "2026-10-14T16:00:00.000Z",
@@ -117,12 +117,12 @@
       "latitude": 8.262466,
       "longitude": 124.337034,
       "indicator": "rainfall_7day_mm",
-      "value": 93.9,
+      "value": 93.8,
       "unit": "mm",
       "source": "Open-Meteo (supplementary) — PAGASA is the authoritative rainfall reference for the Philippines",
       "responsible_office": "PAGASA (authoritative); CDRRMO for local rain gauges",
       "status": "derived",
-      "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. 7-day accumulated rainfall (today + previous 6 days). Dry day = under 1.0mm. Today: 15.7mm. Dry days in this window: 0 of 7. Consecutive dry days (through today): 0."
+      "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. 7-day accumulated rainfall (today + previous 6 days). Dry day = under 1.0mm. Today: 15.6mm. Dry days in this window: 0 of 7. Consecutive dry days (through today): 0."
     },
     {
       "date_time": "2026-10-14T16:00:00.000Z",
@@ -161,7 +161,7 @@
       "source": "Open-Meteo (supplementary) — PAGASA is the authoritative rainfall reference for the Philippines",
       "responsible_office": "PAGASA (authoritative); CDRRMO for local rain gauges",
       "status": "derived",
-      "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. 7-day accumulated rainfall (today + previous 6 days). Dry day = under 1.0mm. Today: 10.8mm. Dry days in this window: 0 of 7. Consecutive dry days (through today): 0."
+      "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. 7-day accumulated rainfall (today + previous 6 days). Dry day = under 1.0mm. Today: 10.9mm. Dry days in this window: 0 of 7. Consecutive dry days (through today): 0."
     },
     {
       "date_time": "2026-10-14T16:00:00.000Z",
@@ -174,7 +174,7 @@
       "source": "Open-Meteo (supplementary) — PAGASA is the authoritative rainfall reference for the Philippines",
       "responsible_office": "PAGASA (authoritative); CDRRMO for local rain gauges",
       "status": "derived",
-      "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. 7-day accumulated rainfall (today + previous 6 days). Dry day = under 1.0mm. Today: 28.3mm. Dry days in this window: 0 of 7. Consecutive dry days (through today): 0."
+      "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. 7-day accumulated rainfall (today + previous 6 days). Dry day = under 1.0mm. Today: 28.2mm. Dry days in this window: 0 of 7. Consecutive dry days (through today): 0."
     },
     {
       "date_time": "2026-10-14T16:00:00.000Z",
@@ -182,12 +182,12 @@
       "latitude": 8.288466,
       "longitude": 124.320603,
       "indicator": "rainfall_7day_mm",
-      "value": 93.9,
+      "value": 93.8,
       "unit": "mm",
       "source": "Open-Meteo (supplementary) — PAGASA is the authoritative rainfall reference for the Philippines",
       "responsible_office": "PAGASA (authoritative); CDRRMO for local rain gauges",
       "status": "derived",
-      "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. 7-day accumulated rainfall (today + previous 6 days). Dry day = under 1.0mm. Today: 15.7mm. Dry days in this window: 0 of 7. Consecutive dry days (through today): 0."
+      "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. 7-day accumulated rainfall (today + previous 6 days). Dry day = under 1.0mm. Today: 15.6mm. Dry days in this window: 0 of 7. Consecutive dry days (through today): 0."
     },
     {
       "date_time": "2026-10-14T16:00:00.000Z",
@@ -208,12 +208,12 @@
       "latitude": 8.288963,
       "longitude": 124.281658,
       "indicator": "rainfall_7day_mm",
-      "value": 93.9,
+      "value": 93.8,
       "unit": "mm",
       "source": "Open-Meteo (supplementary) — PAGASA is the authoritative rainfall reference for the Philippines",
       "responsible_office": "PAGASA (authoritative); CDRRMO for local rain gauges",
       "status": "derived",
-      "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. 7-day accumulated rainfall (today + previous 6 days). Dry day = under 1.0mm. Today: 15.7mm. Dry days in this window: 0 of 7. Consecutive dry days (through today): 0."
+      "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. 7-day accumulated rainfall (today + previous 6 days). Dry day = under 1.0mm. Today: 15.6mm. Dry days in this window: 0 of 7. Consecutive dry days (through today): 0."
     },
     {
       "date_time": "2026-10-14T16:00:00.000Z",
@@ -221,12 +221,12 @@
       "latitude": 8.22364,
       "longitude": 124.343979,
       "indicator": "rainfall_7day_mm",
-      "value": 93.9,
+      "value": 93.8,
       "unit": "mm",
       "source": "Open-Meteo (supplementary) — PAGASA is the authoritative rainfall reference for the Philippines",
       "responsible_office": "PAGASA (authoritative); CDRRMO for local rain gauges",
       "status": "derived",
-      "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. 7-day accumulated rainfall (today + previous 6 days). Dry day = under 1.0mm. Today: 15.7mm. Dry days in this window: 0 of 7. Consecutive dry days (through today): 0."
+      "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. 7-day accumulated rainfall (today + previous 6 days). Dry day = under 1.0mm. Today: 15.6mm. Dry days in this window: 0 of 7. Consecutive dry days (through today): 0."
     },
     {
       "date_time": "2026-10-14T16:00:00.000Z",
@@ -239,7 +239,7 @@
       "source": "Open-Meteo (supplementary) — PAGASA is the authoritative rainfall reference for the Philippines",
       "responsible_office": "PAGASA (authoritative); CDRRMO for local rain gauges",
       "status": "derived",
-      "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. 7-day accumulated rainfall (today + previous 6 days). Dry day = under 1.0mm. Today: 10.8mm. Dry days in this window: 0 of 7. Consecutive dry days (through today): 0."
+      "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. 7-day accumulated rainfall (today + previous 6 days). Dry day = under 1.0mm. Today: 10.9mm. Dry days in this window: 0 of 7. Consecutive dry days (through today): 0."
     },
     {
       "date_time": "2026-10-14T16:00:00.000Z",
@@ -260,7 +260,7 @@
       "latitude": 8.296761,
       "longitude": 124.379313,
       "indicator": "rainfall_7day_mm",
-      "value": 134.5,
+      "value": 134.4,
       "unit": "mm",
       "source": "Open-Meteo (supplementary) — PAGASA is the authoritative rainfall reference for the Philippines",
       "responsible_office": "PAGASA (authoritative); CDRRMO for local rain gauges",
@@ -273,12 +273,12 @@
       "latitude": 8.244349,
       "longitude": 124.306129,
       "indicator": "rainfall_7day_mm",
-      "value": 93.9,
+      "value": 93.8,
       "unit": "mm",
       "source": "Open-Meteo (supplementary) — PAGASA is the authoritative rainfall reference for the Philippines",
       "responsible_office": "PAGASA (authoritative); CDRRMO for local rain gauges",
       "status": "derived",
-      "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. 7-day accumulated rainfall (today + previous 6 days). Dry day = under 1.0mm. Today: 15.7mm. Dry days in this window: 0 of 7. Consecutive dry days (through today): 0."
+      "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. 7-day accumulated rainfall (today + previous 6 days). Dry day = under 1.0mm. Today: 15.6mm. Dry days in this window: 0 of 7. Consecutive dry days (through today): 0."
     },
     {
       "date_time": "2026-10-14T16:00:00.000Z",
@@ -312,12 +312,12 @@
       "latitude": 8.107555,
       "longitude": 124.477695,
       "indicator": "rainfall_7day_mm",
-      "value": 138,
+      "value": 137.6,
       "unit": "mm",
       "source": "Open-Meteo (supplementary) — PAGASA is the authoritative rainfall reference for the Philippines",
       "responsible_office": "PAGASA (authoritative); CDRRMO for local rain gauges",
       "status": "derived",
-      "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. 7-day accumulated rainfall (today + previous 6 days). Dry day = under 1.0mm. Today: 27mm. Dry days in this window: 0 of 7. Consecutive dry days (through today): 0."
+      "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. 7-day accumulated rainfall (today + previous 6 days). Dry day = under 1.0mm. Today: 26.8mm. Dry days in this window: 0 of 7. Consecutive dry days (through today): 0."
     },
     {
       "date_time": "2026-10-14T16:00:00.000Z",
@@ -351,12 +351,12 @@
       "latitude": 8.147127,
       "longitude": 124.487814,
       "indicator": "rainfall_7day_mm",
-      "value": 147.2,
+      "value": 147,
       "unit": "mm",
       "source": "Open-Meteo (supplementary) — PAGASA is the authoritative rainfall reference for the Philippines",
       "responsible_office": "PAGASA (authoritative); CDRRMO for local rain gauges",
       "status": "derived",
-      "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. 7-day accumulated rainfall (today + previous 6 days). Dry day = under 1.0mm. Today: 18.9mm. Dry days in this window: 0 of 7. Consecutive dry days (through today): 0."
+      "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. 7-day accumulated rainfall (today + previous 6 days). Dry day = under 1.0mm. Today: 18.7mm. Dry days in this window: 0 of 7. Consecutive dry days (through today): 0."
     },
     {
       "date_time": "2026-10-14T16:00:00.000Z",
@@ -382,7 +382,7 @@
       "source": "Open-Meteo (supplementary) — PAGASA is the authoritative rainfall reference for the Philippines",
       "responsible_office": "PAGASA (authoritative); CDRRMO for local rain gauges",
       "status": "derived",
-      "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. 7-day accumulated rainfall (today + previous 6 days). Dry day = under 1.0mm. Today: 10.8mm. Dry days in this window: 0 of 7. Consecutive dry days (through today): 0."
+      "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. 7-day accumulated rainfall (today + previous 6 days). Dry day = under 1.0mm. Today: 10.9mm. Dry days in this window: 0 of 7. Consecutive dry days (through today): 0."
     },
     {
       "date_time": "2026-10-14T16:00:00.000Z",
@@ -408,7 +408,7 @@
       "source": "Open-Meteo (supplementary) — PAGASA is the authoritative rainfall reference for the Philippines",
       "responsible_office": "PAGASA (authoritative); CDRRMO for local rain gauges",
       "status": "derived",
-      "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. 7-day accumulated rainfall (today + previous 6 days). Dry day = under 1.0mm. Today: 10.8mm. Dry days in this window: 0 of 7. Consecutive dry days (through today): 0."
+      "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. 7-day accumulated rainfall (today + previous 6 days). Dry day = under 1.0mm. Today: 10.9mm. Dry days in this window: 0 of 7. Consecutive dry days (through today): 0."
     },
     {
       "date_time": "2026-10-14T16:00:00.000Z",
@@ -551,7 +551,7 @@
       "source": "Open-Meteo (supplementary) — PAGASA is the authoritative rainfall reference for the Philippines",
       "responsible_office": "PAGASA (authoritative); CDRRMO for local rain gauges",
       "status": "derived",
-      "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. 7-day accumulated rainfall (today + previous 6 days). Dry day = under 1.0mm. Today: 10.8mm. Dry days in this window: 0 of 7. Consecutive dry days (through today): 0."
+      "remarks": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed. 7-day accumulated rainfall (today + previous 6 days). Dry day = under 1.0mm. Today: 10.9mm. Dry days in this window: 0 of 7. Consecutive dry days (through today): 0."
     },
     {
       "date_time": "2026-10-14T16:00:00.000Z",
@@ -593,7 +593,7 @@
       "daily": [
         {
           "date": "2026-10-08",
-          "precipitation_mm": 19,
+          "precipitation_mm": 21.1,
           "precipitation_hours": 19,
           "is_dry": false
         },
@@ -611,25 +611,25 @@
         },
         {
           "date": "2026-10-11",
-          "precipitation_mm": 15.3,
+          "precipitation_mm": 14.1,
           "precipitation_hours": 15,
           "is_dry": false
         },
         {
           "date": "2026-10-12",
-          "precipitation_mm": 14.3,
+          "precipitation_mm": 15.5,
           "precipitation_hours": 16,
           "is_dry": false
         },
         {
           "date": "2026-10-13",
-          "precipitation_mm": 10.2,
+          "precipitation_mm": 10,
           "precipitation_hours": 11,
           "is_dry": false
         },
         {
           "date": "2026-10-14",
-          "precipitation_mm": 8.8,
+          "precipitation_mm": 9,
           "precipitation_hours": 11,
           "is_dry": false
         },
@@ -645,7 +645,7 @@
       "name": "Acmac",
       "latitude": 8.275246,
       "longitude": 124.268353,
-      "rainfall_today_mm": 10.8,
+      "rainfall_today_mm": 10.9,
       "rainfall_7day_mm": 73.8,
       "dry_days_7": 0,
       "consecutive_dry_days": 0,
@@ -653,7 +653,7 @@
       "daily": [
         {
           "date": "2026-10-08",
-          "precipitation_mm": 14.4,
+          "precipitation_mm": 15.1,
           "precipitation_hours": 13,
           "is_dry": false
         },
@@ -665,37 +665,37 @@
         },
         {
           "date": "2026-10-10",
-          "precipitation_mm": 10.9,
+          "precipitation_mm": 10.8,
           "precipitation_hours": 10,
           "is_dry": false
         },
         {
           "date": "2026-10-11",
-          "precipitation_mm": 17.2,
+          "precipitation_mm": 16.8,
           "precipitation_hours": 13,
           "is_dry": false
         },
         {
           "date": "2026-10-12",
-          "precipitation_mm": 6.9,
+          "precipitation_mm": 7.4,
           "precipitation_hours": 16,
           "is_dry": false
         },
         {
           "date": "2026-10-13",
-          "precipitation_mm": 13.6,
+          "precipitation_mm": 13.4,
           "precipitation_hours": 12,
           "is_dry": false
         },
         {
           "date": "2026-10-14",
-          "precipitation_mm": 7.2,
+          "precipitation_mm": 7.3,
           "precipitation_hours": 12,
           "is_dry": false
         },
         {
           "date": "2026-10-15",
-          "precipitation_mm": 10.8,
+          "precipitation_mm": 10.9,
           "precipitation_hours": 18,
           "is_dry": false
         }
@@ -713,7 +713,7 @@
       "daily": [
         {
           "date": "2026-10-08",
-          "precipitation_mm": 19,
+          "precipitation_mm": 21.1,
           "precipitation_hours": 19,
           "is_dry": false
         },
@@ -731,25 +731,25 @@
         },
         {
           "date": "2026-10-11",
-          "precipitation_mm": 15.3,
+          "precipitation_mm": 14.1,
           "precipitation_hours": 15,
           "is_dry": false
         },
         {
           "date": "2026-10-12",
-          "precipitation_mm": 14.3,
+          "precipitation_mm": 15.5,
           "precipitation_hours": 16,
           "is_dry": false
         },
         {
           "date": "2026-10-13",
-          "precipitation_mm": 10.2,
+          "precipitation_mm": 10,
           "precipitation_hours": 11,
           "is_dry": false
         },
         {
           "date": "2026-10-14",
-          "precipitation_mm": 8.8,
+          "precipitation_mm": 9,
           "precipitation_hours": 11,
           "is_dry": false
         },
@@ -765,15 +765,15 @@
       "name": "Bonbonon",
       "latitude": 8.266244,
       "longitude": 124.297982,
-      "rainfall_today_mm": 15.7,
-      "rainfall_7day_mm": 93.9,
+      "rainfall_today_mm": 15.6,
+      "rainfall_7day_mm": 93.8,
       "dry_days_7": 0,
       "consecutive_dry_days": 0,
       "window_days": 7,
       "daily": [
         {
           "date": "2026-10-08",
-          "precipitation_mm": 12.1,
+          "precipitation_mm": 12.7,
           "precipitation_hours": 16,
           "is_dry": false
         },
@@ -791,31 +791,31 @@
         },
         {
           "date": "2026-10-11",
-          "precipitation_mm": 28.2,
+          "precipitation_mm": 27,
           "precipitation_hours": 14,
           "is_dry": false
         },
         {
           "date": "2026-10-12",
-          "precipitation_mm": 7.6,
+          "precipitation_mm": 8.8,
           "precipitation_hours": 16,
           "is_dry": false
         },
         {
           "date": "2026-10-13",
-          "precipitation_mm": 13.6,
+          "precipitation_mm": 13,
           "precipitation_hours": 13,
           "is_dry": false
         },
         {
           "date": "2026-10-14",
-          "precipitation_mm": 7.7,
+          "precipitation_mm": 8.3,
           "precipitation_hours": 15,
           "is_dry": false
         },
         {
           "date": "2026-10-15",
-          "precipitation_mm": 15.7,
+          "precipitation_mm": 15.6,
           "precipitation_hours": 15,
           "is_dry": false
         }
@@ -825,15 +825,15 @@
       "name": "Bunawan",
       "latitude": 8.301856,
       "longitude": 124.308101,
-      "rainfall_today_mm": 15.7,
-      "rainfall_7day_mm": 93.9,
+      "rainfall_today_mm": 15.6,
+      "rainfall_7day_mm": 93.8,
       "dry_days_7": 0,
       "consecutive_dry_days": 0,
       "window_days": 7,
       "daily": [
         {
           "date": "2026-10-08",
-          "precipitation_mm": 12.1,
+          "precipitation_mm": 12.7,
           "precipitation_hours": 16,
           "is_dry": false
         },
@@ -851,31 +851,31 @@
         },
         {
           "date": "2026-10-11",
-          "precipitation_mm": 28.2,
+          "precipitation_mm": 27,
           "precipitation_hours": 14,
           "is_dry": false
         },
         {
           "date": "2026-10-12",
-          "precipitation_mm": 7.6,
+          "precipitation_mm": 8.8,
           "precipitation_hours": 16,
           "is_dry": false
         },
         {
           "date": "2026-10-13",
-          "precipitation_mm": 13.6,
+          "precipitation_mm": 13,
           "precipitation_hours": 13,
           "is_dry": false
         },
         {
           "date": "2026-10-14",
-          "precipitation_mm": 7.7,
+          "precipitation_mm": 8.3,
           "precipitation_hours": 15,
           "is_dry": false
         },
         {
           "date": "2026-10-15",
-          "precipitation_mm": 15.7,
+          "precipitation_mm": 15.6,
           "precipitation_hours": 15,
           "is_dry": false
         }
@@ -893,7 +893,7 @@
       "daily": [
         {
           "date": "2026-10-08",
-          "precipitation_mm": 17.3,
+          "precipitation_mm": 19,
           "precipitation_hours": 20,
           "is_dry": false
         },
@@ -905,31 +905,31 @@
         },
         {
           "date": "2026-10-10",
-          "precipitation_mm": 13.3,
+          "precipitation_mm": 13.2,
           "precipitation_hours": 12,
           "is_dry": false
         },
         {
           "date": "2026-10-11",
-          "precipitation_mm": 29.6,
+          "precipitation_mm": 29.1,
           "precipitation_hours": 17,
           "is_dry": false
         },
         {
           "date": "2026-10-12",
-          "precipitation_mm": 16.6,
+          "precipitation_mm": 17.2,
           "precipitation_hours": 13,
           "is_dry": false
         },
         {
           "date": "2026-10-13",
-          "precipitation_mm": 12.9,
+          "precipitation_mm": 12.8,
           "precipitation_hours": 13,
           "is_dry": false
         },
         {
           "date": "2026-10-14",
-          "precipitation_mm": 11.7,
+          "precipitation_mm": 11.8,
           "precipitation_hours": 16,
           "is_dry": false
         },
@@ -945,7 +945,7 @@
       "name": "Dalipuga",
       "latitude": 8.30596,
       "longitude": 124.258587,
-      "rainfall_today_mm": 10.8,
+      "rainfall_today_mm": 10.9,
       "rainfall_7day_mm": 73.8,
       "dry_days_7": 0,
       "consecutive_dry_days": 0,
@@ -953,7 +953,7 @@
       "daily": [
         {
           "date": "2026-10-08",
-          "precipitation_mm": 14.4,
+          "precipitation_mm": 15.1,
           "precipitation_hours": 13,
           "is_dry": false
         },
@@ -965,37 +965,37 @@
         },
         {
           "date": "2026-10-10",
-          "precipitation_mm": 10.9,
+          "precipitation_mm": 10.8,
           "precipitation_hours": 10,
           "is_dry": false
         },
         {
           "date": "2026-10-11",
-          "precipitation_mm": 17.2,
+          "precipitation_mm": 16.8,
           "precipitation_hours": 13,
           "is_dry": false
         },
         {
           "date": "2026-10-12",
-          "precipitation_mm": 6.9,
+          "precipitation_mm": 7.4,
           "precipitation_hours": 16,
           "is_dry": false
         },
         {
           "date": "2026-10-13",
-          "precipitation_mm": 13.6,
+          "precipitation_mm": 13.4,
           "precipitation_hours": 12,
           "is_dry": false
         },
         {
           "date": "2026-10-14",
-          "precipitation_mm": 7.2,
+          "precipitation_mm": 7.3,
           "precipitation_hours": 12,
           "is_dry": false
         },
         {
           "date": "2026-10-15",
-          "precipitation_mm": 10.8,
+          "precipitation_mm": 10.9,
           "precipitation_hours": 18,
           "is_dry": false
         }
@@ -1013,7 +1013,7 @@
       "daily": [
         {
           "date": "2026-10-08",
-          "precipitation_mm": 19,
+          "precipitation_mm": 21.1,
           "precipitation_hours": 19,
           "is_dry": false
         },
@@ -1031,25 +1031,25 @@
         },
         {
           "date": "2026-10-11",
-          "precipitation_mm": 15.3,
+          "precipitation_mm": 14.1,
           "precipitation_hours": 15,
           "is_dry": false
         },
         {
           "date": "2026-10-12",
-          "precipitation_mm": 14.3,
+          "precipitation_mm": 15.5,
           "precipitation_hours": 16,
           "is_dry": false
         },
         {
           "date": "2026-10-13",
-          "precipitation_mm": 10.2,
+          "precipitation_mm": 10,
           "precipitation_hours": 11,
           "is_dry": false
         },
         {
           "date": "2026-10-14",
-          "precipitation_mm": 8.8,
+          "precipitation_mm": 9,
           "precipitation_hours": 11,
           "is_dry": false
         },
@@ -1065,15 +1065,15 @@
       "name": "Digkilaan",
       "latitude": 8.262466,
       "longitude": 124.337034,
-      "rainfall_today_mm": 15.7,
-      "rainfall_7day_mm": 93.9,
+      "rainfall_today_mm": 15.6,
+      "rainfall_7day_mm": 93.8,
       "dry_days_7": 0,
       "consecutive_dry_days": 0,
       "window_days": 7,
       "daily": [
         {
           "date": "2026-10-08",
-          "precipitation_mm": 12.1,
+          "precipitation_mm": 12.7,
           "precipitation_hours": 16,
           "is_dry": false
         },
@@ -1091,31 +1091,31 @@
         },
         {
           "date": "2026-10-11",
-          "precipitation_mm": 28.2,
+          "precipitation_mm": 27,
           "precipitation_hours": 14,
           "is_dry": false
         },
         {
           "date": "2026-10-12",
-          "precipitation_mm": 7.6,
+          "precipitation_mm": 8.8,
           "precipitation_hours": 16,
           "is_dry": false
         },
         {
           "date": "2026-10-13",
-          "precipitation_mm": 13.6,
+          "precipitation_mm": 13,
           "precipitation_hours": 13,
           "is_dry": false
         },
         {
           "date": "2026-10-14",
-          "precipitation_mm": 7.7,
+          "precipitation_mm": 8.3,
           "precipitation_hours": 15,
           "is_dry": false
         },
         {
           "date": "2026-10-15",
-          "precipitation_mm": 15.7,
+          "precipitation_mm": 15.6,
           "precipitation_hours": 15,
           "is_dry": false
         }
@@ -1133,7 +1133,7 @@
       "daily": [
         {
           "date": "2026-10-08",
-          "precipitation_mm": 19,
+          "precipitation_mm": 21.1,
           "precipitation_hours": 19,
           "is_dry": false
         },
@@ -1151,25 +1151,25 @@
         },
         {
           "date": "2026-10-11",
-          "precipitation_mm": 15.3,
+          "precipitation_mm": 14.1,
           "precipitation_hours": 15,
           "is_dry": false
         },
         {
           "date": "2026-10-12",
-          "precipitation_mm": 14.3,
+          "precipitation_mm": 15.5,
           "precipitation_hours": 16,
           "is_dry": false
         },
         {
           "date": "2026-10-13",
-          "precipitation_mm": 10.2,
+          "precipitation_mm": 10,
           "precipitation_hours": 11,
           "is_dry": false
         },
         {
           "date": "2026-10-14",
-          "precipitation_mm": 8.8,
+          "precipitation_mm": 9,
           "precipitation_hours": 11,
           "is_dry": false
         },
@@ -1193,7 +1193,7 @@
       "daily": [
         {
           "date": "2026-10-08",
-          "precipitation_mm": 9.2,
+          "precipitation_mm": 11,
           "precipitation_hours": 17,
           "is_dry": false
         },
@@ -1211,25 +1211,25 @@
         },
         {
           "date": "2026-10-11",
-          "precipitation_mm": 33.7,
+          "precipitation_mm": 31.9,
           "precipitation_hours": 15,
           "is_dry": false
         },
         {
           "date": "2026-10-12",
-          "precipitation_mm": 19.8,
+          "precipitation_mm": 21.6,
           "precipitation_hours": 17,
           "is_dry": false
         },
         {
           "date": "2026-10-13",
-          "precipitation_mm": 10,
+          "precipitation_mm": 9.6,
           "precipitation_hours": 12,
           "is_dry": false
         },
         {
           "date": "2026-10-14",
-          "precipitation_mm": 12.2,
+          "precipitation_mm": 12.6,
           "precipitation_hours": 15,
           "is_dry": false
         },
@@ -1245,7 +1245,7 @@
       "name": "Hinaplanon",
       "latitude": 8.246596,
       "longitude": 124.259474,
-      "rainfall_today_mm": 10.8,
+      "rainfall_today_mm": 10.9,
       "rainfall_7day_mm": 73.8,
       "dry_days_7": 0,
       "consecutive_dry_days": 0,
@@ -1253,7 +1253,7 @@
       "daily": [
         {
           "date": "2026-10-08",
-          "precipitation_mm": 14.4,
+          "precipitation_mm": 15.1,
           "precipitation_hours": 13,
           "is_dry": false
         },
@@ -1265,37 +1265,37 @@
         },
         {
           "date": "2026-10-10",
-          "precipitation_mm": 10.9,
+          "precipitation_mm": 10.8,
           "precipitation_hours": 10,
           "is_dry": false
         },
         {
           "date": "2026-10-11",
-          "precipitation_mm": 17.2,
+          "precipitation_mm": 16.8,
           "precipitation_hours": 13,
           "is_dry": false
         },
         {
           "date": "2026-10-12",
-          "precipitation_mm": 6.9,
+          "precipitation_mm": 7.4,
           "precipitation_hours": 16,
           "is_dry": false
         },
         {
           "date": "2026-10-13",
-          "precipitation_mm": 13.6,
+          "precipitation_mm": 13.4,
           "precipitation_hours": 12,
           "is_dry": false
         },
         {
           "date": "2026-10-14",
-          "precipitation_mm": 7.2,
+          "precipitation_mm": 7.3,
           "precipitation_hours": 12,
           "is_dry": false
         },
         {
           "date": "2026-10-15",
-          "precipitation_mm": 10.8,
+          "precipitation_mm": 10.9,
           "precipitation_hours": 18,
           "is_dry": false
         }
@@ -1305,7 +1305,7 @@
       "name": "Hindang",
       "latitude": 8.304424,
       "longitude": 124.348089,
-      "rainfall_today_mm": 28.3,
+      "rainfall_today_mm": 28.2,
       "rainfall_7day_mm": 132.6,
       "dry_days_7": 0,
       "consecutive_dry_days": 0,
@@ -1313,49 +1313,49 @@
       "daily": [
         {
           "date": "2026-10-08",
-          "precipitation_mm": 16.3,
+          "precipitation_mm": 16.7,
           "precipitation_hours": 22,
           "is_dry": false
         },
         {
           "date": "2026-10-09",
-          "precipitation_mm": 8.4,
+          "precipitation_mm": 8.5,
           "precipitation_hours": 16,
           "is_dry": false
         },
         {
           "date": "2026-10-10",
-          "precipitation_mm": 11.6,
+          "precipitation_mm": 11.5,
           "precipitation_hours": 8,
           "is_dry": false
         },
         {
           "date": "2026-10-11",
-          "precipitation_mm": 34.8,
+          "precipitation_mm": 34.2,
           "precipitation_hours": 15,
           "is_dry": false
         },
         {
           "date": "2026-10-12",
-          "precipitation_mm": 11.6,
+          "precipitation_mm": 12.3,
           "precipitation_hours": 16,
           "is_dry": false
         },
         {
           "date": "2026-10-13",
-          "precipitation_mm": 19.7,
+          "precipitation_mm": 19.3,
           "precipitation_hours": 16,
           "is_dry": false
         },
         {
           "date": "2026-10-14",
-          "precipitation_mm": 18.2,
+          "precipitation_mm": 18.6,
           "precipitation_hours": 16,
           "is_dry": false
         },
         {
           "date": "2026-10-15",
-          "precipitation_mm": 28.3,
+          "precipitation_mm": 28.2,
           "precipitation_hours": 15,
           "is_dry": false
         }
@@ -1365,15 +1365,15 @@
       "name": "Kabacsanan",
       "latitude": 8.288466,
       "longitude": 124.320603,
-      "rainfall_today_mm": 15.7,
-      "rainfall_7day_mm": 93.9,
+      "rainfall_today_mm": 15.6,
+      "rainfall_7day_mm": 93.8,
       "dry_days_7": 0,
       "consecutive_dry_days": 0,
       "window_days": 7,
       "daily": [
         {
           "date": "2026-10-08",
-          "precipitation_mm": 12.1,
+          "precipitation_mm": 12.7,
           "precipitation_hours": 16,
           "is_dry": false
         },
@@ -1391,31 +1391,31 @@
         },
         {
           "date": "2026-10-11",
-          "precipitation_mm": 28.2,
+          "precipitation_mm": 27,
           "precipitation_hours": 14,
           "is_dry": false
         },
         {
           "date": "2026-10-12",
-          "precipitation_mm": 7.6,
+          "precipitation_mm": 8.8,
           "precipitation_hours": 16,
           "is_dry": false
         },
         {
           "date": "2026-10-13",
-          "precipitation_mm": 13.6,
+          "precipitation_mm": 13,
           "precipitation_hours": 13,
           "is_dry": false
         },
         {
           "date": "2026-10-14",
-          "precipitation_mm": 7.7,
+          "precipitation_mm": 8.3,
           "precipitation_hours": 15,
           "is_dry": false
         },
         {
           "date": "2026-10-15",
-          "precipitation_mm": 15.7,
+          "precipitation_mm": 15.6,
           "precipitation_hours": 15,
           "is_dry": false
         }
@@ -1433,7 +1433,7 @@
       "daily": [
         {
           "date": "2026-10-08",
-          "precipitation_mm": 9.2,
+          "precipitation_mm": 11,
           "precipitation_hours": 17,
           "is_dry": false
         },
@@ -1451,25 +1451,25 @@
         },
         {
           "date": "2026-10-11",
-          "precipitation_mm": 33.7,
+          "precipitation_mm": 31.9,
           "precipitation_hours": 15,
           "is_dry": false
         },
         {
           "date": "2026-10-12",
-          "precipitation_mm": 19.8,
+          "precipitation_mm": 21.6,
           "precipitation_hours": 17,
           "is_dry": false
         },
         {
           "date": "2026-10-13",
-          "precipitation_mm": 10,
+          "precipitation_mm": 9.6,
           "precipitation_hours": 12,
           "is_dry": false
         },
         {
           "date": "2026-10-14",
-          "precipitation_mm": 12.2,
+          "precipitation_mm": 12.6,
           "precipitation_hours": 15,
           "is_dry": false
         },
@@ -1485,15 +1485,15 @@
       "name": "Kiwalan",
       "latitude": 8.288963,
       "longitude": 124.281658,
-      "rainfall_today_mm": 15.7,
-      "rainfall_7day_mm": 93.9,
+      "rainfall_today_mm": 15.6,
+      "rainfall_7day_mm": 93.8,
       "dry_days_7": 0,
       "consecutive_dry_days": 0,
       "window_days": 7,
       "daily": [
         {
           "date": "2026-10-08",
-          "precipitation_mm": 12.1,
+          "precipitation_mm": 12.7,
           "precipitation_hours": 16,
           "is_dry": false
         },
@@ -1511,31 +1511,31 @@
         },
         {
           "date": "2026-10-11",
-          "precipitation_mm": 28.2,
+          "precipitation_mm": 27,
           "precipitation_hours": 14,
           "is_dry": false
         },
         {
           "date": "2026-10-12",
-          "precipitation_mm": 7.6,
+          "precipitation_mm": 8.8,
           "precipitation_hours": 16,
           "is_dry": false
         },
         {
           "date": "2026-10-13",
-          "precipitation_mm": 13.6,
+          "precipitation_mm": 13,
           "precipitation_hours": 13,
           "is_dry": false
         },
         {
           "date": "2026-10-14",
-          "precipitation_mm": 7.7,
+          "precipitation_mm": 8.3,
           "precipitation_hours": 15,
           "is_dry": false
         },
         {
           "date": "2026-10-15",
-          "precipitation_mm": 15.7,
+          "precipitation_mm": 15.6,
           "precipitation_hours": 15,
           "is_dry": false
         }
@@ -1545,15 +1545,15 @@
       "name": "Lanipao",
       "latitude": 8.22364,
       "longitude": 124.343979,
-      "rainfall_today_mm": 15.7,
-      "rainfall_7day_mm": 93.9,
+      "rainfall_today_mm": 15.6,
+      "rainfall_7day_mm": 93.8,
       "dry_days_7": 0,
       "consecutive_dry_days": 0,
       "window_days": 7,
       "daily": [
         {
           "date": "2026-10-08",
-          "precipitation_mm": 12.1,
+          "precipitation_mm": 12.7,
           "precipitation_hours": 16,
           "is_dry": false
         },
@@ -1571,31 +1571,31 @@
         },
         {
           "date": "2026-10-11",
-          "precipitation_mm": 28.2,
+          "precipitation_mm": 27,
           "precipitation_hours": 14,
           "is_dry": false
         },
         {
           "date": "2026-10-12",
-          "precipitation_mm": 7.6,
+          "precipitation_mm": 8.8,
           "precipitation_hours": 16,
           "is_dry": false
         },
         {
           "date": "2026-10-13",
-          "precipitation_mm": 13.6,
+          "precipitation_mm": 13,
           "precipitation_hours": 13,
           "is_dry": false
         },
         {
           "date": "2026-10-14",
-          "precipitation_mm": 7.7,
+          "precipitation_mm": 8.3,
           "precipitation_hours": 15,
           "is_dry": false
         },
         {
           "date": "2026-10-15",
-          "precipitation_mm": 15.7,
+          "precipitation_mm": 15.6,
           "precipitation_hours": 15,
           "is_dry": false
         }
@@ -1605,7 +1605,7 @@
       "name": "Luinab",
       "latitude": 8.247049,
       "longitude": 124.267966,
-      "rainfall_today_mm": 10.8,
+      "rainfall_today_mm": 10.9,
       "rainfall_7day_mm": 73.8,
       "dry_days_7": 0,
       "consecutive_dry_days": 0,
@@ -1613,7 +1613,7 @@
       "daily": [
         {
           "date": "2026-10-08",
-          "precipitation_mm": 14.4,
+          "precipitation_mm": 15.1,
           "precipitation_hours": 13,
           "is_dry": false
         },
@@ -1625,37 +1625,37 @@
         },
         {
           "date": "2026-10-10",
-          "precipitation_mm": 10.9,
+          "precipitation_mm": 10.8,
           "precipitation_hours": 10,
           "is_dry": false
         },
         {
           "date": "2026-10-11",
-          "precipitation_mm": 17.2,
+          "precipitation_mm": 16.8,
           "precipitation_hours": 13,
           "is_dry": false
         },
         {
           "date": "2026-10-12",
-          "precipitation_mm": 6.9,
+          "precipitation_mm": 7.4,
           "precipitation_hours": 16,
           "is_dry": false
         },
         {
           "date": "2026-10-13",
-          "precipitation_mm": 13.6,
+          "precipitation_mm": 13.4,
           "precipitation_hours": 12,
           "is_dry": false
         },
         {
           "date": "2026-10-14",
-          "precipitation_mm": 7.2,
+          "precipitation_mm": 7.3,
           "precipitation_hours": 12,
           "is_dry": false
         },
         {
           "date": "2026-10-15",
-          "precipitation_mm": 10.8,
+          "precipitation_mm": 10.9,
           "precipitation_hours": 18,
           "is_dry": false
         }
@@ -1673,7 +1673,7 @@
       "daily": [
         {
           "date": "2026-10-08",
-          "precipitation_mm": 19,
+          "precipitation_mm": 21.1,
           "precipitation_hours": 19,
           "is_dry": false
         },
@@ -1691,25 +1691,25 @@
         },
         {
           "date": "2026-10-11",
-          "precipitation_mm": 15.3,
+          "precipitation_mm": 14.1,
           "precipitation_hours": 15,
           "is_dry": false
         },
         {
           "date": "2026-10-12",
-          "precipitation_mm": 14.3,
+          "precipitation_mm": 15.5,
           "precipitation_hours": 16,
           "is_dry": false
         },
         {
           "date": "2026-10-13",
-          "precipitation_mm": 10.2,
+          "precipitation_mm": 10,
           "precipitation_hours": 11,
           "is_dry": false
         },
         {
           "date": "2026-10-14",
-          "precipitation_mm": 8.8,
+          "precipitation_mm": 9,
           "precipitation_hours": 11,
           "is_dry": false
         },
@@ -1726,14 +1726,14 @@
       "latitude": 8.296761,
       "longitude": 124.379313,
       "rainfall_today_mm": 28,
-      "rainfall_7day_mm": 134.5,
+      "rainfall_7day_mm": 134.4,
       "dry_days_7": 0,
       "consecutive_dry_days": 0,
       "window_days": 7,
       "daily": [
         {
           "date": "2026-10-08",
-          "precipitation_mm": 10.7,
+          "precipitation_mm": 11.7,
           "precipitation_hours": 21,
           "is_dry": false
         },
@@ -1745,31 +1745,31 @@
         },
         {
           "date": "2026-10-10",
-          "precipitation_mm": 15.7,
+          "precipitation_mm": 15.6,
           "precipitation_hours": 13,
           "is_dry": false
         },
         {
           "date": "2026-10-11",
-          "precipitation_mm": 37.5,
+          "precipitation_mm": 36.6,
           "precipitation_hours": 15,
           "is_dry": false
         },
         {
           "date": "2026-10-12",
-          "precipitation_mm": 12.2,
+          "precipitation_mm": 13.2,
           "precipitation_hours": 17,
           "is_dry": false
         },
         {
           "date": "2026-10-13",
-          "precipitation_mm": 23.1,
+          "precipitation_mm": 22.4,
           "precipitation_hours": 14,
           "is_dry": false
         },
         {
           "date": "2026-10-14",
-          "precipitation_mm": 14.5,
+          "precipitation_mm": 15.1,
           "precipitation_hours": 16,
           "is_dry": false
         },
@@ -1785,15 +1785,15 @@
       "name": "Mandulog",
       "latitude": 8.244349,
       "longitude": 124.306129,
-      "rainfall_today_mm": 15.7,
-      "rainfall_7day_mm": 93.9,
+      "rainfall_today_mm": 15.6,
+      "rainfall_7day_mm": 93.8,
       "dry_days_7": 0,
       "consecutive_dry_days": 0,
       "window_days": 7,
       "daily": [
         {
           "date": "2026-10-08",
-          "precipitation_mm": 12.1,
+          "precipitation_mm": 12.7,
           "precipitation_hours": 16,
           "is_dry": false
         },
@@ -1811,31 +1811,31 @@
         },
         {
           "date": "2026-10-11",
-          "precipitation_mm": 28.2,
+          "precipitation_mm": 27,
           "precipitation_hours": 14,
           "is_dry": false
         },
         {
           "date": "2026-10-12",
-          "precipitation_mm": 7.6,
+          "precipitation_mm": 8.8,
           "precipitation_hours": 16,
           "is_dry": false
         },
         {
           "date": "2026-10-13",
-          "precipitation_mm": 13.6,
+          "precipitation_mm": 13,
           "precipitation_hours": 13,
           "is_dry": false
         },
         {
           "date": "2026-10-14",
-          "precipitation_mm": 7.7,
+          "precipitation_mm": 8.3,
           "precipitation_hours": 15,
           "is_dry": false
         },
         {
           "date": "2026-10-15",
-          "precipitation_mm": 15.7,
+          "precipitation_mm": 15.6,
           "precipitation_hours": 15,
           "is_dry": false
         }
@@ -1853,7 +1853,7 @@
       "daily": [
         {
           "date": "2026-10-08",
-          "precipitation_mm": 19,
+          "precipitation_mm": 21.1,
           "precipitation_hours": 19,
           "is_dry": false
         },
@@ -1871,25 +1871,25 @@
         },
         {
           "date": "2026-10-11",
-          "precipitation_mm": 15.3,
+          "precipitation_mm": 14.1,
           "precipitation_hours": 15,
           "is_dry": false
         },
         {
           "date": "2026-10-12",
-          "precipitation_mm": 14.3,
+          "precipitation_mm": 15.5,
           "precipitation_hours": 16,
           "is_dry": false
         },
         {
           "date": "2026-10-13",
-          "precipitation_mm": 10.2,
+          "precipitation_mm": 10,
           "precipitation_hours": 11,
           "is_dry": false
         },
         {
           "date": "2026-10-14",
-          "precipitation_mm": 8.8,
+          "precipitation_mm": 9,
           "precipitation_hours": 11,
           "is_dry": false
         },
@@ -1913,7 +1913,7 @@
       "daily": [
         {
           "date": "2026-10-08",
-          "precipitation_mm": 19,
+          "precipitation_mm": 21.1,
           "precipitation_hours": 19,
           "is_dry": false
         },
@@ -1931,25 +1931,25 @@
         },
         {
           "date": "2026-10-11",
-          "precipitation_mm": 15.3,
+          "precipitation_mm": 14.1,
           "precipitation_hours": 15,
           "is_dry": false
         },
         {
           "date": "2026-10-12",
-          "precipitation_mm": 14.3,
+          "precipitation_mm": 15.5,
           "precipitation_hours": 16,
           "is_dry": false
         },
         {
           "date": "2026-10-13",
-          "precipitation_mm": 10.2,
+          "precipitation_mm": 10,
           "precipitation_hours": 11,
           "is_dry": false
         },
         {
           "date": "2026-10-14",
-          "precipitation_mm": 8.8,
+          "precipitation_mm": 9,
           "precipitation_hours": 11,
           "is_dry": false
         },
@@ -1965,15 +1965,15 @@
       "name": "Panoroganan",
       "latitude": 8.107555,
       "longitude": 124.477695,
-      "rainfall_today_mm": 27,
-      "rainfall_7day_mm": 138,
+      "rainfall_today_mm": 26.8,
+      "rainfall_7day_mm": 137.6,
       "dry_days_7": 0,
       "consecutive_dry_days": 0,
       "window_days": 7,
       "daily": [
         {
           "date": "2026-10-08",
-          "precipitation_mm": 9.1,
+          "precipitation_mm": 11.1,
           "precipitation_hours": 19,
           "is_dry": false
         },
@@ -1991,31 +1991,31 @@
         },
         {
           "date": "2026-10-11",
-          "precipitation_mm": 25.1,
+          "precipitation_mm": 24.8,
           "precipitation_hours": 16,
           "is_dry": false
         },
         {
           "date": "2026-10-12",
-          "precipitation_mm": 26.4,
+          "precipitation_mm": 26.7,
           "precipitation_hours": 15,
           "is_dry": false
         },
         {
           "date": "2026-10-13",
-          "precipitation_mm": 17.9,
+          "precipitation_mm": 17.8,
           "precipitation_hours": 9,
           "is_dry": false
         },
         {
           "date": "2026-10-14",
-          "precipitation_mm": 20.6,
+          "precipitation_mm": 20.5,
           "precipitation_hours": 17,
           "is_dry": false
         },
         {
           "date": "2026-10-15",
-          "precipitation_mm": 27,
+          "precipitation_mm": 26.8,
           "precipitation_hours": 15,
           "is_dry": false
         }
@@ -2033,7 +2033,7 @@
       "daily": [
         {
           "date": "2026-10-08",
-          "precipitation_mm": 19,
+          "precipitation_mm": 21.1,
           "precipitation_hours": 19,
           "is_dry": false
         },
@@ -2051,25 +2051,25 @@
         },
         {
           "date": "2026-10-11",
-          "precipitation_mm": 15.3,
+          "precipitation_mm": 14.1,
           "precipitation_hours": 15,
           "is_dry": false
         },
         {
           "date": "2026-10-12",
-          "precipitation_mm": 14.3,
+          "precipitation_mm": 15.5,
           "precipitation_hours": 16,
           "is_dry": false
         },
         {
           "date": "2026-10-13",
-          "precipitation_mm": 10.2,
+          "precipitation_mm": 10,
           "precipitation_hours": 11,
           "is_dry": false
         },
         {
           "date": "2026-10-14",
-          "precipitation_mm": 8.8,
+          "precipitation_mm": 9,
           "precipitation_hours": 11,
           "is_dry": false
         },
@@ -2093,7 +2093,7 @@
       "daily": [
         {
           "date": "2026-10-08",
-          "precipitation_mm": 19,
+          "precipitation_mm": 21.1,
           "precipitation_hours": 19,
           "is_dry": false
         },
@@ -2111,25 +2111,25 @@
         },
         {
           "date": "2026-10-11",
-          "precipitation_mm": 15.3,
+          "precipitation_mm": 14.1,
           "precipitation_hours": 15,
           "is_dry": false
         },
         {
           "date": "2026-10-12",
-          "precipitation_mm": 14.3,
+          "precipitation_mm": 15.5,
           "precipitation_hours": 16,
           "is_dry": false
         },
         {
           "date": "2026-10-13",
-          "precipitation_mm": 10.2,
+          "precipitation_mm": 10,
           "precipitation_hours": 11,
           "is_dry": false
         },
         {
           "date": "2026-10-14",
-          "precipitation_mm": 8.8,
+          "precipitation_mm": 9,
           "precipitation_hours": 11,
           "is_dry": false
         },
@@ -2145,15 +2145,15 @@
       "name": "Rogongon",
       "latitude": 8.147127,
       "longitude": 124.487814,
-      "rainfall_today_mm": 18.9,
-      "rainfall_7day_mm": 147.2,
+      "rainfall_today_mm": 18.7,
+      "rainfall_7day_mm": 147,
       "dry_days_7": 0,
       "consecutive_dry_days": 0,
       "window_days": 7,
       "daily": [
         {
           "date": "2026-10-08",
-          "precipitation_mm": 17.3,
+          "precipitation_mm": 19.5,
           "precipitation_hours": 19,
           "is_dry": false
         },
@@ -2165,37 +2165,37 @@
         },
         {
           "date": "2026-10-10",
-          "precipitation_mm": 17.5,
+          "precipitation_mm": 17.4,
           "precipitation_hours": 14,
           "is_dry": false
         },
         {
           "date": "2026-10-11",
-          "precipitation_mm": 29.8,
+          "precipitation_mm": 29.6,
           "precipitation_hours": 16,
           "is_dry": false
         },
         {
           "date": "2026-10-12",
-          "precipitation_mm": 28,
+          "precipitation_mm": 28.3,
           "precipitation_hours": 14,
           "is_dry": false
         },
         {
           "date": "2026-10-13",
-          "precipitation_mm": 17.4,
+          "precipitation_mm": 17,
           "precipitation_hours": 12,
           "is_dry": false
         },
         {
           "date": "2026-10-14",
-          "precipitation_mm": 22.7,
+          "precipitation_mm": 23.1,
           "precipitation_hours": 17,
           "is_dry": false
         },
         {
           "date": "2026-10-15",
-          "precipitation_mm": 18.9,
+          "precipitation_mm": 18.7,
           "precipitation_hours": 12,
           "is_dry": false
         }
@@ -2213,7 +2213,7 @@
       "daily": [
         {
           "date": "2026-10-08",
-          "precipitation_mm": 19,
+          "precipitation_mm": 21.1,
           "precipitation_hours": 19,
           "is_dry": false
         },
@@ -2231,25 +2231,25 @@
         },
         {
           "date": "2026-10-11",
-          "precipitation_mm": 15.3,
+          "precipitation_mm": 14.1,
           "precipitation_hours": 15,
           "is_dry": false
         },
         {
           "date": "2026-10-12",
-          "precipitation_mm": 14.3,
+          "precipitation_mm": 15.5,
           "precipitation_hours": 16,
           "is_dry": false
         },
         {
           "date": "2026-10-13",
-          "precipitation_mm": 10.2,
+          "precipitation_mm": 10,
           "precipitation_hours": 11,
           "is_dry": false
         },
         {
           "date": "2026-10-14",
-          "precipitation_mm": 8.8,
+          "precipitation_mm": 9,
           "precipitation_hours": 11,
           "is_dry": false
         },
@@ -2265,7 +2265,7 @@
       "name": "San Roque",
       "latitude": 8.257546,
       "longitude": 124.261743,
-      "rainfall_today_mm": 10.8,
+      "rainfall_today_mm": 10.9,
       "rainfall_7day_mm": 73.8,
       "dry_days_7": 0,
       "consecutive_dry_days": 0,
@@ -2273,7 +2273,7 @@
       "daily": [
         {
           "date": "2026-10-08",
-          "precipitation_mm": 14.4,
+          "precipitation_mm": 15.1,
           "precipitation_hours": 13,
           "is_dry": false
         },
@@ -2285,37 +2285,37 @@
         },
         {
           "date": "2026-10-10",
-          "precipitation_mm": 10.9,
+          "precipitation_mm": 10.8,
           "precipitation_hours": 10,
           "is_dry": false
         },
         {
           "date": "2026-10-11",
-          "precipitation_mm": 17.2,
+          "precipitation_mm": 16.8,
           "precipitation_hours": 13,
           "is_dry": false
         },
         {
           "date": "2026-10-12",
-          "precipitation_mm": 6.9,
+          "precipitation_mm": 7.4,
           "precipitation_hours": 16,
           "is_dry": false
         },
         {
           "date": "2026-10-13",
-          "precipitation_mm": 13.6,
+          "precipitation_mm": 13.4,
           "precipitation_hours": 12,
           "is_dry": false
         },
         {
           "date": "2026-10-14",
-          "precipitation_mm": 7.2,
+          "precipitation_mm": 7.3,
           "precipitation_hours": 12,
           "is_dry": false
         },
         {
           "date": "2026-10-15",
-          "precipitation_mm": 10.8,
+          "precipitation_mm": 10.9,
           "precipitation_hours": 18,
           "is_dry": false
         }
@@ -2333,7 +2333,7 @@
       "daily": [
         {
           "date": "2026-10-08",
-          "precipitation_mm": 19,
+          "precipitation_mm": 21.1,
           "precipitation_hours": 19,
           "is_dry": false
         },
@@ -2351,25 +2351,25 @@
         },
         {
           "date": "2026-10-11",
-          "precipitation_mm": 15.3,
+          "precipitation_mm": 14.1,
           "precipitation_hours": 15,
           "is_dry": false
         },
         {
           "date": "2026-10-12",
-          "precipitation_mm": 14.3,
+          "precipitation_mm": 15.5,
           "precipitation_hours": 16,
           "is_dry": false
         },
         {
           "date": "2026-10-13",
-          "precipitation_mm": 10.2,
+          "precipitation_mm": 10,
           "precipitation_hours": 11,
           "is_dry": false
         },
         {
           "date": "2026-10-14",
-          "precipitation_mm": 8.8,
+          "precipitation_mm": 9,
           "precipitation_hours": 11,
           "is_dry": false
         },
@@ -2385,7 +2385,7 @@
       "name": "Santa Filomena",
       "latitude": 8.269375,
       "longitude": 124.260689,
-      "rainfall_today_mm": 10.8,
+      "rainfall_today_mm": 10.9,
       "rainfall_7day_mm": 73.8,
       "dry_days_7": 0,
       "consecutive_dry_days": 0,
@@ -2393,7 +2393,7 @@
       "daily": [
         {
           "date": "2026-10-08",
-          "precipitation_mm": 14.4,
+          "precipitation_mm": 15.1,
           "precipitation_hours": 13,
           "is_dry": false
         },
@@ -2405,37 +2405,37 @@
         },
         {
           "date": "2026-10-10",
-          "precipitation_mm": 10.9,
+          "precipitation_mm": 10.8,
           "precipitation_hours": 10,
           "is_dry": false
         },
         {
           "date": "2026-10-11",
-          "precipitation_mm": 17.2,
+          "precipitation_mm": 16.8,
           "precipitation_hours": 13,
           "is_dry": false
         },
         {
           "date": "2026-10-12",
-          "precipitation_mm": 6.9,
+          "precipitation_mm": 7.4,
           "precipitation_hours": 16,
           "is_dry": false
         },
         {
           "date": "2026-10-13",
-          "precipitation_mm": 13.6,
+          "precipitation_mm": 13.4,
           "precipitation_hours": 12,
           "is_dry": false
         },
         {
           "date": "2026-10-14",
-          "precipitation_mm": 7.2,
+          "precipitation_mm": 7.3,
           "precipitation_hours": 12,
           "is_dry": false
         },
         {
           "date": "2026-10-15",
-          "precipitation_mm": 10.8,
+          "precipitation_mm": 10.9,
           "precipitation_hours": 18,
           "is_dry": false
         }
@@ -2453,7 +2453,7 @@
       "daily": [
         {
           "date": "2026-10-08",
-          "precipitation_mm": 19,
+          "precipitation_mm": 21.1,
           "precipitation_hours": 19,
           "is_dry": false
         },
@@ -2471,25 +2471,25 @@
         },
         {
           "date": "2026-10-11",
-          "precipitation_mm": 15.3,
+          "precipitation_mm": 14.1,
           "precipitation_hours": 15,
           "is_dry": false
         },
         {
           "date": "2026-10-12",
-          "precipitation_mm": 14.3,
+          "precipitation_mm": 15.5,
           "precipitation_hours": 16,
           "is_dry": false
         },
         {
           "date": "2026-10-13",
-          "precipitation_mm": 10.2,
+          "precipitation_mm": 10,
           "precipitation_hours": 11,
           "is_dry": false
         },
         {
           "date": "2026-10-14",
-          "precipitation_mm": 8.8,
+          "precipitation_mm": 9,
           "precipitation_hours": 11,
           "is_dry": false
         },
@@ -2513,7 +2513,7 @@
       "daily": [
         {
           "date": "2026-10-08",
-          "precipitation_mm": 19,
+          "precipitation_mm": 21.1,
           "precipitation_hours": 19,
           "is_dry": false
         },
@@ -2531,25 +2531,25 @@
         },
         {
           "date": "2026-10-11",
-          "precipitation_mm": 15.3,
+          "precipitation_mm": 14.1,
           "precipitation_hours": 15,
           "is_dry": false
         },
         {
           "date": "2026-10-12",
-          "precipitation_mm": 14.3,
+          "precipitation_mm": 15.5,
           "precipitation_hours": 16,
           "is_dry": false
         },
         {
           "date": "2026-10-13",
-          "precipitation_mm": 10.2,
+          "precipitation_mm": 10,
           "precipitation_hours": 11,
           "is_dry": false
         },
         {
           "date": "2026-10-14",
-          "precipitation_mm": 8.8,
+          "precipitation_mm": 9,
           "precipitation_hours": 11,
           "is_dry": false
         },
@@ -2573,7 +2573,7 @@
       "daily": [
         {
           "date": "2026-10-08",
-          "precipitation_mm": 19,
+          "precipitation_mm": 21.1,
           "precipitation_hours": 19,
           "is_dry": false
         },
@@ -2591,25 +2591,25 @@
         },
         {
           "date": "2026-10-11",
-          "precipitation_mm": 15.3,
+          "precipitation_mm": 14.1,
           "precipitation_hours": 15,
           "is_dry": false
         },
         {
           "date": "2026-10-12",
-          "precipitation_mm": 14.3,
+          "precipitation_mm": 15.5,
           "precipitation_hours": 16,
           "is_dry": false
         },
         {
           "date": "2026-10-13",
-          "precipitation_mm": 10.2,
+          "precipitation_mm": 10,
           "precipitation_hours": 11,
           "is_dry": false
         },
         {
           "date": "2026-10-14",
-          "precipitation_mm": 8.8,
+          "precipitation_mm": 9,
           "precipitation_hours": 11,
           "is_dry": false
         },
@@ -2633,7 +2633,7 @@
       "daily": [
         {
           "date": "2026-10-08",
-          "precipitation_mm": 19,
+          "precipitation_mm": 21.1,
           "precipitation_hours": 19,
           "is_dry": false
         },
@@ -2651,25 +2651,25 @@
         },
         {
           "date": "2026-10-11",
-          "precipitation_mm": 15.3,
+          "precipitation_mm": 14.1,
           "precipitation_hours": 15,
           "is_dry": false
         },
         {
           "date": "2026-10-12",
-          "precipitation_mm": 14.3,
+          "precipitation_mm": 15.5,
           "precipitation_hours": 16,
           "is_dry": false
         },
         {
           "date": "2026-10-13",
-          "precipitation_mm": 10.2,
+          "precipitation_mm": 10,
           "precipitation_hours": 11,
           "is_dry": false
         },
         {
           "date": "2026-10-14",
-          "precipitation_mm": 8.8,
+          "precipitation_mm": 9,
           "precipitation_hours": 11,
           "is_dry": false
         },
@@ -2693,7 +2693,7 @@
       "daily": [
         {
           "date": "2026-10-08",
-          "precipitation_mm": 19,
+          "precipitation_mm": 21.1,
           "precipitation_hours": 19,
           "is_dry": false
         },
@@ -2711,25 +2711,25 @@
         },
         {
           "date": "2026-10-11",
-          "precipitation_mm": 15.3,
+          "precipitation_mm": 14.1,
           "precipitation_hours": 15,
           "is_dry": false
         },
         {
           "date": "2026-10-12",
-          "precipitation_mm": 14.3,
+          "precipitation_mm": 15.5,
           "precipitation_hours": 16,
           "is_dry": false
         },
         {
           "date": "2026-10-13",
-          "precipitation_mm": 10.2,
+          "precipitation_mm": 10,
           "precipitation_hours": 11,
           "is_dry": false
         },
         {
           "date": "2026-10-14",
-          "precipitation_mm": 8.8,
+          "precipitation_mm": 9,
           "precipitation_hours": 11,
           "is_dry": false
         },
@@ -2753,7 +2753,7 @@
       "daily": [
         {
           "date": "2026-10-08",
-          "precipitation_mm": 19,
+          "precipitation_mm": 21.1,
           "precipitation_hours": 19,
           "is_dry": false
         },
@@ -2771,25 +2771,25 @@
         },
         {
           "date": "2026-10-11",
-          "precipitation_mm": 15.3,
+          "precipitation_mm": 14.1,
           "precipitation_hours": 15,
           "is_dry": false
         },
         {
           "date": "2026-10-12",
-          "precipitation_mm": 14.3,
+          "precipitation_mm": 15.5,
           "precipitation_hours": 16,
           "is_dry": false
         },
         {
           "date": "2026-10-13",
-          "precipitation_mm": 10.2,
+          "precipitation_mm": 10,
           "precipitation_hours": 11,
           "is_dry": false
         },
         {
           "date": "2026-10-14",
-          "precipitation_mm": 8.8,
+          "precipitation_mm": 9,
           "precipitation_hours": 11,
           "is_dry": false
         },
@@ -2813,7 +2813,7 @@
       "daily": [
         {
           "date": "2026-10-08",
-          "precipitation_mm": 19,
+          "precipitation_mm": 21.1,
           "precipitation_hours": 19,
           "is_dry": false
         },
@@ -2831,25 +2831,25 @@
         },
         {
           "date": "2026-10-11",
-          "precipitation_mm": 15.3,
+          "precipitation_mm": 14.1,
           "precipitation_hours": 15,
           "is_dry": false
         },
         {
           "date": "2026-10-12",
-          "precipitation_mm": 14.3,
+          "precipitation_mm": 15.5,
           "precipitation_hours": 16,
           "is_dry": false
         },
         {
           "date": "2026-10-13",
-          "precipitation_mm": 10.2,
+          "precipitation_mm": 10,
           "precipitation_hours": 11,
           "is_dry": false
         },
         {
           "date": "2026-10-14",
-          "precipitation_mm": 8.8,
+          "precipitation_mm": 9,
           "precipitation_hours": 11,
           "is_dry": false
         },
@@ -2873,7 +2873,7 @@
       "daily": [
         {
           "date": "2026-10-08",
-          "precipitation_mm": 19,
+          "precipitation_mm": 21.1,
           "precipitation_hours": 19,
           "is_dry": false
         },
@@ -2891,25 +2891,25 @@
         },
         {
           "date": "2026-10-11",
-          "precipitation_mm": 15.3,
+          "precipitation_mm": 14.1,
           "precipitation_hours": 15,
           "is_dry": false
         },
         {
           "date": "2026-10-12",
-          "precipitation_mm": 14.3,
+          "precipitation_mm": 15.5,
           "precipitation_hours": 16,
           "is_dry": false
         },
         {
           "date": "2026-10-13",
-          "precipitation_mm": 10.2,
+          "precipitation_mm": 10,
           "precipitation_hours": 11,
           "is_dry": false
         },
         {
           "date": "2026-10-14",
-          "precipitation_mm": 8.8,
+          "precipitation_mm": 9,
           "precipitation_hours": 11,
           "is_dry": false
         },
@@ -2933,7 +2933,7 @@
       "daily": [
         {
           "date": "2026-10-08",
-          "precipitation_mm": 19,
+          "precipitation_mm": 21.1,
           "precipitation_hours": 19,
           "is_dry": false
         },
@@ -2951,25 +2951,25 @@
         },
         {
           "date": "2026-10-11",
-          "precipitation_mm": 15.3,
+          "precipitation_mm": 14.1,
           "precipitation_hours": 15,
           "is_dry": false
         },
         {
           "date": "2026-10-12",
-          "precipitation_mm": 14.3,
+          "precipitation_mm": 15.5,
           "precipitation_hours": 16,
           "is_dry": false
         },
         {
           "date": "2026-10-13",
-          "precipitation_mm": 10.2,
+          "precipitation_mm": 10,
           "precipitation_hours": 11,
           "is_dry": false
         },
         {
           "date": "2026-10-14",
-          "precipitation_mm": 8.8,
+          "precipitation_mm": 9,
           "precipitation_hours": 11,
           "is_dry": false
         },
@@ -2993,7 +2993,7 @@
       "daily": [
         {
           "date": "2026-10-08",
-          "precipitation_mm": 19,
+          "precipitation_mm": 21.1,
           "precipitation_hours": 19,
           "is_dry": false
         },
@@ -3011,25 +3011,25 @@
         },
         {
           "date": "2026-10-11",
-          "precipitation_mm": 15.3,
+          "precipitation_mm": 14.1,
           "precipitation_hours": 15,
           "is_dry": false
         },
         {
           "date": "2026-10-12",
-          "precipitation_mm": 14.3,
+          "precipitation_mm": 15.5,
           "precipitation_hours": 16,
           "is_dry": false
         },
         {
           "date": "2026-10-13",
-          "precipitation_mm": 10.2,
+          "precipitation_mm": 10,
           "precipitation_hours": 11,
           "is_dry": false
         },
         {
           "date": "2026-10-14",
-          "precipitation_mm": 8.8,
+          "precipitation_mm": 9,
           "precipitation_hours": 11,
           "is_dry": false
         },
@@ -3045,7 +3045,7 @@
       "name": "Upper Hinaplanon",
       "latitude": 8.255802,
       "longitude": 124.268887,
-      "rainfall_today_mm": 10.8,
+      "rainfall_today_mm": 10.9,
       "rainfall_7day_mm": 73.8,
       "dry_days_7": 0,
       "consecutive_dry_days": 0,
@@ -3053,7 +3053,7 @@
       "daily": [
         {
           "date": "2026-10-08",
-          "precipitation_mm": 14.4,
+          "precipitation_mm": 15.1,
           "precipitation_hours": 13,
           "is_dry": false
         },
@@ -3065,37 +3065,37 @@
         },
         {
           "date": "2026-10-10",
-          "precipitation_mm": 10.9,
+          "precipitation_mm": 10.8,
           "precipitation_hours": 10,
           "is_dry": false
         },
         {
           "date": "2026-10-11",
-          "precipitation_mm": 17.2,
+          "precipitation_mm": 16.8,
           "precipitation_hours": 13,
           "is_dry": false
         },
         {
           "date": "2026-10-12",
-          "precipitation_mm": 6.9,
+          "precipitation_mm": 7.4,
           "precipitation_hours": 16,
           "is_dry": false
         },
         {
           "date": "2026-10-13",
-          "precipitation_mm": 13.6,
+          "precipitation_mm": 13.4,
           "precipitation_hours": 12,
           "is_dry": false
         },
         {
           "date": "2026-10-14",
-          "precipitation_mm": 7.2,
+          "precipitation_mm": 7.3,
           "precipitation_hours": 12,
           "is_dry": false
         },
         {
           "date": "2026-10-15",
-          "precipitation_mm": 10.8,
+          "precipitation_mm": 10.9,
           "precipitation_hours": 18,
           "is_dry": false
         }
@@ -3113,7 +3113,7 @@
       "daily": [
         {
           "date": "2026-10-08",
-          "precipitation_mm": 19,
+          "precipitation_mm": 21.1,
           "precipitation_hours": 19,
           "is_dry": false
         },
@@ -3131,25 +3131,25 @@
         },
         {
           "date": "2026-10-11",
-          "precipitation_mm": 15.3,
+          "precipitation_mm": 14.1,
           "precipitation_hours": 15,
           "is_dry": false
         },
         {
           "date": "2026-10-12",
-          "precipitation_mm": 14.3,
+          "precipitation_mm": 15.5,
           "precipitation_hours": 16,
           "is_dry": false
         },
         {
           "date": "2026-10-13",
-          "precipitation_mm": 10.2,
+          "precipitation_mm": 10,
           "precipitation_hours": 11,
           "is_dry": false
         },
         {
           "date": "2026-10-14",
-          "precipitation_mm": 8.8,
+          "precipitation_mm": 9,
           "precipitation_hours": 11,
           "is_dry": false
         },
@@ -3173,7 +3173,7 @@
       "daily": [
         {
           "date": "2026-10-08",
-          "precipitation_mm": 19,
+          "precipitation_mm": 21.1,
           "precipitation_hours": 19,
           "is_dry": false
         },
@@ -3191,25 +3191,25 @@
         },
         {
           "date": "2026-10-11",
-          "precipitation_mm": 15.3,
+          "precipitation_mm": 14.1,
           "precipitation_hours": 15,
           "is_dry": false
         },
         {
           "date": "2026-10-12",
-          "precipitation_mm": 14.3,
+          "precipitation_mm": 15.5,
           "precipitation_hours": 16,
           "is_dry": false
         },
         {
           "date": "2026-10-13",
-          "precipitation_mm": 10.2,
+          "precipitation_mm": 10,
           "precipitation_hours": 11,
           "is_dry": false
         },
         {
           "date": "2026-10-14",
-          "precipitation_mm": 8.8,
+          "precipitation_mm": 9,
           "precipitation_hours": 11,
           "is_dry": false
         },
