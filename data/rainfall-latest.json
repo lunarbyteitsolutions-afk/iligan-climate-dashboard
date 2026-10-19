@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-19T07:37:05.488Z",
+  "generated_at": "2026-10-19T08:35:00.357Z",
   "indicator": "rainfall",
   "label": "Heat index values shown here are computed from Open-Meteo model data. PAGASA — iHeatMAP, the Heat Index page, AWS readings and ENSO advisories — remains the authoritative reference for official heat index values and El Niño declarations. Values marked derived are modelled, not observed.",
   "schema": "schema/record.schema.json",
@@ -593,31 +593,31 @@
       "daily": [
         {
           "date": "2026-10-12",
-          "precipitation_mm": 15.5,
+          "precipitation_mm": 14.3,
           "precipitation_hours": 16,
           "is_dry": false
         },
         {
           "date": "2026-10-13",
-          "precipitation_mm": 10,
+          "precipitation_mm": 10.2,
           "precipitation_hours": 11,
           "is_dry": false
         },
         {
           "date": "2026-10-14",
-          "precipitation_mm": 9,
+          "precipitation_mm": 8.8,
           "precipitation_hours": 11,
           "is_dry": false
         },
         {
           "date": "2026-10-15",
-          "precipitation_mm": 23.7,
+          "precipitation_mm": 23.8,
           "precipitation_hours": 13,
           "is_dry": false
         },
         {
           "date": "2026-10-16",
-          "precipitation_mm": 8,
+          "precipitation_mm": 7.9,
           "precipitation_hours": 10,
           "is_dry": false
         },
@@ -653,25 +653,25 @@
       "daily": [
         {
           "date": "2026-10-12",
-          "precipitation_mm": 7.4,
+          "precipitation_mm": 6.9,
           "precipitation_hours": 16,
           "is_dry": false
         },
         {
           "date": "2026-10-13",
-          "precipitation_mm": 13.4,
+          "precipitation_mm": 13.6,
           "precipitation_hours": 12,
           "is_dry": false
         },
         {
           "date": "2026-10-14",
-          "precipitation_mm": 7.3,
+          "precipitation_mm": 7.2,
           "precipitation_hours": 12,
           "is_dry": false
         },
         {
           "date": "2026-10-15",
-          "precipitation_mm": 11.1,
+          "precipitation_mm": 11,
           "precipitation_hours": 17,
           "is_dry": false
         },
@@ -713,31 +713,31 @@
       "daily": [
         {
           "date": "2026-10-12",
-          "precipitation_mm": 15.5,
+          "precipitation_mm": 14.3,
           "precipitation_hours": 16,
           "is_dry": false
         },
         {
           "date": "2026-10-13",
-          "precipitation_mm": 10,
+          "precipitation_mm": 10.2,
           "precipitation_hours": 11,
           "is_dry": false
         },
         {
           "date": "2026-10-14",
-          "precipitation_mm": 9,
+          "precipitation_mm": 8.8,
           "precipitation_hours": 11,
           "is_dry": false
         },
         {
           "date": "2026-10-15",
-          "precipitation_mm": 23.7,
+          "precipitation_mm": 23.8,
           "precipitation_hours": 13,
           "is_dry": false
         },
         {
           "date": "2026-10-16",
-          "precipitation_mm": 8,
+          "precipitation_mm": 7.9,
           "precipitation_hours": 10,
           "is_dry": false
         },
@@ -773,19 +773,19 @@
       "daily": [
         {
           "date": "2026-10-12",
-          "precipitation_mm": 8.8,
+          "precipitation_mm": 7.6,
           "precipitation_hours": 16,
           "is_dry": false
         },
         {
           "date": "2026-10-13",
-          "precipitation_mm": 13,
+          "precipitation_mm": 13.6,
           "precipitation_hours": 13,
           "is_dry": false
         },
         {
           "date": "2026-10-14",
-          "precipitation_mm": 8.3,
+          "precipitation_mm": 7.7,
           "precipitation_hours": 15,
           "is_dry": false
         },
@@ -833,19 +833,19 @@
       "daily": [
         {
           "date": "2026-10-12",
-          "precipitation_mm": 8.8,
+          "precipitation_mm": 7.6,
           "precipitation_hours": 16,
           "is_dry": false
         },
         {
           "date": "2026-10-13",
-          "precipitation_mm": 13,
+          "precipitation_mm": 13.6,
           "precipitation_hours": 13,
           "is_dry": false
         },
         {
           "date": "2026-10-14",
-          "precipitation_mm": 8.3,
+          "precipitation_mm": 7.7,
           "precipitation_hours": 15,
           "is_dry": false
         },
@@ -893,31 +893,31 @@
       "daily": [
         {
           "date": "2026-10-12",
-          "precipitation_mm": 17.2,
+          "precipitation_mm": 16.6,
           "precipitation_hours": 13,
           "is_dry": false
         },
         {
           "date": "2026-10-13",
-          "precipitation_mm": 12.8,
+          "precipitation_mm": 12.9,
           "precipitation_hours": 13,
           "is_dry": false
         },
         {
           "date": "2026-10-14",
-          "precipitation_mm": 11.8,
+          "precipitation_mm": 11.7,
           "precipitation_hours": 16,
           "is_dry": false
         },
         {
           "date": "2026-10-15",
-          "precipitation_mm": 34.4,
+          "precipitation_mm": 34.5,
           "precipitation_hours": 13,
           "is_dry": false
         },
         {
           "date": "2026-10-16",
-          "precipitation_mm": 7.1,
+          "precipitation_mm": 7,
           "precipitation_hours": 11,
           "is_dry": false
         },
@@ -953,25 +953,25 @@
       "daily": [
         {
           "date": "2026-10-12",
-          "precipitation_mm": 7.4,
+          "precipitation_mm": 6.9,
           "precipitation_hours": 16,
           "is_dry": false
         },
         {
           "date": "2026-10-13",
-          "precipitation_mm": 13.4,
+          "precipitation_mm": 13.6,
           "precipitation_hours": 12,
           "is_dry": false
         },
         {
           "date": "2026-10-14",
-          "precipitation_mm": 7.3,
+          "precipitation_mm": 7.2,
           "precipitation_hours": 12,
           "is_dry": false
         },
         {
           "date": "2026-10-15",
-          "precipitation_mm": 11.1,
+          "precipitation_mm": 11,
           "precipitation_hours": 17,
           "is_dry": false
         },
@@ -1013,31 +1013,31 @@
       "daily": [
         {
           "date": "2026-10-12",
-          "precipitation_mm": 15.5,
+          "precipitation_mm": 14.3,
           "precipitation_hours": 16,
           "is_dry": false
         },
         {
           "date": "2026-10-13",
-          "precipitation_mm": 10,
+          "precipitation_mm": 10.2,
           "precipitation_hours": 11,
           "is_dry": false
         },
         {
           "date": "2026-10-14",
-          "precipitation_mm": 9,
+          "precipitation_mm": 8.8,
           "precipitation_hours": 11,
           "is_dry": false
         },
         {
           "date": "2026-10-15",
-          "precipitation_mm": 23.7,
+          "precipitation_mm": 23.8,
           "precipitation_hours": 13,
           "is_dry": false
         },
         {
           "date": "2026-10-16",
-          "precipitation_mm": 8,
+          "precipitation_mm": 7.9,
           "precipitation_hours": 10,
           "is_dry": false
         },
@@ -1073,19 +1073,19 @@
       "daily": [
         {
           "date": "2026-10-12",
-          "precipitation_mm": 8.8,
+          "precipitation_mm": 7.6,
           "precipitation_hours": 16,
           "is_dry": false
         },
         {
           "date": "2026-10-13",
-          "precipitation_mm": 13,
+          "precipitation_mm": 13.6,
           "precipitation_hours": 13,
           "is_dry": false
         },
         {
           "date": "2026-10-14",
-          "precipitation_mm": 8.3,
+          "precipitation_mm": 7.7,
           "precipitation_hours": 15,
           "is_dry": false
         },
@@ -1133,31 +1133,31 @@
       "daily": [
         {
           "date": "2026-10-12",
-          "precipitation_mm": 15.5,
+          "precipitation_mm": 14.3,
           "precipitation_hours": 16,
           "is_dry": false
         },
         {
           "date": "2026-10-13",
-          "precipitation_mm": 10,
+          "precipitation_mm": 10.2,
           "precipitation_hours": 11,
           "is_dry": false
         },
         {
           "date": "2026-10-14",
-          "precipitation_mm": 9,
+          "precipitation_mm": 8.8,
           "precipitation_hours": 11,
           "is_dry": false
         },
         {
           "date": "2026-10-15",
-          "precipitation_mm": 23.7,
+          "precipitation_mm": 23.8,
           "precipitation_hours": 13,
           "is_dry": false
         },
         {
           "date": "2026-10-16",
-          "precipitation_mm": 8,
+          "precipitation_mm": 7.9,
           "precipitation_hours": 10,
           "is_dry": false
         },
@@ -1193,43 +1193,43 @@
       "daily": [
         {
           "date": "2026-10-12",
-          "precipitation_mm": 21.6,
+          "precipitation_mm": 19.8,
           "precipitation_hours": 17,
           "is_dry": false
         },
         {
           "date": "2026-10-13",
-          "precipitation_mm": 9.6,
+          "precipitation_mm": 10,
           "precipitation_hours": 12,
           "is_dry": false
         },
         {
           "date": "2026-10-14",
-          "precipitation_mm": 12.6,
+          "precipitation_mm": 12.2,
           "precipitation_hours": 15,
           "is_dry": false
         },
         {
           "date": "2026-10-15",
-          "precipitation_mm": 33.5,
+          "precipitation_mm": 33.6,
           "precipitation_hours": 15,
           "is_dry": false
         },
         {
           "date": "2026-10-16",
-          "precipitation_mm": 21.9,
+          "precipitation_mm": 21.8,
           "precipitation_hours": 18,
           "is_dry": false
         },
         {
           "date": "2026-10-17",
-          "precipitation_mm": 9.9,
+          "precipitation_mm": 10,
           "precipitation_hours": 11,
           "is_dry": false
         },
         {
           "date": "2026-10-18",
-          "precipitation_mm": 8,
+          "precipitation_mm": 7.9,
           "precipitation_hours": 14,
           "is_dry": false
         },
@@ -1253,25 +1253,25 @@
       "daily": [
         {
           "date": "2026-10-12",
-          "precipitation_mm": 7.4,
+          "precipitation_mm": 6.9,
           "precipitation_hours": 16,
           "is_dry": false
         },
         {
           "date": "2026-10-13",
-          "precipitation_mm": 13.4,
+          "precipitation_mm": 13.6,
           "precipitation_hours": 12,
           "is_dry": false
         },
         {
           "date": "2026-10-14",
-          "precipitation_mm": 7.3,
+          "precipitation_mm": 7.2,
           "precipitation_hours": 12,
           "is_dry": false
         },
         {
           "date": "2026-10-15",
-          "precipitation_mm": 11.1,
+          "precipitation_mm": 11,
           "precipitation_hours": 17,
           "is_dry": false
         },
@@ -1313,19 +1313,19 @@
       "daily": [
         {
           "date": "2026-10-12",
-          "precipitation_mm": 12.3,
+          "precipitation_mm": 11.6,
           "precipitation_hours": 16,
           "is_dry": false
         },
         {
           "date": "2026-10-13",
-          "precipitation_mm": 19.3,
+          "precipitation_mm": 19.7,
           "precipitation_hours": 16,
           "is_dry": false
         },
         {
           "date": "2026-10-14",
-          "precipitation_mm": 18.6,
+          "precipitation_mm": 18.2,
           "precipitation_hours": 16,
           "is_dry": false
         },
@@ -1343,13 +1343,13 @@
         },
         {
           "date": "2026-10-17",
-          "precipitation_mm": 10.5,
+          "precipitation_mm": 10.7,
           "precipitation_hours": 10,
           "is_dry": false
         },
         {
           "date": "2026-10-18",
-          "precipitation_mm": 4.8,
+          "precipitation_mm": 4.6,
           "precipitation_hours": 11,
           "is_dry": false
         },
@@ -1373,19 +1373,19 @@
       "daily": [
         {
           "date": "2026-10-12",
-          "precipitation_mm": 8.8,
+          "precipitation_mm": 7.6,
           "precipitation_hours": 16,
           "is_dry": false
         },
         {
           "date": "2026-10-13",
-          "precipitation_mm": 13,
+          "precipitation_mm": 13.6,
           "precipitation_hours": 13,
           "is_dry": false
         },
         {
           "date": "2026-10-14",
-          "precipitation_mm": 8.3,
+          "precipitation_mm": 7.7,
           "precipitation_hours": 15,
           "is_dry": false
         },
@@ -1433,43 +1433,43 @@
       "daily": [
         {
           "date": "2026-10-12",
-          "precipitation_mm": 21.6,
+          "precipitation_mm": 19.8,
           "precipitation_hours": 17,
           "is_dry": false
         },
         {
           "date": "2026-10-13",
-          "precipitation_mm": 9.6,
+          "precipitation_mm": 10,
           "precipitation_hours": 12,
           "is_dry": false
         },
         {
           "date": "2026-10-14",
-          "precipitation_mm": 12.6,
+          "precipitation_mm": 12.2,
           "precipitation_hours": 15,
           "is_dry": false
         },
         {
           "date": "2026-10-15",
-          "precipitation_mm": 33.5,
+          "precipitation_mm": 33.6,
           "precipitation_hours": 15,
           "is_dry": false
         },
         {
           "date": "2026-10-16",
-          "precipitation_mm": 21.9,
+          "precipitation_mm": 21.8,
           "precipitation_hours": 18,
           "is_dry": false
         },
         {
           "date": "2026-10-17",
-          "precipitation_mm": 9.9,
+          "precipitation_mm": 10,
           "precipitation_hours": 11,
           "is_dry": false
         },
         {
           "date": "2026-10-18",
-          "precipitation_mm": 8,
+          "precipitation_mm": 7.9,
           "precipitation_hours": 14,
           "is_dry": false
         },
@@ -1493,19 +1493,19 @@
       "daily": [
         {
           "date": "2026-10-12",
-          "precipitation_mm": 8.8,
+          "precipitation_mm": 7.6,
           "precipitation_hours": 16,
           "is_dry": false
         },
         {
           "date": "2026-10-13",
-          "precipitation_mm": 13,
+          "precipitation_mm": 13.6,
           "precipitation_hours": 13,
           "is_dry": false
         },
         {
           "date": "2026-10-14",
-          "precipitation_mm": 8.3,
+          "precipitation_mm": 7.7,
           "precipitation_hours": 15,
           "is_dry": false
         },
@@ -1553,19 +1553,19 @@
       "daily": [
         {
           "date": "2026-10-12",
-          "precipitation_mm": 8.8,
+          "precipitation_mm": 7.6,
           "precipitation_hours": 16,
           "is_dry": false
         },
         {
           "date": "2026-10-13",
-          "precipitation_mm": 13,
+          "precipitation_mm": 13.6,
           "precipitation_hours": 13,
           "is_dry": false
         },
         {
           "date": "2026-10-14",
-          "precipitation_mm": 8.3,
+          "precipitation_mm": 7.7,
           "precipitation_hours": 15,
           "is_dry": false
         },
@@ -1613,25 +1613,25 @@
       "daily": [
         {
           "date": "2026-10-12",
-          "precipitation_mm": 7.4,
+          "precipitation_mm": 6.9,
           "precipitation_hours": 16,
           "is_dry": false
         },
         {
           "date": "2026-10-13",
-          "precipitation_mm": 13.4,
+          "precipitation_mm": 13.6,
           "precipitation_hours": 12,
           "is_dry": false
         },
         {
           "date": "2026-10-14",
-          "precipitation_mm": 7.3,
+          "precipitation_mm": 7.2,
           "precipitation_hours": 12,
           "is_dry": false
         },
         {
           "date": "2026-10-15",
-          "precipitation_mm": 11.1,
+          "precipitation_mm": 11,
           "precipitation_hours": 17,
           "is_dry": false
         },
@@ -1673,31 +1673,31 @@
       "daily": [
         {
           "date": "2026-10-12",
-          "precipitation_mm": 15.5,
+          "precipitation_mm": 14.3,
           "precipitation_hours": 16,
           "is_dry": false
         },
         {
           "date": "2026-10-13",
-          "precipitation_mm": 10,
+          "precipitation_mm": 10.2,
           "precipitation_hours": 11,
           "is_dry": false
         },
         {
           "date": "2026-10-14",
-          "precipitation_mm": 9,
+          "precipitation_mm": 8.8,
           "precipitation_hours": 11,
           "is_dry": false
         },
         {
           "date": "2026-10-15",
-          "precipitation_mm": 23.7,
+          "precipitation_mm": 23.8,
           "precipitation_hours": 13,
           "is_dry": false
         },
         {
           "date": "2026-10-16",
-          "precipitation_mm": 8,
+          "precipitation_mm": 7.9,
           "precipitation_hours": 10,
           "is_dry": false
         },
@@ -1733,25 +1733,25 @@
       "daily": [
         {
           "date": "2026-10-12",
-          "precipitation_mm": 13.2,
+          "precipitation_mm": 12.2,
           "precipitation_hours": 17,
           "is_dry": false
         },
         {
           "date": "2026-10-13",
-          "precipitation_mm": 22.4,
+          "precipitation_mm": 23.1,
           "precipitation_hours": 14,
           "is_dry": false
         },
         {
           "date": "2026-10-14",
-          "precipitation_mm": 15.1,
+          "precipitation_mm": 14.5,
           "precipitation_hours": 16,
           "is_dry": false
         },
         {
           "date": "2026-10-15",
-          "precipitation_mm": 30.5,
+          "precipitation_mm": 30.4,
           "precipitation_hours": 15,
           "is_dry": false
         },
@@ -1793,19 +1793,19 @@
       "daily": [
         {
           "date": "2026-10-12",
-          "precipitation_mm": 8.8,
+          "precipitation_mm": 7.6,
           "precipitation_hours": 16,
           "is_dry": false
         },
         {
           "date": "2026-10-13",
-          "precipitation_mm": 13,
+          "precipitation_mm": 13.6,
           "precipitation_hours": 13,
           "is_dry": false
         },
         {
           "date": "2026-10-14",
-          "precipitation_mm": 8.3,
+          "precipitation_mm": 7.7,
           "precipitation_hours": 15,
           "is_dry": false
         },
@@ -1853,31 +1853,31 @@
       "daily": [
         {
           "date": "2026-10-12",
-          "precipitation_mm": 15.5,
+          "precipitation_mm": 14.3,
           "precipitation_hours": 16,
           "is_dry": false
         },
         {
           "date": "2026-10-13",
-          "precipitation_mm": 10,
+          "precipitation_mm": 10.2,
           "precipitation_hours": 11,
           "is_dry": false
         },
         {
           "date": "2026-10-14",
-          "precipitation_mm": 9,
+          "precipitation_mm": 8.8,
           "precipitation_hours": 11,
           "is_dry": false
         },
         {
           "date": "2026-10-15",
-          "precipitation_mm": 23.7,
+          "precipitation_mm": 23.8,
           "precipitation_hours": 13,
           "is_dry": false
         },
         {
           "date": "2026-10-16",
-          "precipitation_mm": 8,
+          "precipitation_mm": 7.9,
           "precipitation_hours": 10,
           "is_dry": false
         },
@@ -1913,31 +1913,31 @@
       "daily": [
         {
           "date": "2026-10-12",
-          "precipitation_mm": 15.5,
+          "precipitation_mm": 14.3,
           "precipitation_hours": 16,
           "is_dry": false
         },
         {
           "date": "2026-10-13",
-          "precipitation_mm": 10,
+          "precipitation_mm": 10.2,
           "precipitation_hours": 11,
           "is_dry": false
         },
         {
           "date": "2026-10-14",
-          "precipitation_mm": 9,
+          "precipitation_mm": 8.8,
           "precipitation_hours": 11,
           "is_dry": false
         },
         {
           "date": "2026-10-15",
-          "precipitation_mm": 23.7,
+          "precipitation_mm": 23.8,
           "precipitation_hours": 13,
           "is_dry": false
         },
         {
           "date": "2026-10-16",
-          "precipitation_mm": 8,
+          "precipitation_mm": 7.9,
           "precipitation_hours": 10,
           "is_dry": false
         },
@@ -1973,31 +1973,31 @@
       "daily": [
         {
           "date": "2026-10-12",
-          "precipitation_mm": 26.7,
+          "precipitation_mm": 26.4,
           "precipitation_hours": 15,
           "is_dry": false
         },
         {
           "date": "2026-10-13",
-          "precipitation_mm": 17.8,
+          "precipitation_mm": 17.9,
           "precipitation_hours": 9,
           "is_dry": false
         },
         {
           "date": "2026-10-14",
-          "precipitation_mm": 20.5,
+          "precipitation_mm": 20.6,
           "precipitation_hours": 17,
           "is_dry": false
         },
         {
           "date": "2026-10-15",
-          "precipitation_mm": 38.1,
+          "precipitation_mm": 38.3,
           "precipitation_hours": 15,
           "is_dry": false
         },
         {
           "date": "2026-10-16",
-          "precipitation_mm": 24.7,
+          "precipitation_mm": 24.3,
           "precipitation_hours": 15,
           "is_dry": false
         },
@@ -2033,31 +2033,31 @@
       "daily": [
         {
           "date": "2026-10-12",
-          "precipitation_mm": 15.5,
+          "precipitation_mm": 14.3,
           "precipitation_hours": 16,
           "is_dry": false
         },
         {
           "date": "2026-10-13",
-          "precipitation_mm": 10,
+          "precipitation_mm": 10.2,
           "precipitation_hours": 11,
           "is_dry": false
         },
         {
           "date": "2026-10-14",
-          "precipitation_mm": 9,
+          "precipitation_mm": 8.8,
           "precipitation_hours": 11,
           "is_dry": false
         },
         {
           "date": "2026-10-15",
-          "precipitation_mm": 23.7,
+          "precipitation_mm": 23.8,
           "precipitation_hours": 13,
           "is_dry": false
         },
         {
           "date": "2026-10-16",
-          "precipitation_mm": 8,
+          "precipitation_mm": 7.9,
           "precipitation_hours": 10,
           "is_dry": false
         },
@@ -2093,31 +2093,31 @@
       "daily": [
         {
           "date": "2026-10-12",
-          "precipitation_mm": 15.5,
+          "precipitation_mm": 14.3,
           "precipitation_hours": 16,
           "is_dry": false
         },
         {
           "date": "2026-10-13",
-          "precipitation_mm": 10,
+          "precipitation_mm": 10.2,
           "precipitation_hours": 11,
           "is_dry": false
         },
         {
           "date": "2026-10-14",
-          "precipitation_mm": 9,
+          "precipitation_mm": 8.8,
           "precipitation_hours": 11,
           "is_dry": false
         },
         {
           "date": "2026-10-15",
-          "precipitation_mm": 23.7,
+          "precipitation_mm": 23.8,
           "precipitation_hours": 13,
           "is_dry": false
         },
         {
           "date": "2026-10-16",
-          "precipitation_mm": 8,
+          "precipitation_mm": 7.9,
           "precipitation_hours": 10,
           "is_dry": false
         },
@@ -2153,31 +2153,31 @@
       "daily": [
         {
           "date": "2026-10-12",
-          "precipitation_mm": 28.3,
+          "precipitation_mm": 28,
           "precipitation_hours": 14,
           "is_dry": false
         },
         {
           "date": "2026-10-13",
-          "precipitation_mm": 17,
+          "precipitation_mm": 17.4,
           "precipitation_hours": 12,
           "is_dry": false
         },
         {
           "date": "2026-10-14",
-          "precipitation_mm": 23.1,
+          "precipitation_mm": 22.7,
           "precipitation_hours": 17,
           "is_dry": false
         },
         {
           "date": "2026-10-15",
-          "precipitation_mm": 29.4,
+          "precipitation_mm": 29.5,
           "precipitation_hours": 13,
           "is_dry": false
         },
         {
           "date": "2026-10-16",
-          "precipitation_mm": 10.8,
+          "precipitation_mm": 10.7,
           "precipitation_hours": 15,
           "is_dry": false
         },
@@ -2213,31 +2213,31 @@
       "daily": [
         {
           "date": "2026-10-12",
-          "precipitation_mm": 15.5,
+          "precipitation_mm": 14.3,
           "precipitation_hours": 16,
           "is_dry": false
         },
         {
           "date": "2026-10-13",
-          "precipitation_mm": 10,
+          "precipitation_mm": 10.2,
           "precipitation_hours": 11,
           "is_dry": false
         },
         {
           "date": "2026-10-14",
-          "precipitation_mm": 9,
+          "precipitation_mm": 8.8,
           "precipitation_hours": 11,
           "is_dry": false
         },
         {
           "date": "2026-10-15",
-          "precipitation_mm": 23.7,
+          "precipitation_mm": 23.8,
           "precipitation_hours": 13,
           "is_dry": false
         },
         {
           "date": "2026-10-16",
-          "precipitation_mm": 8,
+          "precipitation_mm": 7.9,
           "precipitation_hours": 10,
           "is_dry": false
         },
@@ -2273,25 +2273,25 @@
       "daily": [
         {
           "date": "2026-10-12",
-          "precipitation_mm": 7.4,
+          "precipitation_mm": 6.9,
           "precipitation_hours": 16,
           "is_dry": false
         },
         {
           "date": "2026-10-13",
-          "precipitation_mm": 13.4,
+          "precipitation_mm": 13.6,
           "precipitation_hours": 12,
           "is_dry": false
         },
         {
           "date": "2026-10-14",
-          "precipitation_mm": 7.3,
+          "precipitation_mm": 7.2,
           "precipitation_hours": 12,
           "is_dry": false
         },
         {
           "date": "2026-10-15",
-          "precipitation_mm": 11.1,
+          "precipitation_mm": 11,
           "precipitation_hours": 17,
           "is_dry": false
         },
@@ -2333,31 +2333,31 @@
       "daily": [
         {
           "date": "2026-10-12",
-          "precipitation_mm": 15.5,
+          "precipitation_mm": 14.3,
           "precipitation_hours": 16,
           "is_dry": false
         },
         {
           "date": "2026-10-13",
-          "precipitation_mm": 10,
+          "precipitation_mm": 10.2,
           "precipitation_hours": 11,
           "is_dry": false
         },
         {
           "date": "2026-10-14",
-          "precipitation_mm": 9,
+          "precipitation_mm": 8.8,
           "precipitation_hours": 11,
           "is_dry": false
         },
         {
           "date": "2026-10-15",
-          "precipitation_mm": 23.7,
+          "precipitation_mm": 23.8,
           "precipitation_hours": 13,
           "is_dry": false
         },
         {
           "date": "2026-10-16",
-          "precipitation_mm": 8,
+          "precipitation_mm": 7.9,
           "precipitation_hours": 10,
           "is_dry": false
         },
@@ -2393,25 +2393,25 @@
       "daily": [
         {
           "date": "2026-10-12",
-          "precipitation_mm": 7.4,
+          "precipitation_mm": 6.9,
           "precipitation_hours": 16,
           "is_dry": false
         },
         {
           "date": "2026-10-13",
-          "precipitation_mm": 13.4,
+          "precipitation_mm": 13.6,
           "precipitation_hours": 12,
           "is_dry": false
         },
         {
           "date": "2026-10-14",
-          "precipitation_mm": 7.3,
+          "precipitation_mm": 7.2,
           "precipitation_hours": 12,
           "is_dry": false
         },
         {
           "date": "2026-10-15",
-          "precipitation_mm": 11.1,
+          "precipitation_mm": 11,
           "precipitation_hours": 17,
           "is_dry": false
         },
@@ -2453,31 +2453,31 @@
       "daily": [
         {
           "date": "2026-10-12",
-          "precipitation_mm": 15.5,
+          "precipitation_mm": 14.3,
           "precipitation_hours": 16,
           "is_dry": false
         },
         {
           "date": "2026-10-13",
-          "precipitation_mm": 10,
+          "precipitation_mm": 10.2,
           "precipitation_hours": 11,
           "is_dry": false
         },
         {
           "date": "2026-10-14",
-          "precipitation_mm": 9,
+          "precipitation_mm": 8.8,
           "precipitation_hours": 11,
           "is_dry": false
         },
         {
           "date": "2026-10-15",
-          "precipitation_mm": 23.7,
+          "precipitation_mm": 23.8,
           "precipitation_hours": 13,
           "is_dry": false
         },
         {
           "date": "2026-10-16",
-          "precipitation_mm": 8,
+          "precipitation_mm": 7.9,
           "precipitation_hours": 10,
           "is_dry": false
         },
@@ -2513,31 +2513,31 @@
       "daily": [
         {
           "date": "2026-10-12",
-          "precipitation_mm": 15.5,
+          "precipitation_mm": 14.3,
           "precipitation_hours": 16,
           "is_dry": false
         },
         {
           "date": "2026-10-13",
-          "precipitation_mm": 10,
+          "precipitation_mm": 10.2,
           "precipitation_hours": 11,
           "is_dry": false
         },
         {
           "date": "2026-10-14",
-          "precipitation_mm": 9,
+          "precipitation_mm": 8.8,
           "precipitation_hours": 11,
           "is_dry": false
         },
         {
           "date": "2026-10-15",
-          "precipitation_mm": 23.7,
+          "precipitation_mm": 23.8,
           "precipitation_hours": 13,
           "is_dry": false
         },
         {
           "date": "2026-10-16",
-          "precipitation_mm": 8,
+          "precipitation_mm": 7.9,
           "precipitation_hours": 10,
           "is_dry": false
         },
@@ -2573,31 +2573,31 @@
       "daily": [
         {
           "date": "2026-10-12",
-          "precipitation_mm": 15.5,
+          "precipitation_mm": 14.3,
           "precipitation_hours": 16,
           "is_dry": false
         },
         {
           "date": "2026-10-13",
-          "precipitation_mm": 10,
+          "precipitation_mm": 10.2,
           "precipitation_hours": 11,
           "is_dry": false
         },
         {
           "date": "2026-10-14",
-          "precipitation_mm": 9,
+          "precipitation_mm": 8.8,
           "precipitation_hours": 11,
           "is_dry": false
         },
         {
           "date": "2026-10-15",
-          "precipitation_mm": 23.7,
+          "precipitation_mm": 23.8,
           "precipitation_hours": 13,
           "is_dry": false
         },
         {
           "date": "2026-10-16",
-          "precipitation_mm": 8,
+          "precipitation_mm": 7.9,
           "precipitation_hours": 10,
           "is_dry": false
         },
@@ -2633,31 +2633,31 @@
       "daily": [
         {
           "date": "2026-10-12",
-          "precipitation_mm": 15.5,
+          "precipitation_mm": 14.3,
           "precipitation_hours": 16,
           "is_dry": false
         },
         {
           "date": "2026-10-13",
-          "precipitation_mm": 10,
+          "precipitation_mm": 10.2,
           "precipitation_hours": 11,
           "is_dry": false
         },
         {
           "date": "2026-10-14",
-          "precipitation_mm": 9,
+          "precipitation_mm": 8.8,
           "precipitation_hours": 11,
           "is_dry": false
         },
         {
           "date": "2026-10-15",
-          "precipitation_mm": 23.7,
+          "precipitation_mm": 23.8,
           "precipitation_hours": 13,
           "is_dry": false
         },
         {
           "date": "2026-10-16",
-          "precipitation_mm": 8,
+          "precipitation_mm": 7.9,
           "precipitation_hours": 10,
           "is_dry": false
         },
@@ -2693,31 +2693,31 @@
       "daily": [
         {
           "date": "2026-10-12",
-          "precipitation_mm": 15.5,
+          "precipitation_mm": 14.3,
           "precipitation_hours": 16,
           "is_dry": false
         },
         {
           "date": "2026-10-13",
-          "precipitation_mm": 10,
+          "precipitation_mm": 10.2,
           "precipitation_hours": 11,
           "is_dry": false
         },
         {
           "date": "2026-10-14",
-          "precipitation_mm": 9,
+          "precipitation_mm": 8.8,
           "precipitation_hours": 11,
           "is_dry": false
         },
         {
           "date": "2026-10-15",
-          "precipitation_mm": 23.7,
+          "precipitation_mm": 23.8,
           "precipitation_hours": 13,
           "is_dry": false
         },
         {
           "date": "2026-10-16",
-          "precipitation_mm": 8,
+          "precipitation_mm": 7.9,
           "precipitation_hours": 10,
           "is_dry": false
         },
@@ -2753,31 +2753,31 @@
       "daily": [
         {
           "date": "2026-10-12",
-          "precipitation_mm": 15.5,
+          "precipitation_mm": 14.3,
           "precipitation_hours": 16,
           "is_dry": false
         },
         {
           "date": "2026-10-13",
-          "precipitation_mm": 10,
+          "precipitation_mm": 10.2,
           "precipitation_hours": 11,
           "is_dry": false
         },
         {
           "date": "2026-10-14",
-          "precipitation_mm": 9,
+          "precipitation_mm": 8.8,
           "precipitation_hours": 11,
           "is_dry": false
         },
         {
           "date": "2026-10-15",
-          "precipitation_mm": 23.7,
+          "precipitation_mm": 23.8,
           "precipitation_hours": 13,
           "is_dry": false
         },
         {
           "date": "2026-10-16",
-          "precipitation_mm": 8,
+          "precipitation_mm": 7.9,
           "precipitation_hours": 10,
           "is_dry": false
         },
@@ -2813,31 +2813,31 @@
       "daily": [
         {
           "date": "2026-10-12",
-          "precipitation_mm": 15.5,
+          "precipitation_mm": 14.3,
           "precipitation_hours": 16,
           "is_dry": false
         },
         {
           "date": "2026-10-13",
-          "precipitation_mm": 10,
+          "precipitation_mm": 10.2,
           "precipitation_hours": 11,
           "is_dry": false
         },
         {
           "date": "2026-10-14",
-          "precipitation_mm": 9,
+          "precipitation_mm": 8.8,
           "precipitation_hours": 11,
           "is_dry": false
         },
         {
           "date": "2026-10-15",
-          "precipitation_mm": 23.7,
+          "precipitation_mm": 23.8,
           "precipitation_hours": 13,
           "is_dry": false
         },
         {
           "date": "2026-10-16",
-          "precipitation_mm": 8,
+          "precipitation_mm": 7.9,
           "precipitation_hours": 10,
           "is_dry": false
         },
@@ -2873,31 +2873,31 @@
       "daily": [
         {
           "date": "2026-10-12",
-          "precipitation_mm": 15.5,
+          "precipitation_mm": 14.3,
           "precipitation_hours": 16,
           "is_dry": false
         },
         {
           "date": "2026-10-13",
-          "precipitation_mm": 10,
+          "precipitation_mm": 10.2,
           "precipitation_hours": 11,
           "is_dry": false
         },
         {
           "date": "2026-10-14",
-          "precipitation_mm": 9,
+          "precipitation_mm": 8.8,
           "precipitation_hours": 11,
           "is_dry": false
         },
         {
           "date": "2026-10-15",
-          "precipitation_mm": 23.7,
+          "precipitation_mm": 23.8,
           "precipitation_hours": 13,
           "is_dry": false
         },
         {
           "date": "2026-10-16",
-          "precipitation_mm": 8,
+          "precipitation_mm": 7.9,
           "precipitation_hours": 10,
           "is_dry": false
         },
@@ -2933,31 +2933,31 @@
       "daily": [
         {
           "date": "2026-10-12",
-          "precipitation_mm": 15.5,
+          "precipitation_mm": 14.3,
           "precipitation_hours": 16,
           "is_dry": false
         },
         {
           "date": "2026-10-13",
-          "precipitation_mm": 10,
+          "precipitation_mm": 10.2,
           "precipitation_hours": 11,
           "is_dry": false
         },
         {
           "date": "2026-10-14",
-          "precipitation_mm": 9,
+          "precipitation_mm": 8.8,
           "precipitation_hours": 11,
           "is_dry": false
         },
         {
           "date": "2026-10-15",
-          "precipitation_mm": 23.7,
+          "precipitation_mm": 23.8,
           "precipitation_hours": 13,
           "is_dry": false
         },
         {
           "date": "2026-10-16",
-          "precipitation_mm": 8,
+          "precipitation_mm": 7.9,
           "precipitation_hours": 10,
           "is_dry": false
         },
@@ -2993,31 +2993,31 @@
       "daily": [
         {
           "date": "2026-10-12",
-          "precipitation_mm": 15.5,
+          "precipitation_mm": 14.3,
           "precipitation_hours": 16,
           "is_dry": false
         },
         {
           "date": "2026-10-13",
-          "precipitation_mm": 10,
+          "precipitation_mm": 10.2,
           "precipitation_hours": 11,
           "is_dry": false
         },
         {
           "date": "2026-10-14",
-          "precipitation_mm": 9,
+          "precipitation_mm": 8.8,
           "precipitation_hours": 11,
           "is_dry": false
         },
         {
           "date": "2026-10-15",
-          "precipitation_mm": 23.7,
+          "precipitation_mm": 23.8,
           "precipitation_hours": 13,
           "is_dry": false
         },
         {
           "date": "2026-10-16",
-          "precipitation_mm": 8,
+          "precipitation_mm": 7.9,
           "precipitation_hours": 10,
           "is_dry": false
         },
@@ -3053,25 +3053,25 @@
       "daily": [
         {
           "date": "2026-10-12",
-          "precipitation_mm": 7.4,
+          "precipitation_mm": 6.9,
           "precipitation_hours": 16,
           "is_dry": false
         },
         {
           "date": "2026-10-13",
-          "precipitation_mm": 13.4,
+          "precipitation_mm": 13.6,
           "precipitation_hours": 12,
           "is_dry": false
         },
         {
           "date": "2026-10-14",
-          "precipitation_mm": 7.3,
+          "precipitation_mm": 7.2,
           "precipitation_hours": 12,
           "is_dry": false
         },
         {
           "date": "2026-10-15",
-          "precipitation_mm": 11.1,
+          "precipitation_mm": 11,
           "precipitation_hours": 17,
           "is_dry": false
         },
@@ -3113,31 +3113,31 @@
       "daily": [
         {
           "date": "2026-10-12",
-          "precipitation_mm": 15.5,
+          "precipitation_mm": 14.3,
           "precipitation_hours": 16,
           "is_dry": false
         },
         {
           "date": "2026-10-13",
-          "precipitation_mm": 10,
+          "precipitation_mm": 10.2,
           "precipitation_hours": 11,
           "is_dry": false
         },
         {
           "date": "2026-10-14",
-          "precipitation_mm": 9,
+          "precipitation_mm": 8.8,
           "precipitation_hours": 11,
           "is_dry": false
         },
         {
           "date": "2026-10-15",
-          "precipitation_mm": 23.7,
+          "precipitation_mm": 23.8,
           "precipitation_hours": 13,
           "is_dry": false
         },
         {
           "date": "2026-10-16",
-          "precipitation_mm": 8,
+          "precipitation_mm": 7.9,
           "precipitation_hours": 10,
           "is_dry": false
         },
@@ -3173,31 +3173,31 @@
       "daily": [
         {
           "date": "2026-10-12",
-          "precipitation_mm": 15.5,
+          "precipitation_mm": 14.3,
           "precipitation_hours": 16,
           "is_dry": false
         },
         {
           "date": "2026-10-13",
-          "precipitation_mm": 10,
+          "precipitation_mm": 10.2,
           "precipitation_hours": 11,
           "is_dry": false
         },
         {
           "date": "2026-10-14",
-          "precipitation_mm": 9,
+          "precipitation_mm": 8.8,
           "precipitation_hours": 11,
           "is_dry": false
         },
         {
           "date": "2026-10-15",
-          "precipitation_mm": 23.7,
+          "precipitation_mm": 23.8,
           "precipitation_hours": 13,
           "is_dry": false
         },
         {
           "date": "2026-10-16",
-          "precipitation_mm": 8,
+          "precipitation_mm": 7.9,
           "precipitation_hours": 10,
           "is_dry": false
         },
